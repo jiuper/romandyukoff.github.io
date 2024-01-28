@@ -1,867 +1,1226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-  <title>slider</title>
-  <link href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
-  <link rel="stylesheet" href="/assets/index.8ba8ea75.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/adaptive.css">
-</head>
-<body>
-<header>
-  <div class="container">
-    <div class="header-container">
-      <div class="header-container-left">
-        <div class="header-container-logo">
-          <img src="/img/logo-desktop.svg" alt="">
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-            СПБ
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-              <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-            </svg>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>slider</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
+    <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-left">
+            <div class="header-container-logo">
+              <img src="/img/logo-desktop.svg" alt="" />
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                СПБ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="10"
+                  viewBox="0 0 8 10"
+                  fill="none"
+                >
+                  <path
+                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                    fill="#DFDFDF"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <h1>Сеть лаунж-ресторанов</h1>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <ul>
+                <li>
+                  <a href="#!" class="burger-menu-active">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Главная
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Рестораны
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Франшиза
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Офрмить бонусную карту
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Кейтеринг
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    О нас
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Контакты
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Доставка
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-container-right">
+            <a href="#!">Доставка</a>
+            <a href="#!" class="header-container-right-btn">
+              Забронировать
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="8"
+                viewBox="0 0 10 8"
+                fill="none"
+              >
+                <path
+                  d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-        <h1>Сеть лаунж-ресторанов</h1>
       </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <div class="menu__box">
-          <ul>
-            <li>
-              <a href="/" class="burger-menu-active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Главная
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Рестораны
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Франшиза
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Офрмить бонусную карту
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Кейтеринг
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                О нас
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Контакты
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Доставка
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+    </header>
+    <section class="section1__restoran">
+      <p class="section1-block__restoran">TangierS</p>
+      <p class="section1-block__restoran">Lounge</p>
+      <div class="section1__restoran-laptop">
+        <p>T n g</p>
+        <p>L n g</p>
       </div>
-      <div class="header-container-right">
-        <a href="/">Доставка</a>
-        <a href="/" class="header-container-right-btn">
-          Забронировать
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-            <path d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z" fill="#DFDFDF"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-<section class="section1__restoran">
-  <p class="section1-block__restoran">TangierS</p>
-  <p class="section1-block__restoran">Lounge</p>
-  <div class="section1__restoran-laptop">
-    <p>T n g</p>
-    <p>L n g</p>
-  </div>
-  <svg class="section1__restoran-mob" xmlns="http://www.w3.org/2000/svg" width="336" height="170" viewBox="0 0 336 170" fill="none">
-    <path d="M16.3446 92.0715H24.6362V158.819H45.2532V166.646H16.3446V92.0715Z" fill="#DFDFDF"/>
-    <path d="M134.645 166.646H126.354V88.941L184.619 149.875V92.0715H192.911V170L134.645 109.066V166.646Z" fill="#DFDFDF"/>
-    <path d="M304.85 137.017V129.191H336V130.98C336 140.222 333.61 148.086 328.829 154.571C322.181 163.515 312.918 167.988 301.041 167.988C289.985 167.988 280.76 164.298 273.365 156.919C265.969 149.465 262.272 140.297 262.272 129.415C262.272 118.532 265.969 109.401 273.365 102.022C280.835 94.5685 290.135 90.8417 301.265 90.8417C310.079 90.8417 317.699 93.3014 324.123 98.2208C327.41 100.755 330.286 103.699 332.751 107.053L326.588 112.644C324.422 109.588 322.069 107.016 319.529 104.929C314.375 100.755 308.324 98.6681 301.377 98.6681C292.488 98.6681 285.167 101.612 279.415 107.501C273.663 113.389 270.788 120.731 270.788 129.526C270.788 135.937 272.356 141.564 275.494 146.409C278.631 151.179 282.441 154.683 286.923 156.919C291.479 159.08 296.223 160.161 301.153 160.161C306.083 160.161 310.565 159.043 314.599 156.807C318.707 154.496 321.844 151.44 324.011 147.639C325.878 144.434 326.887 140.893 327.036 137.017H304.85Z" fill="#DFDFDF"/>
-    <path d="M44.5955 10.9569H26.4435V77.7048H18.1519V10.9569H0V3.13055H44.5955V10.9569Z" fill="#DFDFDF"/>
-    <path d="M135.039 77.7048H126.747V0L185.013 60.934V3.13055H193.305V81.059L135.039 20.125V77.7048Z" fill="#DFDFDF"/>
-    <path d="M304.124 48.0764V40.25H335.273V42.0389C335.273 51.2815 332.883 59.1451 328.102 65.6298C321.454 74.5743 312.191 79.0465 300.314 79.0465C289.258 79.0465 280.033 75.3569 272.638 67.9778C265.243 60.5241 261.545 51.356 261.545 40.4736C261.545 29.5912 265.243 20.4604 272.638 13.0813C280.108 5.62755 289.408 1.9007 300.538 1.9007C309.352 1.9007 316.972 4.36042 323.396 9.27986C326.683 11.8141 329.559 14.7583 332.024 18.1125L325.861 23.7028C323.695 20.6468 321.342 18.0752 318.802 15.9882C313.648 11.8141 307.597 9.72708 300.65 9.72708C291.761 9.72708 284.44 12.6713 278.688 18.5597C272.937 24.4481 270.061 31.79 270.061 40.5854C270.061 46.9956 271.629 52.6231 274.767 57.468C277.904 62.2384 281.714 65.7417 286.196 67.9778C290.752 70.1393 295.496 71.2201 300.426 71.2201C305.356 71.2201 309.838 70.1021 313.872 67.866C317.98 65.5553 321.118 62.4993 323.284 58.6979C325.151 55.4928 326.16 51.9523 326.309 48.0764H304.124Z" fill="#DFDFDF"/>
-  </svg>
-</section>
-<section class="section1__franchise">
-  <div class="section1-line__franchise"></div>
-  <div class="container">
-    <h2 class="section1-title__franchise">
-      Активно развивающаяся сеть заведений <br>
-      в России, США, Казахстане и Европе.
-    </h2>
-    <div class="section1-container__secret-assistants">
-      <h1>
-        Станьте частью франшизной сети <br>
-        Tangiers Lounge
-      </h1>
-      <div class="section1-container-img__secret-assistants">
-        <img src="/img/t2.png" class="section1-container-img-blur__secret-assistants" alt="">
-        <img src="/img/t2.png" alt="" class="section1-container-img-main__secret-assistants">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section2__franchise">
-  <div class="section2-line__franchise"></div>
-  <div class="container">
-    <div class="section2-container__franchise">
-      <img src="/img/face1.png" alt="">
-      <p>
-        Tangiers Lounge <br>
-        был основан в 2018 году. <br>
-        За это время мы успели зарекомендовать <br>
-        себя как лидеры <br>
-        сервиса и качества
-      </p>
-    </div>
-    <div class="section2-container-bottom__franchise">
-      <div class="section2-container-bottom-block__franchise">
-        <p>33</p>
-        <span>Открытых ресторана</span>
-      </div>
-      <div class="section2-container-bottom-block__franchise">
-        <p>>5000</p>
-        <span>Отзывов от гостей</span>
-      </div>
-      <div class="section2-container-bottom-block__franchise">
-        <p>>300 000</p>
-        <span>Человек посетили <br>наши заведения</span>
-      </div>
-      <div class="section2-container-bottom-block__franchise">
-        <p>>50 000</p>
-        <span>Подписчиков <br>в социальных сетях</span>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__franchise">
-  <div class="section3-line-l__franchise"></div>
-  <div class="section3-line-r__franchise"></div>
-  <div class="container">
-    <div class="section3-container__franchise">
-      <p>Интерьер cочетает в себе английскую классику и гранж</p>
-      <div class="section3-container-block__franchise">
-        <img src="/img/gal41.png" alt="" class="section3-container-bg__franchise">
-        <img src="/img/gal41.png" alt="" class="section3-container-img__franchise">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section4__franchise">
-  <div class="section4-line__franchise"></div>
-  <div class="container">
-    <p class="section4-title__franchise">
-      История развития
-    </p>
-    <div class="section4-container__franchise">
-      <p>
-        Артём Синяков совместно <br>
-        с Кириллом Глущенко основали компанию <br>
-        Art Hookah Family в Бангкоке, которая занималась производством дизайнерских кальянов «Temple 45» и реализацией продукта в России.
-      </p>
-      <button type="button">Узнать нашу историю</button>
-      <div class="section1-container-img__secret-assistants">
-        <img src="/img/t2.png" class="section1-container-img-blur__secret-assistants" alt="">
-        <img src="/img/t2.png" alt="" class="section1-container-img-main__secret-assistants">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__vacancy section5__franchise">
-  <div class="container">
-    <div class="section5-top__franchise">
-      <div class="section5-top-left__franchise">Что вы получите от нас</div>
-      <div class="section5-top-right__franchise">
-        <div data-tabFran="#text1" class="section5-top-right-block__franchise section5-top-right-block-active__franchise">
-          Стабильность
-        </div>
-        <div data-tabFran="#text2" class="section5-top-right-block__franchise">
-          Эффективная бизнес-модель
-        </div>
-        <div data-tabFran="#text3" class="section5-top-right-block__franchise">
-          Маркетинг
-        </div>
-        <div data-tabFran="#text4" class="section5-top-right-block__franchise">
-          Узнаваемость и легкий старт
-        </div>
-        <div data-tabFran="#text5" class="section5-top-right-block__franchise">
-          Стандарты сервиса
-        </div>
-      </div>
-    </div>
-    <img src="/img/33.png" alt="" class="section3-img1__vacancy">
-    <img src="/img/34.png" alt="" class="section3-img2__vacancy">
-    <div class="section7-container__secret-assistants section3-container__vacancy">
-      <p id="text1" class="section7-p__vacancy section7-p__vacancy-active">
-        Tangiers Lounge — место для всех, кто ищет нетривиальный ресторан, готов оценить авторские находки миксологов и погрузиться в атмосферу модного заведения для особенных гостей. Интерьер сочетает в себе английскую классику и гранж, а концепция заведения тесно связана с легендой о Мистере Т. - загадочном хозяине Особняка.
-      </p>
-      <p id="text2" class="section7-p__vacancy">
-        Когда начинаешь свой бизнес, не хочется совершать чужих ошибок. Мы разработали рабочую бизнес-модель, которая уже принесла миллионы своим создателям. Пусть принесёт и вам!
-
-      </p>
-      <p id="text3" class="section7-p__vacancy">
-        Не нужно тратить годы на приобретение навыков и опыта управления бизнесом. Мы заинтересованы в том, чтобы вы скорее попали в колею. Поэтому своим дочерним подразделениям мы предоставляем консультации и юридическую поддержку.
-      </p>
-      <p id="text4" class="section7-p__vacancy">
-        Мы предоставим вашим сотрудникам рабочие рекомендации по организации и проведению рекламных кампаний, акций и мероприятий.
-      </p>
-      <p id="text5" class="section7-p__vacancy">
-        Мы проходили через открытие первого заведения и понимаем, насколько это важный момент. Мы обучим ваш персонал всему, что знаем сами. Начиная от фирменных забивок и заканчивая стандартами сервиса.
-      </p>
-
-    </div>
-  </div>
-</section>
-<section class="section6__franchise">
-  <div class="container">
-    <div class="section6-block__franchise">
-      <h3>Финансовые показатели</h3>
-    </div>
-    <div class="section6-container__franchise">
-      <div class="section6-container-block__franchise">
-        <div class="section6-container-block-part__franchise">
-          <span>7-25 </span>
-          <p>млн. руб.</p>
-        </div>
-        <div class="section6-container-block-bottom__franchise">
-          Инвестиции
-        </div>
-      </div>
-      <div class="section6-container-block__franchise">
-        <div class="section6-container-block-part__franchise">
-          <span>2-7,5  </span>
-          <p>млн. руб.</p>
-        </div>
-        <div class="section6-container-block-bottom__franchise">
-          Оборот
-        </div>
-      </div>
-      <div class="section6-container-block__franchise">
-        <div class="section6-container-block-part__franchise">
-          <p>от</p>
-          <span>20%</span>
-        </div>
-        <div class="section6-container-block-bottom__franchise">
-          Чистая прибыль
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section12__catering" style="background: url('/img/video2.png')">
-  <div class="section12-container__catering">
-    <div class="section12-title__catering">
-      Видеопрезентация
-    </div>
-    <div class="section12-container-video__catering">
-      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-        <path d="M9.53674e-07 -1.31134e-06L10 4L-9.53989e-08 8L9.53674e-07 -1.31134e-06Z" fill="#0D0D0D"></path>
+      <svg
+        class="section1__restoran-mob"
+        xmlns="http://www.w3.org/2000/svg"
+        width="336"
+        height="170"
+        viewBox="0 0 336 170"
+        fill="none"
+      >
+        <path
+          d="M16.3446 92.0715H24.6362V158.819H45.2532V166.646H16.3446V92.0715Z"
+          fill="#DFDFDF"
+        />
+        <path
+          d="M134.645 166.646H126.354V88.941L184.619 149.875V92.0715H192.911V170L134.645 109.066V166.646Z"
+          fill="#DFDFDF"
+        />
+        <path
+          d="M304.85 137.017V129.191H336V130.98C336 140.222 333.61 148.086 328.829 154.571C322.181 163.515 312.918 167.988 301.041 167.988C289.985 167.988 280.76 164.298 273.365 156.919C265.969 149.465 262.272 140.297 262.272 129.415C262.272 118.532 265.969 109.401 273.365 102.022C280.835 94.5685 290.135 90.8417 301.265 90.8417C310.079 90.8417 317.699 93.3014 324.123 98.2208C327.41 100.755 330.286 103.699 332.751 107.053L326.588 112.644C324.422 109.588 322.069 107.016 319.529 104.929C314.375 100.755 308.324 98.6681 301.377 98.6681C292.488 98.6681 285.167 101.612 279.415 107.501C273.663 113.389 270.788 120.731 270.788 129.526C270.788 135.937 272.356 141.564 275.494 146.409C278.631 151.179 282.441 154.683 286.923 156.919C291.479 159.08 296.223 160.161 301.153 160.161C306.083 160.161 310.565 159.043 314.599 156.807C318.707 154.496 321.844 151.44 324.011 147.639C325.878 144.434 326.887 140.893 327.036 137.017H304.85Z"
+          fill="#DFDFDF"
+        />
+        <path
+          d="M44.5955 10.9569H26.4435V77.7048H18.1519V10.9569H0V3.13055H44.5955V10.9569Z"
+          fill="#DFDFDF"
+        />
+        <path
+          d="M135.039 77.7048H126.747V0L185.013 60.934V3.13055H193.305V81.059L135.039 20.125V77.7048Z"
+          fill="#DFDFDF"
+        />
+        <path
+          d="M304.124 48.0764V40.25H335.273V42.0389C335.273 51.2815 332.883 59.1451 328.102 65.6298C321.454 74.5743 312.191 79.0465 300.314 79.0465C289.258 79.0465 280.033 75.3569 272.638 67.9778C265.243 60.5241 261.545 51.356 261.545 40.4736C261.545 29.5912 265.243 20.4604 272.638 13.0813C280.108 5.62755 289.408 1.9007 300.538 1.9007C309.352 1.9007 316.972 4.36042 323.396 9.27986C326.683 11.8141 329.559 14.7583 332.024 18.1125L325.861 23.7028C323.695 20.6468 321.342 18.0752 318.802 15.9882C313.648 11.8141 307.597 9.72708 300.65 9.72708C291.761 9.72708 284.44 12.6713 278.688 18.5597C272.937 24.4481 270.061 31.79 270.061 40.5854C270.061 46.9956 271.629 52.6231 274.767 57.468C277.904 62.2384 281.714 65.7417 286.196 67.9778C290.752 70.1393 295.496 71.2201 300.426 71.2201C305.356 71.2201 309.838 70.1021 313.872 67.866C317.98 65.5553 321.118 62.4993 323.284 58.6979C325.151 55.4928 326.16 51.9523 326.309 48.0764H304.124Z"
+          fill="#DFDFDF"
+        />
       </svg>
-      Посмотреть видео
-    </div>
-  </div>
-</section>
-<section class="section3__looking-premises" style="margin-top: 0;">
-  <div class="container">
-    <div class="section3-container__looking-premises section3-container__contacts section6-container__career2">
-      <p class="section3-text__secret-assistants section5-text__secret-assistants" style="padding-top: 0;">
-        Открытые вакансии
-      </p>
-      <div class="section3-container__secret-assistants section5-container__secret-assistants">
-        <div class="section3-container-block__secret-assistants section3-container-img__contacts">
-          <img src="/img/gal21.png" class="section3-container-block-bg__secret-assistants">
-          <img src="/img/gal21.png" alt="" class="section3-container-block-img__secret-assistants">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section4__looking-premises">
-  <div class="section4-container__looking-premises">
-    <div class="section4-container-block__looking-premises">
-      <p>
-        Tangiers Lounge может быть расположен на любом этаже в&nbsp;отдельно стоящем здании (кроме цокольного), в&nbsp;нежилом фонде.
-      </p>
-      <span>1</span>
-      <h5>
-        Любой этаж
-      </h5>
-    </div>
-    <div class="section4-container-block__looking-premises section4-container-block__looking-premises2">
-      <p>
-        Общая площадь помещения 170-300 кв.м.
-      </p>
-      <span>2</span>
-      <h5>
-        Площадь помещения
-      </h5>
-    </div>
-    <div class="section4-container-block__looking-premises section4-container-block__looking-premises3">
-      <p>
-        Обязательно наличие технических условий по системе вентиляции или возможность её размещения на фасаде здания или в домовой шахте.
-      </p>
-      <span>3</span>
-      <h5>
-        Система винтеляции
-      </h5>
-    </div>
-    <div class="section4-container-block__looking-premises section4-container-block__looking-premises4">
-      <p>
-        Обязательно наличие технических условий по электроснабжению. Минимальная мощность
-        <br>— 70 кВт.
-      </p>
-      <span>4</span>
-      <h5>
-        Электроснабжение
-      </h5>
-    </div>
-    <div class="section4-container-block__looking-premises section4-container-block__looking-premises5">
-      <p>
-        Обязательно наличие технических условий по системе канализации и&nbsp;водоотведения помещения.
-      </p>
-      <span>5</span>
-      <h5>
-        Канализация и&nbsp;водоотведение
-      </h5>
-    </div>
-  </div>
-</section>
-<section class="section1__secret-assistants section1__loyalty-program section5__catering">
-  <div class="line-height-1364"></div>
-  <div class="container">
-    <div class="section1-container__secret-assistants">
-      <h1>
-        гарантируем: то, что было на вечеринке <br> останется на вечеринке
-      </h1>
-      <div class="section1-container-img__secret-assistants section4-container-img__catering">
-        <img src="/img/gal25.png" class="section1-container-img-blur__secret-assistants" alt="">
-        <img src="/img/gal25.png" alt="" class="section1-container-img-main__secret-assistants">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section4__careeer">
-  <div class="section4-container__careeer">
-    <div class="section4-container-block__careeer">
-      <div class="section4-container-block-part__careeer">
-        <h3>Команда</h3>
-        <p>
-          Размещение и продвижение на всех рекламных каналах компании, а это — более 100 000 человек суммарной аудитории.
-        </p>
-      </div>
-      <div class="section4-container-block-part__careeer">
-        <h3>Карьерный рост</h3>
-        <p>
-          Наши сотрудники становятся управляющими проектов, руководителями подразделений, имеют возможность присоединиться к команде Tangiers Lounge в других городах или стать сотрудником офиса.
-        </p>
-      </div>
-    </div>
-    <div class="section4-container-block__careeer">
-      <div class="section4-container-block-part__careeer">
-        <h3>Стабильный доход</h3>
-        <p>
-          Стабильная оплата по верхней границе рынка: высокая фиксированная ставка позволяет вам получать стабильный доход вне зависимости от суммы чаевых и прочих выплат.
-        </p>
-      </div>
-      <div class="section4-container-block-part__careeer">
-        <h3>Корпоративная жизнь</h3>
-        <p>
-          Активная корпоративная жизнь: Мистера Т. регулярно устраивает вечеринки для команды Особняков, организует спортивные мероприятия и другие активности.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-map__franchise">
-  <img src="/img/map-fran.png" alt="" class="section-map-bg__franchise">
-  <svg class="section-map-bg__franchise-mob" xmlns="http://www.w3.org/2000/svg" width="289" height="520" viewBox="0 0 289 520" fill="none">
-    <path d="M883.587 -64.8291L895.5 -66.1704L668.027 -262.642L388.184 -245.205L375.749 -236.859L341.716 -214.017L111.007 -59.1756L70.4671 -52.1508L37.2646 -10.6334L34.0223 0.0984075L45.3314 13.4222L48.6541 25.4517L36.9034 41.894L45.0776 65.4022L40.4138 76.1374L49.9542 83.9938L52.4026 96.1348L33.3953 132.182L21.6144 140.089L13.3409 150.395L34.5428 178.468L23.841 182.324L6.34937 183.131L0.161857 195.84L5.65781 204.034L4.96122 223.514L8.69846 229.086L8.99362 250.753L11.0325 270.774L32.1439 273.241L38.3094 285.263L46.6111 313.915L59.1167 325.485L61.3402 335.875L53.0416 339.068L45.9596 346.198L53.8839 360.843L64.2534 355.785L90.8306 357.911L92.3123 374.978L106.526 374.945L118.158 386.626L133.339 381.666L176.026 394.369L183.061 404.857L179.629 423.797L174.853 433.657L160.454 443.321L155.253 456.793L167.709 454.137L180.317 463.737L163.607 469.248L158.166 476.702L168.029 482.917L167.4 490.469L156.805 493.777L155.639 504.066L146.793 507.151L147.698 515.575L162.704 523.09L205.089 543.125L214.907 536.536L241.039 536.584L272.131 547.563L290.149 541.174L301.116 550.449L334.703 555.951L347.465 547.385L322.009 522.167L311.677 506.762L304.345 505.028L294.33 486.558L297.517 460.178L309.083 453.366L319.785 449.511L319.74 436.707L314.369 432.945L308.998 429.182L308.098 422.18L302.832 417.159L271.393 400.709L263.572 384.094L263.681 353.125L274.153 346.097L292.217 352.511L289.226 341.684L316.502 293.908L325.25 294.216L342.277 285.64L353.761 286.489L373.031 293.994L384.71 288.057L396.081 288.03L401.174 275.105L416.897 268.831L433.749 272.73L456.677 263.047L456.319 254.731L447.791 254.751L440.771 248.53L439.639 206.511L427.548 188.484L430.58 180.269L468.878 157.418L508.282 107.206L534.844 105.064L548.117 117.07L557.294 115.188L566.38 118.121L577.409 114.046L587.139 113.695L598.92 105.788L619.072 84.1825L624.118 88.8761L661.452 102.795L684.837 129.879L694.787 129.855L699.891 119.775L712.786 117.775L731.756 102.191L778.355 107.991L775.937 104.385L787.82 94.5084L804.535 90.4201L815.586 61.6138L821.069 35.1188L829.123 24.485L852.914 11.8444L885.934 11.5476L889.406 3.98875L905.206 -11.3688L904.746 -17.7146L880.332 -26.5209L873.737 -36.3541L883.587 -64.8291Z" fill="#454545"/>
-  </svg>
-  <div class="container">
-    <div class="section-map-container__franchise">
-      <div class="section-map-top__franchise">
-        <div class="section-map-top-left__franchise">
-          География проектов
-        </div>
-        <div class="section-map-top-right__franchise">
-          <p>Действующийх проектов — 17</p>
-          <span>Готовятся к открытию — 17</span>
-        </div>
-      </div>
-      <div class="section-map-bottom__franchise">
-        В планах на 2023 год — более 20 новых проектов
-      </div>
-    </div>
-    <div class="section-map-content__franchise">
-      <div class="section-map-content-block__franchise section-map-content-block__franchise1">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
+    </section>
+    <section class="section1__franchise">
+      <div class="section1-line__franchise"></div>
+      <div class="container">
+        <h2 class="section1-title__franchise">
+          Активно развивающаяся сеть заведений <br />
+          в России, США, Казахстане и Европе.
+        </h2>
+        <div class="section1-container__secret-assistants">
+          <h1>
+            Станьте частью франшизной сети <br />
+            Tangiers Lounge
+          </h1>
+          <div class="section1-container-img__secret-assistants">
+            <img
+              src="/img/t2.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/t2.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
           </div>
         </div>
       </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise2">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
+    </section>
+    <section class="section2__franchise">
+      <div class="section2-line__franchise"></div>
+      <div class="container">
+        <div class="section2-container__franchise">
+          <img src="/img/face1.png" alt="" />
+          <p>
+            Tangiers Lounge <br />
+            был основан в 2018 году. <br />
+            За это время мы успели зарекомендовать <br />
+            себя как лидеры <br />
+            сервиса и качества
+          </p>
+        </div>
+        <div class="section2-container-bottom__franchise">
+          <div class="section2-container-bottom-block__franchise">
+            <p>33</p>
+            <span>Открытых ресторана</span>
+          </div>
+          <div class="section2-container-bottom-block__franchise">
+            <p>>5000</p>
+            <span>Отзывов от гостей</span>
+          </div>
+          <div class="section2-container-bottom-block__franchise">
+            <p>>300 000</p>
+            <span>Человек посетили <br />наши заведения</span>
+          </div>
+          <div class="section2-container-bottom-block__franchise">
+            <p>>50 000</p>
+            <span>Подписчиков <br />в социальных сетях</span>
           </div>
         </div>
       </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise3">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
+    </section>
+    <section class="section3__franchise">
+      <div class="section3-line-l__franchise"></div>
+      <div class="section3-line-r__franchise"></div>
+      <div class="container">
+        <div class="section3-container__franchise">
+          <p>Интерьер cочетает в себе английскую классику и гранж</p>
+          <div class="section3-container-block__franchise">
+            <img
+              src="/img/gal41.png"
+              alt=""
+              class="section3-container-bg__franchise"
+            />
+            <img
+              src="/img/gal41.png"
+              alt=""
+              class="section3-container-img__franchise"
+            />
           </div>
         </div>
       </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise4">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
+    </section>
+    <section class="section4__franchise">
+      <div class="section4-line__franchise"></div>
+      <div class="container">
+        <p class="section4-title__franchise">История развития</p>
+        <div class="section4-container__franchise">
+          <p>
+            Артём Синяков совместно <br />
+            с Кириллом Глущенко основали компанию <br />
+            Art Hookah Family в Бангкоке, которая занималась производством
+            дизайнерских кальянов «Temple 45» и реализацией продукта в России.
+          </p>
+          <button type="button">Узнать нашу историю</button>
+          <div class="section1-container-img__secret-assistants">
+            <img
+              src="/img/t2.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/t2.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
           </div>
         </div>
       </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise5">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
+    </section>
+    <section class="section3__vacancy section5__franchise">
+      <div class="container">
+        <div class="section5-top__franchise">
+          <div class="section5-top-left__franchise">Что вы получите от нас</div>
+          <div class="section5-top-right__franchise">
+            <div
+              data-tabFran="#text1"
+              class="section5-top-right-block__franchise section5-top-right-block-active__franchise"
+            >
+              Стабильность
+            </div>
+            <div
+              data-tabFran="#text2"
+              class="section5-top-right-block__franchise"
+            >
+              Эффективная бизнес-модель
+            </div>
+            <div
+              data-tabFran="#text3"
+              class="section5-top-right-block__franchise"
+            >
+              Маркетинг
+            </div>
+            <div
+              data-tabFran="#text4"
+              class="section5-top-right-block__franchise"
+            >
+              Узнаваемость и легкий старт
+            </div>
+            <div
+              data-tabFran="#text5"
+              class="section5-top-right-block__franchise"
+            >
+              Стандарты сервиса
+            </div>
+          </div>
+        </div>
+        <img src="/img/33.png" alt="" class="section3-img1__vacancy" />
+        <img src="/img/34.png" alt="" class="section3-img2__vacancy" />
+        <div
+          class="section7-container__secret-assistants section3-container__vacancy"
+        >
+          <p id="text1" class="section7-p__vacancy section7-p__vacancy-active">
+            Tangiers Lounge — место для всех, кто ищет нетривиальный ресторан,
+            готов оценить авторские находки миксологов и погрузиться в атмосферу
+            модного заведения для особенных гостей. Интерьер сочетает в себе
+            английскую классику и гранж, а концепция заведения тесно связана с
+            легендой о Мистере Т. - загадочном хозяине Особняка.
+          </p>
+          <p id="text2" class="section7-p__vacancy">
+            Когда начинаешь свой бизнес, не хочется совершать чужих ошибок. Мы
+            разработали рабочую бизнес-модель, которая уже принесла миллионы
+            своим создателям. Пусть принесёт и вам!
+          </p>
+          <p id="text3" class="section7-p__vacancy">
+            Не нужно тратить годы на приобретение навыков и опыта управления
+            бизнесом. Мы заинтересованы в том, чтобы вы скорее попали в колею.
+            Поэтому своим дочерним подразделениям мы предоставляем консультации
+            и юридическую поддержку.
+          </p>
+          <p id="text4" class="section7-p__vacancy">
+            Мы предоставим вашим сотрудникам рабочие рекомендации по организации
+            и проведению рекламных кампаний, акций и мероприятий.
+          </p>
+          <p id="text5" class="section7-p__vacancy">
+            Мы проходили через открытие первого заведения и понимаем, насколько
+            это важный момент. Мы обучим ваш персонал всему, что знаем сами.
+            Начиная от фирменных забивок и заканчивая стандартами сервиса.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section6__franchise">
+      <div class="container">
+        <div class="section6-block__franchise">
+          <h3>Финансовые показатели</h3>
+        </div>
+        <div class="section6-container__franchise">
+          <div class="section6-container-block__franchise">
+            <div class="section6-container-block-part__franchise">
+              <span>7-25 </span>
+              <p>млн. руб.</p>
+            </div>
+            <div class="section6-container-block-bottom__franchise">
+              Инвестиции
+            </div>
+          </div>
+          <div class="section6-container-block__franchise">
+            <div class="section6-container-block-part__franchise">
+              <span>2-7,5 </span>
+              <p>млн. руб.</p>
+            </div>
+            <div class="section6-container-block-bottom__franchise">Оборот</div>
+          </div>
+          <div class="section6-container-block__franchise">
+            <div class="section6-container-block-part__franchise">
+              <p>от</p>
+              <span>20%</span>
+            </div>
+            <div class="section6-container-block-bottom__franchise">
+              Чистая прибыль
+            </div>
           </div>
         </div>
       </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise6">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
-          </div>
-        </div>
-      </div>
-      <div class="section-map-content-block__franchise section-map-content-block__franchise7">
-        <div class="section-map-content-block-into__franchise">
-          <img src="/img/Union-map.png" alt="">
-          <div class="section-map-content-block-into-text__franchise">
-            <p>Калининград</p>
-            <span>1</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-map-content__franchise-mob-parent">
-      <div class="section-map-content__franchise-mob">
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-        <div class="section-map-content-block__franchise-mob">
-          <span>7</span>
-          <p>Санкт-Петербург</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section7__secret-assistants">
-  <div class="container">
-    <div class="section7-container__secret-assistants">
-      <img src="/img/gal5.png" alt="" class="section7-img__secret-assistants">
-      <p class="section7-p__secret-assistants">
-        Оставьте заявку, <br>
-        и мы с&nbsp;вами свяжемся
-      </p>
-      <div class="section7-inputs__secret-assistants">
-        <input type="text" placeholder="ФИО" class="input-name__secret-assistants">
-        <input type="tel" placeholder="Телефон" class="input-tel__secret-assistants">
-        <input type="text" placeholder="Город" class="input-city__secret-assistants">
-        <div class="radio">
-          <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-          <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-        </div>
-        <button type="button">Отправить</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section3__secret-assistants section4__catering section13__catering">
-  <div class="section4-line1__catering"></div>
-  <div class="section4-line2__catering"></div>
-  <div class="section4-line3__catering"></div>
-  <div class="section4-line4__catering"></div>
-  <div class="container">
-    <p class="section3-text__secret-assistants">
-      7 <br>
-      особняков <br>
-      в вашем городе
-    </p>
-    <a href="/" class="catering-bottom-link-look-all">Посмотреть все</a>
-    <div class="section3-container__secret-assistants">
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering">
-        <img src="/img/gal28.png" alt="" class="section3-container-block-img__catering">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>Дальневосточный пр-кт, 12</span>
-        </div>
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering section3-container-block-img-active__catering">
-        <img src="/img/gal27.png" class="section3-container-block-bg__secret-assistants">
-        <img src="/img/gal27.png" alt="" class="section3-container-block-img__secret-assistants">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>ул. Гастелло, 22Б</span>
-        </div>
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering">
-        <img src="/img/gal29.png" alt="" class="section3-container-block-img__secret-assistants">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>ул. Хошимина, дом 16</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<a href="/" class="section14__catering">Посмотреть на карте</a>
-<footer>
-  <div class="container">
-    <div class="footer-container">
-      <div class="footer-container-left">
-        <div class="footer-container-left-colum">
-          <a href="/">Рестораны</a>
-          <a href="/">Доставка</a>
-          <a href="/">Франшиза</a>
-          <a href="/">Кейтеринг</a>
-          <a href="/">О нас</a>
-          <a href="/">Контакты</a>
-        </div>
-        <div class="footer-container-left-colum">
-          <a href="/">Новости</a>
-          <a href="/">Карьера</a>
-          <a href="/">Стать тайным гостем</a>
-          <a href="/">Ищем помещение</a>
-          <a href="/">Сертификат</a>
-        </div>
-      </div>
-      <div class="footer-container-right">
-        <a href="/" class="btn-footer-rev">Оставить отзыв</a>
-        <a href="/" class="btn-footer-program-loyal">программа лояльности</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-bottom-left">
-        <a href="/">Подписаться на рассылку</a>
-        <a href="/">Политика конфиденциальности</a>
-      </div>
-      <div class="footer-bottom-social">
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          IN
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-      </div>
-      <div class="footer-bottom-right">
-        <p>© 2022 Tangiers Lounge</p>
-        <p>ART HOOKAH FAMILY</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<div class="modal-history">
-  <div class="modal-history-content">
-    <div class="modal-history-content-top">
-      <p>История TAngiers Lounge</p>
-      <img src="/img/Close-history.png" alt="">
-    </div>
-    <div class="modal-history-content-blocks">
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <p>Cоздание Art Hookah Family</p>
-          </div>
-          <div class="modal-history-content-block-top-part">
-            <p>Кальяны Temple 45</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2012
-        </div>
-      </div>
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <span>Май:</span>
-            <p>Офис продаж в США</p>
-          </div>
-          <div class="modal-history-content-block-top-part">
-            <span>Сентябрь:</span>
-            <p>Офис продаж в России</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2013
-        </div>
-      </div>
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <p>Международная выставка в США</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2014
-        </div>
-      </div>
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <p>Запуск YouTube-канала Hookah Boss</p>
-          </div>
-          <div class="modal-history-content-block-top-part">
-            <p>Art Hookah Lounge в Сан-Диего</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2015
-        </div>
-      </div>
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <p>Запуск YouTube-канала Hookah Boss</p>
-          </div>
-          <div class="modal-history-content-block-top-part">
-            <p>Art Hookah Lounge в Сан-Диего</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2015
-        </div>
-      </div>
-      <div class="modal-history-content-block">
-        <div class="modal-history-content-block-top">
-          <div class="modal-history-content-block-top-part">
-            <p>Запуск YouTube-канала Hookah Boss</p>
-          </div>
-          <div class="modal-history-content-block-top-part">
-            <p>Art Hookah Lounge в Сан-Диего</p>
-          </div>
-        </div>
-        <div class="modal-history-content-block-date">
-          2015
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  let btnHistory = document.querySelector('.section4-container__franchise button')
-  let modalHistory = document.querySelector('.modal-history')
-  let modalClose = document.querySelector('.modal-history-content-top img')
-  btnHistory.addEventListener('click', function (){
-    modalHistory.style.display = 'block'
-  })
-  modalClose.addEventListener('click', function (){
-    modalHistory.style.display = 'none'
-  })
-</script>
-<script>
-  const btnFran = document.querySelectorAll('.section5-top-right-block__franchise');
-  const tabFran = document.querySelectorAll('.section7-p__vacancy')
-
-  btnFran.forEach(function (item){
-    item.addEventListener('click', function (){
-      btnFran.forEach(function (i){
-        i.classList.remove('section5-top-right-block-active__franchise')
-      })
-
-      item.classList.add('section5-top-right-block-active__franchise')
-
-      let tubIDFran = item.getAttribute('data-tabFran');
-      let tabActiveFran = document.querySelector(tubIDFran);
-
-      tabFran.forEach(function (item){
-        item.classList.remove('section7-p__vacancy-active')
-      })
-      tabActiveFran.classList.add('section7-p__vacancy-active')
-
-    })
-  })
-</script>
-<div class="modal-map">
-  <img src="/img/Map.png" alt="" class="modal-map-bg">
-  <img src="/img/close-map.png" alt="" class="modal-map-close">
-</div>
-<script>
-  let btnMap = document.querySelector('.section14__catering')
-  let modalMap = document.querySelector('.modal-map')
-  let closeModal = document.querySelector('.modal-map-close')
-  btnMap.addEventListener('click', function (){
-    modalMap.style.display = 'block'
-  })
-  closeModal.addEventListener('click', function (){
-    modalMap.style.display = 'none'
-  })
-</script>
-<script src="/js/script.js"></script>
-<div class="modal-header-book">
-  <div class="modal-header-book-content">
-    <div class="modal-header-book-content-part">
-      <div class="modal-header-book-content-top">
-        <p>Забронировать стол</p>
-        <img src="/img/close-map.png" alt="" class="modal-header-book-close">
-      </div>
-      <div class="modal-header-book-content-middle">
-        <input type="text" placeholder="Имя">
-        <div class="modal-header-book-content-middle-select">
-          <select>
-            <option disabled selected>Ресторан</option>
-            <option>Ресторан</option>
-          </select>
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-            <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
+    </section>
+    <section
+      class="section12__catering"
+      style="background: url('/img/video2.png')"
+    >
+      <div class="section12-container__catering">
+        <div class="section12-title__catering">Видеопрезентация</div>
+        <div class="section12-container-video__catering">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="8"
+            viewBox="0 0 10 8"
+            fill="none"
+          >
+            <path
+              d="M9.53674e-07 -1.31134e-06L10 4L-9.53989e-08 8L9.53674e-07 -1.31134e-06Z"
+              fill="#0D0D0D"
+            ></path>
           </svg>
+          Посмотреть видео
         </div>
-        <input type="text" placeholder="Телефон"  class="modal-header-book-content-middle-short">
-        <input type="number" placeholder="Количество человек"  class="modal-header-book-content-middle-short">
-        <input type="date" placeholder="Имя" class="modal-header-book-content-middle-short">
-        <input type="time" placeholder="Имя"  class="modal-header-book-content-middle-short">
-        <div class="radio">
-          <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-          <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
+      </div>
+    </section>
+    <section class="section3__looking-premises" style="margin-top: 0">
+      <div class="container">
+        <div
+          class="section3-container__looking-premises section3-container__contacts section6-container__career2"
+        >
+          <p
+            class="section3-text__secret-assistants section5-text__secret-assistants"
+            style="padding-top: 0"
+          >
+            Открытые вакансии
+          </p>
+          <div
+            class="section3-container__secret-assistants section5-container__secret-assistants"
+          >
+            <div
+              class="section3-container-block__secret-assistants section3-container-img__contacts"
+            >
+              <img
+                src="/img/gal21.png"
+                class="section3-container-block-bg__secret-assistants"
+              />
+              <img
+                src="/img/gal21.png"
+                alt=""
+                class="section3-container-block-img__secret-assistants"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4__looking-premises">
+      <div class="section4-container__looking-premises">
+        <div class="section4-container-block__looking-premises">
+          <p>
+            Tangiers Lounge может быть расположен на любом этаже в&nbsp;отдельно
+            стоящем здании (кроме цокольного), в&nbsp;нежилом фонде.
+          </p>
+          <span>1</span>
+          <h5>Любой этаж</h5>
+        </div>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises2"
+        >
+          <p>Общая площадь помещения 170-300 кв.м.</p>
+          <span>2</span>
+          <h5>Площадь помещения</h5>
+        </div>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises3"
+        >
+          <p>
+            Обязательно наличие технических условий по системе вентиляции или
+            возможность её размещения на фасаде здания или в домовой шахте.
+          </p>
+          <span>3</span>
+          <h5>Система винтеляции</h5>
+        </div>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises4"
+        >
+          <p>
+            Обязательно наличие технических условий по электроснабжению.
+            Минимальная мощность
+            <br />— 70 кВт.
+          </p>
+          <span>4</span>
+          <h5>Электроснабжение</h5>
+        </div>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises5"
+        >
+          <p>
+            Обязательно наличие технических условий по системе канализации
+            и&nbsp;водоотведения помещения.
+          </p>
+          <span>5</span>
+          <h5>Канализация и&nbsp;водоотведение</h5>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section1__secret-assistants section1__loyalty-program section5__catering"
+    >
+      <div class="line-height-1364"></div>
+      <div class="container">
+        <div class="section1-container__secret-assistants">
+          <h1>
+            гарантируем: то, что было на вечеринке <br />
+            останется на вечеринке
+          </h1>
+          <div
+            class="section1-container-img__secret-assistants section4-container-img__catering"
+          >
+            <img
+              src="/img/gal25.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/gal25.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4__careeer">
+      <div class="section4-container__careeer">
+        <div class="section4-container-block__careeer">
+          <div class="section4-container-block-part__careeer">
+            <h3>Команда</h3>
+            <p>
+              Размещение и продвижение на всех рекламных каналах компании, а это
+              — более 100 000 человек суммарной аудитории.
+            </p>
+          </div>
+          <div class="section4-container-block-part__careeer">
+            <h3>Карьерный рост</h3>
+            <p>
+              Наши сотрудники становятся управляющими проектов, руководителями
+              подразделений, имеют возможность присоединиться к команде Tangiers
+              Lounge в других городах или стать сотрудником офиса.
+            </p>
+          </div>
+        </div>
+        <div class="section4-container-block__careeer">
+          <div class="section4-container-block-part__careeer">
+            <h3>Стабильный доход</h3>
+            <p>
+              Стабильная оплата по верхней границе рынка: высокая фиксированная
+              ставка позволяет вам получать стабильный доход вне зависимости от
+              суммы чаевых и прочих выплат.
+            </p>
+          </div>
+          <div class="section4-container-block-part__careeer">
+            <h3>Корпоративная жизнь</h3>
+            <p>
+              Активная корпоративная жизнь: Мистера Т. регулярно устраивает
+              вечеринки для команды Особняков, организует спортивные мероприятия
+              и другие активности.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-map__franchise">
+      <img src="/img/map-fran.png" alt="" class="section-map-bg__franchise" />
+      <svg
+        class="section-map-bg__franchise-mob"
+        xmlns="http://www.w3.org/2000/svg"
+        width="289"
+        height="520"
+        viewBox="0 0 289 520"
+        fill="none"
+      >
+        <path
+          d="M883.587 -64.8291L895.5 -66.1704L668.027 -262.642L388.184 -245.205L375.749 -236.859L341.716 -214.017L111.007 -59.1756L70.4671 -52.1508L37.2646 -10.6334L34.0223 0.0984075L45.3314 13.4222L48.6541 25.4517L36.9034 41.894L45.0776 65.4022L40.4138 76.1374L49.9542 83.9938L52.4026 96.1348L33.3953 132.182L21.6144 140.089L13.3409 150.395L34.5428 178.468L23.841 182.324L6.34937 183.131L0.161857 195.84L5.65781 204.034L4.96122 223.514L8.69846 229.086L8.99362 250.753L11.0325 270.774L32.1439 273.241L38.3094 285.263L46.6111 313.915L59.1167 325.485L61.3402 335.875L53.0416 339.068L45.9596 346.198L53.8839 360.843L64.2534 355.785L90.8306 357.911L92.3123 374.978L106.526 374.945L118.158 386.626L133.339 381.666L176.026 394.369L183.061 404.857L179.629 423.797L174.853 433.657L160.454 443.321L155.253 456.793L167.709 454.137L180.317 463.737L163.607 469.248L158.166 476.702L168.029 482.917L167.4 490.469L156.805 493.777L155.639 504.066L146.793 507.151L147.698 515.575L162.704 523.09L205.089 543.125L214.907 536.536L241.039 536.584L272.131 547.563L290.149 541.174L301.116 550.449L334.703 555.951L347.465 547.385L322.009 522.167L311.677 506.762L304.345 505.028L294.33 486.558L297.517 460.178L309.083 453.366L319.785 449.511L319.74 436.707L314.369 432.945L308.998 429.182L308.098 422.18L302.832 417.159L271.393 400.709L263.572 384.094L263.681 353.125L274.153 346.097L292.217 352.511L289.226 341.684L316.502 293.908L325.25 294.216L342.277 285.64L353.761 286.489L373.031 293.994L384.71 288.057L396.081 288.03L401.174 275.105L416.897 268.831L433.749 272.73L456.677 263.047L456.319 254.731L447.791 254.751L440.771 248.53L439.639 206.511L427.548 188.484L430.58 180.269L468.878 157.418L508.282 107.206L534.844 105.064L548.117 117.07L557.294 115.188L566.38 118.121L577.409 114.046L587.139 113.695L598.92 105.788L619.072 84.1825L624.118 88.8761L661.452 102.795L684.837 129.879L694.787 129.855L699.891 119.775L712.786 117.775L731.756 102.191L778.355 107.991L775.937 104.385L787.82 94.5084L804.535 90.4201L815.586 61.6138L821.069 35.1188L829.123 24.485L852.914 11.8444L885.934 11.5476L889.406 3.98875L905.206 -11.3688L904.746 -17.7146L880.332 -26.5209L873.737 -36.3541L883.587 -64.8291Z"
+          fill="#454545"
+        />
+      </svg>
+      <div class="container">
+        <div class="section-map-container__franchise">
+          <div class="section-map-top__franchise">
+            <div class="section-map-top-left__franchise">
+              География проектов
+            </div>
+            <div class="section-map-top-right__franchise">
+              <p>Действующийх проектов — 17</p>
+              <span>Готовятся к открытию — 17</span>
+            </div>
+          </div>
+          <div class="section-map-bottom__franchise">
+            В планах на 2023 год — более 20 новых проектов
+          </div>
+        </div>
+        <div class="section-map-content__franchise">
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise1"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise2"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise3"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise4"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise5"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise6"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-map-content-block__franchise section-map-content-block__franchise7"
+          >
+            <div class="section-map-content-block-into__franchise">
+              <img src="/img/Union-map.png" alt="" />
+              <div class="section-map-content-block-into-text__franchise">
+                <p>Калининград</p>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-map-content__franchise-mob-parent">
+          <div class="section-map-content__franchise-mob">
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="section-map-content-block__franchise-mob">
+              <span>7</span>
+              <p>Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section7__secret-assistants">
+      <div class="container">
+        <div class="section7-container__secret-assistants">
+          <img
+            src="/img/gal5.png"
+            alt=""
+            class="section7-img__secret-assistants"
+          />
+          <p class="section7-p__secret-assistants">
+            Оставьте заявку, <br />
+            и мы с&nbsp;вами свяжемся
+          </p>
+          <div class="section7-inputs__secret-assistants">
+            <input
+              type="text"
+              placeholder="ФИО"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
+            />
+            <input
+              type="text"
+              placeholder="Город"
+              class="input-city__secret-assistants"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-1"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-1"
+                >Даю согласие на&nbsp;обработку
+                <a href="#!">персональных данных</a></label
+              >
+            </div>
+            <button type="button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section3__secret-assistants section4__catering section13__catering"
+    >
+      <div class="section4-line1__catering"></div>
+      <div class="section4-line2__catering"></div>
+      <div class="section4-line3__catering"></div>
+      <div class="section4-line4__catering"></div>
+      <div class="container">
+        <p class="section3-text__secret-assistants">
+          7 <br />
+          особняков <br />
+          в вашем городе
+        </p>
+        <a href="#!" class="catering-bottom-link-look-all">Посмотреть все</a>
+        <div class="section3-container__secret-assistants">
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering"
+          >
+            <img
+              src="/img/gal28.png"
+              alt=""
+              class="section3-container-block-img__catering"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>Дальневосточный пр-кт, 12</span>
+            </div>
+          </div>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering section3-container-block-img-active__catering"
+          >
+            <img
+              src="/img/gal27.png"
+              class="section3-container-block-bg__secret-assistants"
+            />
+            <img
+              src="/img/gal27.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>ул. Гастелло, 22Б</span>
+            </div>
+          </div>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering"
+          >
+            <img
+              src="/img/gal29.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>ул. Хошимина, дом 16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#!" class="section14__catering">Посмотреть на карте</a>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-container-left">
+            <div class="footer-container-left-colum">
+              <a href="#!">Рестораны</a>
+              <a href="#!">Доставка</a>
+              <a href="#!">Франшиза</a>
+              <a href="#!">Кейтеринг</a>
+              <a href="#!">О нас</a>
+              <a href="#!">Контакты</a>
+            </div>
+            <div class="footer-container-left-colum">
+              <a href="#!">Новости</a>
+              <a href="#!">Карьера</a>
+              <a href="#!">Стать тайным гостем</a>
+              <a href="#!">Ищем помещение</a>
+              <a href="#!">Сертификат</a>
+            </div>
+          </div>
+          <div class="footer-container-right">
+            <a href="#!" class="btn-footer-rev">Оставить отзыв</a>
+            <a href="#!" class="btn-footer-program-loyal"
+              >программа лояльности</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <a href="#!">Подписаться на рассылку</a>
+            <a href="#!">Политика конфиденциальности</a>
+          </div>
+          <div class="footer-bottom-social">
+            <a href="#!" class="footer-bottom-social-ellipse"> FB </a>
+            <a href="#!" class="footer-bottom-social-ellipse"> IN </a>
+            <a href="#!" class="footer-bottom-social-ellipse"> FB </a>
+          </div>
+          <div class="footer-bottom-right">
+            <p>© 2022 Tangiers Lounge</p>
+            <p>ART HOOKAH FAMILY</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-history">
+      <div class="modal-history-content">
+        <div class="modal-history-content-top">
+          <p>История TAngiers Lounge</p>
+          <img src="/img/Close-history.png" alt="" />
+        </div>
+        <div class="modal-history-content-blocks">
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <p>Cоздание Art Hookah Family</p>
+              </div>
+              <div class="modal-history-content-block-top-part">
+                <p>Кальяны Temple 45</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2012</div>
+          </div>
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <span>Май:</span>
+                <p>Офис продаж в США</p>
+              </div>
+              <div class="modal-history-content-block-top-part">
+                <span>Сентябрь:</span>
+                <p>Офис продаж в России</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2013</div>
+          </div>
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <p>Международная выставка в США</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2014</div>
+          </div>
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <p>Запуск YouTube-канала Hookah Boss</p>
+              </div>
+              <div class="modal-history-content-block-top-part">
+                <p>Art Hookah Lounge в Сан-Диего</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2015</div>
+          </div>
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <p>Запуск YouTube-канала Hookah Boss</p>
+              </div>
+              <div class="modal-history-content-block-top-part">
+                <p>Art Hookah Lounge в Сан-Диего</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2015</div>
+          </div>
+          <div class="modal-history-content-block">
+            <div class="modal-history-content-block-top">
+              <div class="modal-history-content-block-top-part">
+                <p>Запуск YouTube-канала Hookah Boss</p>
+              </div>
+              <div class="modal-history-content-block-top-part">
+                <p>Art Hookah Lounge в Сан-Диего</p>
+              </div>
+            </div>
+            <div class="modal-history-content-block-date">2015</div>
+          </div>
         </div>
       </div>
     </div>
-    <button class="modal-header-book-btn">Отправить</button>
-  </div>
-</div>
-<script>
-  let btnMenu = document.querySelector('.header-container-right-btn')
-  let modalMenu = document.querySelector('.modal-header-book')
-  let closeMenu = document.querySelector('.modal-header-book-close')
-  btnMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '1'
-    modalMenu.style.zIndex = '999999999999999'
-  })
-  closeMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '0'
-    modalMenu.style.zIndex = '-1'
-  })
+    <script>
+      let btnHistory = document.querySelector(
+        ".section4-container__franchise button"
+      );
+      let modalHistory = document.querySelector(".modal-history");
+      let modalClose = document.querySelector(".modal-history-content-top img");
+      btnHistory.addEventListener("click", function () {
+        modalHistory.style.display = "block";
+      });
+      modalClose.addEventListener("click", function () {
+        modalHistory.style.display = "none";
+      });
+    </script>
+    <script>
+      const btnFran = document.querySelectorAll(
+        ".section5-top-right-block__franchise"
+      );
+      const tabFran = document.querySelectorAll(".section7-p__vacancy");
 
-</script>
-</body>
+      btnFran.forEach(function (item) {
+        item.addEventListener("click", function () {
+          btnFran.forEach(function (i) {
+            i.classList.remove("section5-top-right-block-active__franchise");
+          });
+
+          item.classList.add("section5-top-right-block-active__franchise");
+
+          let tubIDFran = item.getAttribute("data-tabFran");
+          let tabActiveFran = document.querySelector(tubIDFran);
+
+          tabFran.forEach(function (item) {
+            item.classList.remove("section7-p__vacancy-active");
+          });
+          tabActiveFran.classList.add("section7-p__vacancy-active");
+        });
+      });
+    </script>
+    <div class="modal-map">
+      <img src="/img/Map.png" alt="" class="modal-map-bg" />
+      <img src="/img/close-map.png" alt="" class="modal-map-close" />
+    </div>
+    <script>
+      let btnMap = document.querySelector(".section14__catering");
+      let modalMap = document.querySelector(".modal-map");
+      let closeModal = document.querySelector(".modal-map-close");
+      btnMap.addEventListener("click", function () {
+        modalMap.style.display = "block";
+      });
+      closeModal.addEventListener("click", function () {
+        modalMap.style.display = "none";
+      });
+    </script>
+    <script src="/js/script.js"></script>
+    <div class="modal-header-book">
+      <div class="modal-header-book-content">
+        <div class="modal-header-book-content-part">
+          <div class="modal-header-book-content-top">
+            <p>Забронировать стол</p>
+            <img
+              src="/img/close-map.png"
+              alt=""
+              class="modal-header-book-close"
+            />
+          </div>
+          <div class="modal-header-book-content-middle">
+            <input type="text" placeholder="Имя" />
+            <div class="modal-header-book-content-middle-select">
+              <select>
+                <option disabled selected>Ресторан</option>
+                <option>Ресторан</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                viewBox="0 0 8 10"
+                fill="none"
+              >
+                <path
+                  d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="number"
+              placeholder="Количество человек"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="date"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="time"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-1"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-1"
+                >Даю согласие на&nbsp;обработку
+                <a href="#!">персональных данных</a></label
+              >
+            </div>
+          </div>
+        </div>
+        <button class="modal-header-book-btn">Отправить</button>
+      </div>
+    </div>
+    <script>
+      let btnMenu = document.querySelector(".header-container-right-btn");
+      let modalMenu = document.querySelector(".modal-header-book");
+      let closeMenu = document.querySelector(".modal-header-book-close");
+      btnMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "1";
+        modalMenu.style.zIndex = "999999999999999";
+      });
+      closeMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "0";
+        modalMenu.style.zIndex = "-1";
+      });
+    </script>
+  </body>
 </html>

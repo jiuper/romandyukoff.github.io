@@ -17,40 +17,35 @@
         margin-top: -100px;
         margin-left: -100px;
     }
-    .section1-img__main1 {
-        width: 91px;
-        margin-left: -45px;
-    }
-    .section1-img__main2 {
-        left: 15px;
-        bottom: 184px;
-        width: 75px;
-    }
+
     .section1-img__main1 {
         width: 230px;
-        margin-left: -115px;
+        height: 140px;
     }
+
     .section1-img__main2 {
-        z-index: 1;
-        left: 20px;
-        width: 190px;
-        bottom: 231px;
-    }
-    .section1-img__main {
-        z-index: 1;
+        width: 215px;
+        height: 255px;
     }
 
     .section1-img__main3 {
-        right: 51px;
-        top: 120px;
-        width: 136px;
+        width: 155px;
+        height: 255px;
     }
+    
     .section1-img__main4 {
-        bottom: -200px;
-        left: 50%;
-        width: 300px;
-        margin-left: -150px;
+        width: 290px;
+        height: 375px;
     }
+
+    .section1-p__main {
+        padding-top: 110px;
+    }
+
+    .galleryAnim {
+        padding: 280px 0 160px 0;
+    }
+
 }
 @media (max-width: 1370px){
     .section6-content__loyalty-program{
@@ -1005,7 +1000,6 @@
     }
     .section1-img__main1 {
         width: 91px;
-        margin-left: -45px;
     }
     .section1-p__main {
         padding-bottom: 8px;
@@ -1724,7 +1718,7 @@
     }
     .section2-container__restoran{
         padding-left: 15px;
-        pb80
+        /* pb80 */
     }
     .section2__restoran{
         padding-top: 8px;
