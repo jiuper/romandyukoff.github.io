@@ -1004,6 +1004,8 @@ footer {
 }
 .section3__looking-premises {
   margin-top: 560px;
+  border-bottom: 1px solid #454545;
+
 }
 .section3-container__looking-premises {
   max-width: 930px;
@@ -1015,10 +1017,7 @@ footer {
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
 }
-.section3__looking-premises {
-  border-top: 1px solid #454545;
-  border-bottom: 1px solid #454545;
-}
+
 .section2__rent-hookahs {
   border-top: solid #454545;
   border-bottom: 1px solid #454545;
@@ -2189,7 +2188,7 @@ header {
   border-bottom: 1px solid #454545;
 }
 .section2-title__career {
-  font-family: Futura PT,sans-serif;
+  font-family: Futura PT, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -2212,30 +2211,41 @@ header {
   text-transform: uppercase;
 }
 .section2__career {
+  position: relative;
   padding-bottom: 280px;
   background: #0d0d0d;
-  position: relative;
-  z-index: 99999;
   border-bottom: 1px solid #454545;
+  z-index: 99999;
 }
+
+.section2__career::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #454545;
+}
+
+
 .section4-container-block-part__careeer {
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  gap: 10em;
+  width: 40%;
 }
-.section4-container-block-part__careeer h3 {
+
+.section4-container-block-part__careeer >h3 {
   font-size: 40px;
   font-style: normal;
-  width: 50%;
   font-weight: 400;
   line-height: 48px; /* 120% */
   letter-spacing: -0.4px;
   text-transform: uppercase;
 }
-.section4-container-block-part__careeer p {
+.section4-container-block-part__careeer > p {
+  max-width: 297px;
   font-family: Futura PT,sans-serif;
-  width: 50%;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2244,16 +2254,12 @@ header {
 }
 .section4-container-block__careeer {
   display: flex;
-  justify-content: space-between;
-  padding-right: 9%;
-}
-.section4-container-block__careeer {
+  gap: 15%;
   height: 280px;
-  padding-top: 20px;
-  gap: 100px;
+  padding: 20px 21px;
   border-bottom: 1px solid #454545;
-  padding-left: 21px;
 }
+
 .section4-container__careeer {
   display: flex;
   flex-direction: column;

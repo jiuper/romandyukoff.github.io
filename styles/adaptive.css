@@ -1,14 +1,9 @@
 @media (max-width: 1550px){
-    .section4-container-block__careeer{
-        gap: 50px;
-        padding-right: 20px;
-    }
+
     .section-map-bg__franchise {
         width: 100%;
     }
-        .section4-container-block-part__careeer{
-        gap: 50px;
-    }
+
     .section1-block__restoran{
         font-size: 11vw;
         line-height: 12vw;
@@ -44,6 +39,34 @@
 
     .galleryAnim {
         padding: 280px 0 160px 0;
+    }
+
+    .section2-title__career{
+        padding-bottom: 196px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.18px;
+    }
+
+    .section4-container-block__careeer{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        gap: 0;
+    }
+
+    .section4-container-block-part__careeer {
+        width: 100%;
+        padding: 19px 20px;
+        height: 220px;
+    }
+
+    .section4-container-block-part__careeer:nth-child(odd) {
+        border-bottom: 1px solid #454545;
+    }
+
+    .section4-container-block-part__careeer > p {
+        max-width: 482px;
     }
 
 }
@@ -501,10 +524,7 @@
     .section3-container-block__secret-assistants2-none{
         display: none;
     }
-    .section2-title__career{
-        padding-bottom: 196px;
-        font-size: 18px;
-    }
+
     .section3-container__secret-assistants{
         justify-content: center;
         padding: 0;
