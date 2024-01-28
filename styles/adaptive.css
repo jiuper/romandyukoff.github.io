@@ -266,6 +266,9 @@
         width: 201px;
         height: 276px;
     }
+        .section5-container__bankets-second p{
+            max-width: 690px;
+        }
     .section7-container__restoran{
         padding: 0 20px;
     }
@@ -407,15 +410,18 @@
         display: block;
         text-align: center;
         font-family: Futura PT;
-        font-size: 18px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px; /* 133.333% */
         letter-spacing: 0.18px;
     }
     .section3-container-block__bankets img{
-        width: 27%;
+        width: 37%;
     }
+        .section4__bankets-container{
+            padding-top: 0;
+        }
     .section3-container-block__bankets{
         padding-left: 20px;
         padding-right: 20px;
@@ -428,6 +434,7 @@
         letter-spacing: -0.48px;
         text-transform: uppercase;
     }
+
     .section5-container__bankets{
         padding: 0;
     }
@@ -474,8 +481,8 @@
     }
     .section4-kamen3__bankets{
         width: 157px;
-        right: 61px;
-        bottom: 134px;
+        right: 110px;
+        bottom: 172px;
         top: auto;
     }
     .section4__bankets{
@@ -485,7 +492,7 @@
     .section4-kamen1__secret-assistants{
         top: auto;
         bottom: 320px;
-        left: 20px;
+        z-index: 999999;
     }
     .section5-title__bankets{
         font-size: 18px;
@@ -675,9 +682,6 @@
     .section3-container-block-img__catering > img{
         width: 520px;
         height: 380px;
-    }
-    .section3-container-block-bg__secret-assistants{
-        display: none;
     }
     .catering-bottom-link-look-all{
         margin-top: 24px;
@@ -1658,6 +1662,9 @@
         padding-top: 40px;
         padding-bottom: 72px;
     }
+    .section3-container-block__bankets:nth-child(3) {
+     border-bottom: 1px solid #454545;
+    }
     .section1-img__main4 {
         bottom: -95px;
         z-index: 999999;
@@ -2052,6 +2059,9 @@
     .input-tel__secret-assistants,.input-city__secret-assistants{
         width: 47.5%;
     }
+         .section3-container-block__bankets:nth-child(4) {
+             border-bottom: 1px solid #454545;
+         }
 
 }
 @media (max-width: 405px){
@@ -2061,6 +2071,16 @@
     .section7-container-input-block-long__restoran{
         width: 100%;
     }
+     .section5-container__bankets-second p {
+     max-width: 345px;
+    }
+    .section4-kamen3__bankets {
+         right: 90px;
+     }
+          .section3-text__secret-assistants {
+            max-width: 345px;
+          }
+     
 }
 @media (max-width: 375px){
     .section2-container__sertificate p{
@@ -2070,7 +2090,9 @@
 @media (max-width: 355px){
     .section1__restoran-mob{
         width: 100%;
+        
     }
+  
 }
 
 @media (max-width: 330px){
