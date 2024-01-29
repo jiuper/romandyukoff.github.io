@@ -182,6 +182,13 @@
     font-size: 40px !important;
     line-height: 48px !important; /* 120% */
   }
+  .line-none {
+    border-right: 1px solid #454545;
+    border-left: 1px solid #454545;
+  }
+  .line-none__centre {
+    height: 0;
+  }
   .section10-container-block__catering {
     border-top: 1px solid #454545;
   }
@@ -597,7 +604,7 @@
     padding-bottom: 320px;
   }
   .section3-container-block__secret-assistants2 {
-    width: 48%;
+    width: 28% !important;
   }
   .section3-container-block__secret-assistants2-none {
     display: none;
@@ -3012,7 +3019,10 @@
   .section7-p__vacancy > span {
     display: inline;
   }
-
+  .section2-text__career {
+    padding-bottom: 40px;
+    width: 100%;
+  }
   .section1-container-block__news {
     width: 48%;
   }
@@ -3613,7 +3623,7 @@
     margin-top: 24px;
   }
   .section3-container-block__secret-assistants {
-    width: 46%;
+    width: 41%;
   }
   .line-height {
     top: auto;
@@ -4283,7 +4293,7 @@
     right: 50px;
   }
   .section3-container-block__secret-assistants2 {
-    width: 73%;
+    width: 73% !important;
   }
   .section3-container-block__bankets img {
     width: 46%;
@@ -4315,6 +4325,13 @@
   }
   .section3-text__secret-assistants {
     max-width: 345px;
+  }
+   .line-none {
+    border-right: none;
+    border-left: none;
+  }
+  .line-none__centre {
+    height: 100%;
   }
 }
 @media (max-width: 375px) {

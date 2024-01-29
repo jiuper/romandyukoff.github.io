@@ -833,6 +833,7 @@ footer {
 }
 .radio a {
   text-decoration-line: underline;
+  text-underline-offset: 5px;
 }
 .section7-inputs__secret-assistants button {
   color: #0d0d0d;
@@ -1023,17 +1024,14 @@ footer {
 .section3__looking-premises {
   margin-top: 560px;
   border-bottom: 1px solid #454545;
-  border-top: 1px solid #454545;
 }
 .section3-container__looking-premises {
-  max-width: 765px;
+  max-width: 930px;
   padding: 0 130px;
   height: 100%;
   margin: 0 auto;
   padding-top: 15%;
   padding-bottom: 13.7%;
-  border-right: 1px solid #454545;
-  border-left: 1px solid #454545;
 }
 
 .section2__rent-hookahs {
@@ -1865,6 +1863,12 @@ header {
 }
 .section3-container__contacts {
   padding: 280px 80px;
+  border-right: 1px solid #454545;
+  border-left: 1px solid #454545;
+}
+.line-none {
+  border-right: none;
+  border-left: none;
 }
 .section3-container-img__contacts {
   width: 72%;
@@ -2237,11 +2241,10 @@ header {
   border-bottom: 1px solid #454545;
 }
 .section2-title__career {
-  font-family: Futura PT, sans-serif;
-  font-family: "FuturaPTMedium", sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2281,7 +2284,7 @@ header {
 .section4-container-block-part__careeer {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 41%;
 }
 
 .section4-container-block-part__careeer > h3 {
@@ -2300,16 +2303,16 @@ header {
 
 .section4-container-block-part__careeer > p {
   max-width: 297px;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
 }
 .section4-container-block__careeer {
   display: flex;
-  gap: 15%;
+  gap: 9%;
   height: 280px;
   padding: 20px 21px;
   border-bottom: 1px solid #454545;
@@ -2321,10 +2324,10 @@ header {
 }
 .section5-container__careeer h2 {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
