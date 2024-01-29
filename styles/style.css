@@ -15,7 +15,7 @@
       format("svg");
 }
 @font-face {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   src: url("../fonts/FuturaMediumC.woff") format("woff");
   font-style: normal;
   font-weight: normal;
@@ -23,6 +23,14 @@
 
 @font-face {
   font-family: "FuturaPT";
+  font-family: "FuturaPTLigth", sans-serif;
+  src: url("../fonts/FuturaLightC.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "FuturaPTBoldObl";
   src: url("../fonts/FuturaPTBoldObl.eot");
   src: url("../fonts/FuturaPT-Light.eot") format("embedded-opentype"),
     url("../fonts/FuturaPT-Light.woff2") format("woff2"),
@@ -518,11 +526,11 @@ footer {
   justify-content: center;
 }
 .section1-container-img-main__secret-assistants {
-  width: 94%;
+  width: 84%;
   position: relative;
   z-index: 5;
   object-fit: cover;
-  height: 94%;
+  height: 84%;
 }
 .section1-container__secret-assistants {
   display: flex;
@@ -1013,6 +1021,8 @@ footer {
 }
 .section3__looking-premises {
   margin-top: 560px;
+  border-bottom: 1px solid #454545;
+
 }
 .section3-container__looking-premises {
   max-width: 765px;
@@ -1024,10 +1034,7 @@ footer {
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
 }
-.section3__looking-premises {
-  border-top: 1px solid #454545;
-  border-bottom: 1px solid #454545;
-}
+
 .section2__rent-hookahs {
   border-top: solid #454545;
   border-bottom: 1px solid #454545;
@@ -2124,19 +2131,33 @@ header {
 }
 .section7-p__vacancy {
   text-align: center;
-  display: none;
-  transform: scale(0);
+  display: block;
+  /* transform: scale(0);
   font-size: 2.4vw !important;
   font-style: normal;
   font-weight: 400;
   line-height: 3vw !important;
   letter-spacing: -0.4px !important;
   text-transform: uppercase;
-  animation: ani 1s forwards;
+  animation: ani 1s forwards; */
+
+  font-family: "Panama Regular";
+  font-size: 40px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.4px !important;
+  text-transform: uppercase;
 }
-.section7-p__vacancy-active {
+.section7-p__vacancy-active {}
+
+.section7-p__vacancy > span {
+
   display: block;
 }
+/* .section7-p__vacancy-active{
+  display: block;
+} */
 
 @keyframes ani {
   0% {
@@ -2149,7 +2170,7 @@ header {
   }
 }
 .section7-container__contacts {
-  padding: 180px 20px;
+  padding: 180px 15px;
 }
 .section3-container__vacancy {
   padding: 280px 20px;
@@ -2216,6 +2237,7 @@ header {
 }
 .section2-title__career {
   font-family: Futura PT, sans-serif;
+  font-family: 'FuturaPTMedium', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -2226,42 +2248,59 @@ header {
   padding-bottom: 234px;
 }
 .section2-text__career {
-  max-width: 1564px;
-  text-align: center;
-  font-size: 4.4vw;
-  padding-bottom: 60px;
+  width: 85%;
   margin: 0 auto;
+  text-align: center;
+  font-size: 84px;
+  padding-bottom: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw; /* 100% */
+  line-height: 84px;
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
 .section2__career {
+  position: relative;
   padding-bottom: 280px;
   background: #0d0d0d;
-  position: relative;
-  z-index: 99999;
   border-bottom: 1px solid #454545;
+  z-index: 99999;
 }
+
+.section2__career::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #454545;
+}
+
+
 .section4-container-block-part__careeer {
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  gap: 10em;
+  width: 40%;
 }
-.section4-container-block-part__careeer h3 {
+
+.section4-container-block-part__careeer >h3 {
   font-size: 40px;
   font-style: normal;
-  width: 50%;
   font-weight: 400;
   line-height: 48px; /* 120% */
   letter-spacing: -0.4px;
   text-transform: uppercase;
 }
+
 .section4-container-block-part__careeer p {
   font-family: Futura PT, sans-serif;
   width: 50%;
+}
+
+.section4-container-block-part__careeer > p {
+  max-width: 297px;
+  font-family: Futura PT,sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2270,16 +2309,12 @@ header {
 }
 .section4-container-block__careeer {
   display: flex;
-  justify-content: space-between;
-  padding-right: 9%;
-}
-.section4-container-block__careeer {
+  gap: 15%;
   height: 280px;
-  padding-top: 20px;
-  gap: 100px;
+  padding: 20px 21px;
   border-bottom: 1px solid #454545;
-  padding-left: 21px;
 }
+
 .section4-container__careeer {
   display: flex;
   flex-direction: column;
@@ -2296,6 +2331,7 @@ header {
 }
 .section5-container__careeer p {
   text-align: center;
+  font-family: "Panama Regular", serif;
   font-size: 3.15vw;
   font-style: normal;
   font-weight: 400;
