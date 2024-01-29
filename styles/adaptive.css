@@ -4346,6 +4346,10 @@
     top:49%;
     right: 0;
   }
+  .section-last-p__main{
+    width: 340px;
+    font-size: 30px !important;
+  }
 }
 @media (max-width: 375px) {
   .section2-container__sertificate p {
