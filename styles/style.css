@@ -4725,8 +4725,8 @@ body .galleryAnim .galleryAnim__fraction {
 
 .section-last-img__main {
   position: absolute;
-  top: 158px;
-  right: 25%;
+  top: 48%;
+  right: 28%;
   width: 358.453px;
   height: 241.223px;
   transform: rotate(-15deg);
@@ -4740,6 +4740,7 @@ body .galleryAnim .galleryAnim__fraction {
 }
 
 .section-last-p__main {
+  position: relative;
   font-size: 4.4vw;
   font-style: normal;
   font-weight: 400;
