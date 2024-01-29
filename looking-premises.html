@@ -1,358 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>slider</title>
-    <link href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular" rel="stylesheet">
+    <link
+      href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular"
+      rel="stylesheet"
+    />
 
     <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
-    <link rel="stylesheet" href="/assets/index.8ba8ea75.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/adaptive.css">
-</head>
-<body>
-<header>
-    <div class="container">
+    <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <div class="header-container">
-            <div class="header-container-left">
-                <div class="header-container-logo">
-                    <img src="/img/logo-desktop.svg" alt="">
-                </div>
-                <div class="dropdown dropdown-header">
-                    <button class="dropbtn">
-                        СПБ
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-                            <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-                        </svg>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <h1>Сеть лаунж-ресторанов</h1>
+          <div class="header-container-left">
+            <div class="header-container-logo">
+              <img src="/img/logo-desktop.svg" alt="" />
             </div>
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-                <div class="menu__box">
-                    <ul>
-                        <li>
-                            <a href="/" class="burger-menu-active">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Главная
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Рестораны
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Франшиза
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Офрмить бонусную карту
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Кейтеринг
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                О нас
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Контакты
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                                </svg>
-                                Доставка
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                                    <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="dropdown dropdown-header">
+              <button class="dropbtn">
+                СПБ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="10"
+                  viewBox="0 0 8 10"
+                  fill="none"
+                >
+                  <path
+                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                    fill="#DFDFDF"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
-            <div class="header-container-right">
-                <a href="/">Доставка</a>
-                <a href="/" class="header-container-right-btn">
-                    Забронировать
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-                        <path d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z" fill="#DFDFDF"/>
+            <h1>Сеть лаунж-ресторанов</h1>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <ul>
+                <li>
+                  <a href="/" class="burger-menu-active">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
                     </svg>
-                </a>
+                    Главная
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Рестораны
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Франшиза
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Офрмить бонусную карту
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Кейтеринг
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    О нас
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Контакты
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Доставка
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="header-container-right">
+            <a href="/">Доставка</a>
+            <a href="/" class="header-container-right-btn">
+              Забронировать
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="8"
+                viewBox="0 0 10 8"
+                fill="none"
+              >
+                <path
+                  d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-    </div>
-</header>
-<section class="section1__secret-assistants section1__looking-premises">
-    <div class="line-height-1484"></div>
-    <div class="container">
+      </div>
+    </header>
+    <section class="section1__secret-assistants section1__looking-premises">
+      <div class="line-height-1484"></div>
+      <div class="container">
         <div class="section1-container__secret-assistants">
-            <h1>
-                Станьте партнером <br>
-                Мистера Т. и другом сети <br> Tangiers Lounge
-            </h1>
-            <div class="section1-container-img__secret-assistants">
-                <img src="/img/gal6.png" class="section1-container-img-blur__secret-assistants" alt="">
-                <img src="/img/gal6.png" alt="" class="section1-container-img-main__secret-assistants">
-            </div>
+          <h1>
+            Станьте партнером <br />
+            Мистера Т. и другом сети <br />
+            Tangiers Lounge
+          </h1>
+          <div class="section1-container-img__secret-assistants">
+            <img
+              src="/img/gal6.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/gal6.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
+          </div>
         </div>
-    </div>
-</section>
-<section class="section2__looking-premises">
-    <div class="line-height"></div>
-    <img src="/img/face1.png" alt="" class="section2-img1__looking-premises">
-    <img src="/img/face2.png" alt="" class="section2-img2__looking-premises">
-    <div class="container">
+      </div>
+    </section>
+    <section class="section2__looking-premises">
+      <div class="line-height"></div>
+      <img
+        src="/img/face1.png"
+        alt=""
+        class="section2-img1__looking-premises"
+      />
+      <img
+        src="/img/face2.png"
+        alt=""
+        class="section2-img2__looking-premises"
+      />
+      <div class="container">
         <div class="section4-container__secret-assistants">
-            <img src="/img/face3.png" alt="">
-            <p class="section4-p__secret-assistants">
-                Дорогой друг, Мистер Т. находится в поисках помещения для открытия новых Особняков
-                <br>Tangiers Lounge!
-            </p>
+          <img src="/img/face3.png" alt="" />
+          <p class="section4-p__secret-assistants">
+            Дорогой друг, Мистер Т. находится в поисках помещения для открытия
+            новых Особняков
+            <br />Tangiers Lounge!
+          </p>
         </div>
-    </div>
-</section>
-<section class="section3__looking-premises" style="margin-top: 0;">
-    <div class="section4-line3__catering section4-line3__contacts"></div>
-    <div class="section4-line2__catering section4-line2__contacts"></div>
-    <div class="container">
+      </div>
+    </section>
+    <section class="section3__looking-premises" style="margin-top: 0">
+      <div class="section4-line3__catering section4-line3__contacts"></div>
+      <div class="section4-line2__catering section4-line2__contacts"></div>
+      <div class="container">
         <div class="section3-container__looking-premises">
-            <p class="section3-text__secret-assistants section5-text__secret-assistants" style="padding-top: 0;">
-                Требования к помещению
-            </p>
-            <div class="section3-container__secret-assistants section5-container__secret-assistants">
-                <div class="section3-container-block__secret-assistants">
-                    <img src="/img/gal4.png" class="section3-container-block-bg__secret-assistants">
-                    <img src="/img/gal4.png" alt="" class="section3-container-block-img__secret-assistants">
-                </div>
+          <p
+            class="section3-text__secret-assistants section5-text__secret-assistants"
+            style="padding-top: 0"
+          >
+            Требования к помещению
+          </p>
+          <div
+            class="section3-container__secret-assistants section5-container__secret-assistants"
+          >
+            <div class="section3-container-block__secret-assistants">
+              <img
+                src="/img/gal4.png"
+                class="section3-container-block-bg__secret-assistants"
+              />
+              <img
+                src="/img/gal4.png"
+                alt=""
+                class="section3-container-block-img__secret-assistants"
+              />
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="section4__looking-premises">
-    <div class="section4-container__looking-premises">
+      </div>
+    </section>
+    <section class="section4__looking-premises">
+      <div class="section4-container__looking-premises">
         <div class="section4-container-block__looking-premises">
-            <p>
-                Tangiers Lounge может быть расположен на любом этаже в отдельно стоящем здании (кроме цокольного), в нежилом фонде.
-            </p>
-            <span>1</span>
-            <h5>
-                Любой этаж
-            </h5>
+          <p>
+            Tangiers Lounge может быть расположен на любом этаже в отдельно
+            стоящем здании (кроме цокольного), в нежилом фонде.
+          </p>
+          <span>1</span>
+          <h5>Любой этаж</h5>
         </div>
-        <div class="section4-container-block__looking-premises section4-container-block__looking-premises2">
-            <p>
-                Общая площадь помещения 170-300 кв.м.
-            </p>
-            <span>2</span>
-            <h5>
-                Площадь помещения
-            </h5>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises2"
+        >
+          <p>Общая площадь помещения 170-300 кв.м.</p>
+          <span>2</span>
+          <h5>Площадь помещения</h5>
         </div>
-        <div class="section4-container-block__looking-premises section4-container-block__looking-premises3">
-            <p>
-                Обязательно наличие технических условий по системе вентиляции или возможность её размещения на фасаде здания или в домовой шахте.
-            </p>
-            <span>3</span>
-            <h5>
-                Система винтеляции
-            </h5>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises3"
+        >
+          <p>
+            Обязательно наличие технических условий по системе вентиляции или
+            возможность её размещения на фасаде здания или в домовой шахте.
+          </p>
+          <span>3</span>
+          <h5>Система винтеляции</h5>
         </div>
-        <div class="section4-container-block__looking-premises section4-container-block__looking-premises4">
-            <p>
-                Обязательно наличие технических условий по электроснабжению. Минимальная мощность
-                <br>— 70 кВт.
-            </p>
-            <span>4</span>
-            <h5>
-                Электроснабжение
-            </h5>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises4"
+        >
+          <p>
+            Обязательно наличие технических условий по электроснабжению.
+            Минимальная мощность
+            <br />— 70 кВт.
+          </p>
+          <span>4</span>
+          <h5>Электроснабжение</h5>
         </div>
-        <div class="section4-container-block__looking-premises section4-container-block__looking-premises5">
-            <p>
-                Обязательно наличие технических условий по системе канализации и водоотведения помещения.
-            </p>
-            <span>5</span>
-            <h5>
-                Канализация и водоотведение
-            </h5>
+        <div
+          class="section4-container-block__looking-premises section4-container-block__looking-premises5"
+        >
+          <p>
+            Обязательно наличие технических условий по системе канализации
+            и водоотведения помещения.
+          </p>
+          <span>5</span>
+          <h5>Канализация и водоотведение</h5>
         </div>
-    </div>
-</section>
-<section class="section7__secret-assistants">
-    <div class="container">
+      </div>
+    </section>
+    <section class="section7__secret-assistants">
+      <div class="container">
         <div class="section7-container__secret-assistants">
-            <img src="/img/gal5.png" alt="" class="section7-img__secret-assistants">
-            <p class="section7-p__secret-assistants">
-                Оставьте заявку, <br>
-                и мы с&nbsp;вами свяжемся
-            </p>
-            <div class="section7-inputs__secret-assistants">
-                <input type="text" placeholder="ФИО" class="input-name__secret-assistants">
-                <input type="tel" placeholder="Телефон" class="input-tel__secret-assistants">
-                <input type="text" placeholder="Город" class="input-city__secret-assistants">
-                <div class="radio">
-                    <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-                    <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-                </div>
-                <button type="button">Отправить</button>
+          <img
+            src="/img/gal5.png"
+            alt=""
+            class="section7-img__secret-assistants"
+          />
+          <p class="section7-p__secret-assistants">
+            Оставьте заявку, <br />
+            и мы с&nbsp;вами свяжемся
+          </p>
+          <div class="section7-inputs__secret-assistants">
+            <input
+              type="text"
+              placeholder="ФИО"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Город"
+              class="input-city__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Адрес помещения"
+              class="input-adress__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Комментарий"
+              class="input-comment__secret-assistants"
+            />
+            <div class="form-files">
+              <div class="input__wrapper">
+                <input
+                  name="file"
+                  type="file"
+                  id="input__file"
+                  class="input input__file"
+                  multiple
+                />
+                <label for="input__file" class="input__file-button">
+                  <span class="input__file-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path d="M10 0V20M20 10L0 10" stroke="#DFDFDF" />
+                    </svg>
+                  </span>
+                  <span class="input__file-button-text">Прикрепить резюме</span>
+                </label>
+              </div>
+              <div class="radio">
+                <input
+                  class="custom-radio"
+                  type="checkbox"
+                  id="color-1"
+                  name="color"
+                  value="indigo"
+                />
+                <label for="color-1"
+                  >Даю согласие на&nbsp;обработку
+                  <a href="/">персональных данных</a></label
+                >
+              </div>
             </div>
+            <button type="button">Отправить</button>
+          </div>
         </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
+      </div>
+    </section>
+    <footer>
+      <div class="container">
         <div class="footer-container">
-            <div class="footer-container-left">
-                <div class="footer-container-left-colum">
-                    <a href="/">Рестораны</a>
-                    <a href="/">Доставка</a>
-                    <a href="/">Франшиза</a>
-                    <a href="/">Кейтеринг</a>
-                    <a href="/">О нас</a>
-                    <a href="/">Контакты</a>
-                </div>
-                <div class="footer-container-left-colum">
-                    <a href="/">Новости</a>
-                    <a href="/">Карьера</a>
-                    <a href="/">Стать тайным гостем</a>
-                    <a href="/">Ищем помещение</a>
-                    <a href="/">Сертификат</a>
-                </div>
+          <div class="footer-container-left">
+            <div class="footer-container-left-colum">
+              <a href="/">Рестораны</a>
+              <a href="/">Доставка</a>
+              <a href="/">Франшиза</a>
+              <a href="/">Кейтеринг</a>
+              <a href="/">О нас</a>
+              <a href="/">Контакты</a>
             </div>
-            <div class="footer-container-right">
-                <a href="/" class="btn-footer-rev">Оставить отзыв</a>
-                <a href="/" class="btn-footer-program-loyal">программа лояльности</a>
+            <div class="footer-container-left-colum">
+              <a href="/">Новости</a>
+              <a href="/">Карьера</a>
+              <a href="/">Стать тайным гостем</a>
+              <a href="/">Ищем помещение</a>
+              <a href="/">Сертификат</a>
             </div>
+          </div>
+          <div class="footer-container-right">
+            <a href="/" class="btn-footer-rev">Оставить отзыв</a>
+            <a href="/" class="btn-footer-program-loyal"
+              >программа лояльности</a
+            >
+          </div>
         </div>
         <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                <a href="/">Подписаться на рассылку</a>
-                <a href="/">Политика конфиденциальности</a>
-            </div>
-            <div class="footer-bottom-social">
-                <a href="/" class="footer-bottom-social-ellipse">
-                    FB
-                </a>
-                <a href="/" class="footer-bottom-social-ellipse">
-                    IN
-                </a>
-                <a href="/" class="footer-bottom-social-ellipse">
-                    FB
-                </a>
-            </div>
-            <div class="footer-bottom-right">
-                <p>© 2022 Tangiers Lounge</p>
-                <p>ART HOOKAH FAMILY</p>
-            </div>
+          <div class="footer-bottom-left">
+            <a href="/">Подписаться на рассылку</a>
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+          <div class="footer-bottom-social">
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
+            <a href="/" class="footer-bottom-social-ellipse"> IN </a>
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
+          </div>
+          <div class="footer-bottom-right">
+            <p>© 2022 Tangiers Lounge</p>
+            <p>ART HOOKAH FAMILY</p>
+          </div>
         </div>
-    </div>
-</footer>
-<div class="modal-header-book">
-    <div class="modal-header-book-content">
+      </div>
+    </footer>
+    <div class="modal-header-book">
+      <div class="modal-header-book-content">
         <div class="modal-header-book-content-part">
-            <div class="modal-header-book-content-top">
-                <p>Забронировать стол</p>
-                <img src="/img/close-map.png" alt="" class="modal-header-book-close">
+          <div class="modal-header-book-content-top">
+            <p>Забронировать стол</p>
+            <img
+              src="/img/close-map.png"
+              alt=""
+              class="modal-header-book-close"
+            />
+          </div>
+          <div class="modal-header-book-content-middle">
+            <input type="text" placeholder="Имя" />
+            <div class="modal-header-book-content-middle-select">
+              <select>
+                <option disabled selected>Ресторан</option>
+                <option>Ресторан</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                viewBox="0 0 8 10"
+                fill="none"
+              >
+                <path
+                  d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
             </div>
-            <div class="modal-header-book-content-middle">
-                <input type="text" placeholder="Имя">
-                <div class="modal-header-book-content-middle-select">
-                    <select>
-                        <option disabled selected>Ресторан</option>
-                        <option>Ресторан</option>
-                    </select>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-                        <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-                    </svg>
-                </div>
-                <input type="text" placeholder="Телефон"  class="modal-header-book-content-middle-short">
-                <input type="number" placeholder="Количество человек"  class="modal-header-book-content-middle-short">
-                <input type="date" placeholder="Имя" class="modal-header-book-content-middle-short">
-                <input type="time" placeholder="Имя"  class="modal-header-book-content-middle-short">
-                <div class="radio">
-                    <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-                    <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-                </div>
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="number"
+              placeholder="Количество человек"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="date"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="time"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-1"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-1"
+                >Даю согласие на&nbsp;обработку
+                <a href="/">персональных данных</a></label
+              >
             </div>
+          </div>
         </div>
         <button class="modal-header-book-btn">Отправить</button>
+      </div>
     </div>
-</div>
-<script>
-    let btnMenu = document.querySelector('.header-container-right-btn')
-    let modalMenu = document.querySelector('.modal-header-book')
-    let closeMenu = document.querySelector('.modal-header-book-close')
-    btnMenu.addEventListener('click', function (){
-        modalMenu.style.opacity = '1'
-        modalMenu.style.zIndex = '999999999999999'
-    })
-    closeMenu.addEventListener('click', function (){
-        modalMenu.style.opacity = '0'
-        modalMenu.style.zIndex = '-1'
-    })
-
-</script>
-</body>
+    <script>
+      let btnMenu = document.querySelector(".header-container-right-btn");
+      let modalMenu = document.querySelector(".modal-header-book");
+      let closeMenu = document.querySelector(".modal-header-book-close");
+      btnMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "1";
+        modalMenu.style.zIndex = "999999999999999";
+      });
+      closeMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "0";
+        modalMenu.style.zIndex = "-1";
+      });
+    </script>
+  </body>
 </html>

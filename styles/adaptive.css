@@ -395,15 +395,14 @@
     margin-left: -100px;
     margin-top: -60px;
   }
+
   .section4-container-block__looking-premises p {
     position: relative;
-    padding: 0;
     width: 50%;
     font-size: 18px;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
   }
   .section4-container-block__looking-premises h5 {
-    text-align: left;
     width: 50%;
   }
   .section1-img__main2 {
@@ -415,11 +414,10 @@
   }
   .section4-container-block__looking-premises {
     flex-direction: row-reverse;
-    gap: 20px;
     justify-content: space-between;
-    height: 220px;
-    padding: 20px;
     align-items: flex-start;
+    gap: 20px;
+    height: 220px;
   }
   .section11-p__catering {
     padding-top: 240px;
@@ -2257,6 +2255,12 @@
   }
 }
 @media (max-width: 405px) {
+
+  .section3-container-block-bg__secret-assistants {
+    width: 150%;
+    height: 150%;
+  }
+
   .section7-container-input-block__restoran {
     width: 47.5%;
   }

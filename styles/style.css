@@ -87,11 +87,11 @@ a {
 }
 input,
 textarea {
-  font-family: "Panama Regular", sans-serif;
+  /* font-family: "Panama Regular", sans-serif; */
 }
 input::placeholder,
 textarea::placeholder {
-  font-family: "Panama Regular", sans-serif;
+  /* font-family: "Panama Regular", sans-serif; */
 }
 ul {
   padding: 0;
@@ -737,12 +737,12 @@ footer {
   max-width: 614px;
 }
 .section7-inputs__secret-assistants input {
-  color: #454545;
-  font-family: "FuturaPT", sans-serif;
+  font-family: "FuturaPTMedium", sans-serif;
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid #454545;
   background: transparent;
+  color: #454545;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -759,6 +759,11 @@ footer {
 .input-city__secret-assistants {
   width: 48%;
 }
+.input-adress__secret-assistants,
+.input-comment__secret-assistants {
+  width: 100%;
+}
+
 .section7-inputs__secret-assistants {
   margin-top: 120px;
 }
@@ -1003,9 +1008,7 @@ footer {
   position: absolute;
   top: -350px;
 }
-.section2__looking-premises {
-  position: relative;
-}
+
 .section2-img1__looking-premises {
   position: absolute;
   left: 95px;
@@ -1046,18 +1049,17 @@ footer {
   flex-direction: column;
   position: relative;
   gap: 18px;
-  padding-bottom: 116px;
+  height: 280px;
+  padding: 20px;
   border-bottom: 1px solid #454545;
 }
 .section4-container-block__looking-premises p {
-  font-family: "FuturaPT", sans-serif;
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 130% */
   max-width: 455px;
-  padding-top: 20px;
-  padding-left: 20px;
   letter-spacing: 0.2px;
 }
 .section4-container-block__looking-premises h5 {
@@ -1072,9 +1074,8 @@ footer {
 .section4-container-block__looking-premises span {
   position: absolute;
   left: 50%;
-  margin-left: -6px;
-  top: 20px;
-  font-family: Futura PT, sans-serif;
+  transform: translate(-50%, 0);
+  font-family: "FuturaPT", sans-serif;
 }
 .section4-container-block__looking-premises2 {
   gap: 70px;
@@ -1092,7 +1093,6 @@ footer {
 }
 .section7__secret-assistants {
   border-bottom: 1px solid #454545;
-  border-top: 1px solid #454545;
 }
 .section3__vacancy {
   border-bottom: 1px solid #454545;
@@ -1100,9 +1100,8 @@ footer {
   position: relative;
 }
 .section2__looking-premises {
-  border-bottom: 1px solid #454545;
-  border-top: 1px solid #454545;
   position: relative;
+  border-bottom: 1px solid #454545;
   padding: 280px 0;
 }
 .line-height {
