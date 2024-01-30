@@ -1,387 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-  <title>slider</title>
-  <link href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
-  <link rel="stylesheet" href="/assets/index.8ba8ea75.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/adaptive.css">
-</head>
-<body>
-<header>
-  <div class="container">
-    <div class="header-container">
-      <div class="header-container-left">
-        <div class="header-container-logo">
-          <img src="/img/logo-desktop.svg" alt="">
-        </div>
-        <div class="dropdown dropdown-header">
-          <button class="dropbtn">
-            СПБ
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-              <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-            </svg>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>slider</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
+    <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-left">
+            <div class="header-container-logo">
+              <img src="/img/logo-desktop.svg" alt="" />
+            </div>
+            <div class="dropdown dropdown-header">
+              <button class="dropbtn">
+                СПБ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="10"
+                  viewBox="0 0 8 10"
+                  fill="none"
+                >
+                  <path
+                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                    fill="#DFDFDF"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <h1>Сеть лаунж-ресторанов</h1>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <ul>
+                <li>
+                  <a href="/" class="burger-menu-active">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Главная
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Рестораны
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Франшиза
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Офрмить бонусную карту
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Кейтеринг
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    О нас
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Контакты
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Доставка
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-container-right">
+            <a href="/">Доставка</a>
+            <a href="/" class="header-container-right-btn">
+              Забронировать
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="8"
+                viewBox="0 0 10 8"
+                fill="none"
+              >
+                <path
+                  d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-        <h1>Сеть лаунж-ресторанов</h1>
       </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <div class="menu__box">
+    </header>
+    <section class="section1__contacts">
+      <div class="section1-line__contacts"></div>
+      <div class="container">
+        <h1 class="section1-title__contacts">Повар универсал</h1>
+      </div>
+    </section>
+    <section class="section2__contacts">
+      <div class="container">
+        <a href="/" class="section2-top__contacts">+7 958 538-40-20</a>
+        <div class="section2-block__contacts">
+          <h3>
+            г. Санкт-Петербург, <br />
+            ул. Хошимина, дом 16
+          </h3>
+          <button type="button">Откликнуться</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3__vacancy section5__franchise">
+      <div
+        class="section5-top-left__franchise-absolute section5-top-left__franchise"
+      >
+        Описание вакансии:
+      </div>
+      <div class="container section5-top-left__slider">
+        <div class="section5-top-left__slider-clear"></div>
+        <div
+          class="section7-container__secret-assistants section3-container__vacancy"
+        >
+          <img src="/img/33.png" alt="" class="section3-img1__vacancy" />
+          <p class="section7-p__vacancy" style="display: block">
+            Tangiers Lounge — место для всех, кто ищет нетривиальный ресторан,
+            готов оценить авторские находки миксологов и погрузиться в атмосферу
+            модного заведения для особенных гостей. Интерьер сочетает в себе
+            английскую классику и гранж, а концепция заведения тесно связана с
+            легендой о Мистере Т. - загадочном хозяине Особняка.
+          </p>
+          <img src="/img/34.png" alt="" class="section3-img2__vacancy" />
+        </div>
+        <div class="section5-top-left__slider-clear"></div>
+      </div>
+    </section>
+    <section class="section4__vacancy">
+      <div class="section4-container__vacancy">
+        <div class="section4-container-block__vacancy">
+          <p>Обязанности:</p>
           <ul>
             <li>
-              <a href="/" class="burger-menu-active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Главная
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
+              Приготовление холодных и горячих блюд, согласно требуемым
+              стандартам и технологическим картам
+            </li>
+            <li>Приготовление заготовок</li>
+            <li>Соблюдение технологии приготовления блюд</li>
+            <li>Поддержание чистоты и порядка на рабочем месте</li>
+          </ul>
+        </div>
+        <div class="section4-container-block__vacancy">
+          <p>Требования:</p>
+          <ul>
+            <li>Опыт работы поваром в ресторане от 2-х лет</li>
+            <li>Чистоплотность, пунктуальность, ответственность</li>
+            <li>Наличие санитарной книжки или готовность её сделать</li>
+          </ul>
+        </div>
+        <div class="section4-container-block__vacancy">
+          <p>Обязанности:</p>
+          <ul>
+            <li>
+              График работы 5/2 (время работы с 11:00/12:00 - 00:00/01:00)
             </li>
             <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Рестораны
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
+              Заработная плата: ставка 240 - 260 руб/час (в первый месяц работы
+              ставка 240 руб/час, по итогам первого месяца возможно повышение
+              ставки)
             </li>
+            <li>Бесплатное питание и форма</li>
+            <li>Официальное трудоустройство</li>
             <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Франшиза
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
+              Молодой и дружный коллектив, работа в команде профессионалов
             </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Офрмить бонусную карту
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Кейтеринг
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                О нас
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Контакты
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Доставка
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
+            <li>Стабильная заработная плата 2 раза в месяц</li>
           </ul>
         </div>
       </div>
-      <div class="header-container-right">
-        <a href="/">Доставка</a>
-        <a href="/" class="header-container-right-btn">
-          Забронировать
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-            <path d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z" fill="#DFDFDF"/>
-          </svg>
-        </a>
+    </section>
+    <section class="section7__secret-assistants">
+      <div class="container">
+        <div
+          class="section7-container__secret-assistants section7-container__contacts"
+        >
+          <p>
+            Дорогой друг, мы всегда находимся в поиске талантов, готовых стать
+            частью команды Мистера Т. Если среди открытых вакансий нет того, что
+            ты ищешь, то просто оставь свои данные ниже:
+          </p>
+          <div class="section7-inputs__secret-assistants">
+            <input
+              type="text"
+              placeholder="ФИО"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Город"
+              class="input-tel__secret-assistants"
+            />
+            <input
+              type="text"
+              placeholder="Интересующая вакансия"
+              class="input-city__secret-assistants"
+            />
+             <input
+              type="tel"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
+            />
+             <input
+              type="tel"
+              placeholder="Ссылка на аккаунт в соц. сетях"
+              class="input-tel__secret-assistants"
+            />
+            <div class="form-files">
+              <div class="input__wrapper">
+                <input
+                  name="file"
+                  type="file"
+                  id="input__file"
+                  class="input input__file"
+                  multiple
+                />
+                <label for="input__file" class="input__file-button">
+                  <span class="input__file-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path d="M10 0V20M20 10L0 10" stroke="#DFDFDF" />
+                    </svg>
+                  </span>
+                  <span class="input__file-button-text">Прикрепить резюме</span>
+                </label>
+              </div>
+              <div class="radio">
+                <input
+                  class="custom-radio"
+                  type="checkbox"
+                  id="color-1"
+                  name="color"
+                  value="indigo"
+                />
+                <label for="color-1"
+                  >Даю согласие на&nbsp;обработку
+                  <a href="/">персональных данных</a></label
+                >
+              </div>
+            </div>
+            <button type="button">Отправить</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
-<section class="section1__contacts">
-  <div class="section1-line__contacts"></div>
-  <div class="container">
-    <h1 class="section1-title__contacts">
-      ПОвар универсал
-    </h1>
-  </div>
-</section>
-<section class="section2__contacts">
-  <div class="container">
-    <a href="/" class="section2-top__contacts">+7 958 538-40-20</a>
-    <div class="section2-block__contacts">
-      <h3>
-        г. Санкт-Петербург, <br>
-        ул. Хошимина, дом 16
-      </h3>
-      <button type="button">Откликнуться</button>
-    </div>
-  </div>
-</section>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-container-left">
+            <div class="footer-container-left-colum">
+              <a href="/">Рестораны</a>
+              <a href="/">Доставка</a>
+              <a href="/">Франшиза</a>
+              <a href="/">Кейтеринг</a>
+              <a href="/">О нас</a>
+              <a href="/">Контакты</a>
+            </div>
+            <div class="footer-container-left-colum">
+              <a href="/">Новости</a>
+              <a href="/">Карьера</a>
+              <a href="/">Стать тайным гостем</a>
+              <a href="/">Ищем помещение</a>
+              <a href="/">Сертификат</a>
+            </div>
+          </div>
+          <div class="footer-container-right">
+            <a href="/" class="btn-footer-rev">Оставить отзыв</a>
+            <a href="/" class="btn-footer-program-loyal"
+              >программа лояльности</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <a href="/">Подписаться на рассылку</a>
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+          <div class="footer-bottom-social">
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
+            <a href="/" class="footer-bottom-social-ellipse"> IN </a>
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
+          </div>
+          <div class="footer-bottom-right">
+            <p>© 2022 Tangiers Lounge</p>
+            <p>ART HOOKAH FAMILY</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let inputs = document.querySelectorAll(".input__file");
+      Array.prototype.forEach.call(inputs, function (input) {
+        let label = input.nextElementSibling,
+          labelVal = label.querySelector(".input__file-button-text").innerText;
 
-<section class="section3__vacancy">
-  <div class="container">
-    <div class="section3-title__vacancy">Описание вакансии:</div>
-    <img src="/img/33.png" alt="" class="section3-img1__vacancy">
-    <img src="/img/34.png" alt="" class="section3-img2__vacancy">
-    <div class="section7-container__secret-assistants section3-container__vacancy">
-      <p class="section7-p__vacancy" style="display: block">
-        Tangiers Lounge — место для всех, кто ищет нетривиальный ресторан, готов оценить авторские находки миксологов и погрузиться в атмосферу модного заведения для особенных гостей. Интерьер сочетает в себе английскую классику и гранж, а концепция заведения тесно связана с легендой о Мистере Т. - загадочном хозяине Особняка.
-      </p>
-    </div>
-  </div>
-</section>
-<section class="section4__vacancy">
-  <div class="section4-container__vacancy">
-    <div class="section4-container-block__vacancy">
-      <p>
-        Обязанности:
-      </p>
-      <ul>
-        <li>
-          Приготовление холодных и горячих блюд, согласно требуемым стандартам и технологическим картам
-        </li>
-        <li>
-          Приготовление заготовок
-        </li>
-        <li>
-          Соблюдение технологии приготовления блюд
-        </li>
-        <li>
-          Поддержание чистоты и порядка на рабочем месте
-        </li>
-      </ul>
-    </div>
-    <div class="section4-container-block__vacancy">
-      <p>
-        Требования:
-      </p>
-      <ul>
-        <li>
-          Опыт работы поваром в ресторане  от 2-х лет
-        </li>
-        <li>
-          Чистоплотность, пунктуальность, ответственность
-        </li>
-        <li>
-          Наличие санитарной книжки или готовность её сделать
-        </li>
-      </ul>
-    </div>
-    <div class="section4-container-block__vacancy">
-      <p>
-        Обязанности:
-      </p>
-      <ul>
-        <li>
-          График работы 5/2 (время работы с 11:00/12:00 - 00:00/01:00)
-        </li>
-        <li>
-          Заработная плата: ставка 240 - 260 руб/час (в первый месяц работы ставка 240 руб/час, по итогам первого месяца возможно повышение ставки)
-        </li>
-        <li>
-          Бесплатное питание и форма
-        </li>
-        <li>
-          Официальное трудоустройство
-        </li>
-        <li>
-          Молодой и дружный коллектив, работа в команде профессионалов
-        </li>
-        <li>
-          Стабильная заработная плата 2 раза в месяц
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section7__secret-assistants">
-  <div class="container">
-    <div class="section7-container__secret-assistants section7-container__contacts">
-      <p class="section7-p__vacancy">
-        Дорогой друг, мы всегда находимся в поиске талантов, готовых стать частью команды Мистера Т. Если среди открытых вакансий нет того, что ты ищешь, то просто оставь свои данные ниже:
-      </p>
-      <div class="section7-inputs__secret-assistants">
-        <input type="text" placeholder="ФИО" class="input-name__secret-assistants">
-        <input type="tel" placeholder="Телефон" class="input-tel__secret-assistants">
-        <input type="text" placeholder="Город" class="input-city__secret-assistants">
-        <div class="form-files">
-          <div class="input__wrapper">
-            <input name="file" type="file" id="input__file" class="input input__file" multiple>
-            <label for="input__file" class="input__file-button">
-            <span class="input__file-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M10 0V20M20 10L0 10" stroke="#DFDFDF"/>
+        input.addEventListener("change", function (e) {
+          let countFiles = "";
+          if (this.files && this.files.length >= 1)
+            countFiles = this.files.length;
+
+          if (countFiles)
+            label.querySelector(".input__file-button-text").innerText =
+              "Выбрано файлов: " + countFiles;
+          else
+            label.querySelector(".input__file-button-text").innerText =
+              labelVal;
+        });
+      });
+    </script>
+    <div class="modal-header-book">
+      <div class="modal-header-book-content">
+        <div class="modal-header-book-content-part">
+          <div class="modal-header-book-content-top">
+            <p>Забронировать стол</p>
+            <img
+              src="/img/close-map.png"
+              alt=""
+              class="modal-header-book-close"
+            />
+          </div>
+          <div class="modal-header-book-content-middle">
+            <input type="text" placeholder="Имя" />
+            <div class="modal-header-book-content-middle-select">
+              <select>
+                <option disabled selected>Ресторан</option>
+                <option>Ресторан</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                viewBox="0 0 8 10"
+                fill="none"
+              >
+                <path
+                  d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                  fill="#DFDFDF"
+                />
               </svg>
-            </span>
-              <span class="input__file-button-text">Прикрепить резюме</span>
-            </label>
+            </div>
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="number"
+              placeholder="Количество человек"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="date"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="time"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-1"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-1"
+                >Даю согласие на&nbsp;обработку
+                <a href="/">персональных данных</a></label
+              >
+            </div>
           </div>
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-            <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-          </div>
         </div>
-        <button type="button">Отправить</button>
+        <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
-  </div>
-</section>
-<footer>
-  <div class="container">
-    <div class="footer-container">
-      <div class="footer-container-left">
-        <div class="footer-container-left-colum">
-          <a href="/">Рестораны</a>
-          <a href="/">Доставка</a>
-          <a href="/">Франшиза</a>
-          <a href="/">Кейтеринг</a>
-          <a href="/">О нас</a>
-          <a href="/">Контакты</a>
-        </div>
-        <div class="footer-container-left-colum">
-          <a href="/">Новости</a>
-          <a href="/">Карьера</a>
-          <a href="/">Стать тайным гостем</a>
-          <a href="/">Ищем помещение</a>
-          <a href="/">Сертификат</a>
-        </div>
-      </div>
-      <div class="footer-container-right">
-        <a href="/" class="btn-footer-rev">Оставить отзыв</a>
-        <a href="/" class="btn-footer-program-loyal">программа лояльности</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-bottom-left">
-        <a href="/">Подписаться на рассылку</a>
-        <a href="/">Политика конфиденциальности</a>
-      </div>
-      <div class="footer-bottom-social">
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          IN
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-      </div>
-      <div class="footer-bottom-right">
-        <p>© 2022 Tangiers Lounge</p>
-        <p>ART HOOKAH FAMILY</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<script>
-  let inputs = document.querySelectorAll('.input__file');
-  Array.prototype.forEach.call(inputs, function (input) {
-    let label = input.nextElementSibling,
-            labelVal = label.querySelector('.input__file-button-text').innerText;
-
-    input.addEventListener('change', function (e) {
-      let countFiles = '';
-      if (this.files && this.files.length >= 1)
-        countFiles = this.files.length;
-
-      if (countFiles)
-        label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
-      else
-        label.querySelector('.input__file-button-text').innerText = labelVal;
-    });
-  });
-</script>
-<div class="modal-header-book">
-  <div class="modal-header-book-content">
-    <div class="modal-header-book-content-part">
-      <div class="modal-header-book-content-top">
-        <p>Забронировать стол</p>
-        <img src="/img/close-map.png" alt="" class="modal-header-book-close">
-      </div>
-      <div class="modal-header-book-content-middle">
-        <input type="text" placeholder="Имя">
-        <div class="modal-header-book-content-middle-select">
-          <select>
-            <option disabled selected>Ресторан</option>
-            <option>Ресторан</option>
-          </select>
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-            <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-          </svg>
-        </div>
-        <input type="text" placeholder="Телефон"  class="modal-header-book-content-middle-short">
-        <input type="number" placeholder="Количество человек"  class="modal-header-book-content-middle-short">
-        <input type="date" placeholder="Имя" class="modal-header-book-content-middle-short">
-        <input type="time" placeholder="Имя"  class="modal-header-book-content-middle-short">
-        <div class="radio">
-          <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-          <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-        </div>
-      </div>
-    </div>
-    <button class="modal-header-book-btn">Отправить</button>
-  </div>
-</div>
-<script>
-  let btnMenu = document.querySelector('.header-container-right-btn')
-  let modalMenu = document.querySelector('.modal-header-book')
-  let closeMenu = document.querySelector('.modal-header-book-close')
-  btnMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '1'
-    modalMenu.style.zIndex = '999999999999999'
-  })
-  closeMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '0'
-    modalMenu.style.zIndex = '-1'
-  })
-
-</script>
-</body>
+    <script>
+      let btnMenu = document.querySelector(".header-container-right-btn");
+      let modalMenu = document.querySelector(".modal-header-book");
+      let closeMenu = document.querySelector(".modal-header-book-close");
+      btnMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "1";
+        modalMenu.style.zIndex = "999999999999999";
+      });
+      closeMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "0";
+        modalMenu.style.zIndex = "-1";
+      });
+    </script>
+  </body>
 </html>
