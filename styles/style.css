@@ -760,13 +760,13 @@ footer {
 .input-city__secret-assistants {
   width: 48%;
 }
-.input-resize{
+.input-resize {
   width: 100% !important;
 }
-.items__input-resize{
+.items__input-resize {
   width: 100%;
   display: flex;
-    justify-content: space-around;
+  justify-content: space-between;
 }
 .input-adress__secret-assistants,
 .input-comment__secret-assistants {
@@ -2329,7 +2329,7 @@ header {
   flex-direction: column;
   position: relative;
 }
-.section4__careeer-line{
+.section4__careeer-line {
   border-right: 1px solid #454545;
   position: absolute;
   left: 48%;
