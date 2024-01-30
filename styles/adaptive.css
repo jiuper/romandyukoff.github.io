@@ -1045,6 +1045,15 @@
   .section6-container-block__franchise {
     align-items: center;
   }
+
+  .section2-img1__looking-premises {
+      top: 280px;
+}
+
+.section2-img2__looking-premises {
+  top: 320px;
+}
+
 }
 @media (max-width: 1050px) {
   .section7-container__restoran {
@@ -2914,7 +2923,7 @@
     font-size: 24px;
   }
   .section2__looking-premises {
-    padding: 240px 0;
+    padding: 120px 0;
   }
   .section2-title__loyalty-program {
     padding-bottom: 196px;
@@ -3128,6 +3137,11 @@
   .section6-container-block__franchise {
     align-items: center;
   }
+
+  .section4-container__secret-assistants img {
+    top: -250px;
+  }
+
 }
 @media (max-width: 1050px) {
   .section7-container__restoran {
@@ -3147,6 +3161,9 @@
   .section4-container__franchise {
     padding-bottom: 240px;
   }
+
+  
+
 }
 @media (max-width: 900px) {
   .section7-container-block__catering {
