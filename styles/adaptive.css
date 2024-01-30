@@ -17,7 +17,9 @@
     margin-top: -100px;
     margin-left: -100px;
   }
-
+.section12__catering{
+  height: 50rem;
+}
   .section-last-img__main {
   position: absolute;
   top: 43%;
@@ -26,6 +28,12 @@
   height: 241.223px;
   transform: rotate(-15deg);
   z-index: 9999999;
+}
+.section3-container-block__franchise{
+  width: 77%;
+}
+.section4__careeer-line{
+ border: none;
 }
 }
 
@@ -131,6 +139,9 @@
     width: 250px;
     height: 309px;
   }
+  .section12__catering{
+  height: 48rem;
+}
 }
 @media (max-width: 1250px) {
   .section4-container-block__careeer {
@@ -199,12 +210,40 @@
   .line-none__centre {
     height: 0;
   }
+    .section5-top-right-block__franchise{
+    font-size: 18px;
+  }
+  .section6-container-block-part__franchise p{
+    font-size: 24px;
+  }
+    .section6-container-block-part__franchise span{
+    font-size: 60px;
+  }
+  .section6-container-block-part__franchise{
+    flex-direction: column;
+    align-items: center;
+  }
   .section10-container-block__catering {
     border-top: 1px solid #454545;
   }
   .section10-container-block__catering:last-child {
     border-bottom: 1px solid #454545;
   }
+  .section3-line-r__franchise{
+    right: 20%;
+  }
+  .section3-line-l__franchise{
+    left: 20%;
+  }
+  .section5-top-right__franchise{
+    display: none;
+  }
+  .section5-top-left__slider-clear{
+    flex-basis: auto;
+  }
+    .section12__catering{
+  height: 43rem;
+}
 
   body {
     padding-top: 117px;
@@ -269,7 +308,7 @@
     text-transform: uppercase;
   }
   .section-map-content-block__franchise-mob p {
-    font-family: Futura PT;
+    font-family: "FuturaPT", sans-serif;
     font-size: 18px;
     font-style: normal;
     position: relative;
@@ -466,7 +505,7 @@
     line-height: 48px; /* 120% */
   }
   .section3-container__looking-premises {
-    max-width: 690px;
+    max-width: 345px;
   }
   .section3-container-block__bankets span {
     display: block;
@@ -983,10 +1022,7 @@
   .section3-img2__vacancy {
     display: none;
   }
-  .section3-container__vacancy p {
-    font-size: 24px !important;
-    line-height: 32px !important; /* 133.333% */
-  }
+
   .section3-title__vacancy {
     font-size: 18px;
     line-height: 24px; /* 133.333% */
@@ -1029,6 +1065,9 @@
    .section-last-img__main {
     right: 3%;
     top: 50%;
+  }
+  .section4-container__franchise button{
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 935px) {
@@ -1086,10 +1125,6 @@
     line-height: 14px; /* 116.667% */
   }
   /*18px*/
-  .section7-p__vacancy {
-    display: block;
-    padding-top: 80px;
-  }
   .panel-block3__rent-hookahs {
     width: 100%;
     padding: 62px 0;
@@ -1651,7 +1686,7 @@
   }
   .section3-container__looking-premises {
     padding: 80px 0;
-    border: none;
+
   }
   .section11-p__catering {
     padding: 80px 0;
@@ -2065,10 +2100,6 @@
     line-height: 32px !important; /* 100% */
   }
   /*title big*/
-  .section3-container__vacancy p {
-    font-size: 28px !important;
-    line-height: 32px !important; /* 114.286% */
-  }
 }
 @media (max-width: 475px) {
   .section2-container__sertificate p {
@@ -3091,9 +3122,8 @@
   .section3-img2__vacancy {
     display: none;
   }
-  .section3-container__vacancy p {
-    font-size: 24px !important;
-    line-height: 32px !important; /* 133.333% */
+  .slider-nav{
+    display: flex;
   }
   .section3-title__vacancy {
     font-size: 18px;
@@ -3136,10 +3166,6 @@
   }
 }
 @media (max-width: 900px) {
-  .section7-p__vacancy {
-    display: block;
-    padding-top: 80px;
-  }
 
   .section7-container-block__catering {
     width: 100%;
@@ -3181,11 +3207,6 @@
   .section2-top__contacts {
     font-size: 12px;
     line-height: 14px; /* 116.667% */
-  }
-  /*18px*/
-  .section7-p__vacancy {
-    display: block;
-    padding-top: 80px;
   }
   .panel-block3__rent-hookahs {
     width: 100%;
@@ -3735,7 +3756,7 @@
   }
   .section3-container__looking-premises {
     padding: 80px 0;
-    border: none;
+
   }
   .section11-p__catering {
     padding: 80px 0;
@@ -4137,15 +4158,46 @@
     line-height: 32px !important; /* 100% */
   }
   /*title big*/
-  .section3-container__vacancy p {
-    font-size: 28px !important;
-    line-height: 32px !important; /* 114.286% */
-  }
 }
 @media (max-width: 475px) {
   .section2-container__sertificate p {
     height: 150px;
   }
+  .section3-container__contacts{
+    border: none;
+  }
+  .section3__looking-premises-wrapper{
+  position: relative;
+  
+  }
+  .section3-container__looking-premises-lineL,
+  .section3-container__looking-premises-lineR{
+    display: block;
+  }
+
+  .section7-container__secret-assistants{
+    height: 650px;
+    width: 345px;
+  }
+  .section5-top-right-block__franchise{
+    font-size: 12px;
+  }
+  .section6-container-block-part__franchise p{
+    font-size: 16px;
+  }
+    .section6-container-block-part__franchise span{
+    font-size: 32px;
+  }
+  .section6-container-block-part__franchise{
+    gap: 0;
+  }
+  .section6-container-block__franchise{
+    gap: 0;
+  }
+   .section6-container-block__franchise:last-child{
+    gap: 15px;
+  }
+  
   .section2__secret-assistants {
     padding: 80px 0;
   }
@@ -4320,7 +4372,7 @@
   .section5-title__bankets {
     padding-top: 10px;
   }
-}
+
 @media (max-width: 405px) {
   .section7-container-input-block__restoran {
     width: 47.5%;
@@ -4354,6 +4406,26 @@
     width: 340px;
     font-size: 30px !important;
   }
+  .section3-container__franchise p{
+    width: 255px;
+  }
+  .section3-container-img__franchise{
+    width: 100%;
+  }
+
+    .section3-line-r__franchise{
+    right: 27%;
+  }
+  .section3-line-l__franchise{
+    left: 27%;
+  }
+  .section3-container-block__franchise{
+    width: 68%;
+  } 
+  .section4-container__franchise button{
+    margin-bottom: 46px;
+  }
+
 }
 @media (max-width: 375px) {
   .section2-container__sertificate p {
