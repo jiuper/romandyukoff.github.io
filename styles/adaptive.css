@@ -723,7 +723,7 @@
     text-transform: uppercase;
   }
   .section7-container-block-mob-content-part__catering span {
-    font-family: Futura PT;
+    font-family: "FuturaPTMedium", sans-serif !important;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -731,7 +731,7 @@
     letter-spacing: 0.18px;
   }
   .section7-container-block-mob-content-part__catering p {
-    font-family: Futura PT;
+   font-family: "FuturaPTMedium", sans-serif !important;
     font-size: 18px;
     margin-top: 0;
     color: #454545;
@@ -768,9 +768,11 @@
   }
   .section10-container__catering {
     flex-direction: column;
+    border: none;
   }
   .section10-container-block__catering {
     width: 100%;
+    height: 100px;
     border-left: none;
     border-right: none;
     font-size: 18px;
@@ -1716,9 +1718,7 @@
     padding: 15px;
     height: 120px;
   }
-  .section7-container-block__catering p {
-    display: none;
-  }
+
   .section7-container-block__catering {
     height: auto;
   }
@@ -1732,13 +1732,24 @@
   .section7-container-block__catering span {
     font-size: 12px;
   }
+
+.section7-container-block-mob-top__catering > div {
+  width: 50%;
+}
+
   .section7-container-block-mob-btn__catering,
-  .section7-container-block__catering p,
-  .section7-container-block-mob-top__catering > div > span,
-  .section7-container-block-mob-top__catering > div > p {
+  .section7-container-block__catering p {
     font-size: 12px;
-    line-height: 16px; /* 133.333% */
+    line-height: 16px;
   }
+
+
+  .section7-container-block-mob-content-part__catering > span,
+  .section7-container-block-mob-content-part__catering > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .section4-line2__catering-deskt {
     display: block;
   }
@@ -1805,19 +1816,15 @@
     line-height: 20px; /* 125% */
   }
   .section4-container-block-part__careeer h3 {
-    width: 40%;
+    width: 50%;
   }
   .section4-container-block-part__careeer p {
-    width: 60%;
+    width: 50%;
+    font-size: 12px;
+    line-height: 16px;
   }
   .section4-container-block-part__careeer {
-    height: auto;
-    padding: 16px 20px 32px 20px;
     gap: 15px;
-  }
-  .section4-container-block-part__careeer p {
-    font-size: 12px;
-    line-height: 16px; /* 133.333% */
   }
   .section3-container-img__contacts {
     width: 50%;
@@ -2191,13 +2198,7 @@
   .section7-container-block__catering p {
     display: block;
   }
-  .section4-container-block-part__careeer h3 {
-    width: 60%;
-  }
-  .section4-container-block-part__careeer {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
   .section1-container-block__news p,
   .section1-container-block__news h3 {
     text-align: center;
@@ -2790,6 +2791,7 @@
     padding: 12px 0;
     border-top: 1px solid #454545;
   }
+
   .section7-container-block-mob-content__catering {
     padding-top: 32px;
   }
@@ -2813,24 +2815,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
-  .section7-container-block-mob-content-part__catering span {
-    font-family: Futura PT;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 133.333% */
-    letter-spacing: 0.18px;
-  }
-  .section7-container-block-mob-content-part__catering p {
-    font-family: Futura PT;
-    font-size: 18px;
-    margin-top: 0;
-    color: #454545;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 133.333% */
-    letter-spacing: 0.18px;
-  }
+
   .section7-container-block-mob-btn__catering2 {
     margin-top: 24px;
   }
@@ -3172,6 +3157,12 @@
   }
 }
 @media (max-width: 800px) {
+  .section7-container-block-mob-content-part__catering > span,
+  .section7-container-block-mob-content-part__catering > p {
+    font-size: 12px !important;
+  }
+
+
   /*big title 84px*/
   .section6-title__restoran,
   .section3-content-p__loyalty-program,
@@ -3783,9 +3774,7 @@
     padding: 15px;
     height: 120px;
   }
-  .section7-container-block__catering p {
-    display: none;
-  }
+
   .section7-container-block__catering {
     height: auto;
   }
@@ -3796,11 +3785,11 @@
     font-size: 28px;
     line-height: 32px; /* 114.286% */
   }
+
   .section7-container-block__catering span {
     font-size: 12px;
   }
   .section7-container-block-mob-btn__catering,
-  .section7-container-block__catering p,
   .section7-container-block-mob-top__catering > div > span,
   .section7-container-block-mob-top__catering > div > p {
     font-size: 12px;
@@ -3871,15 +3860,8 @@
     font-size: 16px;
     line-height: 20px; /* 125% */
   }
-  .section4-container-block-part__careeer h3 {
-    width: 40%;
-  }
-  .section4-container-block-part__careeer p {
-    width: 60%;
-  }
+
   .section4-container-block-part__careeer {
-    height: auto;
-    padding: 16px 20px 32px 20px;
     gap: 15px;
   }
   .section4-container-block-part__careeer p {
@@ -4091,8 +4073,7 @@
     width: 80%;
   }
   .section7-container__secret-assistants {
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding: 20px 0 80px 0;
   }
   .section2__franchise {
     padding-bottom: 80px;
@@ -4171,7 +4152,7 @@
   }
 
   .section7-container__secret-assistants {
-    height: 650px;
+    height: max-content;
     width: 345px;
   }
   .section5-top-right-block__franchise {
@@ -4272,13 +4253,7 @@
   .section7-container-block__catering p {
     display: block;
   }
-  .section4-container-block-part__careeer h3 {
-    width: 60%;
-  }
-  .section4-container-block-part__careeer {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
   .section1-container-block__news p,
   .section1-container-block__news h3 {
     text-align: center;

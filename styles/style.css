@@ -510,6 +510,7 @@ footer {
   text-transform: uppercase;
 }
 .section1-container-img-blur__secret-assistants {
+  -webkit-backdrop-filter: blur(100px);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -519,10 +520,10 @@ footer {
   filter: blur(100px);
 }
 .section1-container-img__secret-assistants {
-  width: 34.8%;
+  width: 40%;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .section1-container-img-main__secret-assistants {
@@ -608,6 +609,7 @@ footer {
   position: relative;
 }
 .section3-container-block-bg__secret-assistants {
+  -webkit-backdrop-filter: blur(100px);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1156,7 +1158,7 @@ header {
   top: 0;
   margin-top: -80px;
   z-index: 1;
-  height: 1384px;
+  height: 8%;
 }
 .line-height__bankets {
   width: 1px;
@@ -2300,6 +2302,7 @@ header {
   line-height: 48px; /* 120% */
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .section4-container-block-part__careeer p {
@@ -2670,13 +2673,24 @@ header {
   position: relative;
   overflow: hidden;
 }
+
+.section11__catering::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #454545;
+}
+
 .section10-container-block__catering {
   width: 20%;
   padding: 5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #454545;
   text-align: center;
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
@@ -2687,8 +2701,14 @@ header {
   text-transform: uppercase;
 }
 
+.section10-container-block__catering:not(:last-child) {
+  border-right: 1px solid #454545;
+}
+
 .section10-container__catering {
   display: flex;
+  border-top: 1px solid #454545;
+  border-bottom: 1px solid #454545;
 }
 .section11-p__catering {
   max-width: 1722px;

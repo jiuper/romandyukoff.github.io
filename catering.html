@@ -1,762 +1,1139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-  <title>slider</title>
-  <link href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
-  <link rel="stylesheet" href="/assets/index.8ba8ea75.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/adaptive.css">
-</head>
-<body>
-<header>
-  <div class="container">
-    <div class="header-container">
-      <div class="header-container-left">
-        <div class="header-container-logo">
-          <img src="/img/logo-desktop.svg" alt="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>slider</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/abf78524cb042ba43670abd33c4883d6?family=Panama+Regular"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
+    <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-left">
+            <div class="header-container-logo">
+              <img src="/img/logo-desktop.svg" alt="" />
+            </div>
+            <div class="dropdown dropdown-header">
+              <button class="dropbtn">
+                СПБ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="10"
+                  viewBox="0 0 8 10"
+                  fill="none"
+                >
+                  <path
+                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                    fill="#DFDFDF"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <h1>Сеть лаунж-ресторанов</h1>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <ul>
+                <li>
+                  <a href="/" class="burger-menu-active">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Главная
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Рестораны
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Франшиза
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Офрмить бонусную карту
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Кейтеринг
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    О нас
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Контакты
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z"
+                        fill="#DFDFDF"
+                      />
+                    </svg>
+                    Доставка
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="8"
+                      viewBox="0 0 16 8"
+                      fill="none"
+                    >
+                      <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-container-right">
+            <a href="/">Доставка</a>
+            <a href="/" class="header-container-right-btn">
+              Забронировать
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="8"
+                viewBox="0 0 10 8"
+                fill="none"
+              >
+                <path
+                  d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="dropdown dropdown-header">
-          <button class="dropbtn">
-            СПБ
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-              <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
+      </div>
+    </header>
+    <section class="section1__secret-assistants section1__loyalty-program">
+      <div class="line-height-1364 line-height-1364__catering"></div>
+      <div class="container">
+        <div class="section1-container__secret-assistants">
+          <h1>Кальянный кейтеринг</h1>
+          <div class="section1-container-img__secret-assistants">
+            <img
+              src="/img/gal24.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/gal24.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4__careeer">
+      <div class="section4-container__careeer">
+        <div class="section4-container-block__careeer">
+          <div class="section4-container-block-part__careeer">
+            <h3>Разные способы оплаты</h3>
+            <p>Возможность оплаты по расчётному счёту или наличными.</p>
+          </div>
+          <div class="section4-container-block-part__careeer">
+            <h3>Чистое оборудование</h3>
+            <p>
+              Дезинфицируем все составляющие парогенераторами и
+              профессиональными моющими
+              <br />
+              и дезинфицирующими средствами.
+            </p>
+          </div>
+        </div>
+        <div class="section4-container-block__careeer">
+          <div class="section4-container-block-part__careeer">
+            <h3>Заботимся о вашем здоровье</h3>
+            <p>Соблюдаем антиковидные правила и санитарные нормы.</p>
+          </div>
+          <div class="section4-container-block-part__careeer">
+            <h3>
+              Разный формат <br />
+              сотрудничества
+            </h3>
+            <p>Сотрудничаем с event-агентствами и площадками.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3__catering">
+      <img src="/img/face2.png" alt="" class="section3-img2__catering" />
+      <img src="/img/heat.png" alt="" class="section3-img1__catering" />
+      <div class="section3-parent__catering">
+        <div class="section3-parent-line__catering"></div>
+        <div class="container">
+          <div class="section3-container__catering">
+            <img src="/img/eye.png" alt="" />
+            <p>
+              Приедем в любое удобное для вас время <br />
+              и место, со всем необходимым оборудованием и ингредиентами. Мы
+              возьмем на себя все заботы о приготовлении и обслуживании кaльяна,
+              пока вы и ваши гости отдыхаете.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3__secret-assistants section4__catering">
+      <div class="section4-line1__catering"></div>
+      <div class="section4-line2__catering"></div>
+      <div class="section4-line3__catering"></div>
+      <div class="section4-line4__catering"></div>
+      <div class="container">
+        <p class="section3-text__secret-assistants">
+          Наши мастера <br />
+          опытные профессионалы <br />
+          с многолетним стажем
+        </p>
+        <div class="section3-container__secret-assistants">
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block__secret-assistants2-none"
+          >
+            <img
+              src="/img/gal2.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+          </div>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2"
+          >
+            <img
+              src="/img/heats.png"
+              class="section3-container-block-bg__secret-assistants"
+            />
+            <img
+              src="/img/heats.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+          </div>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block__secret-assistants2-none"
+          >
+            <img
+              src="/img/gal3.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section1__secret-assistants section1__loyalty-program section5__catering"
+    >
+      <div class="line-height-1364"></div>
+      <div class="container">
+        <div class="section1-container__secret-assistants">
+          <h1>
+            гарантируем: то, что было на вечеринке <br />
+            останется на вечеринке
+          </h1>
+          <div
+            class="section1-container-img__secret-assistants section4-container-img__catering"
+          >
+            <img
+              src="/img/gal25.png"
+              class="section1-container-img-blur__secret-assistants"
+              alt=""
+            />
+            <img
+              src="/img/gal25.png"
+              alt=""
+              class="section1-container-img-main__secret-assistants"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section3__looking-premises"
+      style="border-bottom: none; margin-top: 0"
+    >
+      <div
+        class="section4-line2__catering section4-line2__catering-deskt"
+      ></div>
+      <div
+        class="section4-line3__catering section4-line2__catering-deskt"
+      ></div>
+      <div class="container">
+        <div
+          class="section3-container__looking-premises section2-container__bankets"
+        >
+          <p
+            class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering"
+            style="padding-top: 0"
+          >
+            готовые <br />
+            решения для вас
+          </p>
+          <div
+            class="section3-container__secret-assistants section5-container__secret-assistants section5-container__bankets"
+          >
+            <div
+              class="section3-container-block__secret-assistants section3-container-block__bankets-menu"
+            >
+              <img
+                src="/img/granat.png"
+                class="section3-container-block-bg__secret-assistants"
+              />
+              <img
+                src="/img/granat.png"
+                alt=""
+                class="section3-container-block-img__secret-assistants"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section7__catering">
+      <div class="section7-container__catering">
+        <div class="section7-container-block__catering">
+          <img src="/img/heat1.png" alt="" />
+          <p class="section7-container-block-p-title__catering">Минимум</p>
+          <span>
+            18.000₽
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                fill="#454545"
+              />
+              <circle cx="9" cy="9" r="8" stroke="#454545" />
             </svg>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+          </span>
+          <div class="section7-container-block-mob__catering">
+            <div class="section7-container-block-mob-top__catering">
+              <div>
+                <p>Цена продления</p>
+                <span>6000₽/ч</span>
+              </div>
+              <div>
+                <p>На компанию</p>
+                <span>до 6 чел.</span>
+              </div>
+            </div>
+            <div class="section7-container-block-mob-content__catering">
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>6</span>
+                <p>Кальянов каждый час</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>3</span>
+                <p>Часа</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>1</span>
+                <p>Мастер</p>
+              </div>
+            </div>
+            <button
+              class="section7-container-block-mob-btn__catering"
+              type="button"
+            >
+              Заказать
+            </button>
           </div>
         </div>
-        <h1>Сеть лаунж-ресторанов</h1>
-      </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <div class="menu__box">
-          <ul>
-            <li>
-              <a href="/" class="burger-menu-active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Главная
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Рестораны
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Франшиза
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Офрмить бонусную карту
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Кейтеринг
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                О нас
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Контакты
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M16 4L9.53674e-07 8L9.53674e-07 0L16 4Z" fill="#DFDFDF"/>
-                </svg>
-                Доставка
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
-                  <path d="M0 4L16 8L16 0L0 4Z" fill="#DFDFDF"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="section7-container-block__catering">
+          <img src="/img/heat2.png" alt="" />
+          <p class="section7-container-block-p-title__catering">Стандарт</p>
+          <span>
+            30.000₽
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                fill="#454545"
+              />
+              <circle cx="9" cy="9" r="8" stroke="#454545" />
+            </svg>
+          </span>
+          <div class="section7-container-block-mob__catering">
+            <div class="section7-container-block-mob-top__catering">
+              <div>
+                <p>Цена продления</p>
+                <span>6000₽/ч</span>
+              </div>
+              <div>
+                <p>На компанию</p>
+                <span>до 6 чел.</span>
+              </div>
+            </div>
+            <div class="section7-container-block-mob-content__catering">
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>6</span>
+                <p>Кальянов каждый час</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>3</span>
+                <p>Часа</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>1</span>
+                <p>Мастер</p>
+              </div>
+            </div>
+            <button
+              class="section7-container-block-mob-btn__catering"
+              type="button"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="section7-container-block__catering">
+          <img src="/img/heat3.png" alt="" />
+          <p class="section7-container-block-p-title__catering">Стандарт+</p>
+          <span>
+            45.000₽
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                fill="#454545"
+              />
+              <circle cx="9" cy="9" r="8" stroke="#454545" />
+            </svg>
+          </span>
+          <div class="section7-container-block-mob__catering">
+            <div class="section7-container-block-mob-top__catering">
+              <div>
+                <p>Цена продления</p>
+                <span>10.000₽/ч</span>
+              </div>
+              <div>
+                <p>На компанию</p>
+                <span>до 12 чел.</span>
+              </div>
+            </div>
+            <div class="section7-container-block-mob-content__catering">
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>6</span>
+                <p>Кальянов каждый час</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>3</span>
+                <p>Часа</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>1</span>
+                <p>Мастер</p>
+              </div>
+            </div>
+            <button
+              class="section7-container-block-mob-btn__catering"
+              type="button"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="section7-container-block__catering">
+          <img src="/img/heat4.png" alt="" />
+          <p class="section7-container-block-p-title__catering">Максимум</p>
+          <span>
+            60.000₽
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                fill="#454545"
+              />
+              <circle cx="9" cy="9" r="8" stroke="#454545" />
+            </svg>
+          </span>
+          <div class="section7-container-block-mob__catering">
+            <div class="section7-container-block-mob-top__catering">
+              <div>
+                <p>Цена продления</p>
+                <span>15.00₽/ч</span>
+              </div>
+              <div>
+                <p>На компанию</p>
+                <span>до 20 чел.</span>
+              </div>
+            </div>
+            <div class="section7-container-block-mob-content__catering">
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>8</span>
+                <p>Кальянов каждый час</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>3</span>
+                <p>Часа</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>2</span>
+                <p>Мастер</p>
+              </div>
+            </div>
+            <button
+              class="section7-container-block-mob-btn__catering"
+              type="button"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div
+          class="section7-container-block__catering section7-container-block-long__catering"
+        >
+          <p class="section7-container-block-long-p__catering">
+            И здесь ещё две строчки, такого объёма будет <br />
+            описание для этого пакета.
+          </p>
+          <img src="/img/heat5.png" alt="" />
+          <p>Ультра</p>
+          <span> 120.000₽ </span>
+          <div class="section7-container-block-mob__catering">
+            <div class="section7-container-block-mob-top__catering">
+              <div>
+                <p>Цена продления</p>
+                <span>40.00₽/ч</span>
+              </div>
+              <div>
+                <p>На компанию</p>
+                <span>до 40 чел.</span>
+              </div>
+            </div>
+            <div class="section7-container-block-mob-content__catering">
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>15</span>
+                <p>Кальянов каждый час</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>3</span>
+                <p>Часа</p>
+              </div>
+              <div class="section7-container-block-mob-content-part__catering">
+                <span>4</span>
+                <p>Мастер</p>
+              </div>
+            </div>
+            <button
+              class="section7-container-block-mob-btn__catering"
+              type="button"
+            >
+              Заказать
+            </button>
+          </div>
         </div>
       </div>
-      <div class="header-container-right">
-        <a href="/">Доставка</a>
-        <a href="/" class="header-container-right-btn">
-          Забронировать
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-            <path d="M9.53674e-07 -4.37114e-07L10 4L6.03983e-07 8L9.53674e-07 -4.37114e-07Z" fill="#DFDFDF"/>
+    </section>
+    <section
+      class="section3__looking-premises"
+      style="border-bottom: none; margin-top: 0"
+    >
+      <div
+        class="section4-line2__catering section4-line2__catering-deskt"
+      ></div>
+      <div
+        class="section4-line3__catering section4-line2__catering-deskt"
+      ></div>
+      <div class="container">
+        <div
+          class="section3-container__looking-premises section2-container__bankets"
+        >
+          <p
+            class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering"
+            style="padding-top: 0"
+          >
+            процесс работы
+          </p>
+          <div
+            class="section3-container__secret-assistants section5-container__secret-assistants section5-container__bankets"
+          >
+            <div
+              class="section3-container-block__secret-assistants section3-container-block__bankets-menu"
+            >
+              <img
+                src="/img/gal26.png"
+                class="section3-container-block-bg__secret-assistants"
+              />
+              <img
+                src="/img/gal26.png"
+                alt=""
+                class="section3-container-block-img__secret-assistants"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section8__catering">
+      <div class="section8-container__catering">
+        <div class="section8-container-block__catering">
+          <p>
+            Приедем на мероприятие за несколько часов до начала для тщательной
+            подготовки.
+          </p>
+          <h3>Подготовка</h3>
+        </div>
+        <div class="section8-container-block__catering">
+          <p>Будем работать на протяжение мероприятия</p>
+          <h3>Основная часть</h3>
+        </div>
+        <div class="section8-container-block__catering">
+          <p>После окончания всё помоем и уберём за собой.</p>
+          <h3>Уборка</h3>
+        </div>
+        <div class="section8-container-block__catering">
+          <p>Ещё пункт примерно такой длины.</p>
+          <h3>4 пункт</h3>
+        </div>
+        <div class="section8-container-block__catering">
+          <p>Ещё пункт примерно такой длины.</p>
+          <h3>5 пункт</h3>
+        </div>
+      </div>
+    </section>
+    <section class="section5__loyalty-program">
+      <div class="section5-line__loyalty-program"></div>
+      <div class="container">
+        <div class="section5-container__loyalty-program">
+          <p>Что нам потребуется</p>
+          <img src="/img/sculpt2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="section10__catering">
+      <div class="section10-container__catering">
+        <div class="section10-container-block__catering">Доступ к воде</div>
+        <div class="section10-container-block__catering">Электричество</div>
+        <div class="section10-container-block__catering">
+          Отдельная зона <br />
+          для подготовки
+        </div>
+        <div class="section10-container-block__catering">Столы для работы</div>
+        <div class="section10-container-block__catering">Крыша</div>
+      </div>
+    </section>
+    <section class="section11__catering">
+      <div class="line-height-1364 line-height-1364__catering"></div>
+      <div class="container">
+        <div class="section11-p__catering">
+          Ежегодно мы сопровождаем кейтерингом более 100 мероприятий, а среди
+          наших клиентов крупные холдинги и звезды. За 5 лет работы мы
+          выработали лучший сервис, который снимет с вас заботы и позволит
+          провести время с гостями.
+        </div>
+      </div>
+    </section>
+    <section
+      class="section12__catering"
+      style="background: url('/img/video.png')"
+    >
+      <div class="section12-container__catering">
+        <div class="section12-title__catering">
+          Презентация продукта «Banger» by TIMATY <br />
+          в TAngiers lounge komenda дамы и господа!
+        </div>
+        <div class="section12-container-video__catering">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="8"
+            viewBox="0 0 10 8"
+            fill="none"
+          >
+            <path
+              d="M9.53674e-07 -1.31134e-06L10 4L-9.53989e-08 8L9.53674e-07 -1.31134e-06Z"
+              fill="#0D0D0D"
+            />
           </svg>
-        </a>
+          Посмотреть видео
+        </div>
       </div>
-    </div>
-  </div>
-</header>
-<section class="section1__secret-assistants section1__loyalty-program">
-  <div class="line-height-1364 line-height-1364__catering"></div>
-  <div class="container">
-    <div class="section1-container__secret-assistants">
-      <h1>
-        Кальянный кейтеринг
-      </h1>
-      <div class="section1-container-img__secret-assistants">
-        <img src="/img/gal24.png" class="section1-container-img-blur__secret-assistants" alt="">
-        <img src="/img/gal24.png" alt="" class="section1-container-img-main__secret-assistants">
+    </section>
+    <section class="section7__secret-assistants">
+      <div class="container">
+        <div class="section7-container__secret-assistants">
+          <img
+            src="/img/gal5.png"
+            alt=""
+            class="section7-img__secret-assistants"
+          />
+          <p class="section7-p__secret-assistants">
+            Оставьте заявку,и мы свяжемся с вами для обсуждения деталей
+          </p>
+          <div class="section7-inputs__secret-assistants">
+            <input
+              type="text"
+              placeholder="ФИО"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="tel"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
+            />
+            <input
+              placeholder="Дата мероприятия"
+              class="input-city__secret-assistants"
+            />
+            <input
+              type="text"
+              placeholder="Интересующий пакет"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="text"
+              placeholder="Комментарий"
+              class="input-name__secret-assistants"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-2"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-2"
+                >Даю согласие на&nbsp;обработку
+                <a href="/">персональных данных</a></label
+              >
+            </div>
+            <button type="button">Отправить</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section4__careeer">
-  <div class="section4-container__careeer">
-    <div class="section4-container-block__careeer">
-      <div class="section4-container-block-part__careeer">
-        <h3>
-          Разные способы оплаты
-        </h3>
-        <p>
-          Возможность оплаты по расчётному счёту или наличными.
+    </section>
+    <section
+      class="section3__secret-assistants section4__catering section13__catering"
+    >
+      <div class="section4-line1__catering"></div>
+      <div class="section4-line2__catering"></div>
+      <div class="section4-line3__catering"></div>
+      <div class="section4-line4__catering"></div>
+      <div class="container">
+        <p class="section3-text__secret-assistants">
+          7 <br />
+          особняков <br />
+          в вашем городе
         </p>
-      </div>
-      <div class="section4-container-block-part__careeer">
-        <h3>Чистое оборудование</h3>
-        <p>
-          Дезинфицируем все составляющие парогенераторами и профессиональными моющими
-          <br> и дезинфицирующими средствами.
-        </p>
-      </div>
-    </div>
-    <div class="section4-container-block__careeer">
-      <div class="section4-container-block-part__careeer">
-        <h3>
-          Заботимся о вашем здоровье
-        </h3>
-        <p>
-          Соблюдаем антиковидные правила и санитарные нормы.
-        </p>
-      </div>
-      <div class="section4-container-block-part__careeer">
-        <h3>Разный формат <br>
-          сотрудничества</h3>
-        <p>
-          Сотрудничаем с event-агентствами и площадками.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__catering">
-  <img src="/img/face2.png" alt="" class="section3-img2__catering">
-  <img src="/img/heat.png" alt="" class="section3-img1__catering">
-  <div class="section3-parent__catering">
-    <div class="section3-parent-line__catering"></div>
-    <div class="container">
-      <div class="section3-container__catering">
-        <img src="/img/eye.png" alt="">
-        <p>
-          Приедем в любое удобное для вас время <br>
-          и место, со всем необходимым оборудованием и ингредиентами. Мы возьмем на себя все заботы о приготовлении и обслуживании кaльяна, пока вы и ваши гости отдыхаете.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__secret-assistants section4__catering">
-  <div class="section4-line1__catering"></div>
-  <div class="section4-line2__catering"></div>
-  <div class="section4-line3__catering"></div>
-  <div class="section4-line4__catering"></div>
-  <div class="container">
-    <p class="section3-text__secret-assistants">
-      Наши мастера <br>
-      опытные профессионалы <br>
-      с многолетним стажем
-    </p>
-    <div class="section3-container__secret-assistants">
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block__secret-assistants2-none">
-        <img src="/img/gal2.png" alt="" class="section3-container-block-img__secret-assistants">
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2">
-        <img src="/img/heats.png" class="section3-container-block-bg__secret-assistants">
-        <img src="/img/heats.png" alt="" class="section3-container-block-img__secret-assistants">
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block__secret-assistants2-none">
-        <img src="/img/gal3.png" alt="" class="section3-container-block-img__secret-assistants">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section1__secret-assistants section1__loyalty-program section5__catering">
-  <div class="line-height-1364"></div>
-  <div class="container">
-    <div class="section1-container__secret-assistants">
-      <h1>
-        гарантируем: то, что было на вечеринке <br> останется на вечеринке
-      </h1>
-      <div class="section1-container-img__secret-assistants section4-container-img__catering">
-        <img src="/img/gal25.png" class="section1-container-img-blur__secret-assistants" alt="">
-        <img src="/img/gal25.png" alt="" class="section1-container-img-main__secret-assistants">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__looking-premises" style="border-bottom: none;margin-top: 0;">
-  <div class="section4-line2__catering section4-line2__catering-deskt"></div>
-  <div class="section4-line3__catering section4-line2__catering-deskt"></div>
-  <div class="container">
-    <div class="section3-container__looking-premises section2-container__bankets">
-      <p class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering" style="padding-top: 0;">
-        готовые <br>
-        решения для вас
-      </p>
-      <div class="section3-container__secret-assistants section5-container__secret-assistants section5-container__bankets">
-        <div class="section3-container-block__secret-assistants section3-container-block__bankets-menu">
-          <img src="/img/granat.png" class="section3-container-block-bg__secret-assistants">
-          <img src="/img/granat.png" alt="" class="section3-container-block-img__secret-assistants">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section7__catering">
-  <div class="section7-container__catering">
-    <div class="section7-container-block__catering">
-      <img src="/img/heat1.png" alt="">
-      <p class="section7-container-block-p-title__catering">Минимум</p>
-      <span>
-        18.000₽ 
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z" fill="#454545"/>
-          <circle cx="9" cy="9" r="8" stroke="#454545"/>
-        </svg>
-      </span>
-      <div class="section7-container-block-mob__catering">
-        <div class="section7-container-block-mob-top__catering">
-          <div>
-            <p>Цена продления</p>
-            <span>6000₽/ч</span>
+        <a href="/" class="catering-bottom-link-look-all">Посмотреть все</a>
+        <div class="section3-container__secret-assistants">
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering"
+          >
+            <img
+              src="/img/gal28.png"
+              alt=""
+              class="section3-container-block-img__catering"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>Дальневосточный пр-кт, 12</span>
+            </div>
           </div>
-          <div>
-            <p>На компанию</p>
-            <span>до 6 чел.</span>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering section3-container-block-img-active__catering"
+          >
+            <img
+              src="/img/gal27.png"
+              class="section3-container-block-bg__secret-assistants"
+            />
+            <img
+              src="/img/gal27.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>ул. Гастелло, 22Б</span>
+            </div>
+          </div>
+          <div
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering"
+          >
+            <img
+              src="/img/gal29.png"
+              alt=""
+              class="section3-container-block-img__secret-assistants"
+            />
+            <div class="section13-container-block-text__catering">
+              <p>Tangiers Lounge</p>
+              <span>ул. Хошимина, дом 16</span>
+            </div>
           </div>
         </div>
-        <div class="section7-container-block-mob-content__catering">
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>6</span>
-            <p>Кальянов каждый час</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>3</span>
-            <p>Часа</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>1</span>
-            <p>Мастер</p>
-          </div>
-        </div>
-        <button class="section7-container-block-mob-btn__catering" type="button">
-          Заказать
-        </button>
       </div>
-    </div>
-    <div class="section7-container-block__catering">
-      <img src="/img/heat2.png" alt="">
-      <p class="section7-container-block-p-title__catering">Стандарт</p>
-      <span>
-        30.000₽
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z" fill="#454545"/>
-          <circle cx="9" cy="9" r="8" stroke="#454545"/>
-        </svg>
-      </span>
-      <div class="section7-container-block-mob__catering">
-        <div class="section7-container-block-mob-top__catering">
-          <div>
-            <p>Цена продления</p>
-            <span>6000₽/ч</span>
+    </section>
+    <a href="/" class="section14__catering">Посмотреть на карте</a>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-container-left">
+            <div class="footer-container-left-colum">
+              <a href="/">Рестораны</a>
+              <a href="/">Доставка</a>
+              <a href="/">Франшиза</a>
+              <a href="/">Кейтеринг</a>
+              <a href="/">О нас</a>
+              <a href="/">Контакты</a>
+            </div>
+            <div class="footer-container-left-colum">
+              <a href="/">Новости</a>
+              <a href="/">Карьера</a>
+              <a href="/">Стать тайным гостем</a>
+              <a href="/">Ищем помещение</a>
+              <a href="/">Сертификат</a>
+            </div>
           </div>
-          <div>
-            <p>На компанию</p>
-            <span>до 6 чел.</span>
-          </div>
-        </div>
-        <div class="section7-container-block-mob-content__catering">
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>6</span>
-            <p>Кальянов каждый час</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>3</span>
-            <p>Часа</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>1</span>
-            <p>Мастер</p>
+          <div class="footer-container-right">
+            <a href="/" class="btn-footer-rev">Оставить отзыв</a>
+            <a href="/" class="btn-footer-program-loyal"
+              >программа лояльности</a
+            >
           </div>
         </div>
-        <button class="section7-container-block-mob-btn__catering" type="button">
-          Заказать
-        </button>
-      </div>
-    </div>
-    <div class="section7-container-block__catering">
-      <img src="/img/heat3.png" alt="">
-      <p class="section7-container-block-p-title__catering">Стандарт+</p>
-      <span>
-        45.000₽
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z" fill="#454545"/>
-          <circle cx="9" cy="9" r="8" stroke="#454545"/>
-        </svg>
-      </span>
-      <div class="section7-container-block-mob__catering">
-        <div class="section7-container-block-mob-top__catering">
-          <div>
-            <p>Цена продления</p>
-            <span>10.000₽/ч</span>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <a href="/">Подписаться на рассылку</a>
+            <a href="/">Политика конфиденциальности</a>
           </div>
-          <div>
-            <p>На компанию</p>
-            <span>до 12 чел.</span>
+          <div class="footer-bottom-social">
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
+            <a href="/" class="footer-bottom-social-ellipse"> IN </a>
+            <a href="/" class="footer-bottom-social-ellipse"> FB </a>
           </div>
-        </div>
-        <div class="section7-container-block-mob-content__catering">
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>6</span>
-            <p>Кальянов каждый час</p>
+          <div class="footer-bottom-right">
+            <p>© 2022 Tangiers Lounge</p>
+            <p>ART HOOKAH FAMILY</p>
           </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>3</span>
-            <p>Часа</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>1</span>
-            <p>Мастер</p>
-          </div>
-        </div>
-        <button class="section7-container-block-mob-btn__catering" type="button">
-          Заказать
-        </button>
-      </div>
-    </div>
-    <div class="section7-container-block__catering">
-      <img src="/img/heat4.png" alt="">
-      <p class="section7-container-block-p-title__catering">Максимум</p>
-      <span>
-        60.000₽
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z" fill="#454545"/>
-          <circle cx="9" cy="9" r="8" stroke="#454545"/>
-        </svg>
-      </span>
-      <div class="section7-container-block-mob__catering">
-        <div class="section7-container-block-mob-top__catering">
-          <div>
-            <p>Цена продления</p>
-            <span>15.00₽/ч</span>
-          </div>
-          <div>
-            <p>На компанию</p>
-            <span>до 20 чел.</span>
-          </div>
-        </div>
-        <div class="section7-container-block-mob-content__catering">
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>8</span>
-            <p>Кальянов каждый час</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>3</span>
-            <p>Часа</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>2</span>
-            <p>Мастер</p>
-          </div>
-        </div>
-        <button class="section7-container-block-mob-btn__catering" type="button">
-          Заказать
-        </button>
-      </div>
-    </div>
-    <div class="section7-container-block__catering section7-container-block-long__catering">
-      <p class="section7-container-block-long-p__catering">
-        И здесь ещё две строчки, такого объёма будет <br> описание для этого пакета.
-      </p>
-      <img src="/img/heat5.png" alt="">
-      <p>Ультра</p>
-      <span>
-        120.000₽
-      </span>
-      <div class="section7-container-block-mob__catering">
-        <div class="section7-container-block-mob-top__catering">
-          <div>
-            <p>Цена продления</p>
-            <span>40.00₽/ч</span>
-          </div>
-          <div>
-            <p>На компанию</p>
-            <span>до 40 чел.</span>
-          </div>
-        </div>
-        <div class="section7-container-block-mob-content__catering">
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>15</span>
-            <p>Кальянов каждый час</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>3</span>
-            <p>Часа</p>
-          </div>
-          <div class="section7-container-block-mob-content-part__catering">
-            <span>4</span>
-            <p>Мастер</p>
-          </div>
-        </div>
-        <button class="section7-container-block-mob-btn__catering" type="button">
-          Заказать
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__looking-premises" style="border-bottom: none;margin-top: 0;">
-  <div class="section4-line2__catering section4-line2__catering-deskt"></div>
-  <div class="section4-line3__catering section4-line2__catering-deskt"></div>
-  <div class="container">
-    <div class="section3-container__looking-premises section2-container__bankets">
-      <p class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering" style="padding-top: 0;">
-        процесс работы
-      </p>
-      <div class="section3-container__secret-assistants section5-container__secret-assistants section5-container__bankets">
-        <div class="section3-container-block__secret-assistants section3-container-block__bankets-menu">
-          <img src="/img/gal26.png" class="section3-container-block-bg__secret-assistants">
-          <img src="/img/gal26.png" alt="" class="section3-container-block-img__secret-assistants">
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section8__catering">
-  <div class="section8-container__catering">
-    <div class="section8-container-block__catering">
-      <p>Приедем на мероприятие за несколько часов до начала для тщательной подготовки.</p>
-      <h3>Подготовка</h3>
-    </div>
-    <div class="section8-container-block__catering">
-      <p>Будем работать на протяжение мероприятия</p>
-      <h3>Основная часть</h3>
-    </div>
-    <div class="section8-container-block__catering">
-      <p>После окончания всё помоем и уберём за собой.</p>
-      <h3>Уборка</h3>
-    </div>
-    <div class="section8-container-block__catering">
-      <p>Ещё пункт примерно такой длины.</p>
-      <h3>4 пункт</h3>
-    </div>
-    <div class="section8-container-block__catering">
-      <p>Ещё пункт примерно такой длины.</p>
-      <h3>5 пункт</h3>
-    </div>
-  </div>
-</section>
-<section class="section5__loyalty-program">
-  <div class="section5-line__loyalty-program"></div>
-  <div class="container">
-    <div class="section5-container__loyalty-program">
-      <p>
-        Что нам потребуется
-      </p>
-      <img src="/img/sculpt2.png" alt="">
-    </div>
-  </div>
-</section>
-<section class="section10__catering">
-  <div class="section10-container__catering">
-    <div class="section10-container-block__catering">
-      Доступ к воде
-    </div>
-    <div class="section10-container-block__catering">
-      Электричество
-    </div>
-    <div class="section10-container-block__catering">
-      Отдельная зона <br>
-      для подготовки
-    </div>
-    <div class="section10-container-block__catering">
-      Столы для работы
-    </div>
-    <div class="section10-container-block__catering">
-      Крыша
-    </div>
-  </div>
-</section>
-<section class="section11__catering">
-  <div class="line-height-1364 line-height-1364__catering"></div>
-  <div class="container">
-    <div class="section11-p__catering">
-      Ежегодно мы сопровождаем кейтерингом более 100 мероприятий, а среди наших клиентов крупные холдинги и звезды. За 5 лет работы мы выработали лучший сервис, который снимет с вас заботы и позволит провести время с гостями.
-    </div>
-  </div>
-</section>
-<section class="section12__catering" style="background: url('/img/video.png')">
-  <div class="section12-container__catering">
-    <div class="section12-title__catering">
-      Презентация продукта «Banger» by TIMATY <br>
-      в TAngiers lounge komenda дамы и господа!
-    </div>
-    <div class="section12-container-video__catering">
-      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-        <path d="M9.53674e-07 -1.31134e-06L10 4L-9.53989e-08 8L9.53674e-07 -1.31134e-06Z" fill="#0D0D0D"/>
-      </svg>
-      Посмотреть видео
-    </div>
-  </div>
-</section>
-<section class="section7__secret-assistants">
-  <div class="container">
-    <div class="section7-container__secret-assistants">
-      <img src="/img/gal5.png" alt="" class="section7-img__secret-assistants">
-      <p class="section7-p__secret-assistants">
-        Оставьте заявку, и мы свяжемся с вами для обсуждения деталей
-      </p>
-      <div class="section7-inputs__secret-assistants">
-        <input type="text" placeholder="ФИО" class="input-name__secret-assistants">
-        <input type="tel" placeholder="Телефон" class="input-tel__secret-assistants">
-        <input type="date" placeholder="Дата мероприятия" class="input-city__secret-assistants">
-        <input type="text" placeholder="Интересующий пакет" class="input-name__secret-assistants">
-        <div class="radio">
-          <input class="custom-radio" type="radio" id="color-2" name="color" value="indigo">
-          <label for="color-2">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-        </div>
-        <button type="button">Отправить</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section3__secret-assistants section4__catering section13__catering">
-  <div class="section4-line1__catering"></div>
-  <div class="section4-line2__catering"></div>
-  <div class="section4-line3__catering"></div>
-  <div class="section4-line4__catering"></div>
-  <div class="container">
-    <p class="section3-text__secret-assistants">
-      7 <br>
-      особняков <br>
-      в вашем городе
-    </p>
-    <a href="/" class="catering-bottom-link-look-all">Посмотреть все</a>
-    <div class="section3-container__secret-assistants">
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering">
-        <img src="/img/gal28.png" alt="" class="section3-container-block-img__catering">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>Дальневосточный пр-кт, 12</span>
-        </div>
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering section3-container-block-img-active__catering">
-        <img src="/img/gal27.png" class="section3-container-block-bg__secret-assistants">
-        <img src="/img/gal27.png" alt="" class="section3-container-block-img__secret-assistants">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>ул. Гастелло, 22Б</span>
-        </div>
-      </div>
-      <div class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 section3-container-block-img__catering">
-        <img src="/img/gal29.png" alt="" class="section3-container-block-img__secret-assistants">
-        <div class="section13-container-block-text__catering">
-          <p>Tangiers Lounge </p>
-          <span>ул. Хошимина, дом 16</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<a href="/" class="section14__catering">Посмотреть на карте</a>
-<footer>
-  <div class="container">
-    <div class="footer-container">
-      <div class="footer-container-left">
-        <div class="footer-container-left-colum">
-          <a href="/">Рестораны</a>
-          <a href="/">Доставка</a>
-          <a href="/">Франшиза</a>
-          <a href="/">Кейтеринг</a>
-          <a href="/">О нас</a>
-          <a href="/">Контакты</a>
-        </div>
-        <div class="footer-container-left-colum">
-          <a href="/">Новости</a>
-          <a href="/">Карьера</a>
-          <a href="/">Стать тайным гостем</a>
-          <a href="/">Ищем помещение</a>
-          <a href="/">Сертификат</a>
-        </div>
-      </div>
-      <div class="footer-container-right">
-        <a href="/" class="btn-footer-rev">Оставить отзыв</a>
-        <a href="/" class="btn-footer-program-loyal">программа лояльности</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-bottom-left">
-        <a href="/">Подписаться на рассылку</a>
-        <a href="/">Политика конфиденциальности</a>
-      </div>
-      <div class="footer-bottom-social">
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          IN
-        </a>
-        <a href="/" class="footer-bottom-social-ellipse">
-          FB
-        </a>
-      </div>
-      <div class="footer-bottom-right">
-        <p>© 2022 Tangiers Lounge</p>
-        <p>ART HOOKAH FAMILY</p>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
+    <script>
+      const btnREnt = document.querySelectorAll(
+        ".section5-top-btn__rent-hookahs"
+      );
+      const tabRent = document.querySelectorAll(
+        ".section5-content__rent-hookahs"
+      );
 
-<script>
-  const btnREnt = document.querySelectorAll('.section5-top-btn__rent-hookahs');
-  const tabRent = document.querySelectorAll('.section5-content__rent-hookahs')
+      btnREnt.forEach(function (item) {
+        item.addEventListener("click", function () {
+          btnREnt.forEach(function (i) {
+            i.classList.remove("section5-top-btn__rent-hookahs-active");
+          });
 
-  btnREnt.forEach(function (item){
-    item.addEventListener('click', function (){
-      btnREnt.forEach(function (i){
-        i.classList.remove('section5-top-btn__rent-hookahs-active')
-      })
+          item.classList.add("section5-top-btn__rent-hookahs-active");
 
-      item.classList.add('section5-top-btn__rent-hookahs-active')
+          let tubIDRent = item.getAttribute("data-tabRent");
+          let tabActiveRent = document.querySelector(tubIDRent);
 
-      let tubIDRent = item.getAttribute('data-tabRent');
-      let tabActiveRent = document.querySelector(tubIDRent);
-
-      tabRent.forEach(function (item){
-        item.classList.remove('section5-content__rent-hookahs-active')
-      })
-      tabActiveRent.classList.add('section5-content__rent-hookahs-active')
-
-    })
-  })
-</script>
-<div class="modal-map">
-  <img src="/img/Map.png" alt="" class="modal-map-bg">
-  <img src="/img/close-map.png" alt="" class="modal-map-close">
-</div>
-<script>
-  let btnMap = document.querySelector('.section14__catering')
-  let modalMap = document.querySelector('.modal-map')
-  let closeModal = document.querySelector('.modal-map-close')
-  btnMap.addEventListener('click', function (){
-    modalMap.style.display = 'block'
-  })
-  closeModal.addEventListener('click', function (){
-    modalMap.style.display = 'none'
-  })
-</script>
-<div class="modal-header-book">
-  <div class="modal-header-book-content">
-    <div class="modal-header-book-content-part">
-      <div class="modal-header-book-content-top">
-        <p>Забронировать стол</p>
-        <img src="/img/close-map.png" alt="" class="modal-header-book-close">
-      </div>
-      <div class="modal-header-book-content-middle">
-        <input type="text" placeholder="Имя">
-        <div class="modal-header-book-content-middle-select">
-          <select>
-            <option disabled selected>Ресторан</option>
-            <option>Ресторан</option>
-          </select>
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-            <path d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z" fill="#DFDFDF"/>
-          </svg>
+          tabRent.forEach(function (item) {
+            item.classList.remove("section5-content__rent-hookahs-active");
+          });
+          tabActiveRent.classList.add("section5-content__rent-hookahs-active");
+        });
+      });
+    </script>
+    <div class="modal-map">
+      <img src="/img/Map.png" alt="" class="modal-map-bg" />
+      <img src="/img/close-map.png" alt="" class="modal-map-close" />
+    </div>
+    <script>
+      let btnMap = document.querySelector(".section14__catering");
+      let modalMap = document.querySelector(".modal-map");
+      let closeModal = document.querySelector(".modal-map-close");
+      btnMap.addEventListener("click", function () {
+        modalMap.style.display = "block";
+      });
+      closeModal.addEventListener("click", function () {
+        modalMap.style.display = "none";
+      });
+    </script>
+    <div class="modal-header-book">
+      <div class="modal-header-book-content">
+        <div class="modal-header-book-content-part">
+          <div class="modal-header-book-content-top">
+            <p>Забронировать стол</p>
+            <img
+              src="/img/close-map.png"
+              alt=""
+              class="modal-header-book-close"
+            />
+          </div>
+          <div class="modal-header-book-content-middle">
+            <input type="text" placeholder="Имя" />
+            <div class="modal-header-book-content-middle-select">
+              <select>
+                <option disabled selected>Ресторан</option>
+                <option>Ресторан</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                viewBox="0 0 8 10"
+                fill="none"
+              >
+                <path
+                  d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="number"
+              placeholder="Количество человек"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="date"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <input
+              type="time"
+              placeholder="Имя"
+              class="modal-header-book-content-middle-short"
+            />
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="color-1"
+                name="color"
+                value="indigo"
+              />
+              <label for="color-1"
+                >Даю согласие на&nbsp;обработку
+                <a href="/">персональных данных</a></label
+              >
+            </div>
+          </div>
         </div>
-        <input type="text" placeholder="Телефон"  class="modal-header-book-content-middle-short">
-        <input type="number" placeholder="Количество человек"  class="modal-header-book-content-middle-short">
-        <input type="date" placeholder="Имя" class="modal-header-book-content-middle-short">
-        <input type="time" placeholder="Имя"  class="modal-header-book-content-middle-short">
-        <div class="radio">
-          <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
-          <label for="color-1">Даю согласие на&nbsp;обработку <a href="/">персональных данных</a></label>
-        </div>
+        <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
-    <button class="modal-header-book-btn">Отправить</button>
-  </div>
-</div>
-<script>
-  let btnMenu = document.querySelector('.header-container-right-btn')
-  let modalMenu = document.querySelector('.modal-header-book')
-  let closeMenu = document.querySelector('.modal-header-book-close')
-  btnMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '1'
-    modalMenu.style.zIndex = '999999999999999'
-  })
-  closeMenu.addEventListener('click', function (){
-    modalMenu.style.opacity = '0'
-    modalMenu.style.zIndex = '-1'
-  })
-
-</script>
-</body>
+    <script>
+      let btnMenu = document.querySelector(".header-container-right-btn");
+      let modalMenu = document.querySelector(".modal-header-book");
+      let closeMenu = document.querySelector(".modal-header-book-close");
+      btnMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "1";
+        modalMenu.style.zIndex = "999999999999999";
+      });
+      closeMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "0";
+        modalMenu.style.zIndex = "-1";
+      });
+    </script>
+  </body>
 </html>
