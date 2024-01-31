@@ -2260,6 +2260,7 @@
     line-height: 32px; /* 100% */
     position: relative;
     z-index: 9999999999;
+    padding: 160px  0 60px 0;
   }
   .section6__restoran {
     padding-bottom: 80px;

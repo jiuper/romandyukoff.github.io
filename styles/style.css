@@ -1958,7 +1958,7 @@ header {
 }
 .section2-block__contacts h3 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 3.65vw;
@@ -1968,10 +1968,10 @@ header {
 .section2-block__contacts p,
 .section2-block__contacts a {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
 }
@@ -2040,13 +2040,13 @@ header {
 .accordion {
   background-color: transparent;
   color: var(--white, #dfdfdf);
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2057,6 +2057,7 @@ header {
   text-align: left;
   outline: none;
   transition: 0.5s;
+  height: 120px;
 }
 
 .active {
@@ -2069,7 +2070,9 @@ header {
   content: url("/img/drop down-icon.svg");
   float: right;
   position: absolute;
-  right: 0;
+  width: 40px;
+  height: 40px;
+  right: 1%;
   margin-left: 5px;
   transition: 0.3s;
 }
@@ -2086,10 +2089,10 @@ header {
 }
 .panel-block-top-left p,
 .panel-block-top-left a {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2107,10 +2110,10 @@ header {
 }
 .panel-block-top-right a {
   text-align: right;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2131,10 +2134,10 @@ header {
   align-items: center;
   justify-content: center;
   color: #0d0d0d;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   width: 40px;
   height: 40px;
   line-height: 20px; /* 125% */
@@ -2165,6 +2168,10 @@ header {
 }
 .section6-container-block__contacts {
   border-bottom: 1px solid #454545;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section2-block__contacts button {
   color: #0d0d0d;
@@ -2176,7 +2183,7 @@ header {
   border-radius: 20px;
   background: #dfdfdf;
   margin-top: 20px;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 450;
@@ -3394,6 +3401,7 @@ header {
   justify-content: center;
 }
 .section1__restaurant-all h1 {
+  z-index: 2;
   text-align: center;
   font-size: 60px;
   font-style: normal;
@@ -3433,10 +3441,10 @@ header {
 }
 .section2-container-block-middle__restaurant-all p {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
 }
@@ -3455,10 +3463,19 @@ header {
   object-fit: cover;
 }
 .section2-container-block-left-top__restaurant-all p {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.section2-container-block-left-top__restaurant-all > a {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
