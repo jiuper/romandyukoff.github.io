@@ -223,6 +223,10 @@
     flex-direction: column;
     align-items: center;
   }
+  .bankets__point > p {
+    font-size: 24px;
+    line-height: 32px; /* 120% */
+  }
   .section10-container-block__catering {
     border-top: 1px solid #454545;
   }
@@ -1179,6 +1183,15 @@
     font-size: 28px;
     line-height: 32px; /* 114.286% */
   }
+  .bankets__item {
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 1px solid #454545;
+  }
+    .bankets__point {
+    border-right: none;
+    border-bottom: 1px solid #454545;
+  }
   .panel-block1-arrow__rent-hookahs {
     width: 32px;
   }
@@ -1917,9 +1930,8 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 1px;
+    border-left: 1px solid #454545;
     height: 100%;
-    background: #454545;
   }
   .section3__bankets {
     position: relative;
@@ -3955,16 +3967,6 @@
     font-size: 12px;
     line-height: 16px;
   }
-
-  .section3-line-r__bankets,
-  .section3-line-l__bankets {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: #454545;
-  }
   .section3__bankets {
     position: relative;
     overflow: hidden;
@@ -4187,12 +4189,12 @@
   .franchise__img-container {
     width: 295px;
   }
-  .franchise__wrapper{
+  .franchise__wrapper {
     padding: 0;
   }
   .franchise__container {
     border: none;
-    
+
     height: 538px;
     width: 375px;
     justify-content: flex-end;
@@ -4205,7 +4207,6 @@
     padding: 8px 0 0 20px;
     font-size: 12px;
     line-height: 16px; /* 130% */
-
   }
   .franchise__items p {
     font-size: 28px;
@@ -4215,7 +4216,10 @@
     font-size: 12px;
     line-height: 16px; /* 114.286% */
   }
-  .franchise__imgGal25{
+  .bankets__point > p {
+    font-size: 28px;
+  }
+  .franchise__imgGal25 {
     width: 165px;
   }
   .section7-container__secret-assistants {
