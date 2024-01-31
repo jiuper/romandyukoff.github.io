@@ -977,6 +977,14 @@
   }
 }
 @media (max-width: 1150px) {
+
+  .accordion__rent-hookahs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+
   .section1-container-block__news {
     width: 48%;
   }
@@ -1202,8 +1210,12 @@
     padding-top: 60px;
   }
   .accordion__rent-hookahs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    line-height: 14px; /* 116.667% */
+    line-height: 14px;
+    height: 60px;
   }
   .panel-block2__rent-hookahs {
     width: 100%;
@@ -1900,7 +1912,7 @@
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
     font-size: 32px !important;
-    line-height: 32px !important; /* 100% */
+    line-height: 34px !important; /* 100% */
   }
   .section3-container-block__bankets {
     width: 100%;
@@ -3953,7 +3965,7 @@
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
     font-size: 32px !important;
-    line-height: 32px !important; /* 100% */
+    line-height: 34px !important; /* 100% */
   }
   .section3-container-block__bankets {
     width: 100%;
@@ -4184,6 +4196,11 @@
 }
 
 @media (max-width: 475px) {
+  .panel-blocks-form__rent-hookahs input,
+  .panel-blocks-form__rent-hookahs select {
+    font-size: 12px;
+  }
+
   .section2-container__sertificate p {
     height: 150px;
   }
