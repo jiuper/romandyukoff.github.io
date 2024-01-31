@@ -2329,19 +2329,19 @@ header {
   justify-content: space-between;
 }
 .section4-container-block__vacancy p {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 .section4-container-block__vacancy ul li {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   list-style-type: unset;
   letter-spacing: 0.2px;
