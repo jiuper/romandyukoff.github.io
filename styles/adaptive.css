@@ -15,7 +15,7 @@
   }
   .section3-img__loyalty-program {
     margin-top: -100px;
-    margin-left: -100px;
+    margin-left: -131px;
   }
   .section12__catering {
     height: 50rem;
@@ -55,10 +55,6 @@
   .section1-block__restoran {
     font-size: 11vw;
     line-height: 12vw;
-  }
-  .section3-img__loyalty-program {
-    margin-top: -100px;
-    margin-left: -100px;
   }
 
   .section1-img__main1 {
@@ -1074,6 +1070,10 @@
     margin-bottom: 24px;
     position: absolute;
     top: 20%;
+  }
+
+  .accordion{
+    height: 80px;
   }
 
   .section4-container__franchise a {
@@ -3952,7 +3952,7 @@
   .section3-text__secret-assistants,
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
-    font-size: 32px !important;
+    font-size: 33px !important;
     line-height: 32px !important; /* 100% */
   }
   .section3-container-block__bankets {
@@ -4429,6 +4429,7 @@
     padding-top: 10px;
   }
 
+
   @media (max-width: 405px) {
     .section7-container-input-block__restoran {
       width: 47.5%;
@@ -4488,6 +4489,9 @@
     .section2-container__franchise img {
       transform: rotate(11deg);
     }
+        .accordion{
+    height: 60px;
+  }
   }
   @media (max-width: 375px) {
     .section2-container__sertificate p {
