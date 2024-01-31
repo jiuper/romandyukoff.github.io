@@ -1014,7 +1014,7 @@
   }
   .section2-container-block-left__restaurant-all-mob {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .section2__restoran {
     padding-top: 20px;
@@ -3128,7 +3128,7 @@
   }
   .section2-container-block-left__restaurant-all-mob {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .section2__restoran {
     padding-top: 20px;
@@ -4172,7 +4172,17 @@
     line-height: 32px !important; /* 100% */
   }
   /*title big*/
+
+  .section1__restaurant-all h1 {
+    font-size: 32px;
+    line-height: 32px; /* 100% */
+    position: relative;
+    z-index: 9999999999;
+    padding: 130px 0 70px 0;
+  }
+
 }
+
 @media (max-width: 475px) {
   .section2-container__sertificate p {
     height: 150px;

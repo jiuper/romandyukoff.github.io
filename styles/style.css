@@ -3429,6 +3429,10 @@ header {
   flex-direction: column;
   gap: 6px;
 }
+.section2-container-block-left__restaurant-all > a {
+  font-family: "FuturaPTLigth", sans-serif !important;
+}
+
 .section2-container-block-left-top__restaurant-all {
   display: flex;
   align-items: center;
@@ -3471,8 +3475,8 @@ header {
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
-.section2-container-block-left-top__restaurant-all > a {
-  font-family: "FuturaPT", sans-serif;
+.section2-container-block-left-top__restaurant-all {
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
