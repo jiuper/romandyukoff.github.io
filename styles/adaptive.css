@@ -35,6 +35,9 @@
   .section4__careeer-line {
     border: none;
   }
+  .section2-img1__looking-premises{
+    top: 364px;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -1641,10 +1644,12 @@
     top: auto;
     bottom: 116px;
     right: 15px;
+    z-index: 9999999;
   }
   .section2-img1__looking-premises {
     width: 93.954px;
-    bottom: 18px;
+    bottom: 26px;
+    transform: rotate(355deg);
     top: auto;
     left: 32px;
   }
@@ -1719,6 +1724,7 @@
   }
   .section3-container__looking-premises {
     padding: 80px 0;
+    border: none;
   }
   .section11-p__catering {
     padding: 80px 0;
@@ -3711,10 +3717,7 @@
     right: 15px;
   }
   .section2-img1__looking-premises {
-    width: 93.954px;
-    bottom: 18px;
-    top: auto;
-    left: 32px;
+        z-index: 9999999;
   }
   .panel-block {
     display: flex;
