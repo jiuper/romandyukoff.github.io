@@ -542,10 +542,23 @@ footer {
   gap: 8px;
 }
 .section1__secret-assistants {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 280px;
   border-bottom: 1px solid #454545;
 }
+
+.section1__secret-assistants::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #454545;
+}
+
 .section2-p__secret-assistants {
   text-align: center;
   font-size: 4.4vw;
@@ -1292,7 +1305,7 @@ header {
   background: #0d0d0d;
 }
 .section2-title__loyalty-program {
-  font-family:"FuturaPT", sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -1539,6 +1552,32 @@ header {
 .section6__loyalty-program {
   overflow: hidden;
   position: relative;
+}
+
+.loyalty__program-wrapper {
+  display: none;
+  border-bottom: 1px solid #454545;
+  flex-direction: column;
+}
+
+.loyalty__program-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 80px 0;
+}
+
+.line__accordion {
+  border-top: 1px solid #454545 !important;
+}
+.more__hidden {
+  display: none;
+}
+.hidden-block {
+  display: none;
+}
+.btn_more {
+  display: none;
 }
 .section6-content-line__loyalty-program {
   height: 100%;
@@ -1983,7 +2022,7 @@ header {
   border-bottom: 1px solid #454545;
 }
 .section3-container__contacts {
-  padding: 280px 80px;
+  padding: 280px 15px;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
 }
@@ -5219,29 +5258,24 @@ header {
 }
 
 .accordion__rent-hookahs {
-  background-color: #0d0d0d;
-  cursor: pointer;
-  padding: 18px;
+  position: relative;
   width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+  padding: 18px;
+
   font-family: Futura PT, sans-serif;
   font-size: 18px;
-  color: #dfdfdf;
   font-style: normal;
   font-weight: 450;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
   letter-spacing: 0.18px;
   text-transform: uppercase;
-}
+  color: #dfdfdf;
+  background-color: #0d0d0d;
 
-.accordion__rent-hookahs:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
 }
 
 .active__rent-hookahs:after {
@@ -5256,12 +5290,16 @@ header {
   transition: max-height 0.2s ease-out;
 }
 .accordion__rent-hookahs:after {
-  content: url("/img/drop down-icon.svg");
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  right: 0;
-  margin-left: 5px;
-  margin-top: -5px;
+  right: 20px;
+  content: "";
+  background: url("/img/drop down-icon.svg") center no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 25px;
   transition: 0.3s;
 }
 .active__rent-hookahs:after {
@@ -5354,7 +5392,7 @@ header {
   width: 152px;
   height: 40px;
   font-family: Futura PT, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 450;
   line-height: 18px; /* 128.571% */

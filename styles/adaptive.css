@@ -35,7 +35,7 @@
   .section4__careeer-line {
     border: none;
   }
-  .section2-img1__looking-premises{
+  .section2-img1__looking-premises {
     top: 364px;
   }
 }
@@ -973,6 +973,13 @@
   }
 }
 @media (max-width: 1150px) {
+  .accordion__rent-hookahs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+
   .section1-container-block__news {
     width: 48%;
   }
@@ -1056,6 +1063,15 @@
   .section2-img2__looking-premises {
     top: 320px;
   }
+  .section6-content-block__loyalty-program p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .section6-content-block__loyalty-program span {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 1050px) {
   .section7-container__restoran {
@@ -1072,7 +1088,7 @@
     top: 20%;
   }
 
-  .accordion{
+  .accordion {
     height: 80px;
   }
 
@@ -1163,6 +1179,10 @@
   .panel-blocks-form-select__rent-hookahs {
     width: 47%;
   }
+  .loyalty__program-items {
+    flex-direction: column;
+    align-items: center;
+  }
   .panel-blocks-form__rent-hookahs {
     gap: 48px 15px;
     padding: 80px 15px;
@@ -1191,7 +1211,7 @@
     border-right: none;
     border-bottom: 1px solid #454545;
   }
-    .bankets__point {
+  .bankets__point {
     border-right: none;
     border-bottom: 1px solid #454545;
   }
@@ -1202,8 +1222,12 @@
     padding-top: 60px;
   }
   .accordion__rent-hookahs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    line-height: 14px; /* 116.667% */
+    line-height: 14px;
+    height: 60px;
   }
   .panel-block2__rent-hookahs {
     width: 100%;
@@ -1900,7 +1924,7 @@
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
     font-size: 32px !important;
-    line-height: 32px !important; /* 100% */
+    line-height: 34px !important; /* 100% */
   }
   .section3-container-block__bankets {
     width: 100%;
@@ -2260,7 +2284,7 @@
     line-height: 32px; /* 100% */
     position: relative;
     z-index: 9999999999;
-    padding: 160px  0 60px 0;
+    padding: 160px 0 60px 0;
   }
   .section6__restoran {
     padding-bottom: 80px;
@@ -3118,6 +3142,9 @@
   .section2-block__contacts button {
     font-size: 14px;
   }
+  .hidden-select {
+    display: flex;
+  }
   .section2-container-block-middle__restaurant-all {
     gap: 12px;
     padding-bottom: 142px;
@@ -3718,7 +3745,7 @@
     right: 15px;
   }
   .section2-img1__looking-premises {
-        z-index: 9999999;
+    z-index: 9999999;
   }
   .panel-block {
     display: flex;
@@ -3953,7 +3980,7 @@
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
     font-size: 33px !important;
-    line-height: 32px !important; /* 100% */
+    line-height: 34px !important; /* 100% */
   }
   .section3-container-block__bankets {
     width: 100%;
@@ -4180,10 +4207,16 @@
     z-index: 9999999999;
     padding: 130px 0 70px 0;
   }
-
 }
 
 @media (max-width: 475px) {
+  .panel-blocks-form__rent-hookahs input,
+  .panel-blocks-form__rent-hookahs select {
+    font-size: 12px;
+  }
+  .btn__width {
+    display: block;
+  }
   .section2-container__sertificate p {
     height: 150px;
   }
@@ -4221,6 +4254,18 @@
     padding: 8px 0 0 20px;
     font-size: 12px;
     line-height: 16px; /* 130% */
+  }
+  .section6-content-block__loyalty-program p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .loyalty__program-items {
+    gap: 0;
+  }
+  .section6-content-block__loyalty-program span {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 40px;
   }
   .franchise__items p {
     font-size: 28px;
@@ -4429,7 +4474,6 @@
     padding-top: 10px;
   }
 
-
   @media (max-width: 405px) {
     .section7-container-input-block__restoran {
       width: 47.5%;
@@ -4489,9 +4533,9 @@
     .section2-container__franchise img {
       transform: rotate(11deg);
     }
-        .accordion{
-    height: 60px;
-  }
+    .accordion {
+      height: 60px;
+    }
   }
   @media (max-width: 375px) {
     .section2-container__sertificate p {
