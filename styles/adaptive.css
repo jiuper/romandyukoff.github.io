@@ -1156,6 +1156,12 @@
   .galleryAnim {
     padding: 180px 0 100px 0;
   }
+  .section7-container-block__catering:nth-child(2) {
+    border-top: none;
+  }
+  .long-p__catering__dn {
+    display: none !important;
+  }
   /*big title 84px*/
   /*18px*/
   .section6-container-block-top-left__career span,
@@ -1487,7 +1493,6 @@
     margin-top: -230px !important;
     width: 32px !important;
     height: 32px !important;
-    
   }
   .swiper-button-next-sertificate,
   .swiper-button-prev-sertificate {
