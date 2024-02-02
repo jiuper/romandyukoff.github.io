@@ -184,12 +184,22 @@ h1 {
   align-items: center;
 }
 .swiper-button-prev-main {
-  left: 50% !important;
-  margin-left: -380px !important;
+  left: 25% !important;
+  transform: translate(-50%, 0);
+  margin: 0 !important;
+  background-color: #0d0d0d;
+  border-radius: 100%;
+  border: 1px solid #454545;
+  color: #fff;
 }
 .swiper-button-next-main {
-  right: 50% !important;
-  margin-right: -380px !important;
+  right: 25% !important;
+  transform: translate(50%, 0);
+  margin: 0 !important;
+  background-color: #0d0d0d;
+  border-radius: 100%;
+  border: 1px solid #454545;
+  color: #fff;
 }
 .swiper-button-prev-main,
 .swiper-button-next-main {
@@ -221,6 +231,7 @@ h1 {
 .slider-section {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .demo-stories-name {
   margin-top: 24px;
@@ -278,9 +289,6 @@ header {
   position: absolute !important;
   width: 100%;
   top: 0;
-}
-body {
-  padding-top: 80px;
 }
 .container {
   padding: 0 20px;
@@ -382,6 +390,7 @@ footer {
 .section3-container-left__sertificate a {
   color: #0d0d0d;
   display: none;
+  font-family: "FuturaPT", sans-serif;
   align-items: center;
   justify-content: center;
   width: 120px;
@@ -391,7 +400,7 @@ footer {
   margin-top: 20px;
   font-size: 12px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 14px; /* 116.667% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -473,8 +482,9 @@ footer {
   padding: 50px 20px;
   text-align: center;
   font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -483,6 +493,10 @@ footer {
 }
 .menu__box ul li a > svg {
   display: none;
+}
+.menu__box ul li a:hover {
+  background: #fff;
+  color: #454545;
 }
 .burger-menu-active > svg {
   display: block !important;
@@ -543,7 +557,7 @@ footer {
 }
 .section1__secret-assistants {
   position: relative;
-  padding-top: 120px;
+  padding-top: 160px;
   padding-bottom: 280px;
   border-bottom: 1px solid #454545;
 }
@@ -554,9 +568,8 @@ footer {
   left: 50%;
   transform: translate(-50%, 0);
   content: "";
-  width: 1px;
+  border-right: 1px solid #454545;
   height: 100%;
-  background-color: #454545;
 }
 
 .section2-p__secret-assistants {
@@ -1278,13 +1291,11 @@ header {
   height: 18%;
 }
 .line-height__bankets {
-  width: 1px;
-  background: #454545;
+  border-left: 1px solid #454545;
   position: absolute;
   left: 50%;
   top: 0;
   z-index: 1;
-  height: 100%;
 }
 .line-height__bankets-section1 {
   width: 1px;
@@ -1296,7 +1307,7 @@ header {
   height: 16%;
 }
 .section1__loyalty-program {
-  padding-bottom: 260px;
+  padding-bottom: 200px;
   border-bottom: 1px solid #454545;
 }
 .section2__loyalty-program {
@@ -1516,6 +1527,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.item-visible {
+  display: block !important;
 }
 .section6-content-block__loyalty-program {
   width: 15%;
@@ -1759,10 +1773,10 @@ header {
 .section2-top-right-btn__sertificate {
   color: #454545;
   cursor: pointer;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   text-align: right;
   letter-spacing: 0.6px;
@@ -1783,7 +1797,7 @@ header {
   align-items: flex-end;
 }
 .section2-top-left__sertificate {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -1909,10 +1923,10 @@ header {
 }
 .section3-container-left__sertificate p {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
   max-width: 270px;
@@ -1929,6 +1943,7 @@ header {
 }
 .section3__sertificate {
   padding-bottom: 14.5%;
+  position: relative;
   border-bottom: 1px solid #454545;
 }
 .section3-container-left__sertificate {
@@ -3114,6 +3129,9 @@ header {
   letter-spacing: 72.45px;
   text-transform: uppercase;
 }
+.section1-block__restoran:first-child {
+  padding-top: 50px;
+}
 .section2__restoran {
   position: relative;
   overflow: hidden;
@@ -3153,7 +3171,7 @@ header {
   padding: 268px 0;
 }
 .section4-title__restoran {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   padding-top: 20px;
   font-style: normal;
@@ -3164,42 +3182,41 @@ header {
 }
 .section4-text__restoran {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  padding-top: 234px;
-  line-height: 4.4vw;
+  padding-top: 120px;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
 .section4__restoran {
   padding-bottom: 280px;
-  border-bottom: 1px solid #454545;
   border-top: 1px solid #454545;
+  border-bottom: 1px solid #454545;
   position: relative;
 }
 .section4-line__restoran {
   height: 100%;
-  background: #454545;
-  width: 1px;
+  border-right: 1px solid #454545;
   position: absolute;
   left: 50%;
-  margin-left: -0.5px;
+  margin: -0.5px;
 }
 .section5-container__restoran {
   display: flex;
-  margin-left: -1px;
-  width: 100.5%;
+  width: 100%;
 }
 .section5-container-block__restoran {
-  width: 16.6%;
-  padding: 4.1% 0;
+  width: 100%;
+  height: 186px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid #454545;
-  font-family: Futura PT, sans-serif;
+  border-right: 1px solid #454545;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -3209,6 +3226,8 @@ header {
 }
 .section6-title__restoran {
   text-align: center;
+  position: relative;
+  z-index: 99999999999999;
   font-size: 4.4vw;
   font-style: normal;
   font-weight: 400;
@@ -3280,7 +3299,6 @@ header {
 }
 .section6-line3__restoran {
   left: 50%;
-  margin-left: -0.5px;
 }
 .section6-line4__restoran {
   right: 30%;
@@ -3340,12 +3358,12 @@ header {
   margin: 0 auto;
 }
 .section7-container__restoran h5 {
-  font-size: 3.15vw;
+  font-size: min(60px, 3.15vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
   margin-top: -50px;
-  line-height: 3.15vw;
+  line-height: min(60px, 3.5vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -3369,6 +3387,9 @@ header {
 }
 .section7-container-input-block__restoran {
   position: relative;
+}
+.pt-res {
+  margin-top: 70px;
 }
 .section7-container-input-block__restoran svg {
   position: absolute;
@@ -3408,6 +3429,7 @@ header {
   font-size: 20px;
   padding-bottom: 8px;
   text-transform: capitalize;
+  font-family: "FuturaPT", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 130% */
@@ -3419,8 +3441,10 @@ header {
 }
 .section8-link__restoran {
   color: #0d0d0d;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 16px;
+  position: relative;
+  z-index: 9999999999;
   font-style: normal;
   margin: 0 auto;
   width: 167px;
@@ -3431,7 +3455,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
   text-transform: uppercase;
@@ -4028,11 +4052,8 @@ header {
   overflow: hidden;
 }
 .section3-line__sertificate {
-  background: #454545;
-  width: 1px;
+  border-right: 1px solid #454545;
   left: 50%;
-  margin-left: -0.5px;
-  top: 0;
   position: absolute;
   height: 100%;
 }
@@ -4061,6 +4082,7 @@ header {
   background-position: center;
   background-size: 25px;
   height: 40px !important;
+  padding: 0 20px;
   background-repeat: no-repeat;
 }
 .swiper-button-prev-sertificate {
@@ -4258,6 +4280,7 @@ header {
 }
 .galleryAnim {
   width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4266,6 +4289,7 @@ header {
   transition: all 1.6s ease 0s;
   position: relative;
   border-bottom: 1px solid #454545;
+  border-top: 1px solid #454545;
 }
 .galleryAnim::before {
   content: "";
@@ -5411,7 +5435,7 @@ header {
 }
 .panel-block2-bottom__rent-hookahs p {
   color: #454545;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 450;
@@ -5420,10 +5444,10 @@ header {
   text-transform: uppercase;
 }
 .panel-block2-bottom__rent-hookahs span {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px; /* 133.333% */
   letter-spacing: 0.18px;
 }
@@ -5475,7 +5499,7 @@ header {
 }
 .panel-block3-long__rent-hookahs p {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   max-width: 482px;
   font-size: 18px;
   font-style: normal;
@@ -5486,7 +5510,7 @@ header {
 }
 .panel-blocks-form__rent-hookahs input,
 .panel-blocks-form__rent-hookahs select {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   border: none;
   font-size: 18px;
   color: #dfdfdf;
@@ -5494,7 +5518,7 @@ header {
   padding-bottom: 10px;
   border-bottom: 1px solid #454545;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px; /* 133.333% */
   letter-spacing: 0.18px;
   color: #454545;
@@ -5575,7 +5599,7 @@ header {
   height: 100vh;
 }
 .modal-header-book-content-top p {
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -5603,10 +5627,10 @@ header {
   background: transparent;
   width: 100%;
   color: #454545;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
 }
@@ -5617,10 +5641,10 @@ header {
   background: transparent;
   width: 100%;
   color: #454545;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
 }
@@ -5649,7 +5673,7 @@ header {
   height: 40px;
   border-radius: 20px;
   background: #dfdfdf;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   margin-left: 20px;
   margin-bottom: 30px;
   font-size: 16px;

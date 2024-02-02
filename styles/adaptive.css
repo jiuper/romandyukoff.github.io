@@ -13,6 +13,9 @@
     font-size: 11vw;
     line-height: 12vw;
   }
+  .galleryAnim::before {
+    width: 734px;
+  }
   .section3-img__loyalty-program {
     margin-top: -100px;
     margin-left: -131px;
@@ -248,9 +251,6 @@
     height: 43rem;
   }
 
-  body {
-    padding-top: 117px;
-  }
   .section-map-top-right__franchise span,
   .section-map-top-right__franchise p,
   .section-map-top-left__franchise,
@@ -395,17 +395,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
   .section1__restoran-laptop p {
     text-align: center;
-    font-size: 20vw;
+    font-size: min(322px, 20vw);
     font-family: "FuturaPT", sans-serif;
     color: #3f3f3fbb;
     font-style: normal;
     font-weight: 600;
-    line-height: 22vw; /* 80.745% */
+    line-height: min(322px, 20vw);
     letter-spacing: 56.35px;
     text-transform: uppercase;
+  }
+  .bg-laptop p {
+    color: #ffffff !important;
   }
   .section4-container-block__vacancy ul li {
     font-size: 18px;
@@ -994,6 +998,13 @@
   }
   .section5-container-block__restoran {
     width: 50%;
+    border-bottom: 1px solid #454545;
+  }
+  .section5-container-block__restoran:last-child {
+    border-bottom: none;
+  }
+  .section5-container-block__restoran:nth-last-child(2) {
+    border-bottom: none;
   }
   .section4__restoran {
     padding-bottom: 240px;
@@ -1072,6 +1083,9 @@
     line-height: 32px;
     padding-bottom: 80px;
   }
+  .section1__secret-assistants {
+    padding-top: 70px;
+  }
 }
 @media (max-width: 1050px) {
   .section7-container__restoran {
@@ -1140,7 +1154,7 @@
     line-height: 32px; /* 114.286% */
   }
   .galleryAnim {
-    padding: 180px 0 0 0;
+    padding: 180px 0 100px 0;
   }
   /*big title 84px*/
   /*18px*/
@@ -1175,6 +1189,9 @@
   .panel-block3__rent-hookahs p {
     font-size: 28px;
     line-height: 32px; /* 114.286% */
+  }
+  .section3-container-left-block__sertificate {
+    width: 50%;
   }
   .panel-blocks-form-select__rent-hookahs {
     width: 47%;
@@ -1364,7 +1381,7 @@
     padding-bottom: 80px;
   }
   .section1-container-img__secret-assistants {
-    width: 271px;
+    width: 271px !important;
     height: 346px;
   }
   .section4-container__franchise a {
@@ -1470,6 +1487,7 @@
     margin-top: -230px !important;
     width: 32px !important;
     height: 32px !important;
+    
   }
   .swiper-button-next-sertificate,
   .swiper-button-prev-sertificate {
@@ -1493,14 +1511,14 @@
   .section4__restoran {
     padding-bottom: 80px;
   }
-  .swiper-button-prev-main {
+  /* .swiper-button-prev-main {
     margin-left: 0 !important;
     left: 30px !important;
   }
   .swiper-button-next-main {
     margin-right: 0 !important;
     right: 30px !important;
-  }
+  } */
   .section1__restoran {
     margin-right: -60px;
   }
@@ -1549,7 +1567,6 @@
     font-size: 32px;
     line-height: 32px; /* 100% */
     padding: 0 15px;
-    height: 128px;
   }
   .section3-title__sertificate {
     padding-top: 80px;
@@ -2262,9 +2279,7 @@
   .section1-container-block__news h3 {
     text-align: center;
   }
-  body {
-    padding-top: 64px;
-  }
+
   .section3-container-left__sertificate a {
     display: flex;
   }
@@ -2324,6 +2339,7 @@
   }
   .section1__restoran-mob {
     display: block;
+    margin-top: 50px;
   }
   .section4-line2__catering {
     left: 50px;
@@ -2409,9 +2425,7 @@
   .section10-container-block__catering:last-child {
     border-bottom: 1px solid #454545;
   }
-  body {
-    padding-top: 117px;
-  }
+
   .section-map-top-right__franchise span,
   .section-map-top-right__franchise p,
   .section-map-top-left__franchise,
@@ -2555,15 +2569,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .section1__restoran-laptop p {
-    text-align: center;
-    font-size: 20vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22vw; /* 80.745% */
-    letter-spacing: 56.35px;
-    text-transform: uppercase;
   }
   .section4-container-block__vacancy ul li {
     font-size: 18px;
@@ -2727,7 +2732,7 @@
     right: 20px;
   }
   .section1__loyalty-program {
-    padding-bottom: 220px;
+    padding-bottom: 80px;
   }
   .section2-title__loyalty-program {
     padding-bottom: 196px;
@@ -3568,14 +3573,14 @@
   .section4__restoran {
     padding-bottom: 80px;
   }
-  .swiper-button-prev-main {
+  /* .swiper-button-prev-main {
     margin-left: 0 !important;
     left: 30px !important;
   }
   .swiper-button-next-main {
     margin-right: 0 !important;
     right: 30px !important;
-  }
+  } */
   .section1__restoran {
     margin-right: -60px;
   }
@@ -3624,7 +3629,6 @@
     font-size: 32px;
     line-height: 32px; /* 100% */
     padding: 0 15px;
-    height: 128px;
   }
   .section3-title__sertificate {
     padding-top: 80px;
@@ -4214,8 +4218,19 @@
   .panel-blocks-form__rent-hookahs select {
     font-size: 12px;
   }
+  .section3-container-left-block__sertificate {
+    width: 83%;
+  }
+  .section3-container-left__sertificate p {
+    max-width: 165px;
+  }
   .btn__width {
     display: block;
+  }
+  .section4-title__restoran1 {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
   }
   .section2-container__sertificate p {
     height: 150px;
@@ -4389,9 +4404,6 @@
   .section1-container-block__news h3 {
     text-align: center;
   }
-  body {
-    padding-top: 64px;
-  }
   .section3-container-left__sertificate a {
     display: flex;
   }
@@ -4473,111 +4485,124 @@
   .section5-title__bankets {
     padding-top: 10px;
   }
-
-  @media (max-width: 405px) {
-    .section7-container-input-block__restoran {
-      width: 47.5%;
-    }
-    .section7-container-input-block-long__restoran {
-      width: 100%;
-    }
-    .section5-container__bankets-second p {
-      max-width: 345px;
-      padding-top: 30px;
-    }
-    .section4-kamen3__bankets {
-      right: 90px;
-    }
-    .section3-text__secret-assistants {
-      max-width: 345px;
-    }
-    .line-none {
-      border-right: none;
-      border-left: none;
-    }
-    .line-none__centre {
-      height: 100%;
-    }
-    .section-last-img__main {
-      transform: rotate(-15deg);
-      top: 49%;
-      right: 0;
-    }
-    .section-last-p__main {
-      width: 340px;
-      font-size: 30px !important;
-    }
-    .section3-container__franchise p {
-      width: 255px;
-    }
-    .section3-container-img__franchise {
-      width: 100%;
-    }
-
-    .section3-line-r__franchise {
-      right: 27%;
-    }
-    .section3-line-l__franchise {
-      left: 27%;
-    }
-    .section3-container-block__franchise {
-      width: 68%;
-    }
-    .section4-container__franchise button {
-      margin-bottom: 46px;
-    }
-
-    .section2-container__franchise {
-      margin-top: 60px;
-    }
-    .section2-container__franchise img {
-      transform: rotate(11deg);
-    }
-    .accordion {
-      height: 60px;
-    }
+  .section1-container__secret-assistants h1 {
+    max-width: 245px;
   }
-  @media (max-width: 375px) {
-    .section2-container__sertificate p {
-      height: 190px;
-    }
+  .section6-content-block__loyalty-program:not([data-mobile="true"]) {
+    display: none;
   }
-  @media (max-width: 355px) {
-    .section1__restoran-mob {
-      width: 100%;
-    }
+  .secret-assistants__fs h1 {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+  .pt-res {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 405px) {
+  .section7-container-input-block__restoran {
+    width: 47.5%;
+  }
+  .section7-container-input-block-long__restoran {
+    width: 100%;
+  }
+  .section5-container__bankets-second p {
+    max-width: 345px;
+    padding-top: 30px;
+  }
+  .section4-kamen3__bankets {
+    right: 90px;
+  }
+  .section3-text__secret-assistants {
+    max-width: 345px;
+  }
+  .line-none {
+    border-right: none;
+    border-left: none;
+  }
+  .line-none__centre {
+    height: 100%;
+  }
+  .section-last-img__main {
+    transform: rotate(-15deg);
+    top: 49%;
+    right: 0;
+  }
+  .section-last-p__main {
+    width: 340px;
+    font-size: 30px !important;
+  }
+  .section3-container__franchise p {
+    width: 255px;
+  }
+  .section3-container-img__franchise {
+    width: 100%;
   }
 
-  @media (max-width: 330px) {
-    .input-tel__secret-assistants,
-    .input-city__secret-assistants {
-      width: 47%;
-    }
-    .section7-container-input-block__restoran {
-      width: 47%;
-    }
-    .section7-container-input-block-long__restoran {
-      width: 100%;
-    }
-    .section1-p__main,
-    .section3-text__secret-assistants,
-    .section4-p__secret-assistants,
-    .section1-container__secret-assistants h1 {
-      font-size: 30px !important;
-      line-height: 32px !important;
-    }
+  .section3-line-r__franchise {
+    right: 27%;
+  }
+  .section3-line-l__franchise {
+    left: 27%;
+  }
+  .section3-container-block__franchise {
+    width: 68%;
+  }
+  .section4-container__franchise button {
+    margin-bottom: 46px;
   }
 
-  @media (max-height: 650px) {
-    .section-map-content__franchise {
-      display: none;
-    }
-    .section3-container__rent-hookahs {
-      margin-left: -1px;
-      width: 101%;
-    }
-    .section3-container-block__rent-hookahs {
-      border-left: none;
-    }
+  .section2-container__franchise {
+    margin-top: 60px;
+  }
+  .section2-container__franchise img {
+    transform: rotate(11deg);
+  }
+  .accordion {
+    height: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .section2-container__sertificate p {
+    height: 190px;
+  }
+}
+@media (max-width: 355px) {
+  .section1__restoran-mob {
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .input-tel__secret-assistants,
+  .input-city__secret-assistants {
+    width: 47%;
+  }
+  .section7-container-input-block__restoran {
+    width: 47%;
+  }
+  .section7-container-input-block-long__restoran {
+    width: 100%;
+  }
+  .section1-p__main,
+  .section3-text__secret-assistants,
+  .section4-p__secret-assistants,
+  .section1-container__secret-assistants h1 {
+    font-size: 30px !important;
+    line-height: 32px !important;
+  }
+}
+
+@media (max-height: 650px) {
+  .section-map-content__franchise {
+    display: none;
+  }
+  .section3-container__rent-hookahs {
+    margin-left: -1px;
+    width: 101%;
+  }
+  .section3-container-block__rent-hookahs {
+    border-left: none;
   }
 }

@@ -666,17 +666,17 @@
       <div class="panel">
         <div class="panel-block">
           <div class="loyalty__program-items">
-            <div class="section6-content-block__loyalty-program">
+            <div class="section6-content-block__loyalty-program " data-mobile="true">
               <img src="/img/kal1.png" alt="" />
               <p>Tangiers Lounge</p>
               <span>ул. Гастелло д.22</span>
             </div>
-            <div class="section6-content-block__loyalty-program">
+            <div class="section6-content-block__loyalty-program" data-mobile="true">
               <img src="/img/kal2.png" alt="" />
               <p>Tangiers Lounge</p>
               <span>ул. Ильюшина д.5</span>
             </div>
-            <div class="section6-content-block__loyalty-program">
+            <div class="section6-content-block__loyalty-program" data-mobile="true">
               <img src="/img/kal5.png" alt="" />
               <p>Tangiers Lounge</p>
               <span>ул. Катерников д.8</span>
@@ -695,7 +695,6 @@
       var acc = document.getElementsByClassName("accordion");
       const btn = document.querySelector(".btn_more");
       const div = [...document.querySelectorAll(".loyalty__program-items")];
-      const panelH = [...document.querySelectorAll(".panel")];
       var i;
 
       for (i = 0; i < acc.length; i++) {
@@ -709,26 +708,14 @@
           }
         });
       }
-      window.addEventListener("resize", () => {
-        if (document.documentElement.clientWidth <= 475) {
-          div.forEach((el, i) =>
-            [...el.children].forEach((elem, i) =>
-              i >= 3 && elem.nodeName === "DIV"
-                ? elem.classList.add("hidden-block")
-                : elem
-            )
-          );
-        }
-      });
+
 
       btn.addEventListener("click", (e) => {
         btn.classList.add("more__hidden");
         btn.classList.remove("btn__width");
         div.forEach((el, i) =>
           [...el.children].forEach((elem, i) =>
-            i >= 3 && elem.nodeName === "DIV"
-              ? elem.classList.remove("hidden-block")
-              : elem
+            elem.nodeName === "DIV" && elem.classList.add("item-visible")
           )
         );
         btn.parentElement.parentElement.parentElement.style.maxHeight =
