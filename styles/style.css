@@ -110,11 +110,19 @@ a {
   text-decoration: none;
 }
 .container {
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   z-index: 5;
   padding: 0;
   position: relative;
+}
+.line-height-tt {
+  position: absolute;
+  border-right: 1px solid #454545;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
 }
 input,
 textarea {
@@ -516,11 +524,11 @@ footer {
   background-repeat: no-repeat;
 }
 .section1-container__secret-assistants h1 {
-  font-size: 3.15vw;
+  font-size: min(60px, 4vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: 3.15vw; /* 100% */
+  line-height: min(60px, 4vw); /* 100% */
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -558,7 +566,7 @@ footer {
 .section1__secret-assistants {
   position: relative;
   padding-top: 160px;
-  padding-bottom: 280px;
+  padding-bottom: 16%;
   border-bottom: 1px solid #454545;
 }
 
@@ -573,43 +581,48 @@ footer {
 }
 
 .section2-p__secret-assistants {
+  max-width: 1430px;
+  width: 100%;
   text-align: center;
-  font-size: 4.4vw;
+  font-size: 5.4vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw; /* 100% */
+  line-height: 5.4vw;
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
 .section2__secret-assistants {
   position: relative;
-  padding-top: 280px;
+  padding-top: 16%;
   background: #0d0d0d;
   z-index: 99999;
   border-bottom: 1px solid #454545;
 }
 .face1__secret-assistants {
   position: absolute;
-  left: 79px;
-  top: 45px;
+  left: 7%;
+  top: 6%;
   width: 18.6%;
-  z-index: 9999;
-  transform: rotate(-15deg);
+  z-index: 999999999;
+  transform: rotate(360deg);
 }
 .face2__secret-assistants {
-  top: -147px;
-  right: 10%;
+  top: -5%;
+  right: 11%;
   position: absolute;
   z-index: 9999;
-  width: 10.85%;
+  width: 10%;
 }
 .face3__secret-assistants {
-  bottom: 150px;
-  z-index: 9999;
+  bottom: -50%;
+  z-index: 999999999;
   left: 50%;
-  width: 18.4%;
+  transform: translate(-50%, 0);
+  width: 18%;
   position: absolute;
-  margin-left: -175px;
+}
+.block-sz {
+  max-width: 100%;
 }
 .section2__secret-assistants {
   padding-bottom: 180px;
@@ -659,38 +672,34 @@ footer {
 }
 .section4-p__secret-assistants {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
 
-.section4__secret-assistants {
-  padding-top: 280px;
-  padding-bottom: 300px;
-}
 .section4-kamen1__secret-assistants {
   position: absolute;
-  bottom: 298px;
-  width: 10%;
+  bottom: 18%;
   left: 8.4%;
-  z-index: 9999;
+  z-index: 9999999999;
 }
 .section4__secret-assistants {
   position: relative;
+  border-bottom: 1px solid #454545;
 }
 .section4-kamen2__secret-assistants {
   position: absolute;
-  top: 90px;
+  top: -4%;
   left: 50%;
-  margin-left: -162px;
+  transform: translate(-50%, 0);
 }
 .section4-kamen3__secret-assistants {
   position: absolute;
   right: 18.5%;
-  bottom: 22px;
+  bottom: 0;
 }
 .section5-container__secret-assistants {
   justify-content: center;
@@ -719,20 +728,25 @@ footer {
   z-index: 999;
 }
 .section6__secret-assistants {
-  padding-bottom: 280px;
+  padding-bottom: 16%;
   position: relative;
   z-index: 999999;
   margin-top: -136px;
+  border-bottom: 1px solid #454545;
 }
 
 .section2-container__secret-assistants {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 800px;
 }
-.section2-container__secret-assistants img {
-  margin-top: -40px;
-  width: 18.4%;
+.section4-kamen3__secret-assistants-photo {
+  z-index: 999999999;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
 }
 .section5-title__secret-assistants {
   font-size: 20px;
@@ -1249,9 +1263,8 @@ footer {
   padding: 280px 0;
 }
 .line-height {
-  width: 1px;
   height: 100%;
-  background: #454545;
+  border-right: 1px solid #454545;
   position: absolute;
   left: 50%;
   margin-left: -0.5px;
@@ -5701,6 +5714,23 @@ header {
 .section6-container__secret-assistants {
   z-index: 999;
   position: relative;
+}
+.section4-kamen2__secret-assistants-photo {
+  z-index: 99999999;
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translate(-50%, 0);
+}
+.section4__secret-assistants-photo {
+  position: relative;
+  border-bottom: 1px solid #454545;
+}
+.section4-kamen1__secret-assistants-photo {
+  z-index: 99999999;
+  position: absolute;
+  left: 8%;
+  bottom: 15%;
 }
 .modal-header-book-content {
   display: flex;
