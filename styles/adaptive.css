@@ -3342,7 +3342,9 @@
   .section7-container-block-mob-content-part__catering > p {
     font-size: 12px !important;
   }
-
+  .line-news {
+    display: block;
+  }
   .section2-container__franchise img {
     top: -32%;
   }
@@ -4640,6 +4642,24 @@
   }
   .secret-assistants-text {
     width: 316px;
+  }
+  .news__header {
+    border-bottom: 1px solid #454545;
+  }
+  .news__content {
+    margin: 60px 0;
+  }
+  .news__caption-footer > span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .title__bottom {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .caption__top {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
