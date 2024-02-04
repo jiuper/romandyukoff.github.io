@@ -1275,8 +1275,10 @@ footer {
   margin-bottom: 80px;
 }
 .section7__secret-assistants {
+  padding: 60px 0;
   border-bottom: 1px solid #454545;
 }
+
 .section3__vacancy {
   border-bottom: 1px solid #454545;
   position: relative;
@@ -2055,7 +2057,7 @@ header {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 3.65vw;
+  line-height: 48px;
   letter-spacing: -0.4px;
   text-transform: uppercase;
 }
@@ -2278,7 +2280,7 @@ header {
   background: #dfdfdf;
   margin-top: 20px;
   font-family: "FuturaPT", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: 20px; /* 125% */
@@ -2319,10 +2321,11 @@ header {
   margin-top: 1px;
   font-family: "FuturaPT", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.2px;
   font-size: 18px;
   line-height: 24px; /* 133.333% */
+  color: #dfdfdf;
 }
 
 .input__file-button {
@@ -2330,9 +2333,9 @@ header {
   max-width: 209px;
   height: 20px;
   background: transparent;
-  color: #fff;
+  color: #dfdfdf;
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3167,6 +3170,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+}
+.section7__franchise-tx {
+  padding-top: 0;
 }
 .section1-block__restoran {
   text-align: center;
@@ -4845,11 +4852,11 @@ body .galleryAnim .galleryAnim__fraction {
 }
 .section6-container-block-top-left__career span {
   color: #454545;
-  font-family: "Futura PT", sans-serif;
-  font-size: 18px;
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 26px; /* 133.333% */
   letter-spacing: 0.18px;
 }
 .section6-container-block-top-left__career p {
@@ -4865,6 +4872,13 @@ body .galleryAnim .galleryAnim__fraction {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+.p__vacancy-career {
+  display: block;
+  margin-bottom: 80px;
+}
+.city__career {
+  display: none;
 }
 .section6-container-block__career {
   display: flex;
@@ -5872,7 +5886,9 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+.franchise_cl-caption {
+  color: #dfdfdf !important;
+}
 .news__content {
   min-height: 50px;
   display: flex;

@@ -656,7 +656,7 @@
     font-size: 14px;
   }
   .custom-radio + label::before {
-    margin-right: 0px;
+    margin-right: 12px;
   }
   .footer-container {
     padding-bottom: 120px;
@@ -1122,6 +1122,15 @@
   .section7-container__restoran {
     padding: 0 20px;
     max-width: 95%;
+  }
+  .section2-block__contacts button {
+    width: 152px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 18px; /* 125% */
+  }
+  .hidden_block-career {
+    display: none;
   }
   .catering-bottom-link-look-all {
     width: 164px;
@@ -2928,9 +2937,6 @@
     width: 124px;
     font-size: 14px;
   }
-  .custom-radio + label::before {
-    margin-right: 0px;
-  }
   .footer-container {
     padding-bottom: 120px;
   }
@@ -4407,7 +4413,7 @@
   .franchise__caption {
     padding: 8px 0 0 20px;
     font-size: 12px;
-    line-height: 16px; /* 130% */
+    line-height: 14px; /* 130% */
   }
   .section6-content-block__loyalty-program p {
     font-size: 12px;
@@ -4436,8 +4442,15 @@
     width: 165px;
   }
   .section7-container__secret-assistants {
-    height: 700px;
-    width: 345px;
+    height: max-content;
+    max-width: 345px;
+  }
+  .section6-block__franchise h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .franchise__sz {
+    height: 600px;
   }
   .section5-top-right-block__franchise {
     font-size: 12px;
@@ -4716,6 +4729,24 @@
     max-width: 290px;
     font-size: 32px;
     line-height: 32px;
+  }
+  .input__file-button-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .p__vacancy-career {
+    margin-bottom: 0 !important;
+    margin-top: 160px;
+  }
+  .section2-block__contacts button {
+    width: 124px;
+    height: 34px;
+    font-family: "FuturaPT", sans-serif;
+    font-size: 12px;
+    line-height: 14px; /* 125% */
+  }
+  .hidden__franchise {
+    display: none;
   }
 }
 
