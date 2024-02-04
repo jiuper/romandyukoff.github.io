@@ -365,7 +365,7 @@
   }
   .section-last-img__main {
     width: 231px;
-    transform: rotate(0deg);
+    transform: rotate(11deg);
     right: 7%;
     bottom: 50%;
   }
@@ -428,21 +428,16 @@
   .section1-block__restoran {
     display: none;
   }
-  .section1__restoran-laptop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
+
   .section1__restoran-laptop p {
     text-align: center;
-    font-size: min(322px, 20vw);
+    font-size: min(322px, 34vw);
     font-family: "FuturaPT", sans-serif;
     color: #3f3f3fbb;
     font-style: normal;
     font-weight: 600;
-    line-height: min(322px, 20vw);
-    letter-spacing: 56.35px;
+    line-height: min(322px, 34vw);
+    letter-spacing: 7.65px;
     text-transform: uppercase;
   }
   .bg-laptop p {
@@ -1122,6 +1117,14 @@
     padding: 0 20px;
     max-width: 95%;
   }
+  .catering-bottom-link-look-all {
+    width: 164px;
+    height: 38px;
+  }
+  .btn-footer-rev {
+    font-size: 164px;
+    height: 38px;
+  }
   .franchise__container {
     max-width: 690px;
     padding: 0 100px;
@@ -1240,6 +1243,9 @@
   }
   .section2-container__secret-assistants {
     height: 300px;
+  }
+  .section1__restoran-laptop p {
+    letter-spacing: 3.65px;
   }
   .section6__secret-assistants {
     margin-top: -40px;
@@ -1386,6 +1392,7 @@
   }
   .section1-img__main1 {
     width: 91px;
+    top: -35px;
   }
   .section1-p__main {
     padding-bottom: 8px;
@@ -2442,9 +2449,6 @@
     padding: 15px;
     padding-bottom: 16px;
   }
-  .section1__restoran-laptop {
-    display: none;
-  }
   .section1__restoran-mob {
     display: block;
     margin-top: 50px;
@@ -2675,9 +2679,11 @@
     display: none;
   }
   .section1__restoran-laptop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
   }
   .section4-container-block__vacancy ul li {
     font-size: 18px;
@@ -4567,9 +4573,6 @@
     padding: 0 15px;
     padding-bottom: 16px;
   }
-  .section1__restoran-laptop {
-    display: none;
-  }
   .section1__restoran-mob {
     display: block;
   }
@@ -4660,6 +4663,17 @@
   .caption__top {
     font-size: 28px;
     line-height: 32px;
+  }
+  .catering-bottom-link-look-all {
+    width: 135px;
+    height: 34px;
+  }
+  .btn-footer-rev {
+    width: 135px;
+    height: 34px;
+  }
+  .footer-reverse {
+    flex-direction: column-reverse;
   }
 }
 
