@@ -524,13 +524,25 @@ footer {
   background-repeat: no-repeat;
 }
 .section1-container__secret-assistants h1 {
-  font-size: min(60px, 4vw);
+  font-size: min(60px, 3.2vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: min(60px, 4vw); /* 100% */
-  letter-spacing: -1.2px;
+  line-height: min(60px, 3.2vw); /* 100% */
+  letter-spacing: -2px;
   text-transform: uppercase;
+}
+.section4-kamen2__bankets {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.section4-kamen1__bankets {
+  position: absolute;
+  bottom: 28%;
+  left: 8.4%;
+  z-index: 9999999999;
 }
 .section1-container-img-blur__secret-assistants {
   -webkit-backdrop-filter: blur(100px);
@@ -911,11 +923,17 @@ footer {
 .section7-img__secret-assistants {
   position: relative;
   top: 55px;
-  width: 23%;
+  width: 30%;
 }
 
 .section3-container-block__bankets span {
   display: none;
+}
+.section3-container-block__bankets:nth-child(2) {
+  border-right: none;
+}
+.section3-container-block__bankets:nth-child(4) {
+  border-right: none;
 }
 .section7-p__secret-assistants {
   position: relative;
@@ -1244,11 +1262,17 @@ footer {
   align-items: center;
   justify-content: center;
   height: 950px;
-  flex: 0 1 930px;
+  max-width: 930px;
   margin: 0 auto;
   padding: 0 20px;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
+  padding-top: 80px;
+}
+.bankets__fs {
+  font-size: 84px !important;
+  line-height: 84px !important;
+  margin-bottom: 80px;
 }
 .section7__secret-assistants {
   border-bottom: 1px solid #454545;
@@ -1309,6 +1333,7 @@ header {
   left: 50%;
   top: 0;
   z-index: 1;
+  height: 100%;
 }
 .line-height__bankets-section1 {
   width: 1px;
@@ -1777,7 +1802,7 @@ header {
 }
 .section4-kamen3__bankets {
   position: absolute;
-  top: 583px;
+  top: 60%;
   right: 18%;
 }
 .section3-container-block__bankets-menu {
@@ -4031,7 +4056,7 @@ header {
 .section1__restoran-laptop {
   display: none;
 }
-.bg-left{
+.bg-left {
   margin-left: 12%;
 }
 .section7-container-block-mob-bottom-left__catering {

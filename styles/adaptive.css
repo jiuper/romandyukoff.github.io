@@ -6,6 +6,9 @@
   .section-map-bg__franchise {
     width: 100%;
   }
+  .section4-kamen1__bankets {
+    width: 12%;
+  }
   .section2-container__secret-assistants {
     height: 700px;
   }
@@ -241,6 +244,9 @@
   .section7-container__secret-assistants p {
     font-size: 40px !important;
     line-height: 48px !important; /* 120% */
+  }
+  .section7-container__secret-assistants {
+    padding-top: 0;
   }
   .line-none {
     border-right: 1px solid #454545;
@@ -1112,7 +1118,7 @@
     padding-top: 120px;
   }
 }
-@media (max-width: 1050px) {
+@media (max-device-width: 1050px) {
   .section7-container__restoran {
     padding: 0 20px;
     max-width: 95%;
@@ -1128,6 +1134,15 @@
   .franchise__container {
     max-width: 690px;
     padding: 0 100px;
+  }
+  .section4-kamen1__bankets {
+    left: 5%;
+    width: 9.5%;
+    bottom: 38%;
+  }
+  .section4-kamen2__bankets {
+    top: 6%;
+    width: 20.6%;
   }
   .franchise__items {
     margin-bottom: 24px;
@@ -2144,10 +2159,6 @@
     top: 12px;
     margin-left: -50px;
   }
-  .section4-kamen3__bankets {
-    width: 86px;
-    bottom: 9px;
-  }
   .section4-kamen1__secret-assistants {
     width: 54px;
     bottom: 202px;
@@ -2297,10 +2308,33 @@
     line-height: 32px !important; /* 100% */
   }
   /*title big*/
+  .section4-kamen1__bankets {
+    width: 54px;
+    left: 22%;
+    bottom: 50%;
+  }
+
+  .section4-kamen2__bankets {
+    width: 99px;
+  }
+
+  .section4-kamen3__bankets {
+    bottom: 12% !important;
+    right: 22% !important;
+    width: 86px !important;
+  }
 }
 @media (max-width: 475px) {
-  .section2-container__sertificate p {
-    height: 150px;
+  .section4-kamen1__bankets {
+    left: 4%;
+  }
+
+  .section4-kamen2__bankets {
+    top: 3%;
+  }
+
+  .section4-kamen3__bankets {
+    bottom: 5% !important;
   }
   .section1-img__main2 {
     left: 13%;
@@ -4115,10 +4149,10 @@
     overflow: hidden;
   }
   .section3-line-r__bankets {
-    right: 50px;
+    right: 25%;
   }
   .section3-line-l__bankets {
-    left: 50px;
+    left: 25%;
   }
   .section2-container__bankets {
     padding-top: 80px;
@@ -4159,10 +4193,7 @@
     top: 12px;
     margin-left: -50px;
   }
-  .section4-kamen3__bankets {
-    width: 86px;
-    bottom: 9px;
-  }
+
   .section4-kamen1__secret-assistants {
     width: 54px;
     bottom: 202px;
@@ -4405,9 +4436,8 @@
     width: 165px;
   }
   .section7-container__secret-assistants {
-    height: max-content;
+    height: 700px;
     width: 345px;
-    padding: 80px 0;
   }
   .section5-top-right-block__franchise {
     font-size: 12px;
@@ -4674,6 +4704,18 @@
   }
   .footer-reverse {
     flex-direction: column-reverse;
+  }
+  .section4__banketss {
+    font-size: 32px !important;
+    line-height: 32px !important;
+  }
+  .bankets__fs {
+    margin-bottom: 0 !important;
+  }
+  .bankets__h1 > h1 {
+    max-width: 290px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
