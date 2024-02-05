@@ -1701,7 +1701,7 @@
     right: 30px !important;
   } */
   .section1__restoran {
-    margin-right: -60px;
+    /*margin-right: -60px;*/
   }
   .section4-container-block__vacancy {
     flex-direction: column;
@@ -3772,7 +3772,7 @@
     right: 30px !important;
   } */
   .section1__restoran {
-    margin-right: -60px;
+    /*margin-right: -60px;*/
   }
   .section4-container-block__vacancy {
     flex-direction: column;
@@ -4403,6 +4403,7 @@
     margin-top: 26%;
   }
 }
+
 
 @media (max-width: 475px) {
   .panel-blocks-form__rent-hookahs input,
