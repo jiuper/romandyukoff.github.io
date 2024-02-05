@@ -720,7 +720,8 @@
   .section2-text__career {
     padding-bottom: 20px;
   }
-  .section3-text__secret-assistants {
+  .section3-text__secret-assistants,
+  .section5-text__rent-hookahs {
     padding-top: 150px;
     font-size: 40px;
     line-height: 48px; /* 120% */
@@ -2119,6 +2120,7 @@
   }
   .section1-p__main,
   .section3-text__secret-assistants,
+  .section5-text__rent-hookahs,
   .section4-p__secret-assistants {
     font-size: 32px !important;
     line-height: 34px !important; /* 100% */
@@ -2576,7 +2578,8 @@
   .section4-kamen3__bankets {
     right: 90px;
   }
-  .section3-text__secret-assistants {
+  .section3-text__secret-assistants,
+  .section5-text__rent-hookahs {
     max-width: 345px;
     padding-top: 110px;
   }
@@ -3466,6 +3469,10 @@
     font-size: 12px;
     line-height: 14px; /* 116.667% */
   }
+  .section3-container__hookahs {
+    border-right: none !important;
+    border-left: none !important;
+  }
   .panel-block3__rent-hookahs {
     width: 100%;
     padding: 62px 0;
@@ -4069,7 +4076,8 @@
   .section4-line3__catering {
     right: 90px;
   }
-  .section3-text__secret-assistants {
+  .section3-text__secret-assistants,
+  .section5-text__rent-hookahs {
     padding-top: 80px;
   }
   .section4__catering {
@@ -4164,6 +4172,7 @@
   }
   .section1-p__main,
   .section3-text__secret-assistants,
+  .section5-text__rent-hookahs,
   .section4-p__secret-assistants {
     font-size: 33px !important;
     line-height: 34px !important; /* 100% */
@@ -4709,8 +4718,12 @@
     top: -31%;
     width: 25.6%;
   }
-  .section3-text__secret-assistants {
+  .section3-text__secret-assistants,
+  .section5-text__rent-hookahs {
     padding-top: 160px;
+  }
+  .section5-text__rent-hookahs {
+    padding-top: 120px;
   }
   .block-sz {
     width: 298px !important;
@@ -4931,6 +4944,7 @@
   }
   .section1-p__main,
   .section3-text__secret-assistants,
+  .section5-text__rent-hookahs,
   .section4-p__secret-assistants,
   .section1-container__secret-assistants h1 {
     font-size: 30px !important;

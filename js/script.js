@@ -7,7 +7,7 @@ if (IsHeroSlider) {
     direction: "horizontal",
     slidesPerView: "auto",
     keyboard: true,
-    freeMode: true,
+    freeMode: false,
     speed: 200,
     touchEventsTarget: "HeroScroll",
     mousewheel: {
