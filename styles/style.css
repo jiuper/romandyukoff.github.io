@@ -612,11 +612,14 @@ footer {
 }
 .face1__secret-assistants {
   position: absolute;
-  left: 7%;
-  top: 6%;
+  left: 0;
+  top: 17%;
   width: 18.6%;
   z-index: 999999999;
   transform: rotate(360deg);
+}
+.secret-assistants_pt {
+  padding: 0 !important;
 }
 .face2__secret-assistants {
   top: -5%;
@@ -1373,11 +1376,11 @@ header {
 }
 .section2-container__loyalty-program p {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: 84px;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
-  letter-spacing: -1.68px;
+  line-height: 84px;
+  letter-spacing: -2px;
   max-width: 1356px;
   text-transform: uppercase;
   padding-bottom: 60px;
@@ -1496,6 +1499,7 @@ header {
   text-transform: uppercase;
 }
 .section3-content-container-block__loyalty-program p {
+  max-width: 245px;
   text-align: center;
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
@@ -1816,7 +1820,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   text-align: right;
   letter-spacing: 0.6px;
@@ -1897,12 +1901,12 @@ header {
   object-fit: cover;
 }
 .section2-container__sertificate p {
-  font-size: 3.15vw;
+  font-size: min(60px, 3vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: 3.15vw;
-  letter-spacing: -1.2px;
+  line-height: min(60px, 3vw);
+  letter-spacing: -2px;
   text-transform: uppercase;
   max-width: 930px;
 }
@@ -1966,7 +1970,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
   max-width: 270px;
@@ -2042,7 +2046,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2105,7 +2109,7 @@ header {
 }
 .section4-container-block__contacts a {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2142,7 +2146,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2188,7 +2192,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2209,7 +2213,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2913,7 +2917,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -2922,7 +2926,14 @@ header {
 .section10-container-block__catering:not(:last-child) {
   border-right: 1px solid #454545;
 }
-
+.secret-assistants_pt > p {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  max-width: 830px;
+}
 .section10-container__catering {
   display: flex;
   border-top: 1px solid #454545;
@@ -3243,7 +3254,7 @@ header {
   font-weight: 400;
   padding-top: 120px;
   line-height: min(84px, 4.4vw);
-  letter-spacing: -1.68px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 .section4__restoran {
@@ -3543,7 +3554,6 @@ header {
 .section1__restaurant-all {
   position: relative;
   overflow: hidden;
-  margin-top: -80px;
 }
 .section2-container-block-left__restaurant-all {
   display: flex;
@@ -3551,7 +3561,12 @@ header {
   gap: 6px;
 }
 .section2-container-block-left__restaurant-all > a {
-  font-family: "FuturaPTLigth", sans-serif !important;
+  font-family: "FuturaPT", sans-serif !important;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
 }
 
 .section2-container-block-left-top__restaurant-all {
@@ -3569,9 +3584,12 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.2px;
+}
+.section2__restoran-pt {
+  padding-bottom: 60px !important;
 }
 .section2-container-block-middle__restaurant-all h5 {
   text-align: center;
@@ -3591,7 +3609,7 @@ header {
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -3600,7 +3618,7 @@ header {
   font-family: "FuturaPTMedium", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
