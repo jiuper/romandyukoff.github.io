@@ -54,7 +54,7 @@
   }
 
   .galleryAnim::before {
-    width: 734px;
+    width: 682px;
   }
 
   .section3-img__loyalty-program {
@@ -722,7 +722,7 @@
   }
   .section3-text__secret-assistants,
   .section5-text__rent-hookahs {
-    padding-top: 150px;
+    padding-top: 200px;
     font-size: 40px;
     line-height: 48px; /* 120% */
     max-width: 690px;
@@ -987,7 +987,6 @@
   }
 
   .section-last-bottom__main {
-    padding-top: 270px;
     justify-content: center;
   }
 
@@ -1143,14 +1142,44 @@
     padding: 0 20px;
     max-width: 95%;
   }
+  .section1-img__main3 {
+    top: 14%;
+    right: 6%;
+  }
+  .section1-img__main4 {
+    top: 81%;
+  }
+  .section4-line2__catering {
+    left: 36%;
+  }
+  .section4-line1__catering {
+    left: 9%;
+  }
   .section6-line3__restoran {
     display: none;
+  }
+  .footer-container-left-colum {
+    gap: 5px;
+  }
+  .section-last-bottom__main {
+    padding-top: 218px;
+  }
+  .section-last-p__main {
+    padding-bottom: 48px;
   }
   .section6-line4__restoran {
     right: 35%;
   }
   .section6-line2__restoran {
     left: 35%;
+  }
+  body .galleryAnim .galleryAnim__slide {
+    padding-bottom: 45.5%;
+  }
+  .section-last-p__main {
+    letter-spacing: -1px;
+    padding-bottom: 23px;
+    padding-top: 47px;
   }
   .section2-block__contacts button {
     width: 152px;
@@ -1244,8 +1273,12 @@
     padding-bottom: 240px;
   }
   .section-last-img__main {
-    right: 3%;
-    top: 50%;
+    right: 4%;
+    top: 67%;
+    width: 244px;
+  }
+  .section4__catering {
+    padding-bottom: 240px !important;
   }
   .section4-container__franchise button {
     margin-bottom: 40px;
@@ -1292,6 +1325,11 @@
   }
   .secret-assistants_h {
     height: 600px !important;
+  }
+  .section1-p__main {
+    font-size: 32px !important;
+    line-height: 32px !important;
+    letter-spacing: -2px;
   }
   .section7-container-block__catering:nth-child(2) {
     border-top: none;
@@ -2118,7 +2156,6 @@
   .section1-p__main {
     padding-top: 45px;
   }
-  .section1-p__main,
   .section3-text__secret-assistants,
   .section5-text__rent-hookahs,
   .section4-p__secret-assistants {
@@ -2559,6 +2596,12 @@
   .section3-container-block__bankets:nth-child(4) {
     border-bottom: 1px solid #454545;
   }
+  .section4__catering {
+    padding-bottom: 90px !important;
+  }
+  .galleryAnim::before {
+    max-width: 345px;
+  }
 }
 @media (max-width: 405px) {
   .section3-container-block-bg__secret-assistants {
@@ -2598,12 +2641,12 @@
 
 @media (max-width: 375px) {
   .section1-img__main2 {
-    left: 13%;
-    bottom: 19%;
+    left: 4%;
+    bottom: 24%;
   }
   .section1-img__main3 {
-    right: 10%;
-    top: 7%;
+    right: 3%;
+    top: 1%;
   }
 }
 @media (max-width: 355px) {
@@ -2979,13 +3022,10 @@
     width: 124px;
     font-size: 14px;
   }
-  .footer-container {
-    padding-bottom: 120px;
-  }
   .footer-container-right,
   .footer-bottom-left,
   .footer-bottom-right {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
   }
   .footer-bottom-left {
@@ -3270,7 +3310,6 @@
   }
 
   .section-last-bottom__main {
-    padding-top: 270px;
     justify-content: center;
   }
 
@@ -4170,7 +4209,6 @@
   .section1-p__main {
     padding-top: 45px;
   }
-  .section1-p__main,
   .section3-text__secret-assistants,
   .section5-text__rent-hookahs,
   .section4-p__secret-assistants {
@@ -4403,7 +4441,6 @@
     margin-top: 26%;
   }
 }
-
 
 @media (max-width: 475px) {
   .panel-blocks-form__rent-hookahs input,
@@ -4721,7 +4758,7 @@
   }
   .section3-text__secret-assistants,
   .section5-text__rent-hookahs {
-    padding-top: 160px;
+    padding-top: 66px;
   }
   .section5-text__rent-hookahs {
     padding-top: 120px;
@@ -4770,6 +4807,10 @@
   }
   .footer-reverse {
     flex-direction: column-reverse;
+  }
+  .footer-reverse > a {
+    font-size: 12px;
+    line-height: 16px;
   }
   .section4__banketss {
     font-size: 32px !important;
@@ -4831,6 +4872,35 @@
   .mySwiper-bt-one {
     margin-top: 44%;
   }
+  .galleryAnim.__hidden {
+    padding-bottom: 68px;
+  }
+  body .galleryAnim .galleryAnim__slide {
+    padding-bottom: 68%;
+  }
+  .galleryAnim__title {
+    letter-spacing: 2px;
+    top: -48px;
+  }
+  .section-last-bottom__main {
+    padding-top: 128px;
+  }
+  .section-last-p__main {
+    padding-top: 12px;
+  }
+  .footer-container-left {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer-container-right {
+    flex-direction: column;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+  .ds-none {
+    display: none;
+  }
 }
 
 @media (max-width: 405px) {
@@ -4864,7 +4934,6 @@
   }
   .section-last-p__main {
     width: 340px;
-    font-size: 30px !important;
   }
   .section3-container__franchise p {
     width: 255px;

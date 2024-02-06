@@ -1,0 +1,12 @@
+.line-center {
+  border-right: 1px solid #454545;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-mr {
+  margin-right: 15px;
+}
+
