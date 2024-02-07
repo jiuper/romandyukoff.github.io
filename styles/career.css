@@ -1,0 +1,31 @@
+.career__page-wrapper {
+  padding-top: 200px !important;
+  padding-bottom: 274px !important;
+}
+.career__page-container {
+  padding: 15px 150px;
+}
+.career__page-imgs {
+  width: 19%;
+}
+.career__page-imgs > img {
+  width: 100%;
+  height: 100%;
+}
+.career__page-img {
+  width: 41%;
+}
+.career__page-img > img {
+  width: 100%;
+  height: 100%;
+}
+.career__page-form {
+  height: 1239px;
+  padding: 235px 15px !important;
+}
+
+.career__page-container-form-city {
+  height: 1184px;
+  padding: 170px 15px 0 15px !important;
+  gap: 36px;
+}

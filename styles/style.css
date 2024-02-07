@@ -537,14 +537,14 @@ footer {
 }
 .section4-kamen2__bankets {
   position: absolute;
-  top: 6%;
+  top: 9%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .section4-kamen1__bankets {
   position: absolute;
   bottom: 28%;
-  left: 8.4%;
+  left: 10%;
   z-index: 9999999999;
 }
 .section1-container-img-blur__secret-assistants {
@@ -1266,14 +1266,13 @@ footer {
 .section7-container__secret-assistants {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 950px;
+  height: 1390px;
   max-width: 930px;
   margin: 0 auto;
   padding: 0 20px;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
-  padding-top: 80px;
+  padding-top: 45px;
 }
 .bankets__fs {
   font-size: 84px !important;
@@ -1281,7 +1280,6 @@ footer {
   margin-bottom: 80px;
 }
 .section7__secret-assistants {
-  padding: 60px 0;
   border-bottom: 1px solid #454545;
 }
 
@@ -1671,7 +1669,7 @@ header {
   margin-left: -0.5px;
 }
 .section2-container__bankets {
-  padding: 280px 20px 260px 20px;
+  padding: 280px 20px 212px 20px;
 }
 
 /* .section5-container__bankets {
@@ -1721,7 +1719,7 @@ header {
   width: 57%;
 }
 .section4-container-block__bankets {
-  width: 20%;
+  width: 19.9%;
   text-align: center;
   font-family: "FuturaPT", sans-serif;
   font-size: 20px;
@@ -1786,14 +1784,14 @@ header {
   text-transform: uppercase;
 }
 .section5__bankets {
-  padding-bottom: 13%;
+  padding-bottom: 15.5%;
   position: relative;
   border-bottom: 1px solid #454545;
 }
 .section4__bankets {
   position: relative;
 
-  padding-bottom: 280px;
+  padding-bottom: 284px;
 }
 .section4__bankets-container {
   padding-top: 280px;
@@ -1811,8 +1809,8 @@ header {
 }
 .section4-kamen3__bankets {
   position: absolute;
-  top: 60%;
-  right: 18%;
+  top: 62%;
+  right: 18.5%;
 }
 .section3-container-block__bankets-menu {
   width: 57%;
@@ -2031,19 +2029,21 @@ header {
 .section1__contacts {
   padding-top: 200px;
   padding-bottom: 120px;
-  margin-top: -80px;
   border-bottom: 1px solid #454545;
   position: relative;
   overflow: hidden;
 }
+.universal__page {
+  height: 943px;
+  justify-content: center;
+}
 .section1-line__contacts {
-  background: #454545;
+  border-right: 1px solid #454545;
   height: 100%;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -0.5px;
-  width: 1px;
+  transform: translate(-50%, 0);
 }
 .section2-top__contacts {
   font-family: "FuturaPT", sans-serif;
@@ -2058,6 +2058,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 .section2-block__contacts h3 {
   text-align: center;
@@ -2080,11 +2081,11 @@ header {
 }
 .section2__contacts {
   padding-top: 20px;
-  padding-bottom: 84px;
+  padding-bottom: 64px;
   border-bottom: 1px solid #454545;
 }
 .section3-container__contacts {
-  padding: 280px 15px;
+  padding: 270px 15px;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
 }
@@ -2363,6 +2364,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
+}
+.footer-mb {
+  display: none;
 }
 .section7-p__vacancy {
   display: none;
@@ -2459,7 +2464,7 @@ header {
   letter-spacing: 0.2px;
 }
 .section4-container-block__vacancy ul {
-  width: 930px;
+  width: 891px;
 }
 .section4-container-block__vacancy {
   padding: 20px;
@@ -4042,7 +4047,7 @@ header {
 
 .bankets__point {
   width: 100%;
-  height: 258px;
+  height: 280px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -4050,6 +4055,7 @@ header {
   border-right: 1px solid #454545;
 }
 .bankets__point > p {
+  max-width: 830px;
   padding: 0 105px;
   font-family: "Panama Regular";
   font-size: 40px;
@@ -4910,14 +4916,20 @@ body .galleryAnim .galleryAnim__fraction {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #454545;
-  gap: 57px;
+  gap: 54px;
+}
+.career__page-container_h1 > p {
+  max-width: 450px;
+}
+.career__page-container-h1 > p {
+  max-width: 930px;
 }
 .section6-container-block__career {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-bottom: 103px;
+  padding-bottom: 87px;
 }
 .section6-container-block-text__career p {
   font-size: 40px;

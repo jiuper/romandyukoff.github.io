@@ -1,0 +1,9 @@
+.vacancy__page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 143px;
+  height: 1246px;
+}
+.vacancy__page-form > p {
+  letter-spacing: -1px;
+}
