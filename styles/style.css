@@ -694,7 +694,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: min(84px, 4.4vw);
-  letter-spacing: -1.68px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -789,7 +789,7 @@ footer {
   font-weight: 400;
   line-height: 48px;
   text-align: center;
-  letter-spacing: -1.68px;
+  letter-spacing: -2px;
   text-transform: uppercase;
 }
 .section7-inputs__secret-assistants {
@@ -1076,17 +1076,17 @@ footer {
   align-items: center;
 }
 .section4-container__secret-assistants img {
-  width: 15.5%;
+  width: 20%;
   position: absolute;
-  top: -350px;
+  top: -444px;
   z-index: 99999999999;
 }
 
 .section2-img1__looking-premises {
   position: absolute;
-  left: 95px;
+  left: 86px;
   top: 390px;
-  width: 18.6%;
+  width: 20.6%;
   z-index: 99999999;
   transform: rotate(-15deg);
 }
@@ -1128,15 +1128,15 @@ footer {
   justify-content: center;
   position: relative;
   max-width: 930px;
-  padding: 0 130px;
+  padding: 0 159px;
   height: 100%;
   margin: 0 auto;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
-  height: 1000px;
+  height: 1136px;
 }
 .franchise__items {
-  margin-bottom: 88px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .franchise__lineL {
@@ -1169,7 +1169,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: 48px; /* 120% */
-  letter-spacing: -0.4px;
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 .franchise__items > span {
@@ -1200,7 +1200,7 @@ footer {
 }
 
 .franchise__imgGal25 {
-  width: 59%;
+  width: 50%;
 }
 .franchise__wrapper-imgGal25 {
   border-bottom: 1px solid #454545;
@@ -2438,7 +2438,7 @@ header {
 .section3-img2__vacancy {
   position: absolute;
   z-index: 1;
-  top: 30%;
+  top: 47%;
   right: -9em;
 }
 .section4-container-block__vacancy {
@@ -2558,8 +2558,9 @@ header {
 .section4__careeer-line {
   border-right: 1px solid #454545;
   position: absolute;
-  left: 48%;
+  left: 50%;
   height: 100%;
+  transform: translate(-50%, 0px);
 }
 .section5-container__careeer h2 {
   text-align: center;
@@ -3002,19 +3003,19 @@ header {
 .section12-container-video__catering {
   color: #0d0d0d;
   font-family: "FuturaPT", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 125% */
+  line-height: 16px; /* 125% */
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background: #dfdfdf;
-  letter-spacing: 0.48px;
-  width: 212px;
-  height: 40px;
+  letter-spacing: -1px;
+  width: 173px;
+  height: 36px;
   text-transform: uppercase;
 }
 .catering-bottom-link-look-all {
@@ -3680,7 +3681,7 @@ header {
   margin-top: 240px;
 }
 .section2-container__franchise p {
-  max-width: 1725px;
+  max-width: 1085px;
   text-align: center;
   font-size: 4.4vw;
   margin: 0 auto;
@@ -3693,8 +3694,8 @@ header {
 .section2-container__franchise img {
   position: absolute;
   z-index: 999;
-  top: -62%;
-  width: 22%;
+  top: -56%;
+  width: 20%;
   transform: rotate(15deg);
 }
 .section2-container-bottom__franchise {
@@ -3734,7 +3735,7 @@ header {
   position: relative;
   overflow: hidden;
   padding-bottom: 280px;
-  padding-top: 30px;
+  padding-top: 75px;
   border-bottom: 1px solid #454545;
 }
 .section2-line__franchise {

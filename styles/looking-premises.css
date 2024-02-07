@@ -1,0 +1,17 @@
+.looking-premises-page__block1 {
+  padding-top: 195px;
+}
+.looking-premises-page__block3-container {
+  padding-bottom: 12%;
+}
+.looking-premises-page__form {
+  height: 1481px !important;
+}
+.looking-premises-page__form-wrapper {
+  gap: 29px;
+  height: 1481px !important;
+}
+.looking-premises-page__form-wrapper > p {
+  font-size: 60px;
+  line-height: 66px;
+}

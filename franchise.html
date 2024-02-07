@@ -15,6 +15,7 @@
     <script type="module" crossorigin src="/js/header.js"></script>
     <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/franshise.css" />
     <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
   </head>
   <body>
@@ -315,7 +316,9 @@
           Активно развивающаяся сеть заведений <br />
           в России, США, Казахстане и Европе.
         </h2>
-        <div class="section1-container__secret-assistants">
+        <div
+          class="section1-container__secret-assistants franchise-page-caption"
+        >
           <h1>
             Станьте частью франшизной сети <br />
             Tangiers Lounge
@@ -341,11 +344,8 @@
         <div class="section2-container__franchise">
           <img src="/img/face1.png" alt="" />
           <p>
-            Tangiers Lounge <br />
-            был основан в 2018 году. <br />
-            За это время мы успели зарекомендовать <br />
-            себя как лидеры <br />
-            сервиса и качества
+            Tangiers Lounge был основан в 2018 году. За это время мы успели
+            зарекомендовать себя как лидеры сервиса и качества
           </p>
         </div>
         <div class="section2-container-bottom__franchise">
@@ -426,7 +426,7 @@
       <div class="container section5-top-left__slider">
         <div class="section5-top-left__slider-clear"></div>
         <div
-          class="section7-container__secret-assistants section3-container__vacancy franchise__sz"
+          class="franchise-page-slide section3-container__vacancy franchise__sz franchise-page__desc"
         >
           <img src="/img/33.png" alt="" class="section3-img1__vacancy" />
 
@@ -604,7 +604,7 @@
       </div>
     </section>
     <section
-      class="section12__catering"
+      class="section12__catering franchise-page__video"
       style="background: url('/img/video2.png')"
     >
       <div class="section12-container__catering">
@@ -631,7 +631,7 @@
         <div class="section3-container__looking-premises-lineL"></div>
         <div class="section3-container__looking-premises-lineR"></div>
         <div
-          class="section3-container__looking-premises section3-container__contacts section6-container__career2"
+          class="section3-container__looking-premises section3-container__contacts franchise-page__block-open section6-container__career2"
         >
           <p
             class="section3-text__secret-assistants section5-text__secret-assistants"
@@ -640,10 +640,10 @@
             Процесс открытия франшизы Tangiers Lounge
           </p>
           <div
-            class="section3-container__secret-assistants section5-container__secret-assistants"
+            class="section3-container__secret-assistants section5-container__secret-assistants franchise-page__container-img"
           >
             <div
-              class="section3-container-block__secret-assistants section3-container-img__contacts"
+              class="section3-container-block__secret-assistants section3-container-img__contacts franchise-page__img"
             >
               <img
                 src="/img/gal21.png"
@@ -722,8 +722,8 @@
     <section class="franchise__wrapper franchise__wrapper-imgGal25">
       <div class="franchise__lineL franchise__hidden"></div>
       <div class="franchise__lineR franchise__hidden"></div>
-      <div class="franchise__container">
-        <div class="franchise__items">
+      <div class="franchise__container franchise-page-container franchise-page-container__openBlock">
+        <div class="franchise__items franchise-page-caption__p">
           <p class="franchise__item">А что после открытия?</p>
         </div>
         <div class="franchise__img-container franchise__imgGal25">
@@ -918,15 +918,15 @@
         </div>
       </div>
     </section>
-    <section class="section7__secret-assistants section7__franchise-tx">
+    <section class="section7__secret-assistants">
       <div class="container">
-        <div class="section7-container__secret-assistants">
+        <div class="section7-container__secret-assistants franchise-page-form">
           <img
             src="/img/gal5.png"
             alt=""
             class="section7-img__secret-assistants"
           />
-          <p class="section7-p__secret-assistants">
+          <p class="section7-p__secret-assistants bankets__fs">
             Оставьте заявку, <br />
             и мы с&nbsp;вами свяжемся
           </p>
@@ -938,38 +938,38 @@
             />
             <input
               type="tel"
-              placeholder="Город"
-              class="input-tel__secret-assistants input-resize"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
             />
-            <div class="items__input-resize">
-              <input
-                type="tel"
-                placeholder="Телефон"
-                class="input-tel__secret-assistants"
-              />
-              <input
-                type="text"
-                placeholder="Почта"
-                class="input-tel__secret-assistants"
-              />
-            </div>
-
             <input
               type="text"
-              placeholder="Коментарий"
-              class="input-city__secret-assistants input-resize"
+              placeholder="Город"
+              class="input-city__secret-assistants"
+            />
+            <input
+              min="0"
+              max="9999"
+              maxlength="4"
+              oninput="this.value=this.value.slice(0,this.maxLength||0/0);this.value=(this.value   < 0) ? (1/1) : this.value;"
+              placeholder="Количество человек"
+              class="input-name__secret-assistants"
+            />
+            <input
+              type="text"
+              placeholder="Комментарий"
+              class="input-name__secret-assistants"
             />
             <div class="radio">
               <input
                 class="custom-radio"
                 type="checkbox"
-                id="color-1"
+                id="color-3"
                 name="color"
                 value="indigo"
               />
-              <label for="color-1"
-                >Даю согласие на&nbsp;обработку
-                <a href="#!">персональных данных</a></label
+              <label for="color-3"
+                >Даю согласие на
+                <a href="/">обработку персональных данных</a></label
               >
             </div>
             <button type="button">Отправить</button>
@@ -1077,7 +1077,12 @@
             <a href="#!" class="footer-bottom-social-ellipse"> IN </a>
             <a href="#!" class="footer-bottom-social-ellipse"> FB </a>
           </div>
-          <div class="footer-bottom-right">
+                 <div class="footer-bottom-right ds-none">
+              <p>© 2022 Tangiers Lounge</p>
+              <p>ART HOOKAH FAMILY</p>
+            </div>
+          </div>
+          <div class="footer-mb">
             <p>© 2022 Tangiers Lounge</p>
             <p>ART HOOKAH FAMILY</p>
           </div>
