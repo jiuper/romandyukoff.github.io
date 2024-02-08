@@ -19,7 +19,21 @@ if (IsHeroSlider) {
   let blur = document.querySelector(".HeroScroll__blur");
   let heroImg = document.querySelector(".HeroScroll__img");
 
+  const scrollEnabler = (_, progress) => {
+    if (progress === 1) {document.body.style.overflow = 'auto'}
+  }
+  swiperHero.on("afterInit", () => console.log('init'));
+  swiperHero.on("reachEnd", () => document.body.style.overflow = 'auto');
   swiperHero.on("scroll", blurBack);
+
+
+
+  let enabled = false;
+  heroSlider.addEventListener('pointerdown', () => enabled = true);
+  heroSlider.addEventListener('pointerup', () => enabled = false);
+  heroSlider.addEventListener('pointermove', (event) => {
+    console.log(event);
+  });
 
   // var startY = 0;
 
@@ -159,20 +173,23 @@ galleryAnimEndSliderBtn.addEventListener("click", () => {
   galleryAnim.classList.add("__hidden");
 });
 
-btnFran.forEach(function (item) {
-  item.addEventListener("click", function () {
-    btnFran.forEach(function (i) {
-      i.classList.remove("section5-top-right-block-active__franchise");
-    });
+// (btnFran || []).forEach(function (item) {
+//   item.addEventListener("click", function () {
+//     btnFran.forEach(function (i) {
+//       i.classList.remove("section5-top-right-block-active__franchise");
+//     });
+//
+//     item.classList.add("section5-top-right-block-active__franchise");
+//
+//     let tubIDFran = item.getAttribute("data-tabFran");
+//     let tabActiveFran = document.querySelector(tubIDFran);
+//
+//     tabFran.forEach(function (item) {
+//       item.classList.remove("section7-p__vacancy-active");
+//     });
+//     tabActiveFran.classList.add("section7-p__vacancy-active");
+//   });
+// });
 
-    item.classList.add("section5-top-right-block-active__franchise");
 
-    let tubIDFran = item.getAttribute("data-tabFran");
-    let tabActiveFran = document.querySelector(tubIDFran);
 
-    tabFran.forEach(function (item) {
-      item.classList.remove("section7-p__vacancy-active");
-    });
-    tabActiveFran.classList.add("section7-p__vacancy-active");
-  });
-});
