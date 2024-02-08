@@ -5242,7 +5242,6 @@ body .galleryAnim .galleryAnim__fraction {
   text-transform: uppercase;
 }
 .section-map-top-right__franchise span {
-  color: #454545;
   font-family: Futura PT, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -5251,6 +5250,10 @@ body .galleryAnim .galleryAnim__fraction {
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
+.section-map-top-right__franchise span:not(.section-map-top-right__franchise-item--active) {
+  color: #454545;
+}
+
 .section-map-top__franchise {
   display: flex;
   width: 100%;
@@ -5347,12 +5350,12 @@ body .galleryAnim .galleryAnim__fraction {
 }
 .section-map__franchise {
   position: relative;
-  width: 100%;
-  height: 1000px;
-  background-image: url("../img/map-fran.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*width: 100%;*/
+  /*height: 1000px;*/
+  /*background-image: url("../img/map-fran.png");*/
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 /* .section-map-bg__franchise {
   width: 100%;

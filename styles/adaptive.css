@@ -1730,7 +1730,7 @@
   .section-map-content__franchise-mob-parent {
     right: auto;
     left: 19px;
-    top: 136px;
+    top: 50%;
   }
   .section-map-top__franchise {
     gap: 20px;
@@ -2921,15 +2921,18 @@
     position: relative;
   }
   .section-map-content__franchise-mob {
-    display: flex;
-    max-width: 425px;
-    gap: 48px 93px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 420px;
+    gap: 2vw 6vw;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .section-map-content__franchise-mob-parent {
     position: absolute;
-    top: 73px;
-    right: 126px;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 4%;
   }
   .section-map-top__franchise {
     flex-direction: column;
@@ -2942,6 +2945,7 @@
   .section-map-content-block__franchise-mob {
     display: flex;
     align-items: flex-end;
+    gap: 12px;
   }
   .section-map-content-block__franchise-mob span {
     font-size: 60px;
@@ -3823,7 +3827,7 @@
   .section-map-content__franchise-mob-parent {
     right: auto;
     left: 19px;
-    top: 136px;
+    top: 50%;
   }
   .section-map-top__franchise {
     gap: 20px;
@@ -4606,7 +4610,8 @@
     padding-bottom: 0;
   }
   .section-map-content__franchise-mob {
-    gap: 3px 53px;
+    gap: 2vw 6vw;
+    justify-content: flex-start;
   }
   .section-map-bg__franchise {
     display: none;
