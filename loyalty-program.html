@@ -15,6 +15,7 @@
     <script type="module" crossorigin src="/js/header.js"></script>
     <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/loyalty-program.css" />
     <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
   </head>
   <body>
@@ -725,35 +726,46 @@
       </div>
     </section>
     <script>
-      var acc = document.getElementsByClassName("accordion");
-      const btn = document.querySelector(".btn_more");
+      const acc = [...document.querySelectorAll(".accordion")];
+      const btn = [...document.querySelectorAll(".btn_more")];
       const div = [...document.querySelectorAll(".loyalty__program-items")];
-      var i;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight - 100 + "px";
+      acc.forEach((el, i) =>
+        el.addEventListener("click", () => {
+          el.classList.toggle("active");
+          const panel = el.nextElementSibling;
+          panel.style.maxHeight
+            ? (panel.style.maxHeight = null)
+            : (panel.style.maxHeight = panel.scrollHeight + "px");
+
+          if (acc[i].className !== "active") {
+            btn[i].className !== "btn__width" &&
+              btn[i].classList.add("btn__width"),
+              [...div[i].children].forEach((child) =>
+                child.nodeName === "DIV"
+                  ? child.classList.remove("item-visible")
+                  : child
+              );
           }
-        });
-      }
-
-      btn.addEventListener("click", (e) => {
-        btn.classList.add("more__hidden");
-        btn.classList.remove("btn__width");
-        div.forEach((el, i) =>
-          [...el.children].forEach(
-            (elem, i) =>
-              elem.nodeName === "DIV" && elem.classList.add("item-visible")
-          )
-        );
-        btn.parentElement.parentElement.parentElement.style.maxHeight =
-          btn.parentElement.parentElement.parentElement.scrollHeight + "px";
-      });
+        })
+      );
+     
+      btn.forEach((el, i) =>
+        el.addEventListener("click", () => {
+          btn[i].classList.add("more__hidden");
+          btn[i].classList.remove("btn__width");
+          div.forEach((el, j) =>
+            [...el.children].forEach((elem, k) =>
+              i === j && elem.nodeName === "DIV"
+                ? elem.classList.add("item-visible")
+                : elem
+            )
+          );
+          btn[i].parentElement.parentElement.parentElement.style.maxHeight =
+            btn[i].parentElement.parentElement.parentElement.scrollHeight +
+            "px";
+        })
+      );
     </script>
     <footer>
       <div class="container">

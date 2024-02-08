@@ -599,25 +599,25 @@ footer {
   max-width: 1430px;
   width: 100%;
   text-align: center;
-  font-size: 5.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 5.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
 .section2__secret-assistants {
   position: relative;
-  padding-top: 16%;
+  padding-top: 9%;
   background: #0d0d0d;
   z-index: 99999;
   border-bottom: 1px solid #454545;
 }
 .face1__secret-assistants {
   position: absolute;
-  left: 0;
-  top: 17%;
-  width: 18.6%;
+  left: 4%;
+  top: 14%;
+  width: 20.6%;
   z-index: 999999999;
   transform: rotate(360deg);
 }
@@ -626,13 +626,13 @@ footer {
 }
 .face2__secret-assistants {
   top: -5%;
-  right: 11%;
+  right: 15%;
   position: absolute;
   z-index: 9999;
   width: 10%;
 }
 .face3__secret-assistants {
-  bottom: -50%;
+  bottom: -34%;
   z-index: 999999999;
   left: 50%;
   transform: translate(-50%, 0);
@@ -643,12 +643,12 @@ footer {
   max-width: 100%;
 }
 .section2__secret-assistants {
-  padding-bottom: 180px;
+  padding-bottom: 176px;
 }
 .section3-text__secret-assistants {
   max-width: 930px;
   margin: 0 auto;
-  padding-top: 287px;
+  padding-top: 295px;
   display: block;
   font-size: 60px;
   font-style: normal;
@@ -726,11 +726,11 @@ footer {
   max-width: 930px;
 }
 .section6-p__secret-assistants {
-  font-size: 3.15vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: 3.15vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -763,8 +763,8 @@ footer {
 .section4-kamen3__secret-assistants-photo {
   z-index: 999999999;
   position: absolute;
-  right: 10%;
-  bottom: 5%;
+  right: 18%;
+  bottom: 3%;
 }
 .section5-title__secret-assistants {
   font-size: 20px;
@@ -1574,7 +1574,7 @@ header {
   align-items: center;
 }
 .item-visible {
-  display: block !important;
+  display: flex !important;
 }
 .section6-content-block__loyalty-program {
   width: 15%;
@@ -2753,7 +2753,7 @@ header {
 .section4__catering {
   position: relative;
   margin-top: -38px;
-  padding-bottom: 250px;
+  padding-bottom: 237px;
   border-bottom: 1px solid #454545;
 }
 .section4-line1__catering {
@@ -2774,7 +2774,7 @@ header {
   height: 100%;
   position: absolute;
   border-right: 1px solid #454545;
-  right: 20.6%;
+  right: 20.2%;
   top: 0;
 }
 .section4-line4__catering {
@@ -5798,8 +5798,8 @@ header {
 .section4-kamen2__secret-assistants-photo {
   z-index: 99999999;
   position: absolute;
-  left: 50%;
-  top: 4%;
+  left: 48%;
+  top: 7%;
   transform: translate(-50%, 0);
 }
 .section4__secret-assistants-photo {
@@ -5809,8 +5809,8 @@ header {
 .section4-kamen1__secret-assistants-photo {
   z-index: 99999999;
   position: absolute;
-  left: 8%;
-  bottom: 15%;
+  left: 9%;
+  bottom: 18%;
 }
 .modal-header-book-content {
   display: flex;
