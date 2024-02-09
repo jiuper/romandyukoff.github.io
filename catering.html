@@ -14,6 +14,7 @@
     <script type="module" crossorigin src="/assets/index.1a3fe84b.js"></script>
     <link rel="stylesheet" href="/assets/index.8ba8ea75.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/catering.css" />
     <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
   </head>
   <body>
@@ -475,7 +476,7 @@
     </section>
     <section class="section7__catering">
       <div class="section7-container__catering">
-        <div class="section7-container-block__catering">
+        <div class="section7-container-block__catering catering__page-hover">
           <img src="/img/heat1.png" alt="" />
           <p class="section7-container-block-p-title__catering">Минимум</p>
           <span>
@@ -522,12 +523,68 @@
             <button
               class="section7-container-block-mob-btn__catering"
               type="button"
+              onclick="handleIsToogle('Минимум')"
+            >
+              Заказать
+            </button>
+          </div>
+          <div class="catering__page-new">
+            <div>
+              <p class="section7-container-block-p-title__catering">Минимум</p>
+              <span>
+                18.000₽
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                    fill="#454545"
+                  />
+                  <circle cx="9" cy="9" r="8" stroke="#454545" />
+                </svg>
+              </span>
+            </div>
+            <div class="catering__page-new__wrapper">
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>Цена продления</p>
+                  <span>6000₽/ч</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>На компанию</p>
+                  <span>до 6 чел.</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items-last">
+                <div class="catering__page-new__item-last">
+                  <span>6</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>1</span>
+                  <p>Мастер</p>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="handleIsToogle('Минимум')"
+              class="catering__page-new__btn"
             >
               Заказать
             </button>
           </div>
         </div>
-        <div class="section7-container-block__catering">
+        <div class="section7-container-block__catering catering__page-hover">
           <img src="/img/heat2.png" alt="" />
           <p class="section7-container-block-p-title__catering">Стандарт</p>
           <span>
@@ -574,12 +631,68 @@
             <button
               class="section7-container-block-mob-btn__catering"
               type="button"
+              onclick="handleIsToogle('Стандарт')"
+            >
+              Заказать
+            </button>
+          </div>
+          <div class="catering__page-new">
+            <div>
+              <p class="section7-container-block-p-title__catering">Стандарт</p>
+              <span>
+                30.000₽
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                    fill="#454545"
+                  />
+                  <circle cx="9" cy="9" r="8" stroke="#454545" />
+                </svg>
+              </span>
+            </div>
+            <div class="catering__page-new__wrapper">
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>Цена продления</p>
+                  <span>10000₽/ч</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>На компанию</p>
+                  <span>до 12 чел.</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items-last">
+                <div class="catering__page-new__item-last">
+                  <span>6</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>1</span>
+                  <p>Мастер</p>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="handleIsToogle('Стандарт')"
+              class="catering__page-new__btn"
             >
               Заказать
             </button>
           </div>
         </div>
-        <div class="section7-container-block__catering">
+        <div class="section7-container-block__catering catering__page-hover">
           <img src="/img/heat3.png" alt="" />
           <p class="section7-container-block-p-title__catering">Стандарт+</p>
           <span>
@@ -626,12 +739,71 @@
             <button
               class="section7-container-block-mob-btn__catering"
               type="button"
+              onclick="handleIsToogle('Стандарт+')"
+            >
+              Заказать
+            </button>
+          </div>
+          <div class="catering__page-new">
+            <div>
+              <p class="section7-container-block-p-title__catering">
+                Стандарт+
+              </p>
+              <span>
+                45.000₽
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                    fill="#454545"
+                  />
+                  <circle cx="9" cy="9" r="8" stroke="#454545" />
+                </svg>
+              </span>
+            </div>
+            <div class="catering__page-new__wrapper">
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>Цена продления</p>
+                  <span>15000₽/ч</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>На компанию</p>
+                  <span>до 20 чел.</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items-last">
+                <div class="catering__page-new__item-last">
+                  <span>8</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>2</span>
+                  <p>Мастер</p>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="handleIsToogle('Стандарт+')"
+              class="catering__page-new__btn"
+              type="button"
             >
               Заказать
             </button>
           </div>
         </div>
-        <div class="section7-container-block__catering">
+        <div class="section7-container-block__catering catering__page-hover">
           <img src="/img/heat4.png" alt="" />
           <p class="section7-container-block-p-title__catering">Максимум</p>
           <span>
@@ -678,13 +850,70 @@
             <button
               class="section7-container-block-mob-btn__catering"
               type="button"
+              onclick="handleIsToogle('Максимум')"
+            >
+              Заказать
+            </button>
+          </div>
+          <div class="catering__page-new">
+            <div>
+              <p class="section7-container-block-p-title__catering">Максимум</p>
+              <span>
+                60.000₽
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                    fill="#454545"
+                  />
+                  <circle cx="9" cy="9" r="8" stroke="#454545" />
+                </svg>
+              </span>
+            </div>
+            <div class="catering__page-new__wrapper">
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>Цена продления</p>
+                  <span>29000₽/ч</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items">
+                <div class="catering__page-new__item">
+                  <p>На компанию</p>
+                  <span>до 20 чел.</span>
+                </div>
+              </div>
+              <div class="catering__page-new__items-last">
+                <div class="catering__page-new__item-last">
+                  <span>10</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-last">
+                  <span>1</span>
+                  <p>Мастер</p>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="handleIsToogle('Максимум')"
+              class="catering__page-new__btn"
+              type="button"
             >
               Заказать
             </button>
           </div>
         </div>
         <div
-          class="section7-container-block__catering section7-container-block-long__catering"
+          class="section7-container-block__catering catering__page-hover section7-container-block-long__catering"
         >
           <p
             class="section7-container-block-long-p__catering long-p__catering__dn"
@@ -723,9 +952,78 @@
             <button
               class="section7-container-block-mob-btn__catering"
               type="button"
+              onclick="handleIsToogle('Ультра')"
             >
               Заказать
             </button>
+          </div>
+          <div class="catering__page-new catering__page-ultra">
+            <div class="catering__page-new-caption">
+              <p>
+                И здесь ещё две строчки, такого объёма будет <br />
+                описание для этого пакета.
+              </p>
+            </div>
+            <div class="catering__page-new-title">
+              <p class="section7-container-block-p-title__catering">Ультра</p>
+              <span>
+                120.000₽
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    d="M8.29412 7.85853H9.70588V13H8.29412V7.85853ZM8.29412 6.6992C8.09804 6.50389 8 6.26952 8 5.99608C8 5.72265 8.09804 5.48828 8.29412 5.29297C8.4902 5.09766 8.72549 5 9 5C9.27451 5 9.5098 5.09766 9.70588 5.29297C9.90196 5.48828 10 5.72265 10 5.99608C10 6.26952 9.90196 6.50389 9.70588 6.6992C9.5098 6.89451 9.27451 6.99217 9 6.99217C8.72549 6.99217 8.4902 6.89451 8.29412 6.6992Z"
+                    fill="#454545"
+                  />
+                  <circle cx="9" cy="9" r="8" stroke="#454545" />
+                </svg>
+              </span>
+            </div>
+            <div class="catering__page-new__wrapper-ultra">
+              <div class="catering__page-new__items-ultra-last">
+                <div class="catering__page-new__item-ultra-last">
+                  <span>15</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span>4</span>
+                  <p>Мастер</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span></span>
+                  <p></p>
+                </div>
+              </div>
+              <button
+                onclick="handleIsToogle('Ультра')"
+                class="catering__page-new__btn"
+                type="button"
+              >
+                Заказать
+              </button>
+              <div class="catering__page-new__itemsList-ultra">
+                <div class="catering__page-new__items-ultra">
+                  <div class="catering__page-new__item-ultra">
+                    <p>На компанию</p>
+                    <span>до 40 чел.</span>
+                  </div>
+                </div>
+                <div class="catering__page-new__items-ultra">
+                  <div class="catering__page-new__item-ultra">
+                    <p>Цена продления</p>
+                    <span>40000₽/ч</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -855,7 +1153,7 @@
         </div>
       </div>
     </section>
-    <section class="section7__secret-assistants secret-assistants_pt ">
+    <section class="section7__secret-assistants secret-assistants_pt">
       <div class="container">
         <div class="section7-container__secret-assistants secret-assistants_pt">
           <img
@@ -866,7 +1164,9 @@
           <p class="section7-p__secret-assistants">
             напишите нам, если у вас остались вопросы
           </p>
-          <div class="section7-inputs__secret-assistants secret-assistants_pt-small">
+          <div
+            class="section7-inputs__secret-assistants secret-assistants_pt-small"
+          >
             <input
               type="text"
               placeholder="ФИО"
@@ -970,6 +1270,71 @@
         </div>
       </div>
     </section>
+    <section class="news__modal news__hidden">
+      <div class="catering__wrapper">
+        <div class="catering__backdrop" onclick="handleIsToogle()"></div>
+        <div class="catering__container">
+          <div class="catering__header">
+            <div class="catering__actions">
+              <span class="tarif"></span>
+              <button
+                aria-label="Mute volume"
+                type="button"
+                class="action"
+                onclick="handleIsToogle()"
+              ></button>
+            </div>
+          </div>
+          <div class="catering__content">
+            <div class="section7-inputs__secret-assistants">
+              <input
+                type="text"
+                placeholder="ФИО"
+                class="input-name__secret-assistants"
+              />
+              <div class="catering__inputs">
+                <input
+                  type="tel"
+                  placeholder="Телефон"
+                  class="input-tel__secret-assistants"
+                />
+                <input
+                  type="text"
+                  placeholder="Дата мероприятия"
+                  class="input-city__secret-assistants"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Интересующий пакет"
+                class="input-name__secret-assistants defultValue"
+              />
+              <input
+                type="text"
+                placeholder="Комментарий"
+                class="input-name__secret-assistants"
+              />
+              <div class="radio">
+                <input
+                  class="custom-radio"
+                  type="checkbox"
+                  id="color-3"
+                  name="color"
+                  value="indigo"
+                />
+                <label for="color-3"
+                  >Даю согласие на обработку
+                  <a href="/"> персональных данных</a></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="catering__footer">
+            <button class="nameBtn">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <a href="/" class="section14__catering">Посмотреть на карте</a>
     <footer>
       <div class="container">
@@ -1015,7 +1380,20 @@
         </div>
       </div>
     </footer>
-
+    <script>
+      const modal = document.querySelector(".news__modal");
+      const caption = document.querySelector(".tarif");
+      const input = document.querySelector(".defultValue");
+      const handleIsToogle = (title) => {
+        modal.classList.toggle("news__hidden");
+        modal.className === "news__modal news__hidden"
+          ? (document.body.style.overflow = "auto")
+          : (document.body.style.overflow = "hidden");
+        caption.innerHTML = `Тариф ${title}`;
+        input.value = `Тариф ${title}`;
+        input.style.color = "#dfdfdf";
+      };
+    </script>
     <script>
       const btnREnt = document.querySelectorAll(
         ".section5-top-btn__rent-hookahs"

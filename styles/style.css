@@ -2678,7 +2678,7 @@ header {
 }
 .section5-content-block__rent-hookahs p {
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -2688,6 +2688,9 @@ header {
 }
 .section5-content__rent-hookahs {
   display: none;
+}
+.rent-hookahs-page-bb {
+  border-bottom: 1px solid #454545;
 }
 .section5-content__rent-hookahs-active {
   display: flex;
@@ -2837,7 +2840,7 @@ header {
   display: flex;
   gap: 8px;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 450;
   line-height: 26px; /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -5250,7 +5253,8 @@ body .galleryAnim .galleryAnim__fraction {
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
-.section-map-top-right__franchise span:not(.section-map-top-right__franchise-item--active) {
+.section-map-top-right__franchise
+  span:not(.section-map-top-right__franchise-item--active) {
   color: #454545;
 }
 
