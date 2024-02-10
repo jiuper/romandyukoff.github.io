@@ -527,12 +527,12 @@ footer {
   background-repeat: no-repeat;
 }
 .section1-container__secret-assistants h1 {
-  font-size: min(60px, 3.2vw);
+  font-size: max(60px, 3.2vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: min(60px, 3.2vw); /* 100% */
-  letter-spacing: -2px;
+  line-height: max(60px, 3.2vw); /* 100% */
+  letter-spacing: -3px;
   text-transform: uppercase;
 }
 .section4-kamen2__bankets {
@@ -599,10 +599,10 @@ footer {
   max-width: 1430px;
   width: 100%;
   text-align: center;
-  font-size: min(84px, 4.4vw);
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: min(84px, 4.4vw);
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -690,10 +690,10 @@ footer {
 }
 .section4-p__secret-assistants {
   text-align: center;
-  font-size: min(84px, 4.4vw);
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: min(84px, 4.4vw);
+  line-height: max(84px, 4.4vw);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -726,11 +726,11 @@ footer {
   max-width: 930px;
 }
 .section6-p__secret-assistants {
-  font-size: min(84px, 4.4vw);
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: min(84px, 4.4vw);
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -1275,8 +1275,8 @@ footer {
   padding-top: 45px;
 }
 .bankets__fs {
-  font-size: 84px !important;
-  line-height: 84px !important;
+  font-size: max(84px, 4.4vw) !important;
+  line-height: max(84px, 4.4vw) !important;
   margin-bottom: 80px;
 }
 .section7__secret-assistants {
@@ -1361,10 +1361,10 @@ header {
 }
 .section2-title__loyalty-program {
   font-family: "FuturaPT", sans-serif;
-  font-size: 20px;
+  font-size: max(20px, 1.042vw);
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 130% */
+  line-height: max(26px, 1.354vw); /* 130% */
   letter-spacing: 0.6px;
   padding-top: 20px;
   padding-bottom: 234px;
@@ -1377,10 +1377,10 @@ header {
 }
 .section2-container__loyalty-program p {
   text-align: center;
-  font-size: 84px;
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 84px;
+  line-height: max(84px, 4.4vw);
   letter-spacing: -2px;
   max-width: 1356px;
   text-transform: uppercase;
@@ -1388,10 +1388,10 @@ header {
 }
 .section2-container__loyalty-program span {
   font-family: "FuturaPT", sans-serif;
-  font-size: 20px;
+  font-size: max(20px, 1.042vw);
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 130% */
+  line-height: max(26px, 1.354vw); /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -1420,7 +1420,7 @@ header {
   width: 46.6%;
 }
 .section2__loyalty-program {
-  padding-bottom: 260px;
+  padding-bottom: 355px;
   border-bottom: 1px solid #454545;
   overflow: hidden;
 }
@@ -1454,20 +1454,20 @@ header {
 }
 .section3-img__loyalty-program {
   position: absolute;
-  left: 50%;
-  margin-left: -150px;
+  left: 49%;
+  margin-left: -155px;
   width: 18.6%;
   z-index: 9999;
-  margin-top: -170px;
+  margin-top: -159px;
   transform: rotate(15deg);
 }
 
-.section3-content-p__loyalty-program {
+p.section3-content-p__loyalty-program {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.68px;
   max-width: 1100px;
   text-transform: uppercase;
@@ -1514,28 +1514,28 @@ header {
   gap: 238px;
 }
 .section3-content__loyalty-program {
-  padding-bottom: 120px;
+  padding-bottom: 137px;
 }
 .section5-container__loyalty-program {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
 }
 .section2__secret-assistants {
   position: relative;
 }
 .section5-container__loyalty-program p {
-  font-size: 3.15vw;
+  font-size: max(60px, 3.15vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: 3.15vw;
+  line-height: max(60px, 3.15vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
 .section5__loyalty-program {
-  padding-top: 23%;
+  padding-top: 15%;
   position: relative;
 }
 
@@ -1577,7 +1577,7 @@ header {
   display: flex !important;
 }
 .section6-content-block__loyalty-program {
-  width: 15%;
+  width: 17%;
 }
 .section6-content-block__loyalty-program img {
   width: 100%;
@@ -1604,7 +1604,7 @@ header {
 }
 .section6-content__loyalty-program {
   display: flex;
-  gap: 80px 11.4vw;
+  gap: 84px 9.4vw;
   padding: 120px 99px;
   flex-wrap: wrap;
 }
@@ -1919,7 +1919,7 @@ header {
   margin-top: 91px;
 }
 .section2__sertificate {
-  padding-bottom: 12%;
+  padding-bottom: 13%;
   border-bottom: 1px solid #454545;
 }
 .section3-title__sertificate {
@@ -2018,11 +2018,11 @@ header {
   margin: 0 auto;
 }
 .section1-title__contacts {
-  font-size: 3.15vw;
+  font-size: max(60px, 3.15vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: 3.15vw;
+  line-height: max(66px, 3.48vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -2047,10 +2047,10 @@ header {
 }
 .section2-top__contacts {
   font-family: "FuturaPT", sans-serif;
-  font-size: 20px;
+  font-size: max(20px, 1.042vw);
   font-style: normal;
   font-weight: 450;
-  line-height: 26px; /* 130% */
+  line-height: max(26px, 1.354vw); /* 130% */
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -2062,10 +2062,10 @@ header {
 }
 .section2-block__contacts h3 {
   text-align: center;
-  font-size: 40px;
+  font-size: max(40px, 2.083vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 48px;
+  line-height: max(48px, 2.5vw);
   letter-spacing: -0.4px;
   text-transform: uppercase;
 }
@@ -2073,10 +2073,10 @@ header {
 .section2-block__contacts a {
   text-align: center;
   font-family: "FuturaPT", sans-serif;
-  font-size: 20px;
+  font-size: max(20px, 1.042vw);
   font-style: normal;
-  font-weight: 600;
-  line-height: 26px; /* 130% */
+  font-weight: 450;
+  line-height: max(26px, 1.354vw); /* 130% */
   letter-spacing: 0.2px;
 }
 .section2__contacts {
@@ -2104,12 +2104,13 @@ header {
 }
 .section4-container-block__contacts h3 {
   text-align: center;
-  font-size: 3vw;
+  font-size: max(40px, 2.083vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 3.65vw;
-  letter-spacing: -0.4px;
+  line-height: max(48px, 2.5vw);
+  letter-spacing: -1px;
   text-transform: uppercase;
+  max-width: 730px;
 }
 .section4-container-block__contacts a {
   text-align: center;
@@ -2128,7 +2129,7 @@ header {
   justify-content: center;
   border-bottom: 1px solid #454545;
   border-right: 1px solid #454545;
-  padding: 60px 0;
+  padding: 82px 0;
 }
 .section4-container__contacts {
   display: flex;
@@ -2239,22 +2240,22 @@ header {
   justify-content: center;
   color: #0d0d0d;
   font-family: "FuturaPT", sans-serif;
-  font-size: 16px;
+  font-size: max(16px, 0.833vw);
   font-style: normal;
   font-weight: 600;
   width: 40px;
   height: 40px;
-  line-height: 20px; /* 125% */
+  line-height: max(20px, 1.042vw); /* 125% */
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
 .panel-block-bottom p {
   text-align: center;
-  font-size: 3vw;
+  font-size: max(40px, 2.083vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 3.65vw;
-  letter-spacing: -0.4px;
+  line-height: max(48px, 2.5vw);
+  letter-spacing: -1px;
   text-transform: uppercase;
   padding-bottom: 12px;
 }
@@ -2486,11 +2487,11 @@ header {
   width: 85%;
   margin: 0 auto;
   text-align: center;
-  font-size: 84px;
+  font-size: max(84px, 4.4vw);
   padding-bottom: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: 84px;
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -2545,7 +2546,7 @@ header {
 .section4-container-block__careeer {
   display: flex;
   gap: 9%;
-  height: 280px;
+  height: 260px;
   padding: 20px 21px;
   border-bottom: 1px solid #454545;
 }
@@ -2709,10 +2710,10 @@ header {
 }
 .section3-container__catering p {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.68px;
   max-width: 1724px;
   margin-top: -30px;
@@ -2808,7 +2809,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  padding: 5% 0;
+  padding: 3% 0 3.5% 0;
 }
 
 .section7-container-block__catering:first-child {
@@ -2921,7 +2922,7 @@ header {
 
 .section10-container-block__catering {
   width: 20%;
-  padding: 5% 0;
+  padding: 3% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2973,7 +2974,7 @@ header {
   text-transform: uppercase;
 }
 .section12-container__catering {
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2998,7 +2999,7 @@ header {
   display: none;
 }
 .section12__catering {
-  height: 68rem;
+  height: 62rem;
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -3006,7 +3007,7 @@ header {
 .section12-container-video__catering {
   color: #0d0d0d;
   font-family: "FuturaPT", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 16px; /* 125% */
@@ -3016,9 +3017,9 @@ header {
   align-items: center;
   border-radius: 20px;
   background: #dfdfdf;
-  letter-spacing: -1px;
-  width: 173px;
-  height: 36px;
+  letter-spacing: 1px;
+  width: 212px;
+  height: 40px;
   text-transform: uppercase;
 }
 .catering-bottom-link-look-all {
@@ -3261,11 +3262,11 @@ header {
 }
 .section4-text__restoran {
   text-align: center;
-  font-size: min(84px, 4.4vw);
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
   padding-top: 120px;
-  line-height: min(84px, 4.4vw);
+  line-height: max(84px, 4.4vw);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -3543,6 +3544,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 78px;
 }
 .section1__restaurant-all h1 {
   z-index: 2;
@@ -3640,7 +3642,7 @@ header {
 }
 .section2-container-block__restaurant-all {
   display: flex;
-  padding: 20px;
+  padding: 16px;
   gap: 10px;
   border-bottom: 1px solid #454545;
   justify-content: space-between;
@@ -3686,11 +3688,11 @@ header {
 .section2-container__franchise p {
   max-width: 1085px;
   text-align: center;
-  font-size: 4.4vw;
+  font-size: max(84px, 4.4vw);
   margin: 0 auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: max(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -5154,10 +5156,10 @@ body .galleryAnim .galleryAnim__fraction {
 
 .section-last-p__main {
   position: relative;
-  font-size: min(84px, 4.4vw);
+  font-size: max(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: min(84px, 4.4vw);
+  line-height: max(84px, 4.4vw);
   text-align: left;
   padding-top: 37px;
   letter-spacing: -2px;

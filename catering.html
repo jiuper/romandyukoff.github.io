@@ -288,7 +288,9 @@
         </div>
       </div>
     </header>
-    <section class="section1__secret-assistants section1__loyalty-program">
+    <section
+      class="section1__secret-assistants section1__loyalty-program catering-page__wrapper"
+    >
       <div class="line-height-1364 line-height-1364__catering"></div>
       <div class="container">
         <div
@@ -360,13 +362,15 @@
         </div>
       </div>
     </section>
-    <section class="section3__secret-assistants section4__catering">
+    <section
+      class="section3__secret-assistants section4__catering catering-page__container"
+    >
       <div class="section4-line1__catering"></div>
       <div class="section4-line2__catering"></div>
       <div class="section4-line3__catering"></div>
       <div class="section4-line4__catering"></div>
       <div class="container">
-        <p class="section3-text__secret-assistants">
+        <p class="section3-text__secret-assistants catering-page__general-p">
           Наши мастера <br />
           опытные профессионалы <br />
           с многолетним стажем
@@ -382,7 +386,7 @@
             />
           </div>
           <div
-            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2"
+            class="section3-container-block__secret-assistants section3-container-block__secret-assistants2 catering-page__general"
           >
             <img
               src="/img/heats.png"
@@ -407,17 +411,19 @@
       </div>
     </section>
     <section
-      class="section1__secret-assistants section1__loyalty-program section5__catering"
+      class="section1__secret-assistants section1__loyalty-program section5__catering catering-page__container-img"
     >
       <div class="line-height-1364"></div>
       <div class="container">
-        <div class="section1-container__secret-assistants">
+        <div
+          class="section1-container__secret-assistants catering-page__container-h1"
+        >
           <h1>
             гарантируем: то, что было на вечеринке <br />
             останется на вечеринке
           </h1>
           <div
-            class="section1-container-img__secret-assistants section4-container-img__catering"
+            class="section1-container-img__secret-assistants section4-container-img__catering catering-page__container-imgTwo"
           >
             <img
               src="/img/gal25.png"
@@ -445,7 +451,7 @@
       ></div>
       <div class="container">
         <div
-          class="section3-container__looking-premises section2-container__bankets"
+          class="section3-container__looking-premises section2-container__bankets catering__page-container-imgLast"
         >
           <p
             class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering"
@@ -921,10 +927,23 @@
             И здесь ещё две строчки, такого объёма будет <br />
             описание для этого пакета.
           </p>
-          <img src="/img/heat5.png" alt="" />
+          <img
+            class="catering-page__container-ultra-cal"
+            src="/img/heat5.png"
+            alt=""
+          />
           <p>Ультра</p>
-          <span> 120.000₽ </span>
-          <div class="section7-container-block-mob__catering">
+          <span class="catering-page__container-ultra-mb"> 120.000₽ </span>
+          <button
+            onclick="handleIsToogle('Ультра')"
+            class="catering__page-new__btn catering-page__container-ultra-middle"
+            type="button"
+          >
+            Заказать
+          </button>
+          <div
+            class="section7-container-block-mob__catering catering-page__container-ultra-mob"
+          >
             <div class="section7-container-block-mob-top__catering">
               <div>
                 <p>Цена продления</p>
@@ -956,6 +975,44 @@
             >
               Заказать
             </button>
+          </div>
+          <div
+            class="catering__page-new catering__page-ultra catering-page__container-ultra-middle"
+          >
+            <div class="catering__page-new__wrapper-ultra">
+              <div class="catering__page-new__items-ultra-last">
+                <div class="catering__page-new__item-ultra-last">
+                  <span>15</span>
+                  <p>Кальянов каждый час</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span>3</span>
+                  <p>Часа</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span>4</span>
+                  <p>Мастер</p>
+                </div>
+                <div class="catering__page-new__item-ultra-last">
+                  <span></span>
+                  <p></p>
+                </div>
+              </div>
+              <div class="catering__page-new__itemsList-ultra">
+                <div class="catering__page-new__items-ultra">
+                  <div class="catering__page-new__item-ultra">
+                    <p>На компанию</p>
+                    <span>до 40 чел.</span>
+                  </div>
+                </div>
+                <div class="catering__page-new__items-ultra">
+                  <div class="catering__page-new__item-ultra">
+                    <p>Цена продления</p>
+                    <span>40000₽/ч</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="catering__page-new catering__page-ultra">
             <div class="catering__page-new-caption">
@@ -1036,11 +1093,11 @@
         class="section4-line2__catering section4-line2__catering-deskt"
       ></div>
       <div
-        class="section4-line3__catering section4-line2__catering-deskt"
+        class="section4-line3__catering section4-line2__catering-deskt catering-page__container-line"
       ></div>
       <div class="container">
         <div
-          class="section3-container__looking-premises section2-container__bankets"
+          class="section3-container__looking-premises section2-container__bankets catering-page__content"
         >
           <p
             class="section3-text__secret-assistants section5-text__secret-assistants section6-text__catering"
@@ -1098,7 +1155,9 @@
     <section class="section5__loyalty-program">
       <div class="section5-line__loyalty-program"></div>
       <div class="container">
-        <div class="section5-container__loyalty-program">
+        <div
+          class="section5-container__loyalty-program catering-page__container-imgThree"
+        >
           <p>Что нам потребуется</p>
           <img src="/img/sculpt2.png" alt="" />
         </div>
@@ -1109,8 +1168,7 @@
         <div class="section10-container-block__catering">Доступ к воде</div>
         <div class="section10-container-block__catering">Электричество</div>
         <div class="section10-container-block__catering">
-          Отдельная зона <br />
-          для подготовки
+          Отдельная зона для подготовки
         </div>
         <div class="section10-container-block__catering">Столы для работы</div>
         <div class="section10-container-block__catering">Крыша</div>
@@ -1153,9 +1211,13 @@
         </div>
       </div>
     </section>
-    <section class="section7__secret-assistants secret-assistants_pt">
+    <section
+      class="section7__secret-assistants secret-assistants_pt catering-page__form"
+    >
       <div class="container">
-        <div class="section7-container__secret-assistants secret-assistants_pt">
+        <div
+          class="section7-container__secret-assistants secret-assistants_pt catering-page__form"
+        >
           <img
             src="/img/gal5.png"
             alt=""
@@ -1177,15 +1239,7 @@
               placeholder="Телефон"
               class="input-tel__secret-assistants"
             />
-            <input
-              placeholder="Дата мероприятия"
-              class="input-city__secret-assistants"
-            />
-            <input
-              type="text"
-              placeholder="Интересующий пакет"
-              class="input-name__secret-assistants"
-            />
+            <input placeholder="Почта" class="input-city__secret-assistants" />
             <input
               type="text"
               placeholder="Комментарий"
@@ -1213,8 +1267,8 @@
       class="section3__secret-assistants section4__catering section13__catering"
     >
       <div class="section4-line1__catering"></div>
-      <div class="section4-line2__catering"></div>
-      <div class="section4-line3__catering"></div>
+      <div class="section4-line2__catering catering-page__container-line2"></div>
+      <div class="section4-line3__catering catering-page__container-line3"></div>
       <div class="section4-line4__catering"></div>
       <div class="container">
         <p class="section3-text__secret-assistants">
@@ -1373,10 +1427,15 @@
             <a href="/" class="footer-bottom-social-ellipse"> IN </a>
             <a href="/" class="footer-bottom-social-ellipse"> FB </a>
           </div>
-          <div class="footer-bottom-right">
+                 <div class="footer-bottom-right ds-none">
             <p>© 2022 Tangiers Lounge</p>
             <p>ART HOOKAH FAMILY</p>
           </div>
+        </div>
+        <div class="footer-mb">
+          <p>© 2022 Tangiers Lounge</p>
+          <p>ART HOOKAH FAMILY</p>
+        </div>
         </div>
       </div>
     </footer>

@@ -1,0 +1,24 @@
+@media (max-width: 1050px) {
+  .section1__restaurant-all {
+    padding-top: 109px !important;
+  }
+  .section2-container-block-middle__restaurant-all > h5 {
+    font-size: 40px !important;
+  }
+  .section2-container-block__restaurant-all {
+    padding: 11px;
+  }
+}
+@media (max-width: 475px) {
+  .section1__restaurant-all {
+    padding-top: 50px !important;
+  }
+  .section2-container-block-middle__restaurant-all > h5 {
+    font-size: 28px !important;
+    line-height: 32px !important;
+    letter-spacing: 1px !important;
+  }
+  .section2-container-block__restaurant-all {
+    padding: 24px;
+  }
+}

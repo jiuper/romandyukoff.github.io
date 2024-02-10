@@ -1,0 +1,149 @@
+.restaurant-page__caption > h1 {
+  font-size: max(40px, 2.083vw);
+  line-height: max(48px, 2.5vw);
+}
+.section2__restoran-pt {
+  padding-bottom: 75px !important;
+}
+
+.slider-section-line-l {
+  left: 26%;
+}
+.swiper-button-prev-main {
+  left: 26% !important;
+}
+.slider-section {
+  position: relative;
+  padding: 317px 0 381px 0;
+}
+.section4-text__restoran {
+  padding-top: 233px;
+}
+.galleryAnim.__hidden {
+  padding-bottom: 93px;
+}
+.restaurant-page__form {
+  height: 1045px;
+  gap: 10px;
+}
+.restaurant-page__title {
+  padding-top: 264px;
+  font-size: max(60px, 3.15vw);
+  line-height: max(66px, 3.48vw);
+}
+.section6__restoran {
+  padding-bottom: 302px;
+}
+.restaurant-page__imgOne {
+  width: 614px;
+  height: 800px;
+}
+.restaurant-page__imgOne > img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1050px) {
+  .restaurant-page__imgOne {
+    width: 482px;
+    height: 606px;
+  }
+  .restaurant-page__imgOne > img {
+    width: 100%;
+    height: 100%;
+  }
+  .section2__restoran-pt {
+    padding-bottom: 244px !important;
+  }
+  .slider-section-line-l {
+    left: 16%;
+  }
+  .slider-section-line-r {
+    right: 16%;
+  }
+  .swiper-button-next-main {
+    right: 16% !important;
+  }
+  .swiper-button-prev-main {
+    left: 16% !important;
+  }
+  .slider-section {
+    padding-top: 240px !important;
+    padding-bottom: 241px !important;
+  }
+  .section4__restoran {
+    padding-bottom: 179px !important;
+  }
+  .galleryAnim.__hidden {
+    padding-bottom: 106px;
+  }
+  .section6__restoran {
+    padding-bottom: 311px !important;
+  }
+  .section6-line2__restoran {
+    left: 37% !important;
+  }
+  .section7-container__restoran {
+    padding: 0 20px;
+    max-width: 690px !important;
+  }
+  .pt-res {
+    margin-top: 0px !important;
+  }
+  .restaurant-page__form {
+    height: 937px;
+  }
+  .restaurant-page__title {
+    padding-top: 264px;
+    font-size: max(40px, 2.083vw) !important;
+    line-height: max(48px, 2.5vw) !important;
+  }
+  .section6__restoran {
+    padding-bottom: 275px !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .restaurant-page__imgOne {
+    width: 255px;
+    height: 330px;
+  }
+  .section2__restoran-pt {
+    padding-bottom: 67px !important;
+  }
+  .slider-section {
+    padding-top: 116px !important;
+    padding-bottom: 60px !important;
+  }
+  .slider-section-line-l {
+    left: 24%;
+  }
+  .slider-section-line-r {
+    right: 24%;
+  }
+  .swiper-button-next-main {
+    right: 24% !important;
+  }
+  .swiper-button-prev-main {
+    left: 24% !important;
+  }
+  .galleryAnim {
+    padding: 66px 0 62px 0 !important;
+  }
+  .section6__restoran {
+    padding-bottom: 191px !important;
+  }
+  .restaurant-page__form {
+    height: 668px;
+    gap: 0;
+  }
+  .restaurant-page__inputs {
+    padding-bottom: 0 !important;
+    gap: 23px 15px !important;
+  }
+  div.restaurant-page__line1 {
+    left: 19% !important;
+  }
+  div.restaurant-page__line5 {
+    right: 19% !important;
+  }
+}

@@ -288,9 +288,11 @@
         </div>
       </div>
     </header>
-    <section class="section1__secret-assistants section1__loyalty-program">
+    <section
+      class="section1__secret-assistants section1__loyalty-program loyalty-program__page-caption"
+    >
       <div class="container">
-        <div class="section1-container__secret-assistants secret-assistants_h1">
+        <div class="section1-container__secret-assistants secret-assistants_h1 loyalty-program__page-h1">
           <h1>MR. T. Friends</h1>
           <div class="section1-container-img__secret-assistants">
             <img
@@ -318,7 +320,9 @@
             которыми можно оплатить до 50% от счета
           </p>
           <span> (1 рубль = 1 бонус) </span>
-          <div class="section2-container-img__loyalty-program">
+          <div
+            class="section2-container-img__loyalty-program loyalty-program__page-imgOne"
+          >
             <img
               src="/img/phone.png"
               alt=""
@@ -364,7 +368,7 @@
       <div class="section4-line3__catering section4-line3__contacts"></div>
       <div class="section4-line2__catering section4-line2__contacts"></div>
       <div class="container">
-        <div class="section3-container__looking-premises">
+        <div class="section3-container__looking-premises loyalty-program__page-container">
           <p
             class="section3-text__secret-assistants section5-text__secret-assistants section5-text__loyalty-program"
           >
@@ -374,7 +378,7 @@
           <div
             class="section3-container__secret-assistants section5-container__secret-assistants"
           >
-            <div class="section3-container-block__secret-assistants">
+            <div class="section3-container-block__secret-assistants loyalty-program__page-container-img">
               <img
                 src="/img/gal4.png"
                 class="section3-container-block-bg__secret-assistants"
@@ -577,7 +581,7 @@
     <section class="loyalty__program-wrapper hidden-select">
       <button class="accordion">Санкт-Петербург</button>
       <div class="panel">
-        <div class="panel-block">
+        <div class="panel-block loyalty-program__page-panel">
           <div class="loyalty__program-items">
             <div
               class="section6-content-block__loyalty-program"
@@ -614,7 +618,7 @@
       </div>
       <button class="accordion line__accordion">Москва</button>
       <div class="panel">
-        <div class="panel-block">
+        <div class="panel-block loyalty-program__page-panel">
           <div class="loyalty__program-items">
             <div
               class="section6-content-block__loyalty-program"
@@ -651,7 +655,7 @@
       </div>
       <button class="accordion line__accordion">Казахстан</button>
       <div class="panel">
-        <div class="panel-block">
+        <div class="panel-block loyalty-program__page-panel">
           <div class="loyalty__program-items">
             <div
               class="section6-content-block__loyalty-program"
@@ -688,7 +692,7 @@
       </div>
       <button class="accordion line__accordion">Беларусь</button>
       <div class="panel">
-        <div class="panel-block">
+        <div class="panel-block loyalty-program__page-panel">
           <div class="loyalty__program-items">
             <div
               class="section6-content-block__loyalty-program"
@@ -748,7 +752,7 @@
           }
         })
       );
-     
+
       btn.forEach((el, i) =>
         el.addEventListener("click", () => {
           btn[i].classList.add("more__hidden");
@@ -803,10 +807,15 @@
             <a href="/" class="footer-bottom-social-ellipse"> IN </a>
             <a href="/" class="footer-bottom-social-ellipse"> FB </a>
           </div>
-          <div class="footer-bottom-right">
+        <div class="footer-bottom-right ds-none">
             <p>© 2022 Tangiers Lounge</p>
             <p>ART HOOKAH FAMILY</p>
           </div>
+        </div>
+        <div class="footer-mb">
+          <p>© 2022 Tangiers Lounge</p>
+          <p>ART HOOKAH FAMILY</p>
+        </div>
         </div>
       </div>
     </footer>

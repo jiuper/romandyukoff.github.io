@@ -485,9 +485,10 @@
     width: 42%;
   }
   .section3-img__loyalty-program {
-    width: 200px;
+    width: 215px;
     margin-left: -100px;
     margin-top: -60px;
+    transform: rotate(1deg);
   }
 
   .section4-container-block__looking-premises p {
@@ -738,6 +739,7 @@
   .section7-container-block-mob__catering {
     display: block;
   }
+ 
   .section7-container-block-mob__catering {
     width: 100%;
     padding-top: 80px;
@@ -1009,6 +1011,7 @@
   .section2-text__career {
     font-size: 60px;
     line-height: 110%; /* 66px */
+    letter-spacing: -1px;
   }
 
   /*title 64px*/
@@ -2614,8 +2617,9 @@
   .section2-text__career,
   .section5-container__bankets-second p,
   .section7-container__secret-assistants p {
-    font-size: 32px !important;
-    line-height: 32px !important; /* 100% */
+    font-size: max(32px, 1.667vw) !important;
+    line-height: max(32px, 1.667vw) !important; /* 100% */
+    letter-spacing: 1px;
   }
   /*title big*/
   .section4-kamen1__bankets {
@@ -3063,11 +3067,6 @@
   }
   .section3-container-block__secret-assistants {
     width: 42%;
-  }
-  .section3-img__loyalty-program {
-    width: 200px;
-    margin-left: -100px;
-    margin-top: -60px;
   }
   .section4-container-block__looking-premises p {
     position: relative;
@@ -5021,7 +5020,7 @@
   .secret-page_block7 {
     height: 659px !important;
     padding: 98px 20px 76px 20px !important;
-}
+  }
   .section6-container__secret-assistants img {
     margin-top: 2px;
     width: 27.4%;
