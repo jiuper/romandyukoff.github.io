@@ -527,11 +527,11 @@ footer {
   background-repeat: no-repeat;
 }
 .section1-container__secret-assistants h1 {
-  font-size: max(60px, 3.2vw);
+  font-size: min(60px, 3.2vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: max(60px, 3.2vw); /* 100% */
+  line-height: min(60px, 3.2vw); /* 100% */
   letter-spacing: -3px;
   text-transform: uppercase;
 }
@@ -599,10 +599,10 @@ footer {
   max-width: 1430px;
   width: 100%;
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -690,10 +690,10 @@ footer {
 }
 .section4-p__secret-assistants {
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -726,11 +726,11 @@ footer {
   max-width: 930px;
 }
 .section6-p__secret-assistants {
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -1275,8 +1275,8 @@ footer {
   padding-top: 45px;
 }
 .bankets__fs {
-  font-size: max(84px, 4.4vw) !important;
-  line-height: max(84px, 4.4vw) !important;
+  font-size: min(84px, 4.4vw) !important;
+  line-height: min(84px, 4.4vw) !important;
   margin-bottom: 80px;
 }
 .section7__secret-assistants {
@@ -1377,10 +1377,10 @@ header {
 }
 .section2-container__loyalty-program p {
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -2px;
   max-width: 1356px;
   text-transform: uppercase;
@@ -1456,7 +1456,7 @@ header {
   position: absolute;
   left: 49%;
   margin-left: -155px;
-  width: 18.6%;
+  width: min(380px, 18.6%);
   z-index: 9999;
   margin-top: -159px;
   transform: rotate(15deg);
@@ -1464,10 +1464,10 @@ header {
 
 p.section3-content-p__loyalty-program {
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   max-width: 1100px;
   text-transform: uppercase;
@@ -1492,10 +1492,10 @@ p.section3-content-p__loyalty-program {
 }
 .section3-content-container-block__loyalty-program span {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -1526,11 +1526,11 @@ p.section3-content-p__loyalty-program {
   position: relative;
 }
 .section5-container__loyalty-program p {
-  font-size: max(60px, 3.15vw);
+  font-size: min(60px, 3.15vw);
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: max(60px, 3.15vw);
+  line-height: min(60px, 3.15vw);
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -1773,12 +1773,15 @@ p.section3-content-p__loyalty-program {
   align-items: center;
   padding-top: 11%;
 }
+.section3__bankets {
+  border-top: 1px solid #454545;
+}
 .section5-container__bankets-second p {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   max-width: 1564px;
   text-transform: uppercase;
@@ -1924,10 +1927,10 @@ p.section3-content-p__loyalty-program {
 }
 .section3-title__sertificate {
   text-align: center;
-  font-size: 3.15vw;
+  font-size: min(60px, 3.15vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 3.15vw; /* 100% */
+  line-height: min(60px, 3.15vw); /* 100% */
   letter-spacing: -1.2px;
   text-transform: uppercase;
   padding: 120px 0;
@@ -2487,11 +2490,11 @@ p.section3-content-p__loyalty-program {
   width: 85%;
   margin: 0 auto;
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   padding-bottom: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -2576,10 +2579,10 @@ p.section3-content-p__loyalty-program {
 .section5-container__careeer p {
   text-align: center;
   font-family: "Panama Regular", serif;
-  font-size: 3.15vw;
+  font-size: min(60px, 3.15vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 3.15vw; /* 100% */
+  line-height: min(60px, 3.15vw); /* 100% */
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
@@ -2710,10 +2713,10 @@ p.section3-content-p__loyalty-program {
 }
 .section3-container__catering p {
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   max-width: 1724px;
   margin-top: -30px;
@@ -2956,10 +2959,10 @@ p.section3-content-p__loyalty-program {
   max-width: 1722px;
   margin: 0 auto;
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw; /* 100% */
+  line-height: min(84px, 4.4vw); /* 100% */
   letter-spacing: -1.68px;
   text-transform: uppercase;
   padding: 280px 0;
@@ -3110,10 +3113,10 @@ p.section3-content-p__loyalty-program {
 }
 .section1-title__news {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   margin-top: -30px;
   text-transform: uppercase;
@@ -3262,11 +3265,11 @@ p.section3-content-p__loyalty-program {
 }
 .section4-text__restoran {
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
   padding-top: 120px;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -3308,11 +3311,11 @@ p.section3-content-p__loyalty-program {
   text-align: center;
   position: relative;
   z-index: 99999999999999;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
   padding-top: 281px;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -3688,11 +3691,11 @@ p.section3-content-p__loyalty-program {
 .section2-container__franchise p {
   max-width: 1085px;
   text-align: center;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   margin: 0 auto;
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -3719,11 +3722,11 @@ p.section3-content-p__loyalty-program {
 }
 .section2-container-bottom-block__franchise p {
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   margin: 0 auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -3833,12 +3836,12 @@ p.section3-content-p__loyalty-program {
 .section4-container__franchise p {
   max-width: 1725px;
   text-align: center;
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   padding-bottom: 40px;
   margin: 0 auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   letter-spacing: -1.68px;
   text-transform: uppercase;
 }
@@ -4811,10 +4814,10 @@ body .galleryAnim .galleryAnim__fraction {
   align-items: flex-end;
 }
 .section6-container-block-part__franchise span {
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   text-align: center;
   letter-spacing: -1.68px;
   text-transform: uppercase;
@@ -5112,10 +5115,10 @@ body .galleryAnim .galleryAnim__fraction {
   letter-spacing: 0.2px;
 }
 .section1-p__main {
-  font-size: 4.4vw;
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 4.4vw;
+  line-height: min(84px, 4.4vw);
   text-align: center;
   letter-spacing: -1.68px;
   text-transform: uppercase;
@@ -5156,10 +5159,10 @@ body .galleryAnim .galleryAnim__fraction {
 
 .section-last-p__main {
   position: relative;
-  font-size: max(84px, 4.4vw);
+  font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
-  line-height: max(84px, 4.4vw);
+  line-height: min(84px, 4.4vw);
   text-align: left;
   padding-top: 37px;
   letter-spacing: -2px;
@@ -5377,9 +5380,7 @@ body .galleryAnim .galleryAnim__fraction {
   flex-direction: column;
   gap: 85vh;
 }
-.line-bankets {
-  border-top: 1px solid #454545;
-}
+
 .section-map-content__franchise-mob {
   display: none;
 }

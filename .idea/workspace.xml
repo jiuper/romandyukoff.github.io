@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b92648ca-b0a6-4019-93cf-34aa807a06eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b92648ca-b0a6-4019-93cf-34aa807a06eb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2c05NljnCexb01tLdC439JHpExY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +23,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jiupe/OneDrive/Документы/romandyukoff.github.io",
+    "last_opened_file_path": "C:/Users/jiupe/OneDrive/Документы/belle-allure",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,6 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707235618138</updated>
       <workItem from="1707235619145" duration="73000" />
+      <workItem from="1707647890712" duration="24000" />
     </task>
     <servers />
   </component>

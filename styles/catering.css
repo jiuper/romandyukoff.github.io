@@ -13,8 +13,8 @@
   padding: 280px 20px 270px 20px !important;
 }
 .catering-page__container-h1 > h1 {
-  font-size: max(84px, 4.4vw) !important;
-  line-height: max(84px, 4.4vw) !important;
+  font-size: min(84px, 4.4vw) !important;
+  line-height: min(84px, 4.4vw) !important;
 }
 .catering-page__container-imgThree > img {
   width: 495px;
@@ -297,8 +297,8 @@
     padding-bottom: 125px !important;
   }
   .catering-page__wrapper > div > div > h1 {
-    font-size: max(40px, 2.083vw);
-    line-height: max(48px, 2.5vw);
+    font-size: min(40px, 2.083vw);
+    line-height: min(48px, 2.5vw);
   }
   .catering-page__wrapper > div > div > div {
     height: 727px;
@@ -316,8 +316,8 @@
     height: 100%;
   }
   .catering-page__container-h1 > h1 {
-    font-size: max(60px, 3.15vw) !important;
-    line-height: max(66px, 3.48vw) !important;
+    font-size: min(60px, 3.15vw) !important;
+    line-height: min(66px, 3.48vw) !important;
     max-width: 730px;
   }
   .catering__page-container-imgLast {
@@ -342,8 +342,8 @@
     border-right: none !important;
   }
   .section11-p__catering {
-    font-size: max(60px, 3.15vw);
-    line-height: max(66px, 3.48vw);
+    font-size: min(60px, 3.15vw);
+    line-height: min(66px, 3.48vw);
     padding-top: 240px !important;
     padding-bottom: 281px !important;
     letter-spacing: -0.68px;
@@ -376,8 +376,8 @@
     padding-bottom: 14px !important;
   }
   .catering-page__wrapper > div > div > h1 {
-    font-size: max(32px, 1.667vw) !important;
-    line-height: max(32px, 1.667vw) !important; /* 100% */
+    font-size: min(32px, 1.667vw) !important;
+    line-height: min(32px, 1.667vw) !important; /* 100% */
   }
   .catering-page__wrapper > div > div > div {
     width: 282px !important;
@@ -401,8 +401,8 @@
     padding-top: 88px;
   }
   .catering-page__container-h1 > h1 {
-    font-size: max(32px, 1.667vw) !important;
-    line-height: max(32px, 1.667vw) !important;
+    font-size: min(32px, 1.667vw) !important;
+    line-height: min(32px, 1.667vw) !important;
     max-width: 345px !important;
     letter-spacing: -1px;
   }
