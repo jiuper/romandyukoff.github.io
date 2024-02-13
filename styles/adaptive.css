@@ -7,6 +7,9 @@
   .secret-assistants_pt > p {
     margin-bottom: 80px;
   }
+  .section4-text__restoran > p {
+    letter-spacing: -2px;
+  }
 }
 @media (max-width: 1550px) {
   .section4-container-block__careeer {
@@ -126,7 +129,7 @@
   }
 
   .galleryAnim {
-    padding: 280px 0 0 0;
+    padding: 280px 0 70px 0;
   }
   .section2-title__career {
     padding-bottom: 196px;
@@ -739,7 +742,7 @@
   .section7-container-block-mob__catering {
     display: block;
   }
- 
+
   .section7-container-block-mob__catering {
     width: 100%;
     padding-top: 80px;
@@ -4732,7 +4735,7 @@
     padding-bottom: 80px;
   }
   .franchise__items {
-    top: 37%;
+    top: 20%;
   }
   .franchise__caption {
     padding: 8px 0 0 20px;
@@ -4751,13 +4754,16 @@
     line-height: 20px;
     padding-bottom: 40px;
   }
-  .franchise__items p {
-    font-size: 32px;
+  .franchise__items > p {
+    font-size: 28px;
     line-height: 32px; /* 114.286% */
   }
   .franchise__items span {
     font-size: 12px;
     line-height: 16px; /* 114.286% */
+  }
+  .franchise-page__container-title {
+    height: 538px !important;
   }
   .bankets__point > p {
     font-size: 28px;
@@ -4976,8 +4982,8 @@
   }
   .section1-container__secret-assistants h1 {
     max-width: 245px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 32px !important;
+    line-height: 32px !important;
   }
   .section6-content-block__loyalty-program:not([data-mobile="true"]) {
     display: none;
@@ -5135,7 +5141,7 @@
     padding-bottom: 68%;
   }
   .galleryAnim__title {
-    letter-spacing: 2px;
+    letter-spacing: 0;
     top: -48px;
   }
   .section-last-bottom__main {
@@ -5175,7 +5181,7 @@
     margin-top: 47px;
   }
   .footer-mb {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     font-family: "FuturaPT", sans-serif;
@@ -5184,6 +5190,9 @@
     line-height: 16px;
     letter-spacing: 2px;
     text-align: left;
+  }
+  .footer-bottom {
+    gap: 63px;
   }
   .career__page-h1_img {
     width: 242px !important;
@@ -5249,7 +5258,7 @@
   .section1__restoran-laptop p {
     font-size: 100px;
     line-height: 100px;
-    color: #dfdfdf;
+    color: #515151;
   }
   .section1__restoran-laptop {
     padding-top: 19%;
@@ -5398,6 +5407,10 @@
   }
   .secret-page_block3 {
     padding: 135px 0 80px 0 !important;
+  }
+  .secret-page_lineMobR,
+  .secret-page_lineMobL {
+    display: block;
   }
 }
 

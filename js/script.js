@@ -122,6 +122,7 @@ window.addEventListener("load", () => {
     centeredSlides: true,
     allowTouchMove: false,
     centeredSlides: true,
+
     spaceBetween: 20,
     speed: 1200,
     navigation: {
