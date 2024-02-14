@@ -3237,11 +3237,11 @@ p.section3-content-p__loyalty-program {
 .section1-block__restoran {
   text-align: center;
   font-family: "FuturaPT", sans-serif;
-  font-size: 16.3vw;
+  font-size: min(322px, 16.3vw);
   font-style: normal;
   font-weight: 600;
-  line-height: 14vw; /* 68.323% */
-  letter-spacing: 3.65px;
+  line-height: min(322px, 16.3vw); /* 68.323% */
+  letter-spacing: 1.65px;
   text-transform: uppercase;
 }
 .section1-block__restoran:first-child {
@@ -6091,4 +6091,19 @@ header {
   margin-left: -45px;
   z-index: -1;
   display: none;
+}
+
+.header-wrapper {
+  left: 0;
+  right: 0;
+  position: relative !important;
+}
+.line-container {
+  padding: 0;
+}
+@media (min-width: 1921px) {
+  .line-container {
+    border-left: 1px solid #454545 !important;
+    border-right: 1px solid #454545 !important;
+  }
 }
