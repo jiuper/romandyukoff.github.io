@@ -1,5 +1,6 @@
 .section1__rent-hookahs {
   padding-bottom: 260px;
+  padding-top: 200px !important;
 }
 .section1-container__rent-hookahs {
   display: flex;
@@ -17,6 +18,7 @@
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
+
 .section1-container-img__rent-hookahs {
   width: 40%;
   position: relative;
@@ -41,7 +43,17 @@
   object-fit: cover;
   height: 82%;
 }
-
+.section3-container__hookahs {
+  padding: 101px 15px 186px 15px !important;
+}
+.rent-page__wrapper-R {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 0;
+}
+.rent-page__container {
+  padding: 0 150px !important;
+}
 .image1 {
   --size-desktop-width: 0px;
   --size-tablet-width: 0px;
@@ -171,17 +183,33 @@
   line-height: 60px;
   letter-spacing: -1.2px;
   text-transform: uppercase;
-  margin-bottom: 24px;
 }
-
+.section5-text__rent-hookahs-title {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding-top: 280px;
+}
+.section5-text__rent-hookahs-title > p {
+  font-size: 60px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+}
 .section3-container__hookahs {
   padding: 272px 15px 238px 15px;
   border-right: 1px solid #454545;
   border-left: 1px solid #454545;
 }
 .section4__rent-hookahs {
-  padding-top: 280px;
+  padding-top: 0;
   position: relative;
+}
+.section5-text__rent-hookahs-title > img {
+  width: 66%;
 }
 .rent-hookahs-page_btn {
   padding: 50px 0;
@@ -198,4 +226,15 @@
   width: 146px;
   height: 38px;
   border-radius: 20px;
+}
+.rent-page__btn{
+    --b: 4px; /* the thickness */
+  width: 40px; /* the size */
+  aspect-ratio: 1;
+  border: 10px solid #000; /* the outer space */
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,#fff 0) 
+    calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+    calc(50%  + var(--b))   calc(50%  + var(--b));
+  display: inline-block;
 }

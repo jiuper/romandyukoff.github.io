@@ -20,66 +20,67 @@ if (IsHeroSlider) {
   let heroImg = document.querySelector(".HeroScroll__img");
 
   const scrollEnabler = (_, progress) => {
-    if (progress === 1) {document.body.style.overflow = 'auto'}
-  }
-  swiperHero.on("afterInit", () => console.log('init'));
-  swiperHero.on("reachEnd", () => document.body.style.overflow = 'auto');
+    if (progress === 1) {
+      document.body.style.overflow = "auto";
+    }
+  };
+  swiperHero.on("afterInit", () => console.log("init"));
+  swiperHero.on("reachEnd", () => (document.body.style.overflow = "auto"));
   swiperHero.on("scroll", blurBack);
 
-
-
   let enabled = false;
-  heroSlider.addEventListener('pointerdown', () => enabled = true);
-  heroSlider.addEventListener('pointerup', () => enabled = false);
-  heroSlider.addEventListener('pointermove', (event) => {
+  heroSlider.addEventListener("pointerdown", () => (enabled = true));
+  heroSlider.addEventListener("pointerup", () => (enabled = false));
+  heroSlider.addEventListener("pointermove", (event) => {
     console.log(event);
   });
 
-  // var startY = 0;
+  var startY = 0;
 
-  // document.addEventListener('touchstart', function(e) {
-  //   startY = e.touches[0].clientY;
-  // });
+  document.addEventListener("touchstart", function (e) {
+    startY = e.touches[0].clientY;
+  });
 
-  // document.addEventListener('touchmove', function(e) {
-  //   if (swiperHero.isEnd) { // Проверяем, достиг ли слайдер конца
-  //    //  document.removeEventListener('touchmove'); // Если достиг, удаляем обработчик события touchmove
-  //     return;
-  //   }
+  document.addEventListener("touchmove", function (e) {
+    if (swiperHero.isEnd) {
+      // Проверяем, достиг ли слайдер конца
+      //  document.removeEventListener('touchmove'); // Если достиг, удаляем обработчик события touchmove
+      return;
+    }
 
-  //   var currentY = e.touches[0].clientY;
-  //   var deltaY = currentY - startY;
+    var currentY = e.touches[0].clientY;
+    var deltaY = currentY - startY;
 
-  //   if (Math.abs(deltaY) > 10) { // Порог для определения свайпа
-  //     e.preventDefault(); // Отменяем прокрутку страницы
-  //     swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 2); // Изменяем позицию swiper в соответствии с движением пальца
-  //   }
-  // });
-  // let touchstart;
-  // heroSlider.addEventListener("touchstart", (event)=>{
-  //    touchstart = event.touches[0].clientY;
-  // })
-  // heroSlider.addEventListener("touchmove", (event)=>{
-  //    let translate;
-  //    let count = 0.2;
-  //    if(!swiperHero.isEnd){
-  //       if (event.cancelable) event.preventDefault()
-  //          translate = (event.changedTouches[0].clientY -  touchstart) * count;
-  //       if(swiperHero.translate + translate > 0){
-  //          swiperHero.setTranslate(0)
-  //          translate = 0
-  //       }
-  //    }else {
-  //       translate = (event.changedTouches[0].clientY -  touchstart) * count;
-  //       if(translate < 0){
-  //          translate = 0
-  //       }
-  //    }
-  //    swiperHero.setTranslate(swiperHero.translate + translate)
+    if (Math.abs(deltaY) > 10) {
+      // Порог для определения свайпа
+      e.preventDefault(); // Отменяем прокрутку страницы
+      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 2); // Изменяем позицию swiper в соответствии с движением пальца
+    }
+  });
+  let touchstart;
+  heroSlider.addEventListener("touchstart", (event) => {
+    touchstart = event.touches[0].clientY;
+  });
+  heroSlider.addEventListener("touchmove", (event) => {
+    let translate;
+    let count = 0.2;
+    if (!swiperHero.isEnd) {
+      if (event.cancelable) event.preventDefault();
+      translate = (event.changedTouches[0].clientY - touchstart) * count;
+      if (swiperHero.translate + translate > 0) {
+        swiperHero.setTranslate(0);
+        translate = 0;
+      }
+    } else {
+      translate = (event.changedTouches[0].clientY - touchstart) * count;
+      if (translate < 0) {
+        translate = 0;
+      }
+    }
+    swiperHero.setTranslate(swiperHero.translate + translate);
 
-  //    blurBack()
-
-  // })
+    blurBack();
+  });
 
   window.addEventListener(
     "scroll",
@@ -191,6 +192,3 @@ galleryAnimEndSliderBtn.addEventListener("click", () => {
 //     tabActiveFran.classList.add("section7-p__vacancy-active");
 //   });
 // });
-
-
-
