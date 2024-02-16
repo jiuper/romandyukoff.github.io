@@ -398,19 +398,36 @@
         <div
           data-tabRent="#tabrent1"
           class="section5-top-btn__rent-hookahs section5-top-btn__rent-hookahs-active"
+          onclick="handleIsChoose(0)"
         >
           Срок аренды
         </div>
-        <div data-tabRent="#tabrent2" class="section5-top-btn__rent-hookahs">
+        <div
+          data-tabRent="#tabrent2"
+          class="section5-top-btn__rent-hookahs"
+          onclick="handleIsChoose(1)"
+        >
           миксы
         </div>
-        <div data-tabRent="#tabrent3" class="section5-top-btn__rent-hookahs">
+        <div
+          data-tabRent="#tabrent3"
+          class="section5-top-btn__rent-hookahs"
+          onclick="handleIsChoose(2)"
+        >
           Дополнительно
         </div>
-        <div data-tabRent="#tabrent4" class="section5-top-btn__rent-hookahs">
+        <div
+          data-tabRent="#tabrent4"
+          class="section5-top-btn__rent-hookahs"
+          onclick="handleIsChoose(3)"
+        >
           Инвентарь
         </div>
-        <div data-tabRent="#tabrent5" class="section5-top-btn__rent-hookahs">
+        <div
+          data-tabRent="#tabrent5"
+          class="section5-top-btn__rent-hookahs"
+          onclick="handleIsChoose(4)"
+        >
           Личные данные
         </div>
       </div>
@@ -419,32 +436,99 @@
         class="section5-content__rent-hookahs section5-content__rent-hookahs-active"
       >
         <div class="section5-content-block__rent-hookahs">
-          <div class="rent-page__btn"></div>
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>Сутки</h3>
           <p>2000₽</p>
         </div>
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>3 дня</h3>
           <p>6000₽</p>
         </div>
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>неделя</h3>
           <p>14.000₽</p>
         </div>
       </div>
       <div id="tabrent2" class="section5-content__rent-hookahs">
-        <div class="panel-blocks2__rent-hookahs">
-          <div class="panel-block2__rent-hookahs">
-            <div class="panel-block2-top__rent-hookahs">
-              <img src="/img/IMG-accordion.png" alt="" />
+        <div class="rent-page__container-block2">
+          <div class="rent-page__wrapper">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <img src="/img/IMG-accordion.png" alt="Skittles" />
               <p>Skittles</p>
               <span>
                 Микс известных жевательных конфет с фруктовым вкусом.
                 Кисло-сладкий, не приторный, средней крепости.
               </span>
-              <a href="/">Выбрать</a>
+              <a href="#">Посмотреть все</a>
             </div>
-            <div class="panel-block2-bottom__rent-hookahs">
+            <div class="rent-page__container-bottom">
               <p>Соотношение табаков:</p>
               <span>
                 Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
@@ -452,37 +536,35 @@
               </span>
             </div>
           </div>
-          <div class="panel-block2__rent-hookahs">
-            <div class="panel-block2-top__rent-hookahs">
-              <img src="/img/fanta.png" alt="" />
+          <div class="rent-page__wrapper">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <img src="/img/fanta.png" alt="Skittles" />
               <p>ягодная фанта</p>
               <span>
                 Всем знакомый лимонад с необычным ягодным оттенком. Достаточно
                 одной затяжки Fanta — и вы почувствуете удовольствие от яркого
                 ягодного безобразия.
               </span>
-              <a href="/">Выбрать</a>
+              <a href="#">Посмотреть все</a>
             </div>
-            <div class="panel-block2-bottom__rent-hookahs">
-              <p>Соотношение табаков:</p>
-              <span
-                >Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
-                DarkSide Redberry.</span
-              >
-            </div>
-          </div>
-          <div class="panel-block2__rent-hookahs">
-            <div class="panel-block2-top__rent-hookahs">
-              <img src="/img/nutela.png" alt="" />
-              <p>Nutellav</p>
-              <span>
-                Ненавязчивый вкус сочетания лесных орехов и кокао. Полностью
-                отсутствует приторность и химозность, а нежная кремовая текстура
-                делает вкус еще интенсивнее.
-              </span>
-              <a href="/">Выбрать</a>
-            </div>
-            <div class="panel-block2-bottom__rent-hookahs">
+            <div class="rent-page__container-bottom">
               <p>Соотношение табаков:</p>
               <span>
                 Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
@@ -490,42 +572,168 @@
               </span>
             </div>
           </div>
-          <div class="panel-block2__rent-hookahs">
-            <div class="panel-block2-top__rent-hookahs">
-              <img src="/img/fuze.png" alt="" />
+          <div class="rent-page__wrapper">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+
+            <div class="rent-page__container-top">
+              <img src="/img/nutela.png" alt="Skittles" />
+              <p>Nutella</p>
+              <span>
+                Ненавязчивый вкус сочетания лесных орехов и кокао. Полностью
+                отсутствует приторность и химозность, а нежная кремовая текстура
+                делает вкус еще интенсивнее.
+              </span>
+              <a href="#">Посмотреть все</a>
+            </div>
+            <div class="rent-page__container-bottom">
+              <p>Соотношение табаков:</p>
+              <span>
+                Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
+                DarkSide Redberry.
+              </span>
+            </div>
+          </div>
+          <div class="rent-page__wrapper">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+
+            <div class="rent-page__container-top">
+              <img src="/img/fuze.png" alt="Skittles" />
               <p>fuzetea</p>
               <span>
                 Микс известных жевательных конфет с фруктовым вкусом.
                 Кисло-сладкий, не приторный, средней крепости.
               </span>
-              <a href="/">Выбрать</a>
+              <a href="#">Посмотреть все</a>
             </div>
-            <div class="panel-block2-bottom__rent-hookahs">
+            <div class="rent-page__container-bottom">
               <p>Соотношение табаков:</p>
-              <span
-                >Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
-                DarkSide Redberry.</span
-              >
+              <span>
+                Satyr PussyFruit, Spectrum ForestMix, DarkSide Lemonblast,
+                DarkSide Redberry.
+              </span>
             </div>
           </div>
         </div>
       </div>
       <div id="tabrent3" class="section5-content__rent-hookahs">
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>НЕТ</h3>
           <p></p>
         </div>
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>ФРУКТ</h3>
           <p>2000₽</p>
+          <a href="#">Выбрать +</a>
         </div>
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>3 ФРУКТА</h3>
           <p>6000₽</p>
+          <a href="#">Выбрать +</a>
         </div>
         <div class="section5-content-block__rent-hookahs">
+          <div class="rent-page__btn">
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                fill="#454545"
+              />
+            </svg>
+          </div>
           <h3>5 ФРУКТОВ</h3>
           <p>14.000₽</p>
+          <a href="#">Выбрать +</a>
         </div>
       </div>
       <div id="tabrent4" class="section5-content__rent-hookahs">
@@ -536,21 +744,94 @@
               забрать прямо в пункте выдачи прямо в ресторане
             </p>
           </div>
-          <div class="panel-block3__rent-hookahs">
-            <img src="/img/image 38.png" alt="" />
-            <p>Плитка</p>
+          <div class="rent-page__wrapper rent-page__container-block4">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <img src="/img/image 38.png" alt="Плитка" />
+              <p>Плитка</p>
+            </div>
           </div>
-          <div class="panel-block3__rent-hookahs">
-            <img src="/img/image 39.png" alt="" />
-            <p>Уголь</p>
+          <div class="rent-page__wrapper rent-page__container-block4">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <img src="/img/image 39.png" alt="Плитка" />
+              <p>Уголь</p>
+            </div>
           </div>
-          <div class="panel-block3__rent-hookahs">
-            <img src="/img/image 40.png" alt="" />
-            <p>чистящее средство</p>
+          <div class="rent-page__wrapper rent-page__container-block4">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <img src="/img/image 40.png" alt="Плитка" />
+              <p>чистящее средство</p>
+            </div>
           </div>
-          <div class="panel-block3__rent-hookahs">
-            <img src="/img/image 41.png" alt="" />
-            <p>перейти в магазин</p>
+          <div class="rent-page__wrapper rent-page__container-block4">
+            <div class="rent-page__btn">
+              <svg
+                width="88"
+                height="88"
+                viewBox="0 0 88 88"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                <path
+                  d="M64.7071 44.7071C65.0976 44.3166 65.0976 43.6834 64.7071 43.2929L58.3431 36.9289C57.9526 36.5384 57.3195 36.5384 56.9289 36.9289C56.5384 37.3195 56.5384 37.9526 56.9289 38.3431L62.5858 44L56.9289 49.6569C56.5384 50.0474 56.5384 50.6805 56.9289 51.0711C57.3195 51.4616 57.9526 51.4616 58.3431 51.0711L64.7071 44.7071ZM24 45L64 45V43L24 43V45Z"
+                  fill="#454545"
+                />
+              </svg>
+            </div>
+            <div class="rent-page__container-top">
+              <p>перейти в магазин</p>
+            </div>
           </div>
         </div>
       </div>
@@ -564,70 +845,104 @@
             placeholder="ФИО"
             class="panel-blocks-form-long__rent-hookahs"
           />
-          <input
-            type="tel"
-            placeholder="Телефон"
-            class="input-tel__secret-assistants"
-          />
-          <div class="panel-blocks-form-select__rent-hookahs">
-            <select>
-              <option disabled selected>Срок аренды</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-            </select>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="6"
-              height="8"
-              viewBox="0 0 6 8"
-              fill="none"
-            >
-              <path
-                d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
-                fill="#DFDFDF"
-              />
-            </svg>
+          <div class="rent-page__container-inputs">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              class="input-tel__secret-assistants"
+            />
+            <div class="panel-blocks-form-select__rent-hookahs">
+              <select>
+                <option disabled selected>Дата аренды</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="8"
+                viewBox="0 0 6 8"
+                fill="none"
+              >
+                <path
+                  d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="panel-blocks-form-select__rent-hookahs">
-            <select>
-              <option disabled selected>Миксы</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-            </select>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="6"
-              height="8"
-              viewBox="0 0 6 8"
-              fill="none"
-            >
-              <path
-                d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
-                fill="#DFDFDF"
-              />
-            </svg>
+          <div class="rent-page__container-inputs">
+            <div class="panel-blocks-form-select__rent-hookahs">
+              <select>
+                <option disabled selected>Срок аренды</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+              </select>
+            </div>
+            <div class="panel-blocks-form-select__rent-hookahs">
+              <select>
+                <option disabled selected>Миксы</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="8"
+                viewBox="0 0 6 8"
+                fill="none"
+              >
+                <path
+                  d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="panel-blocks-form-select__rent-hookahs">
-            <select>
-              <option disabled selected>Дополнительно</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-              <option>7 999 999 99 99</option>
-            </select>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="6"
-              height="8"
-              viewBox="0 0 6 8"
-              fill="none"
-            >
-              <path
-                d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
-                fill="#DFDFDF"
-              />
-            </svg>
+          <div class="rent-page__container-inputs">
+            <div class="panel-blocks-form-select__rent-hookahs">
+              <select>
+                <option disabled selected>Дополнительно</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="8"
+                viewBox="0 0 6 8"
+                fill="none"
+              >
+                <path
+                  d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
+            <div class="panel-blocks-form-select__rent-hookahs">
+              <select>
+                <option disabled selected>Инвентарь</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+                <option>7 999 999 99 99</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="8"
+                viewBox="0 0 6 8"
+                fill="none"
+              >
+                <path
+                  d="M6 4.76837e-07L3 8L6.99382e-07 -4.76995e-08L6 4.76837e-07Z"
+                  fill="#DFDFDF"
+                />
+              </svg>
+            </div>
           </div>
           <div
             class="panel-blocks-form-select__rent-hookahs panel-blocks-form-long__rent-hookahs"
@@ -665,8 +980,8 @@
               value="indigo"
             />
             <label for="color-1"
-              >Даю согласие на&nbsp;обработку
-              <a href="/">персональных данных</a></label
+              >Даю согласие на&nbsp;
+              <a href="/">обработку персональных данных</a></label
             >
           </div>
           <button type="button" class="panel-blocks-form-btn__rent-hookahs">
@@ -675,6 +990,45 @@
         </div>
       </div>
     </section>
+    <section class="rent-page__btn-form">
+      <button class="controller-form"></button>
+    </section>
+    <script>
+      const listPoints = [
+        ...document.querySelector(".section5-top__rent-hookahs").children,
+      ];
+      const tabRents = document.querySelectorAll(
+        ".section5-content__rent-hookahs"
+      );
+
+      const btn = document.querySelector(".controller-form");
+      let cur = 0;
+      btn.innerHTML = "Далее";
+      const handleIsChoose = (index) => {
+        cur = index;
+        cur === 4 ? (btn.innerHTML = "Отправить") : (btn.innerHTML = "Далее");
+      };
+
+      btn.addEventListener("click", () => {
+        cur === 4 ? cur : cur++;
+        cur === 4 ? (btn.innerHTML = "Отправить") : (btn.innerHTML = "Далее");
+        let tubIDRent;
+        let tabActiveRent;
+        listPoints.forEach((el, i) => {
+          if (i === cur) {
+            el.classList.add("section5-top-btn__rent-hookahs-active");
+            tubIDRent = el.getAttribute("data-tabRent");
+            tabActiveRent = document.querySelector(tubIDRent);
+          } else {
+            el.classList.remove("section5-top-btn__rent-hookahs-active");
+          }
+        });
+        tabRents.forEach(function (item) {
+          item.classList.remove("section5-content__rent-hookahs-active");
+        });
+        tabActiveRent.classList.add("section5-content__rent-hookahs-active");
+      });
+    </script>
     <section class="section6__rent-hookahs">
       <div class="section6-container__rent-hookahs">
         <div class="section6-container-block__rent-hookahs">
@@ -705,8 +1059,8 @@
               </svg>
             </div>
             <div class="panel-block1__rent-hookahs">
-              <p>Сутки</p>
-              <span>2000₽</span>
+              <p>3 ДНЯ</p>
+              <span>6000₽</span>
               <svg
                 class="panel-block1-arrow__rent-hookahs"
                 xmlns="http://www.w3.org/2000/svg"
@@ -729,8 +1083,8 @@
               </svg>
             </div>
             <div class="panel-block1__rent-hookahs">
-              <p>Сутки</p>
-              <span>2000₽</span>
+              <p>Неделя</p>
+              <span>14000₽</span>
               <svg
                 class="panel-block1-arrow__rent-hookahs"
                 xmlns="http://www.w3.org/2000/svg"
@@ -759,6 +1113,23 @@
           <div class="panel__rent-hookahs">
             <div class="panel-blocks2__rent-hookahs">
               <div class="panel-block2__rent-hookahs">
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
                 <div class="panel-block2-top__rent-hookahs">
                   <img src="/img/IMG-accordion.png" alt="" />
                   <p>Skittles</p>
@@ -777,6 +1148,23 @@
                 </div>
               </div>
               <div class="panel-block2__rent-hookahs">
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
                 <div class="panel-block2-top__rent-hookahs">
                   <img src="/img/fanta.png" alt="" />
                   <p>ягодная фанта</p>
@@ -796,6 +1184,23 @@
                 </div>
               </div>
               <div class="panel-block2__rent-hookahs">
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
                 <div class="panel-block2-top__rent-hookahs">
                   <img src="/img/nutela.png" alt="" />
                   <p>Nutellav</p>
@@ -815,6 +1220,23 @@
                 </div>
               </div>
               <div class="panel-block2__rent-hookahs">
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
                 <div class="panel-block2-top__rent-hookahs">
                   <img src="/img/fuze.png" alt="" />
                   <p>fuzetea</p>
@@ -832,9 +1254,6 @@
                   >
                 </div>
               </div>
-            </div>
-            <div class="rent-hookahs-page_btn">
-              <button>ПОКАЗАТЬ ВСЕ</button>
             </div>
           </div>
         </div>
@@ -949,19 +1368,102 @@
                 </p>
               </div>
               <div class="panel-block3__rent-hookahs">
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
                 <img src="/img/image 38.png" alt="" />
                 <p>Плитка</p>
               </div>
               <div class="panel-block3__rent-hookahs">
-                <img src="/img/image 39.png" alt="" />
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./img/image 45.png"
+                  alt=""
+                  style="position: relative; width: 100%"
+                />
+                <img
+                  src="./img/image 46.png"
+                  alt=""
+                  style="
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                  "
+                />
                 <p>Уголь</p>
               </div>
               <div class="panel-block3__rent-hookahs">
-                <img src="/img/image 40.png" alt="" />
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 44L44 59H45L45 44H59V43H45V29H44V43H29V44H44Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
+                <img src="/img/image 44.png" alt="" />
                 <p>чистящее средство</p>
               </div>
               <div class="panel-block3__rent-hookahs">
-                <img src="/img/image 41.png" alt="" />
+                <div class="rent-page__btn">
+                  <svg
+                    width="88"
+                    height="88"
+                    viewBox="0 0 88 88"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="44" cy="44" r="43.5" stroke="#454545" />
+                    <path
+                      d="M64.7071 44.7071C65.0976 44.3166 65.0976 43.6834 64.7071 43.2929L58.3431 36.9289C57.9526 36.5384 57.3195 36.5384 56.9289 36.9289C56.5384 37.3195 56.5384 37.9526 56.9289 38.3431L62.5858 44L56.9289 49.6569C56.5384 50.0474 56.5384 50.6805 56.9289 51.0711C57.3195 51.4616 57.9526 51.4616 58.3431 51.0711L64.7071 44.7071ZM24 45L64 45V43L24 43V45Z"
+                      fill="#454545"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="/img/image 41.png"
+                  alt=""
+                  style="opacity: 0; height: 80px"
+                />
                 <p>перейти в магазин</p>
               </div>
             </div>
@@ -1081,13 +1583,13 @@
                   <a href="/">персональных данных</a></label
                 >
               </div>
-              <button type="button" class="panel-blocks-form-btn__rent-hookahs">
-                Отправить
-              </button>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="rent-page__btn-form-mob">
+      <button class="controller-form__mob">Отправить</button>
     </section>
     <footer>
       <div class="container">
@@ -1126,10 +1628,14 @@
             <a href="/" class="footer-bottom-social-ellipse"> IN </a>
             <a href="/" class="footer-bottom-social-ellipse"> FB </a>
           </div>
-          <div class="footer-bottom-right">
+          <div class="footer-bottom-right ds-none">
             <p>© 2022 Tangiers Lounge</p>
             <p>ART HOOKAH FAMILY</p>
           </div>
+        </div>
+        <div class="footer-mb">
+          <p>© 2022 Tangiers Lounge</p>
+          <p>ART HOOKAH FAMILY</p>
         </div>
       </div>
     </footer>

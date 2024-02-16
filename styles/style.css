@@ -2637,6 +2637,14 @@ p.section3-content-p__loyalty-program {
   border: 1px solid #454545;
   border-top: none;
 }
+.section3-container-block__rent-hookahs:nth-child(4),
+.section3-container-block__rent-hookahs:first-child {
+  border-left: none;
+}
+.section3-container-block__rent-hookahs:nth-child(3),
+.section3-container-block__rent-hookahs:last-child {
+  border-right: none;
+}
 .section3-container-block__rent-hookahs > span {
   text-transform: uppercase;
   font-family: "FuturaPT", sans-serif;
@@ -2704,6 +2712,7 @@ p.section3-content-p__loyalty-program {
   gap: 10px;
   border-right: 1px solid #454545;
   border-bottom: 1px solid #454545;
+  position: relative;
 }
 .section5-content-block__rent-hookahs:last-child {
   border-right: none;
@@ -5544,8 +5553,6 @@ header {
   display: none;
 }
 .panel-block2-top__rent-hookahs img {
-  width: 232px;
-  height: 140px;
   object-fit: cover;
 }
 .panel-block2-top__rent-hookahs p {
@@ -5594,6 +5601,7 @@ header {
   width: 50%;
   padding: 20px;
   padding-top: 80px;
+  position: relative;
 }
 .panel-block2-bottom__rent-hookahs p {
   color: #454545;
@@ -5627,6 +5635,7 @@ header {
 .panel-block3__rent-hookahs {
   width: 50%;
   padding: 118px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5657,7 +5666,7 @@ header {
   border-bottom: 1px solid #454545;
 }
 .panel-blocks2__rent-hookahs {
-  width: 101%;
+  width: 100%;
 }
 .panel-block3-long__rent-hookahs p {
   text-align: center;

@@ -10,6 +10,9 @@
   .section4-text__restoran > p {
     letter-spacing: -2px;
   }
+  .rent-page__btn-form{
+    display: flex !important;
+  }
 }
 @media (max-width: 1550px) {
   .section4-container-block__careeer {
@@ -933,12 +936,7 @@
   .section3-container__rent-hookahs {
     flex-wrap: wrap;
   }
-  .section3-container-block__rent-hookahs {
-    width: 50%;
-    height: 80px;
-    font-size: 18px;
-    line-height: 24px; /* 133.333% */
-  }
+
   .section3-container-left__sertificate p,
   .section2-container-block-left__restaurant-all-mob a,
   .section2-container-block-left-top__restaurant-all p,
@@ -3462,12 +3460,7 @@
   .section3-container__rent-hookahs {
     flex-wrap: wrap;
   }
-  .section3-container-block__rent-hookahs {
-    width: 50%;
-    height: 80px;
-    font-size: 18px;
-    line-height: 24px; /* 133.333% */
-  }
+
   .section3-container-left__sertificate p,
   .section2-container-block-left__restaurant-all-mob a,
   .section2-container-block-left-top__restaurant-all p,
