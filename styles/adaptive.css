@@ -1,3 +1,12 @@
+@media (min-width: 1921px) {
+  .container-rubber {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    border-right: 1px solid #454545;
+    border-left: 1px solid #454545;
+  }
+}
 @media (min-width: 1150px) {
   .secret-assistants_pt {
     height: 1200px;
@@ -10,7 +19,7 @@
   .section4-text__restoran > p {
     letter-spacing: -2px;
   }
-  .rent-page__btn-form{
+  .rent-page__btn-form {
     display: flex !important;
   }
 }

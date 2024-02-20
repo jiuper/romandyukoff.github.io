@@ -1606,6 +1606,7 @@ p.section3-content-p__loyalty-program {
 }
 .section6-content-block__loyalty-program img {
   width: 100%;
+  z-index: 1;
 }
 .section6-content-block__loyalty-program p {
   text-align: center;
@@ -2301,7 +2302,7 @@ p.section3-content-p__loyalty-program {
 }
 .section6-container-block__contacts {
   border-bottom: 1px solid #454545;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6121,13 +6122,4 @@ header {
   left: 0;
   right: 0;
   position: relative !important;
-}
-.line-container {
-  padding: 0;
-}
-@media (min-width: 1921px) {
-  .line-container {
-    border-left: 1px solid #454545 !important;
-    border-right: 1px solid #454545 !important;
-  }
 }
