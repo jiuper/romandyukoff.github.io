@@ -297,8 +297,8 @@
     padding-bottom: 125px !important;
   }
   .catering-page__wrapper > div > div > h1 {
-    font-size: min(40px, 2.083vw);
-    line-height: min(48px, 2.5vw);
+    font-size:40px;
+    line-height:48px;
   }
   .catering-page__wrapper > div > div > div {
     height: 727px;
@@ -376,8 +376,8 @@
     padding-bottom: 14px !important;
   }
   .catering-page__wrapper > div > div > h1 {
-    font-size: min(32px, 1.667vw) !important;
-    line-height: min(32px, 1.667vw) !important; /* 100% */
+    font-size: 32px !important;
+    line-height: 32px!important; /* 100% */
   }
   .catering-page__wrapper > div > div > div {
     width: 282px !important;
