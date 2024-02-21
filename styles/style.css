@@ -289,7 +289,7 @@ h1 {
   border-radius: 120px;
   border: 1px solid #454545;
   background: rgba(196, 196, 196, 0.01);
-  backdrop-filter: blur(42px);
+  filter: blur(42px);
 }
 .stories-slider-actions {
   height: 40px;
@@ -558,7 +558,6 @@ footer {
   z-index: 9999999999;
 }
 .section1-container-img-blur__secret-assistants {
-  -webkit-backdrop-filter: blur(100px);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1216,7 +1215,6 @@ footer {
   z-index: 2;
 }
 .franchise__img {
-  -webkit-backdrop-filter: blur(100px);
   position: absolute;
   width: 100%;
   right: 0;
@@ -4531,7 +4529,7 @@ body
   position: relative;
   border: 1px solid var(--line, #454545);
   background: rgba(196, 196, 196, 0.01);
-  backdrop-filter: blur(42px);
+  filter: blur(42px);
   transition: all 0.6s ease 0s;
 }
 .galleryAnim__arrow.swiper-button-disabled {
@@ -4559,7 +4557,7 @@ body
   position: relative;
   border: 1px solid #454545;
   background: rgba(196, 196, 196, 0.01);
-  backdrop-filter: blur(42px);
+  filter: blur(42px);
   margin: 0 20px;
   transition: all 0.6s ease 0s;
 }
