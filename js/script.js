@@ -44,7 +44,7 @@ if (IsHeroSlider) {
   document.addEventListener("touchmove", function (e) {
     if (swiperHero.isEnd) {
       // Проверяем, достиг ли слайдер конца
-      //  document.removeEventListener('touchmove'); // Если достиг, удаляем обработчик события touchmove
+        document.removeEventListener('touchmove'); // Если достиг, удаляем обработчик события touchmove
       return;
     }
 
