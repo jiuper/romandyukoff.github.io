@@ -542,7 +542,7 @@ footer {
   text-align: center;
   font-weight: 400;
   line-height: min(60px, 3.2vw); /* 100% */
-  letter-spacing: -3px;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 .section4-kamen2__bankets {
@@ -6123,4 +6123,3 @@ header {
   right: 0;
   position: relative !important;
 }
-
