@@ -690,7 +690,7 @@ footer {
   height: 88%;
   object-fit: cover;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .section3-container__secret-assistants {
   display: flex;
