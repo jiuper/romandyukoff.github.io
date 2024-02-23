@@ -693,7 +693,7 @@
 
       <script>
         document.addEventListener("DOMContentLoaded", () => {
-          var mySwiper = new Swiper(".swiper-container", {
+          const mySwiper = new Swiper(".swiper-container", {
             spaceBetween: 100,
             slidesPerView: 4,
             lazy: true,
@@ -703,6 +703,7 @@
             speed: 700,
             autoplay: {
               delay: 3000,
+              disableOnInteraction: false
             },
             loopAdditionalSlides: 30,
             navigation: {
