@@ -56,7 +56,7 @@ if (IsHeroSlider) {
     if (Math.abs(deltaY) > 10) {
       // Порог для определения свайпа
       e.preventDefault(); // Отменяем прокрутку страницы
-      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 2); // Изменяем позицию swiper в соответствии с движением пальца
+      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 0.2); // Изменяем позицию swiper в соответствии с движением пальца
     }
   });
   let touchstart;
@@ -99,7 +99,7 @@ if (IsHeroSlider) {
 
   function blurBack() {
     let vw = document.documentElement.scrollWidth;
-    let opacity = (swiperHero.translate * 100) / vw / 75;
+    let opacity = (swiperHero.translate * 50) / vw / 35;
     let opacityBlur = 1 + opacity;
     let scaleImg = 1 + Math.abs(opacity) * 0.075;
     if (opacityBlur >= -1) {
