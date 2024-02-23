@@ -97,7 +97,7 @@ if (IsHeroSlider) {
 
   function blurBack() {
     let vw = document.documentElement.scrollWidth;
-    let opacity = (swiperHero.translate * 100) / vw / 75;
+    let opacity = (swiperHero.translate * 50) / vw / 35;
     let opacityBlur = 1 + opacity;
     let scaleImg = 1 + Math.abs(opacity) * 0.075;
     if (opacityBlur >= -1) {
