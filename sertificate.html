@@ -449,9 +449,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="mySwipersertificate-block-bottom mySwiper-bt-one">
+                <!-- <div class="mySwipersertificate-block-bottom mySwiper-bt-one">
                   Друзьям
-                </div>
+                </div> -->
               </div>
               <div class="swiper-slide">
                 <div class="mySwipersertificate-block">
@@ -476,9 +476,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="mySwipersertificate-block-bottom mySwiper-bt">
+                <!-- <div class="mySwipersertificate-block-bottom mySwiper-bt">
                   Любимому человеку
-                </div>
+                </div> -->
               </div>
               <div class="swiper-slide">
                 <div class="mySwipersertificate-block">
@@ -503,9 +503,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="mySwipersertificate-block-bottom mySwiper-bt">
+                <!-- <div class="mySwipersertificate-block-bottom mySwiper-bt">
                   Родителям
-                </div>
+                </div> -->
               </div>
               <div class="swiper-slide">
                 <div class="mySwipersertificate-block">
@@ -530,16 +530,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="mySwipersertificate-block-bottom mySwiper-bt">
+                <!-- <div class="mySwipersertificate-block-bottom mySwiper-bt">
                   Любимому человеку
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
         <div class="section2-bottom__sertificate-mob">
-          <div class="swiper-button-next swiper-button-next-sertificate"></div>
-          <div class="swiper-button-prev swiper-button-prev-sertificate"></div>
+          <div
+            class="swiper-button-next swiper-button-next-sertificate"
+            style="z-index: 99999999"
+          ></div>
+
+          <span class="titles"></span>
+
+          <div
+            class="swiper-button-prev swiper-button-prev-sertificate"
+            style="z-index: 999999999"
+          ></div>
         </div>
       </section>
       <section class="section3__sertificate">
@@ -868,13 +877,31 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwipersertificate", {
+      const title = document.querySelector(".titles");
+      const items = ["Друзьям", "Любимому человеку", "Родителя"];
+
+      const addInitText = (text) => {
+        title.innerHTML = text || "";
+      };
+
+      const swiper = new Swiper(".mySwipersertificate", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        on: {
+          init: (swiper) => {
+            title && addInitText(items[swiper.activeIndex]);
+          },
+          activeIndexChange: (swiper) => {
+            title && addInitText(items[swiper.activeIndex]);
+          },
+        },
+
         cssMode: true,
       });
+
+      swiper.init();
     </script>
     <div class="modal-header-book">
       <div class="modal-header-book-content">

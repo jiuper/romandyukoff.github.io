@@ -1,6 +1,8 @@
 let IsHeroSlider =
   document.querySelectorAll(".HeroScroll__slider").length > 0 ? true : false;
 
+console.log(IsHeroSlider);
+
 if (IsHeroSlider) {
   const heroSlider = document.querySelector(".HeroScroll__slider");
   const swiperHero = new Swiper(heroSlider, {
@@ -44,7 +46,7 @@ if (IsHeroSlider) {
   document.addEventListener("touchmove", function (e) {
     if (swiperHero.isEnd) {
       // Проверяем, достиг ли слайдер конца
-        document.removeEventListener('touchmove'); // Если достиг, удаляем обработчик события touchmove
+      document.removeEventListener("touchmove"); // Если достиг, удаляем обработчик события touchmove
       return;
     }
 
