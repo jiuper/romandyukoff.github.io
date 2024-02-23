@@ -565,6 +565,8 @@ footer {
   left: 0;
   z-index: 1;
   filter: blur(100px);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
 }
 .section1-container-img__secret-assistants {
   width: 40%;
@@ -3388,7 +3390,9 @@ p.section3-content-p__loyalty-program {
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-filter: blur(100px);
   filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   z-index: 1;
   object-fit: cover;
 }
