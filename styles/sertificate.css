@@ -341,8 +341,8 @@ input {
 }
 @media (max-width: 475px) {
   .sertificate-page__wrapper-h1 > h1 {
-    font-size: min(40px, 2.083vw);
-    line-height: min(40px, 2.083vw);
+    font-size: 40px;
+    line-height: 40px;
     max-width: 100% !important;
   }
   .sertificate-page__wrapper {

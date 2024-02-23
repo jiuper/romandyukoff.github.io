@@ -360,19 +360,6 @@
         <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
-    <script>
-      let btnMenu = document.querySelector(".header-container-right-btn");
-      let modalMenu = document.querySelector(".modal-header-book");
-      let closeMenu = document.querySelector(".modal-header-book-close");
-      btnMenu.addEventListener("click", function () {
-        modalMenu.style.opacity = "1";
-        modalMenu.style.zIndex = "999999999999999";
-      });
-      closeMenu.addEventListener("click", function () {
-        modalMenu.style.opacity = "0";
-        modalMenu.style.zIndex = "-1";
-      });
-    </script>
 
     <section class="section1__restoran">
       <p
@@ -428,281 +415,6 @@
           </div>
         </div>
       </section>
-
-      <div class="stories-slider">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- specific user stories -->
-            <div class="swiper-slide swiper-slide-story">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- user's single story -->
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button">
-                        <img src="/img/Group 1321316158.png" alt="" />
-                      </button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Group 1321316196.png" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button"></button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Frame 2087324462.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-story">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- user's single story -->
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button"></button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Group 1321316196.png" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button"></button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Frame 2087324462.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-story">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- user's single story -->
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button"></button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Group 1321316196.png" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="stories-slider-actions">
-                      <button class="stories-slider-close-button"></button>
-                    </div>
-                    <div class="stories-slider-content">
-                      <img src="/img/Frame 2087324462.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-      />
-      <style>
-        .swiper-button-prev {
-          background-image: url("/img/arr-l.svg");
-        }
-
-        .swiper-button-next {
-          background-image: url("/img/arr-r.svg");
-        }
-      </style>
-      <section class="slider-section">
-        <div class="slider-section-line-l"></div>
-        <div class="slider-section-line-r"></div>
-        <!-- Slider main container -->
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2531.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Афиша</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2529.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Mr.T. Friends</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2528.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Кейтеринг</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 25322.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Доставка</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2532.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">День рождения</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2531.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Афиша</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2529.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Mr.T. Friends</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2528.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Кейтеринг</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 25322.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Доставка</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2532.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">День рождения</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2531.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Афиша</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2529.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Mr.T. Friends</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2528.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Кейтеринг</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 25322.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">Доставка</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-            <div class="swiper-slide swiper-slide-main">
-              <div class="demo-stories">
-                <a href="index.html">
-                  <span class="demo-stories-avatar">
-                    <img src="/img/Rectangle 2532.png" alt="" />
-                  </span>
-                  <p class="demo-stories-name">День рождения</p>
-                </a>
-              </div>
-              <div class="blur-block"></div>
-            </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev swiper-button-prev-main"></div>
-          <div class="swiper-button-next swiper-button-next-main"></div>
-        </div>
-      </section>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
       <script>
         $(document).ready(function () {
@@ -1075,5 +787,18 @@
     <script src="js/script.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/mapModal.js"></script>
+    <script>
+      let btnMenu = document.querySelector(".header-container-right-btn");
+      let modalMenu = document.querySelector(".modal-header-book");
+      let closeMenu = document.querySelector(".modal-header-book-close");
+      btnMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "1";
+        modalMenu.style.zIndex = "999999999999999";
+      });
+      closeMenu.addEventListener("click", function () {
+        modalMenu.style.opacity = "0";
+        modalMenu.style.zIndex = "-1";
+      });
+    </script>
   </body>
 </html>

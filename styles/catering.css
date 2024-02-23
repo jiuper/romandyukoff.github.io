@@ -401,8 +401,8 @@
     padding-top: 88px;
   }
   .catering-page__container-h1 > h1 {
-    font-size: min(32px, 1.667vw) !important;
-    line-height: min(32px, 1.667vw) !important;
+    font-size: 32px !important;
+    line-height: 32px !important;
     max-width: 345px !important;
     letter-spacing: -1px;
   }

@@ -10,11 +10,11 @@
   padding-top: 45px;
 }
 .franchise-page-caption > h1 {
-  font-size: min(40px, 2.08vw);
+  font-size: 40px;
   font-style: normal;
   text-align: center;
   font-weight: 400;
-  line-height: min(48px, 2.5vw);
+  line-height: 48px;
   letter-spacing: -2px;
   text-transform: uppercase;
 }

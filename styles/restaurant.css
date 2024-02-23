@@ -1,6 +1,6 @@
 .restaurant-page__caption > h1 {
-  font-size: min(40px, 2.083vw);
-  line-height: min(48px, 2.5vw);
+  font-size: 40px;
+  line-height: 48px;
 }
 .section2__restoran-pt {
   padding-bottom: 75px !important;
@@ -94,8 +94,8 @@
   }
   .restaurant-page__title {
     padding-top: 264px;
-    font-size: min(40px, 2.083vw) !important;
-    line-height: min(48px, 2.5vw) !important;
+    font-size: 40px !important;
+    line-height: 48px!important;
   }
   .section6__restoran {
     padding-bottom: 275px !important;

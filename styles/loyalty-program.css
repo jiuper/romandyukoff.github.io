@@ -27,8 +27,8 @@
     padding-bottom: 253px !important;
   }
   .loyalty-program__page-h1 > h1 {
-    font-size: min(40px, 2.083vw);
-    line-height: min(48px, 2.5vw);
+    font-size: 40px;
+    line-height: 48px;
   }
   .loyalty-program__page-h1 > div > img {
     width: 100%;
@@ -67,8 +67,8 @@
     width: 49%;
   }
   .section5-container__loyalty-program p {
-    font-size: min(40px, 2.083vw);
-    line-height: min(48px, 2.5vw);
+    font-size:40px;
+    line-height:48px;
   }
   .section5__loyalty-program {
     padding-top: 22%;
@@ -97,8 +97,8 @@
     height: 292px !important;
   }
   p.section3-content-p__loyalty-program {
-    font-size: min(32px, 1.667vw) !important;
-    line-height: min(32px, 1.667vw) !important; /* 100% */
+    font-size: 32px !important;
+    line-height: 32px !important; /* 100% */
     letter-spacing: 1px;
     padding-top: 84px;
   }
