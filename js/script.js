@@ -54,7 +54,7 @@ if (IsHeroSlider) {
     if (Math.abs(deltaY) > 10) {
       // Порог для определения свайпа
       e.preventDefault(); // Отменяем прокрутку страницы
-      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 2); // Изменяем позицию swiper в соответствии с движением пальца
+      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 1.2); // Изменяем позицию swiper в соответствии с движением пальца
     }
   });
   let touchstart;
