@@ -242,6 +242,8 @@ h1 {
   z-index: -1;
   transition: 0.5s;
   filter: blur(100px);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
 }
 .swiper-slide__content {
   height: 300px;
@@ -290,6 +292,8 @@ h1 {
   border: 1px solid #454545;
   background: rgba(196, 196, 196, 0.01);
   filter: blur(42px);
+   -webkit-filter: blur(42px);
+  transform: translate3d(0,0,0);
 }
 .stories-slider-actions {
   height: 40px;
@@ -682,6 +686,8 @@ footer {
   height: 100%;
   object-fit: cover;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   position: absolute;
   z-index: 1;
 }
@@ -1221,6 +1227,8 @@ footer {
   width: 100%;
   right: 0;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
 }
 
 .franchise__imgGal25 {
@@ -1430,6 +1438,8 @@ header {
   width: 100%;
   height: 100%;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   position: absolute;
   top: 0;
   left: 0;
@@ -1779,6 +1789,8 @@ p.section3-content-p__loyalty-program {
   width: 100%;
   height: 100%;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   position: absolute;
   left: 0;
   top: 0;
@@ -1920,6 +1932,8 @@ p.section3-content-p__loyalty-program {
   left: 0;
   object-fit: cover;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   z-index: 1;
 }
 .section2-container-block-img__sertificate {
@@ -1975,6 +1989,8 @@ p.section3-content-p__loyalty-program {
   height: 100%;
   object-fit: cover;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   z-index: 1;
 }
 .section3-container-left-block-img__sertificate {
@@ -3845,6 +3861,8 @@ p.section3-content-p__loyalty-program {
   left: 0;
   top: 0;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  transform: translate3d(0,0,0);
   object-fit: contain;
   z-index: 1;
 }

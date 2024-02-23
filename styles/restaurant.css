@@ -37,6 +37,7 @@
 .restaurant-page__imgOne {
   width: 614px;
   height: 800px;
+  position: relative;
 }
 .restaurant-page__imgOne > img {
   width: 100%;
@@ -95,7 +96,7 @@
   .restaurant-page__title {
     padding-top: 264px;
     font-size: 40px !important;
-    line-height: 48px!important;
+    line-height: 48px !important;
   }
   .section6__restoran {
     padding-bottom: 275px !important;
