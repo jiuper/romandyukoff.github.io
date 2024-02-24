@@ -1942,10 +1942,7 @@
     width: 32px !important;
     height: 32px !important;
   }
-  .swiper-button-next-sertificate,
-  .swiper-button-prev-sertificate {
-    margin-top: -15px !important;
-  }
+
   .swiper-button-next-sertificate {
     right: 20px !important;
   }
@@ -4020,7 +4017,7 @@
   }
   .swiper-button-next-sertificate,
   .swiper-button-prev-sertificate {
-    margin-top: -15px !important;
+    margin-top: 0 !important;
   }
   .swiper-button-next-sertificate {
     right: 20px !important;
@@ -5413,6 +5410,10 @@
   .secret-page_lineMobR,
   .secret-page_lineMobL {
     display: block;
+  }
+  .titles {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

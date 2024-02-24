@@ -243,7 +243,7 @@ h1 {
   transition: 0.5s;
   filter: blur(100px);
   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 .swiper-slide__content {
   height: 300px;
@@ -292,8 +292,8 @@ h1 {
   border: 1px solid #454545;
   background: rgba(196, 196, 196, 0.01);
   filter: blur(42px);
-   -webkit-filter: blur(42px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(42px);
+  transform: translate3d(0, 0, 0);
 }
 .stories-slider-actions {
   height: 40px;
@@ -686,8 +686,8 @@ footer {
   height: 100%;
   object-fit: cover;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   position: absolute;
   z-index: 1;
 }
@@ -1227,8 +1227,8 @@ footer {
   width: 100%;
   right: 0;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
 }
 
 .franchise__imgGal25 {
@@ -1438,8 +1438,8 @@ header {
   width: 100%;
   height: 100%;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
@@ -1789,8 +1789,8 @@ p.section3-content-p__loyalty-program {
   width: 100%;
   height: 100%;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   position: absolute;
   left: 0;
   top: 0;
@@ -1932,8 +1932,8 @@ p.section3-content-p__loyalty-program {
   left: 0;
   object-fit: cover;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   z-index: 1;
 }
 .section2-container-block-img__sertificate {
@@ -1989,8 +1989,8 @@ p.section3-content-p__loyalty-program {
   height: 100%;
   object-fit: cover;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   z-index: 1;
 }
 .section3-container-left-block-img__sertificate {
@@ -3861,8 +3861,8 @@ p.section3-content-p__loyalty-program {
   left: 0;
   top: 0;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
-  transform: translate3d(0,0,0);
+  -webkit-filter: blur(100px);
+  transform: translate3d(0, 0, 0);
   object-fit: contain;
   z-index: 1;
 }
@@ -4253,20 +4253,32 @@ p.section3-content-p__loyalty-program {
   background-position: center;
   background-size: 25px;
   height: 40px !important;
-  padding: 0 20px;
+  top: 0% !important;
   background-repeat: no-repeat;
+  margin: 0 !important;
+  position: relative !important;
 }
-.swiper-button-prev-sertificate {
+.swiper-button-next-sertificate {
   transform: rotate(180deg);
 }
 .section2-bottom__sertificate-mob {
-  position: relative;
-  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.titles {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 .mySwipersertificate-block-bottom {
   padding-top: 28px;
   text-align: center;
-  font-family: Futura PT, sans-serif;
+  font-family: "FuturaPT", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 450;

@@ -538,17 +538,11 @@
           </div>
         </div>
         <div class="section2-bottom__sertificate-mob">
-          <div
-            class="swiper-button-next swiper-button-next-sertificate"
-            style="z-index: 99999999"
-          ></div>
+          <div class="swiper-button-prev swiper-button-next-sertificate"></div>
 
           <span class="titles"></span>
 
-          <div
-            class="swiper-button-prev swiper-button-prev-sertificate"
-            style="z-index: 999999999"
-          ></div>
+          <div class="swiper-button-next swiper-button-prev-sertificate"></div>
         </div>
       </section>
       <section class="section3__sertificate">
@@ -878,7 +872,12 @@
     <!-- Initialize Swiper -->
     <script>
       const title = document.querySelector(".titles");
-      const items = ["Друзьям", "Любимому человеку", "Родителя"];
+      const items = [
+        "Друзьям",
+        "Любимому человеку",
+        "Родителя",
+        "Любимому человеку",
+      ];
 
       const addInitText = (text) => {
         title.innerHTML = text || "";
