@@ -46,3 +46,53 @@
   font-size: 60px;
   line-height: 60px;
 }
+@media (max-width: 1151px) {
+  .franchise-page-slider {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .franchise-page-slider__mob {
+    display: flex;
+  }
+  .franchise-page-swiper__mob {
+    max-width: 690px;
+    width: 100%;
+    border-left: 1px solid #454545;
+    border-right: 1px solid #454545;
+  }
+  .franchise-page-swiper-title__mob {
+    position: absolute;
+    padding: 20px;
+  }
+  p.franchise-page-swiper-desc__mob {
+    max-width: 630px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .franchise-page-swiper-block__mob {
+    padding: 250px 0;
+  }
+  .franchise-page-swiper-btn__mob {
+    width: 32px;
+  }
+}
+@media (max-width: 475px) {
+  .franchise-page-swiper__mob {
+    max-width: 375px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  .franchise-page-swiper-block__mob {
+    padding: 75px 0;
+    padding-bottom: 0 !important;
+  }
+  p.franchise-page-swiper-desc__mob {
+    max-width: 345px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

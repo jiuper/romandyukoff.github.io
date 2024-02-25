@@ -417,8 +417,9 @@
           </div>
         </div>
       </section>
-
-      <section class="section3__vacancy section5__franchise">
+      <section
+        class="section3__vacancy section5__franchise franchise-page-slider"
+      >
         <div
           class="section5-top-left__franchise-absolute section5-top-left__franchise"
         >
@@ -496,7 +497,105 @@
           </div>
         </div>
       </section>
-      <section class="section3__slider-top slider-nav">
+      <section class="section2__sertificate-mob">
+        <div
+          class="section2-title__sertificate-mob franchise-page-swiper-title__mob"
+        >
+          Что вы получите от нас
+        </div>
+        <div class="container franchise-page-swiper__mob">
+          <div class="swiper mySwipersertificate">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="mySwipersertificate-block franchise-page-swiper-block__mob"
+                >
+                  <div
+                    class="section2-container__sertificate section2-container__sertificate-active"
+                  >
+                    <p class="franchise-page-swiper-desc__mob">
+                      Франшиза более устойчива к кризисным ситуациям и
+                      нестабильной экономике, что повышает ее популярность в
+                      трудные времена.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="mySwipersertificate-block franchise-page-swiper-block__mob"
+                >
+                  <div
+                    class="section2-container__sertificate section2-container__sertificate-active"
+                  >
+                    <p class="franchise-page-swiper-desc__mob">
+                      Когда начинаешь свой бизнес, не хочется совершать чужих
+                      ошибок. Мы разработали рабочую бизнес-модель, которая уже
+                      принесла миллионы своим создателям. Пусть принесёт и вам!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="mySwipersertificate-block franchise-page-swiper-block__mob"
+                >
+                  <div
+                    class="section2-container__sertificate section2-container__sertificate-active"
+                  >
+                    <p class="franchise-page-swiper-desc__mob">
+                      Не нужно тратить годы на приобретение навыков и опыта
+                      управления бизнесом. Мы заинтересованы в том, чтобы вы
+                      скорее попали в колею. Поэтому своим дочерним
+                      подразделениям мы предоставляем консультации и юридическую
+                      поддержку.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="mySwipersertificate-block franchise-page-swiper-block__mob"
+                >
+                  <div
+                    class="section2-container__sertificate section2-container__sertificate-active"
+                  >
+                    <p class="franchise-page-swiper-desc__mob">
+                      Мы предоставим вашим сотрудникам рабочие рекомендации по
+                      организации и проведению рекламных кампаний, акций и
+                      мероприятий.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="mySwipersertificate-block franchise-page-swiper-block__mob"
+                >
+                  <div
+                    class="section2-container__sertificate section2-container__sertificate-active"
+                  >
+                    <p class="franchise-page-swiper-desc__mob">
+                      Мы проходили через открытие первого заведения и понимаем,
+                      насколько это важный момент. Мы обучим ваш персонал всему,
+                      что знаем сами. Начиная от фирменных забивок и заканчивая
+                      стандартами сервиса.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section2-bottom__sertificate-mob">
+          <div class="swiper-button-prev swiper-button-next-sertificate franchise-page-swiper-btn__mob"></div>
+
+          <span class="titles"></span>
+
+          <div class="swiper-button-next swiper-button-prev-sertificate franchise-page-swiper-btn__mob"></div>
+        </div>
+      </section>
+      <!-- <section class="section3__slider-top slider-nav">
         <div class="handleIsPrev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -557,7 +656,7 @@
             />
           </svg>
         </div>
-      </section>
+      </section> -->
       <section class="section6__franchise">
         <div class="section6__franchise-line line-height__bankets"></div>
         <div class="container">
@@ -1553,7 +1652,40 @@
         <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const title = document.querySelector(".titles");
+      const items = [
+        "Стабильность",
+        "Эффективная бизнес-модель",
+        "Маркетинг",
+        "Узнаваемость и легкий старт",
+        "Стандарты сервиса",
+      ];
+
+      const addInitText = (text) => {
+        title.innerHTML = text || "";
+      };
+
+      const swiper = new Swiper(".mySwipersertificate", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          init: (swiper) => {
+            title && addInitText(items[swiper.activeIndex]);
+          },
+          activeIndexChange: (swiper) => {
+            title && addInitText(items[swiper.activeIndex]);
+          },
+        },
+
+        cssMode: true,
+      });
+
+      swiper.init();
+    </script>
     <script src="./js/index.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/mapModal.js"></script>
