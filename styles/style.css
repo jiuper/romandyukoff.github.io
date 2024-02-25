@@ -276,6 +276,7 @@ h1 {
 }
 .stories-slider {
   padding: 0;
+  z-index: 9999999999999;
 }
 .stories-slider > .swiper {
   z-index: 2;
@@ -3382,7 +3383,7 @@ p.section3-content-p__loyalty-program {
 .section6-title__restoran {
   text-align: center;
   position: relative;
-  z-index: 99999999999999;
+  z-index: 99999999;
   font-size: min(84px, 4.4vw);
   font-style: normal;
   font-weight: 400;
@@ -3601,7 +3602,7 @@ p.section3-content-p__loyalty-program {
   font-family: "FuturaPT", sans-serif;
   font-size: 16px;
   position: relative;
-  z-index: 9999999999;
+  z-index: 999999999;
   font-style: normal;
   margin: 0 auto;
   width: 167px;
