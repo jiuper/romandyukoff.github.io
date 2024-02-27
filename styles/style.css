@@ -292,8 +292,7 @@ h1 {
   border-radius: 120px;
   border: 1px solid #454545;
   background: rgba(196, 196, 196, 0.01);
-  filter: blur(42px);
-  -webkit-filter: blur(42px);
+
   transform: translate3d(0, 0, 0);
 }
 .stories-slider-actions {
