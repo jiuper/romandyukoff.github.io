@@ -4334,6 +4334,7 @@ p.section3-content-p__loyalty-program {
   align-items: center;
   position: relative;
   z-index: 20;
+  touch-action: none;
 }
 .HeroScroll__slider.disabled {
   pointer-events: none;

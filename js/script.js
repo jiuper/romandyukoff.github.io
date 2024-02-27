@@ -21,65 +21,37 @@ if (IsHeroSlider) {
   let blur = document.querySelector(".HeroScroll__blur");
   let heroImg = document.querySelector(".HeroScroll__img");
 
-  const scrollEnabler = (_, progress) => {
-    if (progress === 1) {
-      document.body.style.overflow = "auto";
-    }
-  };
   swiperHero.on("afterInit", () => console.log("init"));
   swiperHero.on("reachEnd", () => (document.body.style.overflow = "auto"));
   swiperHero.on("scroll", blurBack);
 
-  let enabled = false;
-  heroSlider.addEventListener("pointerdown", () => (enabled = true));
-  heroSlider.addEventListener("pointerup", () => (enabled = false));
-  heroSlider.addEventListener("pointermove", (event) => {
-    console.log(event);
-  });
-
-  var startY = 0;
-
-  document.addEventListener("touchstart", function (e) {
-    startY = e.touches[0].clientY;
-  });
-
-  document.addEventListener("touchmove", function (e) {
-    if (swiperHero.isEnd) {
-      // Проверяем, достиг ли слайдер конца
-      document.removeEventListener("touchmove"); // Если достиг, удаляем обработчик события touchmove
-      return;
-    }
-
-    var currentY = e.touches[0].clientY;
-    var deltaY = currentY - startY;
-
-    if (Math.abs(deltaY) > 10) {
-      // Порог для определения свайпа
-      e.preventDefault(); // Отменяем прокрутку страницы
-      swiperHero.setTranslate(swiperHero.getTranslate() + deltaY * 0.2); // Изменяем позицию swiper в соответствии с движением пальца
-    }
-  });
-  let touchstart;
-  heroSlider.addEventListener("touchstart", (event) => {
-    touchstart = event.touches[0].clientY;
-  });
-  heroSlider.addEventListener("touchmove", (event) => {
-    let translate;
-    let count = 0.2;
-    if (!swiperHero.isEnd) {
-      if (event.cancelable) event.preventDefault();
-      translate = (event.changedTouches[0].clientY - touchstart) * count;
-      if (swiperHero.translate + translate > 0) {
-        swiperHero.setTranslate(0);
-        translate = 0;
-      }
+  heroSlider.addEventListener('pointerdown', (event) => {
+    window.swiperEnabled = window.pageYOffset === 0;
+    window.swiperStartY = event.offsetY;
+    window.swiperTempProgress = swiperHero.progress;
+    if (window.pageYOffset === 0) {
+      heroSlider.classList.remove("disabled");
     } else {
-      translate = (event.changedTouches[0].clientY - touchstart) * count;
-      if (translate < 0) {
-        translate = 0;
-      }
+      heroSlider.classList.add("disabled");
     }
-    swiperHero.setTranslate(swiperHero.translate + translate);
+  });
+  heroSlider.addEventListener('pointerup',() => {
+    window.swiperEnabled = false;
+    window.swiperStartY = null;
+    window.swiperTempProgress = null;
+    swiperHero.setProgress(Math.min(+(Math.round(swiperHero.progress * 4) / 4).toFixed(2), 1), 600);
+  });
+  heroSlider.addEventListener('pointermove', (event) => {
+    if (!window.swiperEnabled) return;
+
+    const swipeCoeff = 1.5;
+    const swipeValue = (window.swiperStartY - event.offsetY) / swipeCoeff;
+    const swipePercent = swipeValue / heroSlider.getBoundingClientRect().height;
+    const swipeProgress = (window.swiperTempProgress || 0) + swipePercent;
+
+    if (swipeProgress > 1) heroSlider.classList.add("disabled");
+
+    swiperHero.setProgress(swipeProgress, 300);
 
     blurBack();
   });
