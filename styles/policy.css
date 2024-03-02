@@ -1,0 +1,208 @@
+.policy-container {
+  border-top: 1px solid #454545;
+  border-bottom: 1px solid #454545;
+  position: relative;
+}
+.policy-pt {
+  padding-top: 86px;
+}
+.policy-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.policy-wrapper {
+  max-width: 930px;
+  margin: 0 auto;
+  width: 100%;
+}
+.policy-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid #454545;
+  border-left: 1px solid #454545;
+  border-right: 1px solid #454545;
+  position: relative;
+}
+.policy-caption__line {
+  display: none;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #454545;
+}
+.policy-container__img {
+  width: 350px;
+}
+.policy-container__img > img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.policy-caption > p {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.policy-body {
+  padding: 170px 94px 184px 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  border-left: 1px solid #454545;
+  border-right: 1px solid #454545;
+}
+
+.policy-blockOne,
+.policy-blockTwo,
+.policy-blockThree,
+.policy-blockFour,
+.policy-blockFive,
+.policy-blockSix,
+.policy-blockSeven,
+.policy-blockEigth,
+.policy-blockNine,
+.policy-blockTen > p,
+h2 {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.policy-body > div > h2 {
+  font-weight: 450;
+  text-transform: uppercase;
+}
+.policy-body > div > ul > li {
+  list-style: disc !important;
+}
+.policy-blockOne,
+.policy-blockTwo,
+.policy-blockThree,
+.policy-blockFour,
+.policy-blockFive,
+.policy-blockSix,
+.policy-blockSeven,
+.policy-blockEight,
+.policy-blockNine,
+.policy-blockTen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.policy-body > div > p > a {
+  text-decoration: underline;
+}
+@media (max-width: 1050px) {
+  .policy-wrapper {
+    max-width: 100%;
+  }
+  .policy-caption {
+    padding: 0;
+  }
+  .policy-caption > p {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    max-width: 630px;
+    width: 100%;
+    z-index: 2;
+    padding-bottom: 130px;
+  }
+  .policy-container__img {
+    width: 300px;
+  }
+  .policy-body {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 90px 75px 64px 70px;
+    gap: 29px;
+  }
+  .policy-blockOne,
+  .policy-blockTwo,
+  .policy-blockThree,
+  .policy-blockFour,
+  .policy-blockFive,
+  .policy-blockSix,
+  .policy-blockSeven,
+  .policy-blockEight,
+  .policy-blockNine,
+  .policy-blockTen > p,
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  .policy-caption__line {
+    display: block;
+  }
+  .policy-container__img {
+    z-index: 2;
+    padding-top: 105px;
+  }
+}
+@media (max-width: 475px) {
+  .policy-header {
+    padding-bottom: 15px;
+  }
+  .policy-title {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    max-width: 245px;
+    padding: 10px;
+  }
+  .policy-caption > p {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    max-width: 330px;
+    padding-bottom: 115px;
+  }
+  .policy-container__img {
+    width: 251px;
+    padding-top: 66px;
+  }
+  .policy-body {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px;
+    gap: 29px;
+  }
+  .policy-blockOne,
+  .policy-blockTwo,
+  .policy-blockThree,
+  .policy-blockFour,
+  .policy-blockFive,
+  .policy-blockSix,
+  .policy-blockSeven,
+  .policy-blockEight,
+  .policy-blockNine,
+  .policy-blockTen > p,
+  h2 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+}
