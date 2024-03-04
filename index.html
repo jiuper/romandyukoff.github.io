@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/modals.css" />
     <link rel="stylesheet" type="text/css" href="styles/adaptive.css" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
     <link
@@ -675,9 +676,370 @@
         <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
+    <section class="univers__modal univers__hidden">
+      <div class="univers__wrapper">
+        <div class="univers__backdrop"></div>
+        <div class="univers__container">
+          <div class="age-container">
+            <h2 class="age-title">вам уже исполнилось 18 лет?</h2>
+            <span class="age-desc"
+              >Посещение сайта возможно только при достижении совершеннолетнего
+              возраста.
+            </span>
+            <div class="age-btn">
+              <button onclick="handleOK()">Да</button>
+              <button onclick="handleNot()">Нет</button>
+            </div>
+          </div>
+          <div class="age-container age-Not isNot">
+            <span class="age-desc"
+              >Мистер Т. откроет двери своего Особняка как только ты будешь
+              готов к этому, дорогой друг!
+            </span>
+            <span class="age-desc age-fw"
+              >Увидимся после твоего совершеннолетия.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="univers__modal cookies__hidden">
+      <div class="univers__wrapper">
+        <div class="univers__backdrop cookies-bg"></div>
+        <div class="univers__container cookies-mw">
+          <div class="cookies-container">
+            <div class="cookies-title">
+              <h3>Мы используем файлы cookies</h3>
+              <span
+                >Оставаясь на сайте, вы соглашаетесь c<a href="#">
+                  условиями использования cookies.</a
+                ></span
+              >
+            </div>
+            <div class="age-btn cookies-btn">
+              <button onclick="handleOK()" class="btn-hidden">ОК</button>
+              <div onclick="handleOK()" class="btn-hidden-mob">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_b_2387_14338)">
+                    <rect
+                      x="1"
+                      y="1"
+                      width="22"
+                      height="22"
+                      rx="11"
+                      fill="#C4C4C4"
+                      fill-opacity="0.01"
+                    />
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="23"
+                      height="23"
+                      rx="11.5"
+                      stroke="#454545"
+                    />
+                  </g>
+                  <path d="M15.082 8.92004L8.92208 15.08" stroke="#DFDFDF" />
+                  <path d="M15.082 15.0801L8.92208 8.92013" stroke="#DFDFDF" />
+                  <defs>
+                    <filter
+                      id="filter0_b_2387_14338"
+                      x="-84"
+                      y="-84"
+                      width="192"
+                      height="192"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="42"
+                      />
+                      <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_2387_14338"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_2387_14338"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="univers__modal cookies__hidden">
+      <div class="univers__wrapper">
+        <div class="univers__backdrop cookies-bg"></div>
+        <div class="univers__container cookies-mw__EN">
+          <div class="cookies-container cookies__EN">
+            <div class="cookies-title cookies-title__EN">
+              <p>
+                We use essential cookies to make our site work. With your
+                consent, we may also use non-essential cookies to improve user
+                experience and analyze website traffic. By clicking “Accept,”
+                you agree to our website's cookie use as described in our
+                <u>Cookie Policy</u>. You can change your cookie settings at any
+                time by clicking <u>“Preferences.”</u>
+              </p>
+            </div>
+            <div class="age-btn cookies-btn cookies-btn__EN">
+              <button onclick="handleMoreEn()">Preferences</button>
+              <button onclick="handleOK()">decline</button>
+              <button onclick="handleOK()">accept</button>
+            </div>
+          </div>
+          <div class="cookies-container cookies__EN cookies-preferences">
+            <div
+              class="cookies-title cookies-title__EN cookies-preferences-title"
+            >
+              <div class="cookies-caption__EN">
+                <h3>preferences</h3>
+                <div onclick="handleOK()">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_b_2387_13981)">
+                      <rect
+                        x="1"
+                        y="1"
+                        width="40"
+                        height="40"
+                        rx="20"
+                        fill="#C4C4C4"
+                        fill-opacity="0.01"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="41"
+                        height="41"
+                        rx="20.5"
+                        stroke="#454545"
+                      />
+                    </g>
+                    <path
+                      d="M26.5977 15.3999L15.3977 26.5998"
+                      stroke="#DFDFDF"
+                    />
+                    <path
+                      d="M26.5977 26.5999L15.3977 15.3999"
+                      stroke="#DFDFDF"
+                    />
+                    <defs>
+                      <filter
+                        id="filter0_b_2387_13981"
+                        x="-84"
+                        y="-84"
+                        width="210"
+                        height="210"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feGaussianBlur
+                          in="BackgroundImageFix"
+                          stdDeviation="42"
+                        />
+                        <feComposite
+                          in2="SourceAlpha"
+                          operator="in"
+                          result="effect1_backgroundBlur_2387_13981"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_backgroundBlur_2387_13981"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+
+              <p>
+                We use essential cookies to make our site work. With your
+                consent, we may also use non-essential cookies to improve user
+                experience and analyze website traffic. By clicking “Accept,”
+                you agree to our website's cookie use as described in our
+                <u>Cookie Policy</u>. You can change your cookie settings at any
+                time by clicking <u>“Preferences.”</u>
+              </p>
+            </div>
+            <div class="cookies-content__EN">
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-2"
+                    name="cookies"
+                    value="indigo"
+                    checked
+                  />
+                  <label for="color-2"></label>
+                </div>
+                <div class="item-EN">
+                  <span>Essential Cookies (14) <u>Details</u></span>
+                  <span
+                    >These cookies are necessary to the core functionality of
+                    our website and some of its features, such as access to
+                    secure areas.</span
+                  >
+                </div>
+              </div>
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-3"
+                    name="cookies"
+                    value="indigo"
+                  />
+                  <label for="color-3"></label>
+                </div>
+                <div class="item-EN">
+                  <span
+                    >Performance and Functionality Cookies (11)
+                    <u>Details</u></span
+                  >
+                  <span
+                    >These cookies are used to enhance the performance and
+                    functionality of our websites but are nonessential to their
+                    use. However, without these cookies, certain functionality
+                    (like videos) may become unavailable.</span
+                  >
+                </div>
+              </div>
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-13"
+                    name="cookies"
+                    value="indigo"
+                  />
+                  <label for="color-13"></label>
+                </div>
+                <div class="item-EN">
+                  <span
+                    >Analytics and Customization Cookies (18)
+                    <u>Details</u></span
+                  >
+                  <span
+                    >These cookies collect information that can help us
+                    understand how our websites are being used. This information
+                    can also be used to measure effectiveness in our marketing
+                    campaigns or to curate a personalized site experience for
+                    you.</span
+                  >
+                </div>
+              </div>
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-14"
+                    name="cookies"
+                    value="indigo"
+                  />
+                  <label for="color-14"></label>
+                </div>
+                <div class="item-EN">
+                  <span>Advertising Cookies (15) <u>Details</u></span>
+                  <span
+                    >These cookies are used to make advertising messages more
+                    relevant to you. They prevent the same ad from continuously
+                    reappearing, ensure that ads are properly displayed for
+                    advertisers, and in some cases select advertisements that
+                    are based on your interests.</span
+                  >
+                </div>
+              </div>
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-15"
+                    name="cookies"
+                    value="indigo"
+                  />
+                  <label for="color-15"></label>
+                </div>
+                <div class="item-EN">
+                  <span>Social networking Cookies (15) <u>Details</u></span>
+                  <span
+                    >These cookies enable you to share our website's content
+                    through third-party social networks and other websites.
+                    These cookies may also be used for advertising
+                    purposes.</span
+                  >
+                </div>
+              </div>
+              <div class="cookies-item">
+                <div class="radio cookies-radio">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="color-17"
+                    name="cookies"
+                    value="indigo"
+                  />
+                  <label for="color-17"></label>
+                </div>
+                <div class="item-EN">
+                  <span>Unclassified Cookies (15) <u>Details</u></span>
+                  <span
+                    >These are cookies that have not yet been categorized. We
+                    are in the process of classifying these cookies with the
+                    help of their providers.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="age-btn cookies-btn cookies-btn__EN cookies-preferences-btn"
+            >
+              <button onclick="handleOK()">decline</button>
+              <button onclick="handleOK()">accept</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="/js/header.js"></script>
     <script src="/js/mapModal.js"></script>
     <script src="/js/simpleParallax.js"></script>
+    <script src="/js/modals.js"></script>
     <script>
       const [image1, image2, image3, image4] = document.querySelectorAll(
         "body >  div.blockBack > .container-rubber > section.section1__main img"
