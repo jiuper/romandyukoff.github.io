@@ -34,25 +34,46 @@
               <img src="/img/logo-desktop.svg" alt="" />
             </div>
             <div class="dropdown dropdown-header">
-              <button class="dropbtn">
-                СПБ
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="8"
-                  height="10"
-                  viewBox="0 0 8 10"
-                  fill="none"
-                >
-                  <path
-                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
-                    fill="#DFDFDF"
-                  />
-                </svg>
-              </button>
+              <div class="dropdown-dropbtn dci">
+                <button class="dropbtn"></button>
+              </div>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" class="dropdown-content-icon">Россия</a>
+                <a href="#" class="dropdown-content-icon">Казахстан</a>
+                <a href="#">Бали</a>
+                <a href="#">Минск</a>
+                <a href="#">Ташкент</a>
+              </div>
+              <div class="dropdown-content dropdown-content-acive">
+                <a href="#" class="dropdown-content-icon-down">Россия</a>
+                <a href="#">Санкт-Петербург</a>
+                <a href="#">Москва</a>
+                <a href="#">Казань</a>
+                <a href="#">Краснодар</a>
+                <a href="#">Калининград</a>
+                <a href="#">Ростов-на-Дону</a>
+                <a href="#">Нижний Новгород</a>
+                <a href="#">Новосибирск</a>
+                <a href="#">Тюмень</a>
+                <a href="#">Томск</a>
+                <a href="#">Барнаул</a>
+                <a href="#">Екатеринбург</a>
+                <a href="#">Ставрополь</a>
+                <a href="#">Луганск</a>
+                <a href="#">Пенза</a>
+                <a href="#">Пятигорск</a>
+              </div>
+              <div class="dropdown-content dropdown-content-acive">
+                <a href="#" class="dropdown-content-icon-down">Казахстан</a>
+                <a href="#">Алматы</a>
+                <a href="#">Актау</a>
+                <a href="#">Астана</a>
+                <a href="#">Аксай</a>
+                <a href="#">Костанай</a>
+                <a href="#">Карагандай</a>
+                <a href="#">Уральск</a>
+                <a href="#">Усть-Каменогорск</a>
+                <a href="#">Шымкент</a>
               </div>
             </div>
             <h1>Сеть лаунж-ресторанов</h1>
@@ -63,7 +84,22 @@
               <span></span>
             </label>
             <div class="menu__box">
-              <ul>
+              <div class="burger__header-mob">
+                <div class="burger__dropbtn-mob">
+                  <span class="burger__dropbtn"></span>
+                  <button class="burger__dropbtn-btn">Изменить</button>
+                </div>
+                <div class="burger__search">
+                  <div class="zoom"></div>
+                  <input
+                    class="search__city"
+                    type="text"
+                    placeholder="Ваш город"
+                  />
+                  <div class="close"></div>
+                </div>
+              </div>
+              <ul class="burger__menu">
                 <li>
                   <a href="/" class="burger-menu-active">
                     <svg
@@ -91,7 +127,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/restaurant-all.html">
+                  <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -117,7 +153,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/franchise.html">
+                  <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -143,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/loyalty-program.html">
+                  <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -169,7 +205,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/catering.html">
+                  <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -221,7 +257,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/contacts.html">
+                  <a href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -273,11 +309,58 @@
                   </a>
                 </li>
               </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmc">Россия</li>
+                <li class="bmc">Казахстан</li>
+                <li>Бали</li>
+                <li>Минск</li>
+                <li>Ташкент</li>
+              </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmcd">Россия</li>
+                <li>Санкт-Петербург</li>
+                <li>Москва</li>
+                <li>Казань</li>
+                <li>Краснодар</li>
+                <li>Калининград</li>
+                <li>Ростов-на-Дону</li>
+                <li>Нижний Новгород</li>
+                <li>Новосибирск</li>
+                <li>Тюмень</li>
+                <li>Томск</li>
+                <li>Барнаул</li>
+                <li>Екатеринбург</li>
+                <li>Ставрополь</li>
+                <li>Луганск</li>
+                <li>Пенза</li>
+                <li>Пятигорск</li>
+              </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmcd">Казахстан</li>
+                <li>Алматы</li>
+                <li>Актау</li>
+                <li>Астана</li>
+                <li>Аксай</li>
+                <li>Костанай</li>
+                <li>Карагандай</li>
+                <li>Уральск</li>
+                <li>Усть-Каменогорск</li>
+                <li>Шымкент</li>
+              </ul>
+                <ul class="burger__menu-city burger__menu-city-active maping-list"></ul>
+              <div class="burger__footer">
+                <button class="burger__footer-btn">Забронировать</button>
+                <div class="burger__footer-lang">
+                  <span>RU</span>
+                  <span>EN</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header-container-right">
-            <a href="/">Доставка</a>
-            <a href="#" class="header-container-right-btn">
+            <a href="#!">EN</a>
+            <a href="#!">Доставка</a>
+            <a href="#!" class="header-container-right-btn">
               Забронировать
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,87 @@
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.error-containerMain {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+}
+.error-line {
+  height: 100%;
+  width: 1px;
+  background: #454545;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.error-containerFooter {
+  flex: 0 1 auto;
+}
+.header {
+  border-bottom: 1px solid #454545;
+  height: 80px;
+}
+.header-container-logo {
+  padding: 14px 0 32px 20px;
+}
+.error-img {
+  position: relative;
+  z-index: 5;
+}
+.error-img > img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.error-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 401px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  color: #dfdfdf;
+}
+.error-desc > span {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.error-desc > p {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.error-desc > p > a {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -2px;
+  text-align: center;
+  text-decoration: underline;
+  color: #dfdfdf;
+}
+.footer {
+  border-top: 1px solid #454545;
+  height: 80px;
+}

@@ -277,6 +277,10 @@
   .section7-container__secret-assistants {
     padding-top: 0;
   }
+  .burger__footer,
+  .burger__header-mob {
+    display: flex;
+  }
   .line-none {
     border-right: 1px solid #454545;
     border-left: 1px solid #454545;
@@ -5414,6 +5418,60 @@
   .titles {
     font-size: 12px;
     line-height: 14px;
+  }
+  .burger__menu-city > li,
+  .burger__header-mob {
+    height: 91px;
+  }
+  .burger__menu-city > li,
+  .burger__dropbtn-mob > span {
+    font-size: 12px;
+
+    line-height: 14px;
+  }
+  .burger__footer {
+    padding-top: 20px;
+  }
+  .bmcd::after,
+  .bmc::after {
+    margin-right: 25px;
+    width: 8px;
+    height: 8px;
+  }
+  .bmcd::before,
+  .bmc::before {
+    margin-left: 25px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .burger__dropbtn-mob > button {
+    font-size: 12px;
+
+    line-height: 26px;
+  }
+  .burger__search > div:first-child {
+    top: 35%;
+    width: 9px;
+    height: 10px;
+    margin-left: 40px;
+  }
+  .burger__search > div:last-child {
+    top: 35%;
+    width: 9px;
+    height: 10px;
+    margin-right: 50px;
+  }
+  .burger__search > input {
+    height: 34px;
+    padding: 0 30px;
+  }
+  .menu__box ul li a {
+    padding: 30px 20px;
+
+    font-size: 12px;
+
+    line-height: 14px; /* 130% */
   }
 }
 

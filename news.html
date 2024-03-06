@@ -28,25 +28,46 @@
               <img src="/img/logo-desktop.svg" alt="" />
             </div>
             <div class="dropdown dropdown-header">
-              <button class="dropbtn">
-                СПБ
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="8"
-                  height="10"
-                  viewBox="0 0 8 10"
-                  fill="none"
-                >
-                  <path
-                    d="M8 9.53674e-07L4 10L8.74228e-07 2.54292e-07L8 9.53674e-07Z"
-                    fill="#DFDFDF"
-                  />
-                </svg>
-              </button>
+              <div class="dropdown-dropbtn dci">
+                <button class="dropbtn"></button>
+              </div>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" class="dropdown-content-icon">Россия</a>
+                <a href="#" class="dropdown-content-icon">Казахстан</a>
+                <a href="#">Бали</a>
+                <a href="#">Минск</a>
+                <a href="#">Ташкент</a>
+              </div>
+              <div class="dropdown-content dropdown-content-acive">
+                <a href="#" class="dropdown-content-icon-down">Россия</a>
+                <a href="#">Санкт-Петербург</a>
+                <a href="#">Москва</a>
+                <a href="#">Казань</a>
+                <a href="#">Краснодар</a>
+                <a href="#">Калининград</a>
+                <a href="#">Ростов-на-Дону</a>
+                <a href="#">Нижний Новгород</a>
+                <a href="#">Новосибирск</a>
+                <a href="#">Тюмень</a>
+                <a href="#">Томск</a>
+                <a href="#">Барнаул</a>
+                <a href="#">Екатеринбург</a>
+                <a href="#">Ставрополь</a>
+                <a href="#">Луганск</a>
+                <a href="#">Пенза</a>
+                <a href="#">Пятигорск</a>
+              </div>
+              <div class="dropdown-content dropdown-content-acive">
+                <a href="#" class="dropdown-content-icon-down">Казахстан</a>
+                <a href="#">Алматы</a>
+                <a href="#">Актау</a>
+                <a href="#">Астана</a>
+                <a href="#">Аксай</a>
+                <a href="#">Костанай</a>
+                <a href="#">Карагандай</a>
+                <a href="#">Уральск</a>
+                <a href="#">Усть-Каменогорск</a>
+                <a href="#">Шымкент</a>
               </div>
             </div>
             <h1>Сеть лаунж-ресторанов</h1>
@@ -57,7 +78,22 @@
               <span></span>
             </label>
             <div class="menu__box">
-              <ul>
+              <div class="burger__header-mob">
+                <div class="burger__dropbtn-mob">
+                  <span class="burger__dropbtn"></span>
+                  <button class="burger__dropbtn-btn">Изменить</button>
+                </div>
+                <div class="burger__search">
+                  <div class="zoom"></div>
+                  <input
+                    class="search__city"
+                    type="text"
+                    placeholder="Ваш город"
+                  />
+                  <div class="close"></div>
+                </div>
+              </div>
+              <ul class="burger__menu">
                 <li>
                   <a href="/" class="burger-menu-active">
                     <svg
@@ -267,9 +303,58 @@
                   </a>
                 </li>
               </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmc">Россия</li>
+                <li class="bmc">Казахстан</li>
+                <li>Бали</li>
+                <li>Минск</li>
+                <li>Ташкент</li>
+              </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmcd">Россия</li>
+                <li>Санкт-Петербург</li>
+                <li>Москва</li>
+                <li>Казань</li>
+                <li>Краснодар</li>
+                <li>Калининград</li>
+                <li>Ростов-на-Дону</li>
+                <li>Нижний Новгород</li>
+                <li>Новосибирск</li>
+                <li>Тюмень</li>
+                <li>Томск</li>
+                <li>Барнаул</li>
+                <li>Екатеринбург</li>
+                <li>Ставрополь</li>
+                <li>Луганск</li>
+                <li>Пенза</li>
+                <li>Пятигорск</li>
+              </ul>
+              <ul class="burger__menu-city burger__menu-city-active">
+                <li class="bmcd">Казахстан</li>
+                <li>Алматы</li>
+                <li>Актау</li>
+                <li>Астана</li>
+                <li>Аксай</li>
+                <li>Костанай</li>
+                <li>Карагандай</li>
+                <li>Уральск</li>
+                <li>Усть-Каменогорск</li>
+                <li>Шымкент</li>
+              </ul>
+              <ul
+                class="burger__menu-city burger__menu-city-active maping-list"
+              ></ul>
+              <div class="burger__footer">
+                <button class="burger__footer-btn">Забронировать</button>
+                <div class="burger__footer-lang">
+                  <span>RU</span>
+                  <span>EN</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header-container-right">
+            <a href="#!">EN</a>
             <a href="#!">Доставка</a>
             <a href="#!" class="header-container-right-btn">
               Забронировать
@@ -291,267 +376,275 @@
       </div>
     </header>
     <div class="container-rubber">
-
-
-    <section class="section1__news">
-      <div class="section1-line-l__news"></div>
-      <div class="section1-line-r__news"></div>
-      <div class="container">
-        <div class="section1-title__news">Новости</div>
-        <div class="section1-container__news">
-          <div class="section1-container-block__news" onclick="handleIsOpen(0)">
-            <span>11 декабря 2020</span>
-            <img src="/img/gal31.png" alt="" />
-            <h3>Открытие Tangiers Lounge Aktau</h3>
-            <p>
-              Дамы и господа, торжественно объявляем — техническое открытие
-              Tangiers Lounge Aktau состоялось!
-            </p>
-          </div>
-          <div class="section1-container-block__news" onclick="handleIsOpen(1)">
-            <span>21 января 2021</span>
-            <img src="/img/gal30.png" alt="" />
-            <h3>Открытие Tangiers Lounge Yakimanka</h3>
-            <p>
-              Особняк Мистера Т. в самом сердце столицы Tangiers Lounge
-              Yakimanka открыл свои двери. Ждём вас ежедневно с 12:00!
-            </p>
-          </div>
-          <div class="section1-container-block__news" onclick="handleIsOpen(2)">
-            <div class="line-news"></div>
-            <span>11 декабря 2020</span>
-            <img src="/img/gal32.png" alt="" />
-            <h3>Открытие Tangiers Lounge KLD</h3>
-            <p>
-              Создавая музыкальное произведение, мелодии переписывают много раз.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="news__modal news__hidden">
-      <div class="news__wrapper">
-        <div class="news__backdrop" onclick="handleIsClose()"></div>
-        <div class="news__container">
-          <div class="news__header">
-            <div class="news__actions">
-              <div class="news__action-navigate">
-                <button
-                  aria-label="Mute volume"
-                  type="button"
-                  class="action isPrev"
-                  onclick="handleIsPrev()"
-                ></button>
-                <button
-                  aria-label="Mute volume"
-                  type="button"
-                  class="action isNext"
-                  onclick="handleIsNext()"
-                ></button>
-              </div>
-
-              <button
-                aria-label="Mute volume"
-                type="button"
-                class="action"
-                onclick="handleIsClose()"
-              ></button>
+      <section class="section1__news">
+        <div class="section1-line-l__news"></div>
+        <div class="section1-line-r__news"></div>
+        <div class="container">
+          <div class="section1-title__news">Новости</div>
+          <div class="section1-container__news">
+            <div
+              class="section1-container-block__news"
+              onclick="handleIsOpen(0)"
+            >
+              <span>11 декабря 2020</span>
+              <img src="/img/gal31.png" alt="" />
+              <h3>Открытие Tangiers Lounge Aktau</h3>
+              <p>
+                Дамы и господа, торжественно объявляем — техническое открытие
+                Tangiers Lounge Aktau состоялось!
+              </p>
             </div>
-          </div>
-          <div class="news_list-content">
-            <div class="news__content">
-              <div class="news__caption">
-                <span>11 декабря</span>
-                <h2>Открытие Tangiers Lounge  KLD</h2>
-              </div>
-              <div class="news__content-page">
-                <div class="news__container-img">
-                  <div class="title title-cl">
-                    Новый дом Мистера Т. готов принимать гостей
-                  </div>
-                  <div class="img">
-                    <img src="./img/news__hool.png" alt="news-page" />
-                  </div>
-                </div>
-                <div class="news__description">
-                  <h2 class="caption__top">
-                    Многие великие музыканты, создавая произведение, одну и ту
-                    же мелодию переписывали несколько раз: каждый раз убирая,
-                    изменяя некоторые части произведения, или же добавляя в него
-                    что-то новое, особенное.
-                  </h2>
-                  <span class="title__bottom">
-                    И подобно музыкальным гениям, Мистер Т. решил добавить в
-                    своё произведение нечто новое. Открыть Особняк Tangiers
-                    Lounge в Калининграде, при этом объединив классику
-                    с новаторством.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Всеми известный шеф-повар Дмитрий Бакиев
-                  </div>
-                </div>
-                <div class="news__description">
-                  <span class="title__bottom">
-                    Но кто бы мог искусно управлять новым Особняком,  при этом
-                    руководствуясь Петербургскими традициями?
-                  </span>
-                  <span class="title__bottom">
-                    В Калининграде у Мистера Т. были проверенные временем и
-                    обстоятельствами джентльмены: Евгений Дубченко и Александр
-                    Синалицкий, а также известный не только в Калининграде, но и
-                    Сочи шеф-повар Дмитрий Бакиев.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Персонал Tangiers Lounge можно узнать по классической черной
-                    форме  и английским котелкам
-                  </div>
-                </div>
-                <div class="news__caption-footer">
-                  <span>+7 (916) 682-90-00</span>
-                  <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
-                </div>
-              </div>
+            <div
+              class="section1-container-block__news"
+              onclick="handleIsOpen(1)"
+            >
+              <span>21 января 2021</span>
+              <img src="/img/gal30.png" alt="" />
+              <h3>Открытие Tangiers Lounge Yakimanka</h3>
+              <p>
+                Особняк Мистера Т. в самом сердце столицы Tangiers Lounge
+                Yakimanka открыл свои двери. Ждём вас ежедневно с 12:00!
+              </p>
             </div>
-            <div class="news__content news__hidden">
-              <div class="news__caption">
-                <span>12 декабря</span>
-                <h2>Открытие Tangiers Lounge  KLD #1</h2>
-              </div>
-              <div class="news__content-page">
-                <div class="news__container-img">
-                  <div class="title title-cl">
-                    Новый дом Мистера Т. готов принимать гостей
-                  </div>
-                  <div class="img">
-                    <img src="./img/news__hool.png" alt="news-page" />
-                  </div>
-                </div>
-                <div class="news__description">
-                  <h2 class="caption__top">
-                    Многие великие музыканты, создавая произведение, одну и ту
-                    же мелодию переписывали несколько раз: каждый раз убирая,
-                    изменяя некоторые части произведения, или же добавляя в него
-                    что-то новое, особенное.
-                  </h2>
-                  <span class="title__bottom">
-                    И подобно музыкальным гениям, Мистер Т. решил добавить в
-                    своё произведение нечто новое. Открыть Особняк Tangiers
-                    Lounge в Калининграде, при этом объединив классику
-                    с новаторством.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Всеми известный шеф-повар Дмитрий Бакиев
-                  </div>
-                </div>
-                <div class="news__description">
-                  <span class="title__bottom">
-                    Но кто бы мог искусно управлять новым Особняком,  при этом
-                    руководствуясь Петербургскими традициями?
-                  </span>
-                  <span class="title__bottom">
-                    В Калининграде у Мистера Т. были проверенные временем и
-                    обстоятельствами джентльмены: Евгений Дубченко и Александр
-                    Синалицкий, а также известный не только в Калининграде, но и
-                    Сочи шеф-повар Дмитрий Бакиев.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Персонал Tangiers Lounge можно узнать по классической черной
-                    форме  и английским котелкам
-                  </div>
-                </div>
-                <div class="news__caption-footer">
-                  <span>+7 (916) 682-90-00</span>
-                  <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
-                </div>
-              </div>
-            </div>
-            <div class="news__content news__hidden">
-              <div class="news__caption">
-                <span>13 декабря</span>
-                <h2>Открытие Tangiers Lounge  KLD #2</h2>
-              </div>
-              <div class="news__content-page">
-                <div class="news__container-img">
-                  <div class="title title-cl">
-                    Новый дом Мистера Т. готов принимать гостей
-                  </div>
-                  <div class="img">
-                    <img src="./img/news__hool.png" alt="news-page" />
-                  </div>
-                </div>
-                <div class="news__description">
-                  <h2 class="caption__top">
-                    Многие великие музыканты, создавая произведение, одну и ту
-                    же мелодию переписывали несколько раз: каждый раз убирая,
-                    изменяя некоторые части произведения, или же добавляя в него
-                    что-то новое, особенное.
-                  </h2>
-                  <span class="title__bottom">
-                    И подобно музыкальным гениям, Мистер Т. решил добавить в
-                    своё произведение нечто новое. Открыть Особняк Tangiers
-                    Lounge в Калининграде, при этом объединив классику
-                    с новаторством.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Всеми известный шеф-повар Дмитрий Бакиев
-                  </div>
-                </div>
-                <div class="news__description">
-                  <span class="title__bottom">
-                    Но кто бы мог искусно управлять новым Особняком,  при этом
-                    руководствуясь Петербургскими традициями?
-                  </span>
-                  <span class="title__bottom">
-                    В Калининграде у Мистера Т. были проверенные временем и
-                    обстоятельствами джентльмены: Евгений Дубченко и Александр
-                    Синалицкий, а также известный не только в Калининграде, но и
-                    Сочи шеф-повар Дмитрий Бакиев.
-                  </span>
-                </div>
-                <div class="news__container-img">
-                  <div class="img">
-                    <img src="./img/news__shef.png" alt="news-page" />
-                  </div>
-                  <div class="title">
-                    Персонал Tangiers Lounge можно узнать по классической черной
-                    форме  и английским котелкам
-                  </div>
-                </div>
-                <div class="news__caption-footer">
-                  <span>+7 (916) 682-90-00</span>
-                  <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
-                </div>
-              </div>
+            <div
+              class="section1-container-block__news"
+              onclick="handleIsOpen(2)"
+            >
+              <div class="line-news"></div>
+              <span>11 декабря 2020</span>
+              <img src="/img/gal32.png" alt="" />
+              <h3>Открытие Tangiers Lounge KLD</h3>
+              <p>
+                Создавая музыкальное произведение, мелодии переписывают много
+                раз.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="news__modal news__hidden">
+        <div class="news__wrapper">
+          <div class="news__backdrop" onclick="handleIsClose()"></div>
+          <div class="news__container">
+            <div class="news__header">
+              <div class="news__actions">
+                <div class="news__action-navigate">
+                  <button
+                    aria-label="Mute volume"
+                    type="button"
+                    class="action isPrev"
+                    onclick="handleIsPrev()"
+                  ></button>
+                  <button
+                    aria-label="Mute volume"
+                    type="button"
+                    class="action isNext"
+                    onclick="handleIsNext()"
+                  ></button>
+                </div>
+
+                <button
+                  aria-label="Mute volume"
+                  type="button"
+                  class="action"
+                  onclick="handleIsClose()"
+                ></button>
+              </div>
+            </div>
+            <div class="news_list-content">
+              <div class="news__content">
+                <div class="news__caption">
+                  <span>11 декабря</span>
+                  <h2>Открытие Tangiers Lounge  KLD</h2>
+                </div>
+                <div class="news__content-page">
+                  <div class="news__container-img">
+                    <div class="title title-cl">
+                      Новый дом Мистера Т. готов принимать гостей
+                    </div>
+                    <div class="img">
+                      <img src="./img/news__hool.png" alt="news-page" />
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <h2 class="caption__top">
+                      Многие великие музыканты, создавая произведение, одну и ту
+                      же мелодию переписывали несколько раз: каждый раз убирая,
+                      изменяя некоторые части произведения, или же добавляя в
+                      него что-то новое, особенное.
+                    </h2>
+                    <span class="title__bottom">
+                      И подобно музыкальным гениям, Мистер Т. решил добавить в
+                      своё произведение нечто новое. Открыть Особняк Tangiers
+                      Lounge в Калининграде, при этом объединив классику
+                      с новаторством.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Всеми известный шеф-повар Дмитрий Бакиев
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <span class="title__bottom">
+                      Но кто бы мог искусно управлять новым Особняком,  при этом
+                      руководствуясь Петербургскими традициями?
+                    </span>
+                    <span class="title__bottom">
+                      В Калининграде у Мистера Т. были проверенные временем и
+                      обстоятельствами джентльмены: Евгений Дубченко и Александр
+                      Синалицкий, а также известный не только в Калининграде, но
+                      и Сочи шеф-повар Дмитрий Бакиев.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Персонал Tangiers Lounge можно узнать по классической
+                      черной форме  и английским котелкам
+                    </div>
+                  </div>
+                  <div class="news__caption-footer">
+                    <span>+7 (916) 682-90-00</span>
+                    <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news__content news__hidden">
+                <div class="news__caption">
+                  <span>12 декабря</span>
+                  <h2>Открытие Tangiers Lounge  KLD #1</h2>
+                </div>
+                <div class="news__content-page">
+                  <div class="news__container-img">
+                    <div class="title title-cl">
+                      Новый дом Мистера Т. готов принимать гостей
+                    </div>
+                    <div class="img">
+                      <img src="./img/news__hool.png" alt="news-page" />
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <h2 class="caption__top">
+                      Многие великие музыканты, создавая произведение, одну и ту
+                      же мелодию переписывали несколько раз: каждый раз убирая,
+                      изменяя некоторые части произведения, или же добавляя в
+                      него что-то новое, особенное.
+                    </h2>
+                    <span class="title__bottom">
+                      И подобно музыкальным гениям, Мистер Т. решил добавить в
+                      своё произведение нечто новое. Открыть Особняк Tangiers
+                      Lounge в Калининграде, при этом объединив классику
+                      с новаторством.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Всеми известный шеф-повар Дмитрий Бакиев
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <span class="title__bottom">
+                      Но кто бы мог искусно управлять новым Особняком,  при этом
+                      руководствуясь Петербургскими традициями?
+                    </span>
+                    <span class="title__bottom">
+                      В Калининграде у Мистера Т. были проверенные временем и
+                      обстоятельствами джентльмены: Евгений Дубченко и Александр
+                      Синалицкий, а также известный не только в Калининграде, но
+                      и Сочи шеф-повар Дмитрий Бакиев.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Персонал Tangiers Lounge можно узнать по классической
+                      черной форме  и английским котелкам
+                    </div>
+                  </div>
+                  <div class="news__caption-footer">
+                    <span>+7 (916) 682-90-00</span>
+                    <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news__content news__hidden">
+                <div class="news__caption">
+                  <span>13 декабря</span>
+                  <h2>Открытие Tangiers Lounge  KLD #2</h2>
+                </div>
+                <div class="news__content-page">
+                  <div class="news__container-img">
+                    <div class="title title-cl">
+                      Новый дом Мистера Т. готов принимать гостей
+                    </div>
+                    <div class="img">
+                      <img src="./img/news__hool.png" alt="news-page" />
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <h2 class="caption__top">
+                      Многие великие музыканты, создавая произведение, одну и ту
+                      же мелодию переписывали несколько раз: каждый раз убирая,
+                      изменяя некоторые части произведения, или же добавляя в
+                      него что-то новое, особенное.
+                    </h2>
+                    <span class="title__bottom">
+                      И подобно музыкальным гениям, Мистер Т. решил добавить в
+                      своё произведение нечто новое. Открыть Особняк Tangiers
+                      Lounge в Калининграде, при этом объединив классику
+                      с новаторством.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Всеми известный шеф-повар Дмитрий Бакиев
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <span class="title__bottom">
+                      Но кто бы мог искусно управлять новым Особняком,  при этом
+                      руководствуясь Петербургскими традициями?
+                    </span>
+                    <span class="title__bottom">
+                      В Калининграде у Мистера Т. были проверенные временем и
+                      обстоятельствами джентльмены: Евгений Дубченко и Александр
+                      Синалицкий, а также известный не только в Калининграде, но
+                      и Сочи шеф-повар Дмитрий Бакиев.
+                    </span>
+                  </div>
+                  <div class="news__container-img">
+                    <div class="img">
+                      <img src="./img/news__shef.png" alt="news-page" />
+                    </div>
+                    <div class="title">
+                      Персонал Tangiers Lounge можно узнать по классической
+                      черной форме  и английским котелкам
+                    </div>
+                  </div>
+                  <div class="news__caption-footer">
+                    <span>+7 (916) 682-90-00</span>
+                    <span>г. Москва, Кадашевская наб., д. 6/1/2, стр. 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="container">
@@ -740,7 +833,7 @@
         <button class="modal-header-book-btn">Отправить</button>
       </div>
     </div>
-        <section class="univers__modal univers__hidden">
+    <section class="univers__modal univers__hidden">
       <div class="univers__wrapper">
         <div class="univers__backdrop"></div>
         <div class="univers__container">
@@ -1099,6 +1192,8 @@
         </div>
       </div>
     </section>
+
+
     <script></script>
     <script src="/js/header.js"></script>
     <script src="/js/mapModal.js"></script>

@@ -149,6 +149,7 @@
   color: #000;
   background: #dfdfdf;
 }
+.book__hidden,
 .cookies-preferences,
 .btn-hidden-mob,
 .isNot {
@@ -168,7 +169,9 @@
   align-items: flex-start;
   gap: 10px;
 }
-
+.book__container {
+  max-width: 532px;
+}
 .cookies-title__EN,
 .item-EN {
   display: flex;
@@ -231,6 +234,14 @@
   }
   .cookies-preferences-title > p {
     max-width: 481px;
+  }
+  .book__container {
+    max-width: 481px;
+  }
+  .book__container > div > .age-title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
   }
 }
 
@@ -320,5 +331,10 @@
   .cookies-item > div > .custom-radio + label::before {
     width: 10px;
     height: 10px;
+  }
+  .book__container > div > .age-title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0px;
   }
 }
