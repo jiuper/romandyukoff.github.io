@@ -5577,6 +5577,7 @@
   .section1-container__secret-assistants h1 {
     font-size: 30px !important;
     line-height: 32px !important;
+    max-width: 100%;
   }
 }
 
